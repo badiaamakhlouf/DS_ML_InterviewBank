@@ -19,11 +19,14 @@ Here's a comprehensive list that spans different levels:
 - Statistics and Probability 
 - Programming Proficiency
 - Data Cleaning and Preprocessing
-- Data Manipulation and Feature Engineering
+- Feature Engineering
 - Data Visualization
 - Machine Learning Fundamentals and Advanced Concepts
 - Experimental Design
 - Big Data Technologies
+
+### [1.1- Statistics and Probability]() 
+
 
 
  ## 2- Machine Learning and MLOPS
