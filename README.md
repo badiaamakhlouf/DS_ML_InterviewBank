@@ -25,7 +25,7 @@ Here's a comprehensive list that spans different levels:
 - Experimental Design
 - Big Data Technologies
 
-### [1.1- Statistics and Probability]() 
+### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
 
 
 
