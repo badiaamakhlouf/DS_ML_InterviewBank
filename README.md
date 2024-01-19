@@ -1,5 +1,6 @@
 # Data Scientist and Machine Learning Engineer Interview Questions
-I'm excited to introduce this GitHub repository, which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
+I'm excited to introduce this [GitHub repository](https://github.com/badiaamakhlouf/data_science_interview_preparation), 
+which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
 I've put significant effort into curating a wide range of questions, ensuring they encompass both fundamental principles and project-related inquiries.
 
@@ -16,14 +17,15 @@ Consequently, the repository contains a comprehensive collection of questions ta
 Regardless of your level (junior, senior, or lead), there are fundamental concepts and skills that individuals should master before going into a data science interview.
 Here's a comprehensive list that spans different levels:
 
-- [Statistics and Probability](pages/statistics_and_probability.md):
-- [Programming Proficiency](pages/programming_proficiency.md):
-- [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
-- [Feature Engineering](pages/feature_engineering.md):
-- [Data Visualization](pages/data_visualization.md):
-- [Machine Learning Fundamentals and Advanced Concepts]():
-- [Experimental Design](pages/experimental_design.md):
-- [Big Data Technologies](pages/big_data_technologies.md):
+- [Statistics and Probability](pages/statistics_and_probability.md): understand fundamental statistical concepts, hypothesis testing, confidence intervals, and probability distributions.
+- [Programming Proficiency](pages/programming_proficiency.md): master a programming language commonly used in data science, such as Python or R, and be comfortable with data manipulation libraries like Pandas and NumPy
+- [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md): master how to handle missing data, outliers, and perform preprocessing tasks to prepare data for analysis and modeling
+- [Feature Engineering](pages/feature_engineering.md): understand the importance of feature engineering and how to create relevant features to improve model performance.
+- [Data Visualization](pages/data_visualization.md): create effective visualizations using libraries like Matplotlib or Seaborn to communicate insights and findings clearly.
+- [Machine Learning Fundamentals](): gain a solid understanding of fundamental machine learning algorithms, encompassing both supervised and unsupervised learning. Develop expertise in model evaluation techniques and the adeptness to select the most suitable algorithm for diverse scenarios. This proficiency will be further detailed in the second subject, which delves into Machine Learning and MLOPS
+- [SQL Skills](pages/sql_skills_for_data_science): be proficient in SQL for querying databases and extracting relevant information
+- [Experimental Design](pages/experimental_design.md): understand how to design experiments and A/B tests to draw meaningful conclusions from data.
+- [Big Data Technologies](pages/big_data_technologies.md): familiarity with big data tools and technologies, such as Hadoop, Spark, or Hive, can be beneficial for more senior roles.
 
 #### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
 
