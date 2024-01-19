@@ -12,7 +12,7 @@ This repository is organized into subjects and their corresponding modules.
 Primarily, we feature two main subjects: data science and machine learning. 
 Each subject comprises a set of modules that zero in on specific areas within data or machine learning. 
 Consequently, the repository contains a comprehensive collection of questions tailored to each module, offering a targeted resource for in-depth exploration of related topics.
- ## 1- Data science 
+## 1- Data science 
 Regardless of your level (junior, senior, or lead), there are fundamental concepts and skills that individuals should master before going into a data science interview.
 Here's a comprehensive list that spans different levels:
 
@@ -25,7 +25,7 @@ Here's a comprehensive list that spans different levels:
 - Experimental Design
 - Big Data Technologies
 
-### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
+#### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
 
 
 
