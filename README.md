@@ -1,5 +1,5 @@
 # Data Scientist and Data Engineer Interview Questions
-I'm excited to introduce this GitHub repository, a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
+I'm excited to introduce this GitHub repository, which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
 I've put significant effort into curating a wide range of questions, ensuring they encompass both fundamental principles and project-related inquiries.
 
