@@ -1,4 +1,4 @@
-# Data Scientist and Data Engineer Interview Questions
+# Data Scientist and Machine Learning Engineer Interview Questions
 I'm excited to introduce this GitHub repository, which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
 I've put significant effort into curating a wide range of questions, ensuring they encompass both fundamental principles and project-related inquiries.
@@ -15,10 +15,18 @@ Consequently, the repository contains a comprehensive collection of questions ta
  ## 1- Data science 
 Regardless of your level (junior, senior, or lead), there are fundamental concepts and skills that individuals should master before going into a data science interview.
 Here's a comprehensive list that spans different levels:
-- Statistics
+
+- Statistics and Probability 
+- Programming Proficiency
+- Data Cleaning and Preprocessing
+- Data Manipulation and Feature Engineering
+- Data Visualization
+- Machine Learning Fundamentals and Advanced Concepts
+- Experimental Design
+- Big Data Technologies
 
 
- ## 2- Machine Learning
+ ## 2- Machine Learning and MLOPS
 
  ## 3- Soft Skills 
  In addition to honing technical skills, cultivating strong soft skills is imperative for a successful interview journey.
