@@ -27,7 +27,9 @@ Here's a comprehensive list that spans different levels:
 - [Experimental Design](pages/experimental_design.md): understand how to design experiments and A/B tests to draw meaningful conclusions from data.
 - [Big Data Technologies](pages/big_data_technologies.md): familiarity with big data tools and technologies, such as Hadoop, Spark, or Hive, can be beneficial for more senior roles.
 
-#### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
+**Note:** remember that preparation is key, and practical hands-on experience with real-world datasets can significantly enhance your confidence and proficiency in these fundamental areas.
+Additionally, staying updated on industry trends and advancements is essential to showcase a proactive attitude during interviews. 
+Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
 
 
