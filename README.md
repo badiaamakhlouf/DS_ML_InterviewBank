@@ -16,14 +16,14 @@ Consequently, the repository contains a comprehensive collection of questions ta
 Regardless of your level (junior, senior, or lead), there are fundamental concepts and skills that individuals should master before going into a data science interview.
 Here's a comprehensive list that spans different levels:
 
-- Statistics and Probability 
-- Programming Proficiency
-- Data Cleaning and Preprocessing
-- Feature Engineering
-- Data Visualization
-- Machine Learning Fundamentals and Advanced Concepts
-- Experimental Design
-- Big Data Technologies
+- [Statistics and Probability](pages/statistics_and_probability.md):
+- [Programming Proficiency](pages/programming_proficiency.md):
+- [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
+- [Feature Engineering](pages/feature_engineering.md):
+- [Data Visualization](pages/data_visualization.md):
+- [Machine Learning Fundamentals and Advanced Concepts]():
+- [Experimental Design](pages/experimental_design.md):
+- [Big Data Technologies](pages/big_data_technologies.md):
 
 #### [1.1- Statistics and Probability](pages/data_cleaning_and_preprocessing.md) 
 
