@@ -1,1 +1,1 @@
-# How to improve your communication skills
+# Communication skills for Data Scientist
