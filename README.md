@@ -45,8 +45,9 @@ Please, do not forget to tailor your preparation to the specific requirements ou
  
  Here are more key details regarding each skill to focus on:
 
- - Communication Skills
- - Problem-Solving
- - Leadership and Project Management
- - Continuous Learning and Domain Knowledge
+ - [Communication Skills]()
+ - [Problem-Solving]()
+ - [Leadership and Project Management]()
+ - [Continuous Learning]()
+ - [Domain Knowledge]()
 
