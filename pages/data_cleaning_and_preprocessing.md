@@ -106,9 +106,81 @@ Propagate the last valid observation forward or use the next valid observation t
 
 - Forward fill using : `df = df.ffill()`  or `df.fillna(method='ffill')`
 - Backward fill using : `df = df.bfill()` or `df.fillna(method='bfill')`
-### 3-
-### 4-
-### 5-
+  
+### 9- How to handle duplicates ? 
+Handling duplicates in data science is an essential step to ensure data quality and avoid biases or inaccuracies in analysis. Here are common methods to handle duplicates:
+- 1- Identifying Duplicates using `duplicated()` using Pandas
+- 2- Removing Duplicates - all : `df = df.drop_duplicates()`
+- 3- Removing Duplicates - Keep first Occurrences : `df = df.drop_duplicates(keep='first')`
+- 4- Removing Duplicates - Keep last Occurrences : `df = df.drop_duplicates(keep='last')`
+- 5- Handling Duplicates Based on Columns
+  
+### 10- How to find outliers?
+To find outliers, only numerical columns are considered in our analysis. Here are the common methods to do that :
+- Visualization technique :  Box Plot, Scatter Plot and Histogram Plot (the most used ones).
+- Mathematical approach :
+    - Z-score
+    - Interquartile range : IQR score 
+- Machine Learning Models :
+    - Clustering Algorithms : Kmeans, DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+    - One-Class SVM (Support Vector Machine)
+    - Autoencoders
+- Histogram-based Methods:
+    - Isolation Forest
+- Domain-Specific Knowledge
+
+It's better to try various outlier detection methods and evaluate their performance based on your specific data characteristics that are:
+
+- Data distribution
+- Data dimensionality
+- The type of outliers you expect to encounter. 
+
+It's often a good practice to combine multiple methods for a more robust outlier detection approach.
+
+### 11- What Visualization techniques can be used to determine outliers?
+
+- Performing some plots and analysis:   
+    - Box plot is considered as Uni-variate analysis
+    - Scatter plot is considered as Bi-variate analysis
+      
+### 12- How to handle outliers in dataset ? 
+Here are some methods about how we handle outliers :
+
+- **Deleting the values:** removing the value completely, if we are sure that this value is wrong and it will never occur again, we remove it using either Interquartile range or Z-score.
+- **Replace the values:** change the values if we know the reason for the outliers. (Example: using 99th percentile)
+- **Data transformation:** some times data transformation such as natural log reduces the variation caused by the extreme values. Most used for highly skewed data sets.
+
+### 13- What does Z-Score mean?
+- It calculates the Z-score for each data point.
+- Z-score measures how many standard deviations a data point is from the mean.
+- Typically, a threshold of 2 to 3 standard deviations is used to identify outliers.
+- Formula: $Z ={ X - \mu \over\sigma}$
+
+### 14- What does IQR : interquartile range mean? 
+- The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
+- Q1: It represents the median of the lower 50% of the data. Represents 0.25 percentile
+- Q3 : It represents the median of the upper 50% of the data. Represents 0.75 percentile
+
+To calculate percentiles or quantiles, we need to sort the data in ascending order and finding the value below which a certain percentage of the data falls.
+![title](images/boxplot.png) 
+### 15- What are the limitations of IQR?
+Here are the list of limitations : 
+
+- IQR is sensitive to the size of the dataset : may not accurately represent the spread of the data in case of smaller dataset
+- It assumes that the data is symmetrically distributed. In case the distribution is skewed, IQR may not accurately represent the spread of the data.
+- For IQR, all data points outside the defined range are identified as outliers. However, in some datasets we expect a certain degree of variability, and not all deviations should be considered outliers.
+- It does not provide information about Outlier Magnitude. It consider all values outside the defined range equally, without providing a measure of how extreme they are.
+- It doesn't consider the shape of the overall data distribution. It may not perform well in detecting outliers in non-Gaussian distributions or distributions with multiple modes.
+- It is possible to loose information. With deleting values that are outside the IQR range you sacrifice detailed knowledge about them. Depending on the analytical goals, this loss of detailed information may or may not be significant.
+- IQR is considered robust to outliers within its calculated range. This means that if there are extreme values within this range, they have less impact on the calculation of IQR.
+-  IQR provides robustness within its calculated range, it is not robust to the influence of extreme values outside that range, and such extreme values may still affect the identification of potential outliers. 
+
+### 16- How to mitigate these limitations ?
+Here are some solutions:
+- In scenarios where the nature and cause of outliers matter, the IQR alone might not be sufficient. Other methods that retain specific value information, such as boxplots or more advanced outlier detection techniques, might be more suitable for a detailed diagnostic analysis.
+- In situations where extreme values might exist, and their impact needs to be minimized, other outlier detection methods that are more robust to extreme values, such as modified Z-scores or robust regression techniques, might be considered.
+
+<img src="images/distribution_modes.png" width="600">
 ### 6-
 ### 7-
 ### 8-
