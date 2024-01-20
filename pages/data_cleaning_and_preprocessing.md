@@ -163,6 +163,7 @@ Here are some methods about how we handle outliers :
 
 To calculate percentiles or quantiles, we need to sort the data in ascending order and finding the value below which a certain percentage of the data falls.
 ![title](images/boxplot.png) 
+
 ### 15- What are the limitations of IQR?
 Here are the list of limitations : 
 
@@ -181,7 +182,13 @@ Here are some solutions:
 - In situations where extreme values might exist, and their impact needs to be minimized, other outlier detection methods that are more robust to extreme values, such as modified Z-scores or robust regression techniques, might be considered.
 
 <img src="images/distribution_modes.png" width="600">
-### 6-
+
+### 17- How ML Algorithms used for outliers detection ?
+We have two main methods: 
+- **Clustering Algorithms:** for example k-means can be used to detect outliers where points that do not belong to any cluster or are in small clusters can be identified as outliers.
+- **Isolation Forest:** designed specifically for outlier detection. It isolates outliers by recursively partitioning the data.
+
+
 ### 7-
 ### 8-
 ### 9-
