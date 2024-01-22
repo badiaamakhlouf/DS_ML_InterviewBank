@@ -6,7 +6,7 @@ Feature engineering is crucial in data science and machine learning, involving t
 **Note:**
 Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
 
-### 1- What does feature engineering mean? 
+### Q1- What does feature engineering mean? 
 
 Feature engineering refers to the process of raw data manipulation such as addition, deletion, combination, mutation etc. It encompasses the process of creating new features or modifying existing ones to improve the performance of a machine learning model. 
 
@@ -17,7 +17,7 @@ Here is a range of significant activities used in Feature Engineering :
 - Text Data Processing
 - Time-Series Feature Engineering
 
-### 2- What does data transformation mean?
+### Q2- What does data transformation mean?
 
 Data transformation is indeed one subtask within the broader field of feature engineering in machine learning. It is a specific aspect of feature engineering that involves modifying the raw data to make it more suitable for the learning algorithm.
 It includes : 
@@ -27,13 +27,13 @@ It includes :
 - Binning or Discretization
 - Creating Interaction Terms
   
-### 3- What does feature scaling mean ?
+### Q3- What does feature scaling mean ?
 Feature scaling is a preprocessing step in machine learning that involves transforming the numerical features of a dataset to a common scale. Feature scaling is particularly important for algorithms that rely on distance metrics or gradient descent optimization.
 
-### 4- Why do we need perform feature scaling ? 
+### Q4- Why do we need perform feature scaling ? 
 The goal is to ensure that all features contribute equally to the learning process and to prevent certain features from dominating due to differences in their magnitudes.
 
-### 5- What are the common techniques for feature scaling?
+### Q5- What are the common techniques for feature scaling?
 
 Here are common techniques for feature scaling:
 - Normalization
@@ -77,7 +77,7 @@ Here are common techniques for feature scaling:
 - It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
 
 
-### 6- What does IQR : interquartile range mean?
+### Q6- What does IQR : interquartile range mean?
 - The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
 - Q1: It represents the median of the lower 50% of the data.
 - Q3 : It represents the median of the upper 50% of the data
@@ -94,11 +94,11 @@ Here's how you calculate the IQR:
 
 The IQR provides a robust measure of the spread of the middle 50% of the data, making it less sensitive to extreme values or outliers. It is commonly used in box plots to visually represent the dispersion of data.
 
-### 7- How to deal with categorical values ?
+### Q7- How to deal with categorical values ?
 - Drop categorical variables
 - Perform feature encoding
 
-### 8- What does feature encoding mean? 
+### Q8- What does feature encoding mean? 
 
 Feature encoding is the process of converting categorical data or text data into a numerical format that can be easily used for machine learning algorithms. In many machine learning models, the input features are expected to be numerical, and encoding is necessary when dealing with non-numeric data.
 
@@ -115,7 +115,7 @@ Here are some common encoding methods:
 - One-hot encoding is more used when there is no ranking in the categorical variables.
 - If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
-### 9- What does Feature extraction mean?
+### Q9- What does Feature extraction mean?
 One of the primary goals of feature extraction is to reduce the dimensionality of the dataset. High-dimensional data can lead to the curse of dimensionality, making it challenging for models to generalize well.
 
 Feature extraction aims to retain the most relevant information from the original data. This involves identifying features that contribute significantly to the variability and patterns within the dataset while discarding redundant or irrelevant information.
@@ -127,7 +127,7 @@ Here are all types of Feature Extraction:
 - Independent Component Analysis (ICA)
 - Bag-of-Words (BoW)
 
-### 10- What does Principal Component Analysis (PCA) mean? 
+### Q10- What does Principal Component Analysis (PCA) mean? 
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
@@ -146,7 +146,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 #### 10.2- Why do we need to find eigenvalues and eigenvectors?
 Because the principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
 
-### 11- What does Singular Value Decomposition (SVD) means ? 
+### Q11- What does Singular Value Decomposition (SVD) means ? 
 Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis. 
 
 It is a method for decomposing a matrix into three other matrices, which can be helpful in various applications, including signal processing, data analysis, and machine learning. The SVD of a matrix A is represented as:
@@ -170,9 +170,9 @@ SVD has several applications and implications:
 - **Collaborative Filtering**
 - **Latent Semantic Analysis (LSA)** 
 
-### 12- What does Independent Component Analysis mean ? 
+### Q12- What does Independent Component Analysis mean ? 
 
-### 13- What are the different dimensionality reduction techniques?
+### Q13- What are the different dimensionality reduction techniques?
 
 
 
