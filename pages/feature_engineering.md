@@ -3,8 +3,7 @@ This page is a valuable resource for those gearing up for data scientist and mac
 
 Feature engineering is crucial in data science and machine learning, involving the careful transformation of raw data to boost predictive model performance. The quality and relevance of features significantly impact the effectiveness of machine learning models, influencing accuracy, preventing overfitting, and revealing hidden patterns. Proficient feature engineering is a cornerstone of the model-building process, enabling practitioners to extract meaningful insights, enhance predictions, and harness the full potential of data-driven decision-making.
 
-**Note:**
-Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
+## List of Questions:
 
 ### Q1- What does feature engineering mean? 
 
@@ -173,6 +172,11 @@ SVD has several applications and implications:
 ### Q12- What does Independent Component Analysis mean ? 
 
 ### Q13- What are the different dimensionality reduction techniques?
+
+
+
+**Note:**
+Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
 
 
 
