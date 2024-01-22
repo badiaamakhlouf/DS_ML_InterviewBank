@@ -272,7 +272,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 - The correlation is calculated using the pearson correlation coefficient so values varies from -1 to 1
 
 <img src="images/corr_matrix.png" width="400">
-**source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/
+*source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/*
 
 ### 21- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
