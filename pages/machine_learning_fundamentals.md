@@ -6,8 +6,8 @@ Whether you're polishing your interview skills or seeking insightful questions a
 
 **Note:** Your suggestions for improvement are welcome; please feel free to provide feedback to help maintain the precision and coherence of this page.
 ## List Of Questions:
-
-### Q1- What does Machine Learning mean ? 
+### ML Basics
+#### Q1- What does Machine Learning mean ? 
 Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit programming. The core idea behind machine learning is to allow machines to learn patterns, make predictions, or optimize decisions based on data.
 
 Key concepts in machine learning include:
@@ -19,13 +19,13 @@ Key concepts in machine learning include:
 - Hyperparameter Tuning
 - Deployment
   
-### Q2- What are three stages of building a machine learning model ? 
+#### Q2- What are three stages of building a machine learning model ? 
 - The process of building a machine learning model includes three main stages, These stages are:
     - **Training phase:** after splitting the data into training and testing sets, training data is used to train our model on a labeled dataset. During the training phase, the model tries to learn relationships between input data and the corresponding output target values while adjusting its internal parameters. Throughout this phase, the model aims to maximise the accuracy of making precise predictions or classifications when exposed to unseen data.
     - **Validation phase:** after the model is well trained, we evaluate it on a seperate dataset known as the validation set (maximum 10% of our data). This dataset is not used during the training process. Validation stage helps identify the existence of certain overfitting (model performing well on training data but poorly on new data) or certain underfitting (model needs more training to capture the underlying patterns in the data).
     - **Testing (Inference) phase:** during this phase, the trained and validated model is applied to unseen dataset, called test dataset. This phase aims to evaluate the model's performance and provides a measure regarding the model's effectiveness and its ability to make accurate predictions in a production environment.
       
-## Q3- What are the types of ML algorithms ? 
+#### Q3- What are the types of ML algorithms ? 
 Machine learning algorithms can be categorized into several types based on their learning styles and the nature of the task they are designed to solve.
 
 Here are some common types of machine learning algorithms:
@@ -38,7 +38,7 @@ Here are some common types of machine learning algorithms:
 - **Ranking**
 - **Recommendation system**
 
-### Q4- What does supervised, unsupervised and semi-supervised mean in ML? 
+#### Q4- What does supervised, unsupervised and semi-supervised mean in ML? 
 
 In machine learning, the terms "supervised learning," "unsupervised learning," and "semi-supervised learning" refer to different approaches based on the type of training data available and the learning task at hand:
 
@@ -46,19 +46,19 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
 - **Unsupervised Learning :** Deals with unlabeled data and aims to find patterns, structures, or relationships within the data. Can be used for Clustering (Groups similar data points together) or association
 - **Semi-Supervised Learning:** Utilizes a combination of labeled and unlabeled data to improve learning performance, often in situations where obtaining labeled data is challenging and expensive.
 
-### Q5- What are Unsupervised Learning techniques ?
+#### Q5- What are Unsupervised Learning techniques ?
  We have two techniques, Clustering and association: 
  - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.. 
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
  
-### Q6- What are Supervised Learning techniques ? 
+#### Q6- What are Supervised Learning techniques ? 
 We have two techniques: classfication and regression: 
 - Regression : involves predicting a continuous output or numerical value based on input features. Examples : predicting house prices, temperature, stock prices etc.
 - Classification : is the task of assigning predefined labels or categories to input data. We have two types of classification algorithms: 
     - Binary classification (two classes). Example: identifying whether an email is spam or not.
     - Multiclass classification (multiple classes). Example: classifying images of animals into different species.
 
-### Q7- Examples of well-known machine learning algorithms used to solve Regression problems
+#### Q7- Examples of well-known machine learning algorithms used to solve Regression problems
 
 Here are some well-known machine learning algorithms commonly used to solve regression problems:
 
@@ -74,7 +74,7 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 
 More details regarding each algorithm could be found in [Regression Analysis](pages/regression_analysis.md)
 
-### Q8- Examples of well-known machine learning algorithms used to solve Classification problems
+#### Q8- Examples of well-known machine learning algorithms used to solve Classification problems
 
 Here are some well-known machine learning algorithms commonly used to solve classification problems:
 
@@ -93,7 +93,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 
 More details regarding each algorithm could be found in [Classification Analysis](pages/classification_analysis.md)
 
-### Q9- Examples of well-known machine learning algorithms used to solve Clustering problems
+#### Q9- Examples of well-known machine learning algorithms used to solve Clustering problems
 
 Several well-known machine learning algorithms are commonly used for solving clustering problems. Here are some examples:
 
@@ -106,7 +106,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
 
 These algorithms address different types of clustering scenarios and have varying strengths depending on the nature of the data and the desired outcomes. The choice of clustering algorithm often depends on factors such as the shape of clusters, noise in the data, and the number of clusters expected.
 
-### Q10- How to split your data while building a machine learning model ?    
+#### Q10- How to split your data while building a machine learning model ?    
 - During the model building phase, it is required to split the data into three main sets to evaluate the model's performance and effectiveness. The three sets are: 
     - Training: used to train the model and learn relationship between inputs and outputs, contains 70-80% of our total dataset
     - Validation: used to validate the model, fine-tune the model's hyperparameters and assess its performance during training, it helps to prevent overfitting and underfitting. It contains 10-15% of the total data
@@ -117,7 +117,7 @@ These algorithms address different types of clustering scenarios and have varyin
 - It is favorable to use cross-validation technique. 
 - No fixed rule to split data between training, validation and testing, portions can vary based on individual preferences.
   
-### Q11- How to choose which ML algorithm to use given a dataset?
+#### Q11- How to choose which ML algorithm to use given a dataset?
 - Choosing the right machine learning algorithm for a given dataset involves considering various factors related to the nature of the data and the problem at hand.
 - No master algorithm it all depends on the situation
 - Here's a step-by-step guide to take the right decision : 
