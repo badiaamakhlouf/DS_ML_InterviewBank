@@ -198,25 +198,13 @@ Ranking problems are common in various applications, including information retri
 - Additionally, ensemble methods, which combine multiple models, can sometimes provide robust solutions.
 - Keep in mind that the performance of an algorithm depends on the specific characteristics of your dataset and the goals of your analysis.      
 
-
-
-    
-### 17. 1- What are the correlation limitations ? 
-
-- It captures linear relationships but may not detect non-linear associations.
-- Additionally, correlation does not imply causation, and spurious correlations may exist.
-- For non-linear relationships or cases where data is not normally distributed, Spearman's rank correlation coefficient is an alternative measure.
-
-
-
-### PART II: Model Evaluation 
-#### Q1- What is Overfitting, causes and mitigation? 
+#### Q4- What is Overfitting, causes and mitigation? 
 
 - Overfitting is a common challenges in machine learning that relate to the performance of a model on unseen data.
 - It occurs when a machine learning model learns the training data too well, capturing noise and random fluctuations in addition to the underlying patterns (as concept).
 - High error on testing dataset.
 
-#### Q1. 1-Key characteristics of Overfitting :
+#### Q4. 1-Key characteristics of Overfitting :
 
 - Excellent Performance on Training Data.
 - Poor Generalization to New Data
@@ -224,12 +212,12 @@ Ranking problems are common in various applications, including information retri
 - Complex Model: overfit models are often overly complex and may capture noise or outliers as if they were significant patterns.
 - Memorization of Training Data: instead of learning the underlying patterns, an overfit model may memorize specific details of the training data, including noise and outliers.
 
-#### Q1. 2- Causes of Overfitting : 
+#### Q4. 2- Causes of Overfitting : 
 - Too many features or parameters.
 - Model is too complex for the available data.
 - Training on a small dataset or training for too many iterations
 
-#### Q1. 3- Overfitting mitigation :
+#### Q4. 3- Overfitting mitigation :
 - Regularization techniques (e.g., L1 or L2 regularization).
 - Feature selection or dimensionality reduction.
 - Increasing the amount of training data.
@@ -239,26 +227,26 @@ Ranking problems are common in various applications, including information retri
 **Note:**
 - It is important to find balance between model complexity and the ability to generalize to new, unseen data.
 
-#### Q2- What is Underfitting, causes and mitigation? 
+#### Q5- What is Underfitting, causes and mitigation? 
 - It is the case when the model is too simple to capture the underlying patterns in the training data.
 - Besides, the model performs poorly not only on the training data but also on new, unseen data.
 - High error rate on both training and testing datasets.
 - It occurs when the model lacks the complexity or flexibility to represent the underlying relationships between the features and the target variable.
 
-#### Q2. 1-Key characteristics of underfitting :
+#### Q5. 1-Key characteristics of underfitting :
 - Poor Performance on Training Data
 - Poor Generalization to New Data
 - High Bias, Low Variance : The model is biased toward making overly simple assumptions about the data.
 - Inability to Capture Patterns
 - Simplistic Model: underfit models are often too simplistic and may not capture the nuances or complexities present in the data.
 
-#### Q2. 2- Causes of Underfitting: 
+#### Q5. 2- Causes of Underfitting: 
 - Too few features or parameters: inadequate feature representation.
 - Insufficient model complexity: using a model that is too basic for the complexity of the data.
 - Inadequate training time or data.
 
 
-#### Q2. 3- Underfitting mitigation: 
+#### Q5. 3- Underfitting mitigation: 
 - Increasing the complexity of the model
 - Adding relevant features.
 - Training for a longer duration.
@@ -270,7 +258,7 @@ Ranking problems are common in various applications, including information retri
 - This balance, often referred to as the model's "sweet spot", results in a model that generalizes well to new, unseen data. 
 - Techniques like cross-validation, hyperparameter tuning, and monitoring learning curves can help strike this balance during the model development process.
   
-#### Q3- What are the types of Regularization in Machine Learning?
+#### Q6- What are the types of Regularization in Machine Learning?
 
 - Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the objective/loss function.
 - It consists on adding a cost term that penalize the large weights of model.
@@ -281,14 +269,13 @@ Here are all the used techniques in ML :
 - L2 Regularization (Ridge)
 - Elastic Net
 
-#### Q3. 1- What is L1 Regularization (Lasso)?
+#### Q6. 1- What is L1 Regularization (Lasso)?
 L1 regularization tends to shrink some coefficients exactly to zero, effectively excluding the corresponding features from the model. It is often used when there is a belief that some features are irrelevant. The penalty term is the sum of the absolute values of the regression coefficients.
 
-#### Q3. 2- What is L2 Regularization (Ridge)?
+#### Q6. 2- What is L2 Regularization (Ridge)?
 L2 regularization tends to shrink coefficients toward zero without eliminating them entirely. It is effective in dealing with multicollinearity (high correlation between predictors) and preventing overfitting. The penalty term is the sum of the squared values of the regression coefficients.
 
-
-#### Q3. 3- What is Elastic Net?
+#### Q6. 3- What is Elastic Net?
 
 Elastic Net combines both L1 and L2 penalties in the objective function. It has two control parameters, alpha (which controls the overall strength of regularization) and the mixing parameter, which determines the ratio between L1 and L2 penalties. It is useful when there are many correlated features, and it provides a balance between Lasso and Ridge.
 
@@ -296,7 +283,7 @@ Elastic Net combines both L1 and L2 penalties in the objective function. It has 
 - These regularization techniques help improve the generalization performance of machine learning models by preventing them from becoming too complex and fitting noise in the training data.
 - The choice between L1, L2, or Elastic Net depends on the specific characteristics of the dataset and the modeling goals.
 
-#### Q4- What is Model Validation Technique?
+#### Q7- What is Model Validation Technique?
 
 Validation techniques in machine learning are essential for assessing the performance of a model and ensuring its ability to generalize well to unseen data. 
 
@@ -308,7 +295,7 @@ Here are some common validation techniques:
 - Holdout Validation
 - Time Series Cross-Validation
 
-#### Q5- What is train-test-validation split?
+#### Q8- What is train-test-validation split?
 - It is an important step to indicate how well a model will perform with real-world, unseen data.
 - A good train-test-validation split helps mitigate overfitting and ensures that evaluation is not biased.
 - It consists on dividing input dataset into three subsets:
@@ -317,7 +304,7 @@ Here are some common validation techniques:
     - Testing: 10-15% of the data
 - This split aims to ensure that the model is trained on a sufficiently large dataset, validated on a separate set to fine-tune parameters, and tested on a completely independent set to provide an unbiased evaluation of its performance.
 
-#### Q6- What is K-Fold Cross-Validation?
+#### Q9- What is K-Fold Cross-Validation?
 - It is a technique used to assess the performance and generalization ability of a model. 
 - The input dataset will be divided into k equally sized folds/groups.
 - (K-1) folds are used for training and one fold is used for testing. Then, we evaluate the model. 
@@ -332,7 +319,8 @@ Here are some common validation techniques:
 - Ideally, K is 5 or 10. The optimal value may depend on the size and nature of the dataset.
 - A higher K value can result in a more reliable performance estimate but may increase computational costs.
 - K-fold is very helpful to limit issues related to the variability of a single train-test split.==> It provides a more robust evaluation of a model's performance by ensuring that every data point is used for testing exactly once.
- #### Q7- What is Stratified K-Fold Cross-Validation? 
+  
+ #### Q10- What is Stratified K-Fold Cross-Validation? 
 - It is an extension of K-Fold Cross-Validation that ensures the distribution of the target variable's classes is approximately the same in each fold as it is in the entire dataset.
 - In case of imbalanced datasets, this technique is prefered because some classes may be underrepresented.
 - It helps in addressing issues related to  overrepresented or underrepresented classes in specific folds, which could lead to biased model evaluations.
@@ -341,7 +329,7 @@ Here are some common validation techniques:
     - Model Training and Evaluation: the same K-fold cross-validation, steps repeated K times
     - Average Performance : the average performance is calculated at the end of all K iterations to provide a robust performance estimate.
     
-#### Q8- What is Leave-One-Out Cross-Validation (LOOCV)?
+#### Q11- What is Leave-One-Out Cross-Validation (LOOCV)?
 - It is a specific case of k-fold cross-validation where the number of folds (K) is set equal to the number of data points in the dataset. 
 - Each iteration one point is dedicated to testing while the remaining samples are dedicated for training
 - The same as k-fold, we calculate the performance metric for each iteration then we evaluate the average.
@@ -352,7 +340,7 @@ Here are some common validation techniques:
     - It is computationally expensive, especially for large datasets, as we are going to create a model for each sample.
     - It is preferably to be used with only small datasets.
       
-#### Q9- What is Holdout Validation ?
+#### Q12- What is Holdout Validation ?
 - It is known as a train-test split. 
 - The input dataset will be divided into two subsets: a training set (70-80%) and a testing set (20-30%).
 - The exact split ratio depends on factors such as the size of the dataset and the nature of the machine learning task.
@@ -362,13 +350,13 @@ Here are some common validation techniques:
 - This technique could be not too reliable as the model performance can be influenced by the specific random split of data into training and testing sets. 
 - To address this variability, multiple iterations of the holdout process can be performed, and the results can be averaged.
 
-#### Q10- What does bias term mean?
+#### Q13- What does bias term mean?
 - In the context of machine learning, the term "bias" can refer to two different concepts:
     - Data bias
     - bias in the context of bias-variance tradeoff
     - And bias term in the context of linear models. 
     
-#### Q10. 1-  What does data bias mean?
+#### Q13. 1-  What does data bias mean?
 - It is when the available data used in the training phase is not representative of the real-world population or phenomen of study.
 - It refers to the presence of systematic errors or inaccuracies in a dataset that can lead to unfair, unrepresentative, or skewed results when analyzing or modeling the data.
 - The existence of biased data can lead to undesired and often unfair outcomes (discriminatory results) when the model is applied to testing data because the model will learn these biases too. 
@@ -385,7 +373,7 @@ Here are some common validation techniques:
 **Note:**
     - Addressing data bias is an ongoing challenge in the field of machine learning, and researchers and practitioners are actively working to develop methods and tools to identify, measure, and mitigate bias in models.
     
-#### Q10. 2- What does Bias-variance trade off mean?
+#### Q13. 2- What does Bias-variance trade off mean?
 - It is a fundamental concept in machine learning that involves finding the right balance between two sources of error, namely bias and variance, when building predictive models.
 - The tradeoff arises because decreasing bias often increases variance, and vice versa. 
 - Key points about the bias-variance tradeoff: 
@@ -395,11 +383,11 @@ Here are some common validation techniques:
 
 ![title](images/bias_variance_tradeoff.jpeg)  
 
-#### Q10. 3- How to find the right balance between variance and bias?
+#### Q13. 3- How to find the right balance between variance and bias?
 - Cross-validation techniques, such as k-fold cross-validation, can be used to estimate a model's bias and variance and guide the selection of an appropriate model complexity.
 - Techniques like regularization can be employed to penalize overly complex models, helping to mitigate overfitting and find a better bias-variance tradeoff.
 
-####  Q10. 4- What is Bias-Variance Decomposition? 
+####  Q13. 4- What is Bias-Variance Decomposition? 
 - It is a mathematical expression that breaks down the mean squared error (MSE) of a predictive model into three components: bias squared, variance, and irreducible error. 
 - Formula : $$MSE=Bias^2 +Variance+Irreducible Error$$
 - Irreducible error is the inherent noise or randomness in the data that cannot be reduced by any model. It represents the minimum achievable error, even with a perfect model.
@@ -409,7 +397,7 @@ Here are some common validation techniques:
 **Note:**
 - Balancing bias and variance is a central challenge in machine learning, and understanding this tradeoff is essential for model selection, training, and evaluation. 
     
-#### Q10. 5- How to mitigate Bias in ML?      
+#### Q13. 5- How to mitigate Bias in ML?      
 - To mitigate bias it's crucial to accomplish well studied steps:
     - Collecting diverse and representative data.
     - Implement ethical data collection practices.
