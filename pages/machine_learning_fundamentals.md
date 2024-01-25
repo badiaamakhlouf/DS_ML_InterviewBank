@@ -137,6 +137,21 @@ Ranking in machine learning refers to the process of assigning a meaningful orde
 
 Ranking problems are common in various applications, including information retrieval, recommendation systems, and search engines.
 
+## Q15- What is the difference between Inductive ML and Deductive ML?
+- **Inductive Learning:**
+    - Inductive machine learning involves learning patterns, rules, or models from specific examples or instances.
+    - It generalizes from observed examples to make predictions or classifications for new, unseen instances.
+    - Example: In classification, an inductive ML algorithm learns to classify emails as spam or not spam based on a set of labeled examples.
+- **Deductive Learning:**
+    - Deductive machine learning involves deriving specific conclusions or predictions from general principles or rules.
+    - It starts with general rules or principles and applies them to specific instances to make predictions or decisions.
+    - Example: In expert systems, deductive reasoning is used to derive specific recommendations or diagnoses based on predefined rules and knowledge.
+    
+**Note:**
+- Inductive learning generalizes from specific examples to make predictions.
+- Deductive learning starts with general rules and applies them to make specific predictions or decisions.
+- Inductive learning is data-driven, while deductive learning is rule-driven.
+- 
 ### Part II: Model building
 #### Q1- What are three stages of building a machine learning model ? 
 - The process of building a machine learning model includes three main stages, These stages are:
@@ -404,5 +419,200 @@ Here are some common validation techniques:
     - Thoroughly processing it to detect and identify biases in the data. 
     - Regularly checking model predictions to ensure fairness and to detect and rectify biases in the model predictions.
     - Develop and use algorithms that are designed to be aware of and mitigate biases : `Fairness-aware Algorithms`
+      
+#### Q14- What is bias term in the context of linear models? 
+- Also, it is known as the intercept or constant term.
+- It is a constant value added to the linear combination of input features.
+- In simple linear regression model:
+    - Equation is: $$y = mx + b$$
+    - Where : 
+        - y is the predicted output.
+        - x is the input feature.
+        - m is the coefficient (weight) of the input feature.
+        - b is the bias term.
+    - Bias term is the y-intercept of the linear equation, indicating the value of y when x is zero.
+- In complex models with multiple features:
+    - Equation: $$Y=W \times X + b$$
+    - Where:
+        - Y: is the vector of predicted outputs.
+        - X: is the matrix of input features.
+        - W: is the vector of weights (coefficients) for each feature.
+        - b: is the bias term vector.
+- Bias term provides flexibility and allows the model to make predictions ( even when all input features are zero) that are not strictly dependent on the input features alone.
+  
+#### Q15- What does hyperparameter mean?
+- Hyperparameters are external configuration settings that are not learned from the data but are set before the training process begins.
+- These settings influence the learning process and the overall behavior of the model.
+- Examples of hyperparameters :
+    - Learning rates
+    - Regularization parameters
+    - Hidden layers number
+    - Nodes number
+    - Decision tree depth
+- The choice of hyperparameters, which is called hyperparameter tuning can influence the performance of a machine learning model. 
+- It is crucial to find the optimal values and achieve the best possible predictive performance.
+  
+#### Q16-  What is the difference between a parameter and an hyperparameter?
+- Each machine learning model has : 
+    - Parameters
+    - Hyperparameters
+- **Model parameters:**
+    - It is a configuration variables that is internal to the model.
+    - It is learned from the training data during the model training process and not set manually.
+    - It is required to the model to make prediction.
+    - Corresponds to the coefficients or weights associated with features in a model.
+    - They are crucial for defining the model's structure and capturing patterns in the training data.
+    - They are adjusted during the training process to minimize the difference between the model's predictions and the actual outcomes.
+    - Examples:
+        - $y=wx+b$ : w and b are parameters
+        - $y=ax^2+bx+c$ : a, b,c are parameters
+        - Support vectors in SVM 
+        - In a neural network, the weights and biases connecting the neurons are parameters.
+- **Model hyperparameters:**
+    - An hyperparamter is an external configuration.
+    - It is set prior to the training process, hyperparameters tuning.
+    - Their selection is crucial for achieving optimal model performance:
+        - Can be achieved using an optimal solution:
+            - GridSearch 
+            - RandomSearch
+            - Copy from previous problems
+        - Or they can be set manually
+    - Unlike parameters, hyperparameters are not learned from the data but are chosen based on prior knowledge, experimentation, or heuristics.
+    - They influence the overall behavior of the model and its learning process. 
+    - Examples:
+        - Learning rate in NN or in gradient descent
+        - C and *sigma* in SVM
+        - Depth of a decision tree in a random forest
+        - K in KNN
 
+**Note:**
+- Adjusting parameters improves the model's fit to the training data, while selecting appropriate hyperparameter values affects the model's overall behavior and generalization performance.
+- Understanding the distinction between parameters and hyperparameters is crucial for effectively building and optimizing machine learning models.
+          
+#### Q17 - What does Hyperparameters tuning mean?
+- It is called hyperparameter optimization or model selection.
+- It corresponds to finding the best set of hyperparameters for a machine learning model.
+- Here are common steps of Hyperparameter tuning :
+    - Define a Search Space
+    - Choose a Search Method
+    - Choose the right Objective Function
+    - Search for Optimal Hyperparameters
+    - Evaluate Performance
+    - Select Best Hyperparameters
+    - Final Model Training
+- **Define a Search Space :** select the set of hyperparameters to be tuned and define a range of possible values for each.
+- **Choose a Search Method:** choose a Search Method : Grid Search, Random Search, and more advanced techniques like Bayesian optimization.
+- **Choose the right Objective Function:** select an objective function that evluates the performance of the model for a given set of hyperparameters. Examples: accuracy, precision, recall, or any other relevant measure.
+- **Select Best Hyperparameters:** it involves training and evaluating the model with various hyperparameter combinations. Then, choose the optimal values.
+- Hyperparameter tuning is essential for improving the generalization performance of a machine learning model.
+- It helps to avoid overfitting and ensures that the model is well-configured to handle new, unseen data effectively.
 
+#### Q17. 1- What is Grid Search? 
+
+- Performed using `GridSearchCV` of `scikit-learn`.
+- It consists on performing an exhaustive search for selecting a model using a predefined hyperparameter grid.
+- The data scientist set up a grid of hyperparameters values and for each combination, trains a model and evaluate performance on testing data ==> to select, at the end, the optimal parameters.
+- It explores the entire search space by following a grid pattern. 
+- The search space is defined by specifying discrete values or ranges for each hyperparameter
+- It is deep as it guarantees that every combination is evaluated.
+- However, it is computationally intensive especially when dealing with a large number of hyperparameters or a broad range of values.
+    
+#### Q17. 2- What is Random search?
+    
+- Set up a grid of hyperparameter values and selects random combinations to train the model and score.  
+- Method: Random search randomly samples a specified number of hyperparameter combinations from the defined search space.
+- Exploration: It explores the hyperparameter space randomly, which can be more efficient in some cases.
+- Search Space: The search space is defined similarly to grid search but does not require discretization; it can handle continuous and discrete hyperparameters.
+- Computational Efficiency: Random search is often more computationally efficient than grid search because it does not exhaustively evaluate every combination.    
+    
+#### Q17. 3- How to choose between Random Search and Grid Search  ?
+
+- Choosing between Random Search and Grid Search for hyperparameter tuning depends on:
+    - The specific characteristics of the machine learning model
+    - The size of the hyperparameter search space
+    - The computational resources
+- Here is some details regarding both of them :
+    - **Random Search :**
+        - Computationally Efficient: can reach optimanl combination with fewer iterations.
+        - Suitable for Large Search Space: hyperparameter search space is large, Random Search is preferred as it explores different combinations without exhaustively trying every combination.
+        - Initial Exploration: useful for an initial exploration of hyperparameter space when you have limited knowledge about which hyperparameters are critical.
+        - Resource Constraints: in case we have some computational resource constraints (limited time or computing power), Random Search can provide decent results in a shorter time compared to Grid Search.
+    - **Grid Search:** 
+        - Exhaustive Search: performs an exhaustive search over all specified hyperparameter combinations. It systematically evaluates every combination in the predefined grid
+        - Smaller Search Spaces: it is suitable for smaller search spaces where trying every combination is feasible.
+        - Fine-Tuning: if you have some prior knowledge about the hyperparameter values that are likely to work well, Grid Search can be used for fine-tuning around those values.
+        - Interactions Between Hyperparameters: if there are interactions between hyperparameters, Grid Search may be better at capturing those interactions as it evaluates combinations systematically.
+    - **Hybrid Approach: both:**
+        - Start with Random Search to broadly explore the hyperparameter space and identify promising regions. Then, use Grid Search to perform a more focused search in those regions.
+        - The choice depends on the trade-off between computational resources and the desire for an exhaustive search.
+        - Random Search may provide good results with less computation, but Grid Search guarantees an exhaustive search.    
+
+**Note:**
+- It is common to try both methods and observe their impact on model performance and training time.
+- It is preferred to use cross-validation to evaluate the performance of different hyperparameter combinations and avoid overfitting to the training data.
+- For complex models or large datasets, Random Search is often preferred. For simpler models or smaller datasets, Grid Search may be feasible.
+
+#### Q18- What is the difference between paramter tuning, hyperparamter tuning and fine tuning?
+- In the context of optimization:
+    - Parameter tuning: involves finding the optimal values for the internal variables
+    - hyperparameter tuning: involves finding the best configuration for external settings.
+- Fine-tuning can refer to different processes depending on the context:
+    - **Model Fine-tuning:** 
+        - In case of transfer learning (pre-trained models in DL), fine-tuning refers to adjusting a pre-trained model on a new, domain-specific dataset.
+        - The pre-trained model, often trained on a large dataset, serves as a starting point, and the model is further trained on the new dataset to adapt to the specific task at hand.
+    - **Algorithm Fine-tuning:** 
+        - The adjustment or customization of algorithms to better fit a specific problem or dataset.
+        - It involves making small adjustments to the algorithm's parameters or characteristics to achieve better performance.
+
+**Note:**
+- Fine-tuning can have a broader interpretation, including adjusting pre-trained models or making small adjustments to algorithms for better alignment with specific tasks or datasets.
+- Fine-tuning may involve parameter tuning, but it can encompass a more comprehensive process of model adaptation or algorithm customization.
+
+#### Q19- What is the difference between Type I error and Type II error ?
+- Type I error (False Positive):
+    - Occurs when the null hypothesis is true and we incorrectly reject it
+    - It represents the situation of False positive, where the test incorrectly concludes that there is an effect or difference when, in reality, there is none.
+    - Often denoted by α, the significance level, which is the probability of making a Type I error.
+    - Example: Concluding that a new drug is effective when it actually has no effect.
+- Type II error (False Negative):
+    - Occurs when the null hypothesis is false and we accept it. 
+    - False negative something has happened and we are missing it.
+    - It represents the situation where the test fails to detect a real effect or difference when, in reality, there is one.
+    - Often denoted by β, which is the probability of making a Type II error
+    - 1−β represents the probability of correctly rejecting a false null hypothesis.
+    - Example: Failing to conclude that a new drug is effective when it actually has a positive effect.
+      
+#### Q20- What is Data leakage ? 
+- It refers to the situation where information from outside the training dataset is used to create a model. 
+- The training data contains Information about the target but similar data will not be available when the model is used for testing.
+- Data leakage can significantly impact the generalization ability of the model:
+    - High performance on Training set 
+    - Perform poorly on new, unseen data (production).
+- There are two main types of data leakage:
+    - **Train-Test Contamination**
+    - **Target Leakage**
+
+#### Q20. 1- What is Train-Test Contamination?
+
+- This type of leakage occurs when information from the test set or validation set( any data that the model should not have access to during training) inadvertently influences the model training process.
+- For example, if you preprocess the entire dataset (including the test set) before splitting it into training and testing sets, and your preprocessing involves calculations or transformations based on information that should only be available in the future, then you have introduced data leakage.
+- Here is the optimal solution:
+    - Call train_test_split() to split the data into training, validation and testing
+    - Perform pre-processing such as normalization or standardisation
+    - Exculde validation data from any type of fitting, including the fitting of pre-processing steps.
+    - It is better to use Scikit-learn pipelines
+- It is recommended to split training and validation sets carefully so we can prevent Train-Test Contamination and pipelines can help implement this seperation
+
+#### Q20. 2- What is Target Leakage?
+
+- It happens when predictors include data that will not be available at the time you make predictions.
+- It often happens when we work with timing or chronological order (time series data)
+- For instance, if you use information in the training set that is derived from the target variable (the variable you are trying to predict) but would not be known at the time of prediction, it can lead to a model that performs well on the training data but poorly on new, unseen data.
+- Example : detection the existence of pneumonia, feature "took anti-biotic" does not help because it comes after gotting the disease.==> All not usuable variables, those which were created after the Target parameter should be excluded.
+
+#### Q20. 3- How to avoid data leakage? 
+- Preventing data leakage is crucial for building reliable and generalizable machine learning models.
+- To avoid data leakage, it's important to:
+    - Strictly separate training and testing data
+    - Ensure that feature engineering is done using only information available at the time of prediction
+    - Be cautious about any transformations or preprocessing steps that might inadvertently introduce information from the future into the training process.
