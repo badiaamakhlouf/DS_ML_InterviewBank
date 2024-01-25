@@ -392,7 +392,7 @@ Here are some common validation techniques:
     - **High variance : overfitting:** a model is too complex and fits the training data too closely, capturing noise as if it were a real pattern. It perform poorly on new, unseen data. 
 - The goal is to find the optimal model complexity that minimizes both bias and variance, resulting in good generalization to new data.
 <div>
-<img src="images/bias_variance_tradeoff.jpegg" width="400"/>
+<img src="pages/images/bias_variance_tradeoff.jpeg" width="300"/>
 </div>
 
 #### Q13. 3- How to find the right balance between variance and bias?
