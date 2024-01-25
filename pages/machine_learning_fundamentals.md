@@ -150,7 +150,7 @@ Ranking problems are common in various applications, including information retri
 - Inductive learning generalizes from specific examples to make predictions.
 - Deductive learning starts with general rules and applies them to make specific predictions or decisions.
 - Inductive learning is data-driven, while deductive learning is rule-driven.
-- 
+  
 ### Part II: Model building
 
 #### Q1- What are three stages of building a machine learning model ? 
