@@ -6,9 +6,6 @@ I've put significant effort into curating a wide range of questions, ensuring th
 
 My commitment to excellence doesn't stop here—I aspire to continually enhance this repository by incorporating the latest technologies and advancements in data science and machine learning.
 
-**Note:** please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
-Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
-
 This repository is organized into subjects and their corresponding modules. 
 Primarily, we feature two main subjects: data science and machine learning. 
 Each subject comprises a set of modules that zero in on specific areas within data or machine learning. 
@@ -51,3 +48,5 @@ Please, do not forget to tailor your preparation to the specific requirements ou
  - [Continuous Learning](): demonstrate a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
  - [Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
 
+**Note:** please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
+Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
