@@ -1,5 +1,5 @@
 # Data Scientist and Machine Learning Engineer Interview Questions
-I'm excited to introduce this [GitHub repository](https://github.com/badiaamakhlouf/data_science_interview_preparation), 
+I'm excited to introduce this [repository](https://github.com/badiaamakhlouf/data_science_interview_preparation), 
 which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning. 
 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
 I've put significant effort into curating a wide range of questions, ensuring they encompass both fundamental principles and project-related inquiries.
