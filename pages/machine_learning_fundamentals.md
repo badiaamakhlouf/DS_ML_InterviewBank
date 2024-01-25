@@ -6,7 +6,9 @@ Whether you're polishing your interview skills or seeking insightful questions a
 
 **Note:** Your suggestions for improvement are welcome; please feel free to provide feedback to help maintain the precision and coherence of this page.
 ## List Of Questions:
-### PART I: ML Basics  
+
+### PART I: ML Basics 
+
 #### Q1- What does Machine Learning mean ? 
 Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit programming. The core idea behind machine learning is to allow machines to learn patterns, make predictions, or optimize decisions based on data.
 
@@ -33,7 +35,6 @@ Here are some common types of machine learning algorithms:
 - **Recommendation system**
 
 #### Q3- What does supervised, unsupervised and semi-supervised mean in ML? 
-
 In machine learning, the terms "supervised learning," "unsupervised learning," and "semi-supervised learning" refer to different approaches based on the type of training data available and the learning task at hand:
 
 - **Supervised Learning :** training a model on a labeled dataset, where the algorithm learns the relationship between input features and corresponding target labels. Can be used for Regression (continous output) or Classification (discrete output). 
@@ -99,7 +100,6 @@ These algorithms address different types of clustering scenarios and have varyin
 
 
 #### Q9- What is Ensemble learning?
-
 Ensemble learning is a machine learning technique that involves combining the predictions of multiple individual models to improve overall performance and accuracy. Instead of relying on a single model, ensemble methods leverage the strengths of diverse models to compensate for each other's weaknesses. The idea is that by aggregating the predictions of multiple models, the ensemble can achieve better generalization and make more robust predictions than any individual model.
 
 There are several ensemble learning methods, with two primary types being:
@@ -111,7 +111,6 @@ There are several ensemble learning methods, with two primary types being:
     - Examples: AdaBoost (Adaptive Boosting), Gradient Boosting, XGBoost (Extreme Gradient Boosting), LightGBM (Light Gradient Boosting Machine), CatBoost, GBM (Gradient Boosting Machine)
       
 #### Q10- What is Reinforcement Learning?
-
 Is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties based on its actions, allowing it to learn optimal strategies over time to maximize cumulative rewards. It is inspired by the way humans and animals learn from trial and error.
 
 Here are some applications of Reinforcement Learning : 
@@ -153,6 +152,7 @@ Ranking problems are common in various applications, including information retri
 - Inductive learning is data-driven, while deductive learning is rule-driven.
 - 
 ### Part II: Model building
+
 #### Q1- What are three stages of building a machine learning model ? 
 - The process of building a machine learning model includes three main stages, These stages are:
     - **Training phase:** after splitting the data into training and testing sets, training data is used to train our model on a labeled dataset. During the training phase, the model tries to learn relationships between input data and the corresponding output target values while adjusting its internal parameters. Throughout this phase, the model aims to maximise the accuracy of making precise predictions or classifications when exposed to unseen data.
@@ -214,13 +214,11 @@ Ranking problems are common in various applications, including information retri
 - Keep in mind that the performance of an algorithm depends on the specific characteristics of your dataset and the goals of your analysis.      
 
 #### Q4- What is Overfitting, causes and mitigation? 
-
 - Overfitting is a common challenges in machine learning that relate to the performance of a model on unseen data.
 - It occurs when a machine learning model learns the training data too well, capturing noise and random fluctuations in addition to the underlying patterns (as concept).
 - High error on testing dataset.
 
 #### Q4. 1-Key characteristics of Overfitting :
-
 - Excellent Performance on Training Data.
 - Poor Generalization to New Data
 - Low Bias, High Variance: the model is not biased toward any particular assumption, but its predictions are highly sensitive to variations in the training data.
@@ -274,7 +272,6 @@ Ranking problems are common in various applications, including information retri
 - Techniques like cross-validation, hyperparameter tuning, and monitoring learning curves can help strike this balance during the model development process.
   
 #### Q6- What are the types of Regularization in Machine Learning?
-
 - Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the objective/loss function.
 - It consists on adding a cost term that penalize the large weights of model.
 - There are mainly two types of regularization commonly used: L1 regularization (Lasso) and L2 regularization (Ridge). - Additionally, Elastic Net is a combination of both L1 and L2 regularization. 
@@ -299,7 +296,6 @@ Elastic Net combines both L1 and L2 penalties in the objective function. It has 
 - The choice between L1, L2, or Elastic Net depends on the specific characteristics of the dataset and the modeling goals.
 
 #### Q7- What is Model Validation Technique?
-
 Validation techniques in machine learning are essential for assessing the performance of a model and ensuring its ability to generalize well to unseen data. 
 
 Here are some common validation techniques:
@@ -395,8 +391,9 @@ Here are some common validation techniques:
     - **High bias : underfitting:** a model is too simple and it missunderstand the relevant relations between features and target outputs. It leads to systematic errors on both the training and test data.
     - **High variance : overfitting:** a model is too complex and fits the training data too closely, capturing noise as if it were a real pattern. It perform poorly on new, unseen data. 
 - The goal is to find the optimal model complexity that minimizes both bias and variance, resulting in good generalization to new data.
-
-![title](images/bias_variance_tradeoff.jpeg)  
+<div>
+<img src="images/bias_variance_tradeoff.jpegg" width="400"/>
+</div>
 
 #### Q13. 3- How to find the right balance between variance and bias?
 - Cross-validation techniques, such as k-fold cross-validation, can be used to estimate a model's bias and variance and guide the selection of an appropriate model complexity.
