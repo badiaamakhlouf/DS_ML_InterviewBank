@@ -24,11 +24,6 @@ Here's a comprehensive list that spans different levels:
 - [Experimental Design](pages/experimental_design.md): understand how to design experiments and A/B tests to draw meaningful conclusions from data.
 - [Big Data Technologies](pages/big_data_technologies.md): familiarity with big data tools and technologies, such as Hadoop, Spark, or Hive, can be beneficial for more senior roles.
 
-**Note:** remember that preparation is key, and practical hands-on experience with real-world datasets can significantly enhance your confidence and proficiency in these fundamental areas.
-Additionally, staying updated on industry trends and advancements is essential to showcase a proactive attitude during interviews. 
-Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
-
-
 
  ## 2- Machine Learning and MLOPS
 
@@ -47,6 +42,10 @@ Please, do not forget to tailor your preparation to the specific requirements ou
  - [Leadership and Project Management](): leadership roles should emphasize leadership and project management skills, including the ability to guide a team, make strategic decisions, and manage projects effectively.
  - [Continuous Learning](): demonstrate a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
  - [Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
+
+**Note:** remember that preparation is key, and practical hands-on experience with real-world datasets can significantly enhance your confidence and proficiency in these fundamental areas.
+Additionally, staying updated on industry trends and advancements is essential to showcase a proactive attitude during interviews. 
+Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
 **Note:** please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
 Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
