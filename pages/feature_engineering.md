@@ -236,12 +236,14 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - **Blind Source Separation:** Unmixing signals when the mixing matrix is unknown.
   - **Image Processing:** Separating mixed images into their constituent sources.
   - **Biomedical Signal Processing:** Separating brain signals (e.g., EEG or fMRI) into independent components.
+    
 **Note:**
 - ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
   
 ### Q15- How to measure gaussianity in ICA? 
 
 - ICA uses Kurtosis to measure gaussianity
+- 
 ### Q15- Fast-ICA versus ICA ?
 
 
