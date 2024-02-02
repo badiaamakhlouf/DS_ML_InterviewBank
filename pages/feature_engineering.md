@@ -146,9 +146,12 @@ Here are some key points about Feature Extraction:
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
-- It has two main use cases :
-    - Data Visualization: it aids in visualizing complex datasets, providing valuable insights into the underlying patterns.
-    - Algorithm Optimization: it can significantly accelerate the learning process of algorithms that may otherwise exhibit slow training speeds.
+- PCA serves primarily in two key use cases:
+    - **Data Visualization:** it aids in visualizing complex datasets, providing valuable insights into the underlying patterns.
+    - **Algorithm Optimization:** it can significantly accelerate the learning process of algorithms that may otherwise exhibit slow training speeds.
+- Multiple methods and libraries are available for applying PCA:
+  - **Method 1:** Using scikit-learn library: `sklearn.decomposition.PCA()`
+  - **Method 2:** Using NumPy, SciPy libraries 
     
 Here are the steps of calculating PCA using the covariance matrix and use eigenvalue decomposition to obtain the eigenvectors and eigenvalues. Here are the steps to apply :
  - 1. Standardise the data
@@ -156,36 +159,63 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
  - 3. Select the k largest eigenvalues and their associated eigenvectors.
  - 4. Transform the data into a k dimensional subspace using those k eigenvectors.
     
-#### Q11.1- How to choose the correct number of PCA Components ?
+#### Q11.1- Case 1 : Using scikit-learn library
+- This method is based on using `sklearn.decomposition.PCA()`, where n is the number of PCA components 
+- How to choose the correct number of PCA Components ?
+  - The first principal components that capture the most significant variance in the data
+  - Example 97% or 99% of data variability.
+- If we found the correct component number, example: n=2,  then we use the next code : PCA(n_components=2)  
 
-#### Q11.2- Why do we need to find eigenvalues and eigenvectors?
-Because the principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
+#### Q11.2- Case 2: Using NumPy, SciPy libraries: 
+- This method consists on applying PCA using the eigenvalue decomposition, which is based on finding the eigenvectors and eigenvalues.
+-  Here are the consecutive steps to apply this method:
+    1. Standardise the data
+    2. Compute the covariance matrix and use eigenvalue decomposition to obtain the eigenvectors and eigenvalues.
+    3. Select the k largest eigenvalues and their associated eigenvectors.
+    4. Transform the data into a k dimensional subspace using those k eigenvectors.
+       
+#### Q11.3- Why do we need to find eigenvalues and eigenvectors in PCA?
+- In PCA, finding eigenvalues and eigenvectors is a crucial step in transforming the original data into a new coordinate system (principal components) that captures the maximum variance.
+- PCA begins by calculating the **covariance matrix** of the original data. This matrix summarizes the relationships between different variables.
+- **Eigenvalues:** The eigenvalues of the covariance matrix represent the variance of the data along the corresponding eigenvectors. Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
+- **Eigenvectors:** Eigenvectors are the directions (principal components) in which the data varies the most. Each eigenvector corresponds to a principal component, 
+- The principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
+- The eigenvectors are ranked in order of their corresponding eigenvalues.
+- The first few eigenvectors (principal components) with the largest eigenvalues capture the most significant variance in the data ( 97% or 99% of data variability).
+- By choosing a subset of these components, you can effectively reduce the dimensionality of the data while retaining the most important information.
+
+**Note:**
+- Eigenvectors are orthogonal, meaning they are perpendicular to each other. This orthogonality ensures that the principal components are uncorrelated, simplifying the interpretation of the transformed data.
 
 ### Q12- What does Singular Value Decomposition (SVD) means ? 
-Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis. 
+- Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis.
+- is often used to reduce the number of features or dimensions in a dataset.
+- The singular values obtained from the decomposition can be used to identify the most important components or features, and the corresponding vectors can be used to transform the data into a lower-dimensional space.
+- Here are steps to apply this method:
+  - It aims to represent the original matrix A  with fewer dimensions via decomposing it into three other matrices U, V and Σ.
+  - The SVD of a matrix A is represented as: $A = U Σ V^T$ :
+    - A: The original matrix that we want to decompose.
+    - **Left Singular Vectors U:** These vectors form an orthonormal basis for the column space of the original matrix A. They capture the relationships between the rows of A.
+    - **Singular Values Σ:** The singular values on the diagonal of Σ are the square roots of the eigenvalues of $AA^T$ (or $A^TA$). They represent the amount of variability or importance associated with each singular vector. The singular values are arranged in descending order.
+    - **Right Singular Vectors $V^T$:** These vectors form an orthonormal basis for the row space of the original matrix A. They capture the relationships between the columns of A.
+- This decomposition is widely used in signal processing, data analysis, and machine learning. Examples:
+  - **Dimensionality Reduction** 
+  - **Image Compression**
+  - **Pseudo-Inverse** 
+  - **Collaborative Filtering**
+  - **Latent Semantic Analysis (LSA)**
+    
+### Q13- PCA Versus SVD? 
+- PCA is a specific method for dimensionality reduction and data analysis, SVD is a more general matrix decomposition technique.
+- PCA can be viewed as a special case of SVD when applied to the covariance matrix of the data.
+- Both techniques have their applications and are widely used in various fields, often complementing each other in data analysis and modeling.
+- Here some key differences in their formulations and applications:
+  - PCA: aims to find the principal components (or directions) along which the data varies the most. SVD decomposes a matrix into three other matrices, capturing the inherent structure and relationships within the data.
+  - PCA is a specific application of SVD where the input matrix is the covariance matrix of the data. SVD is a more general matrix decomposition technique applicable to any matrix.
+  - PCA typically involves centering the data (subtracting the mean) before computing the covariance matrix. SVD can be applied directly to the original data matrix without the need for centering.
+  - PCA Commonly used for dimensionality reduction, data visualization, and noise reduction. SVD Applied in a broader range of applications, including matrix inversion, image compression, collaborative filtering, and solving linear least squares problems.
 
-It is a method for decomposing a matrix into three other matrices, which can be helpful in various applications, including signal processing, data analysis, and machine learning. The SVD of a matrix A is represented as:
-
-$A = U Σ V^T$ 
- 
-
-Here's a breakdown of the terms:
-
-- A: The original matrix that we want to decompose.
-- U: The left singular vectors matrix. Columns of U are the eigenvectors of $AA^T$ (covariance matrix of A).
-- Σ: The diagonal matrix of singular values. The singular values are the square roots of the eigenvalues of $AA^T$ OR $A^TA$. They represent the magnitude of the singular vectors.
-
-- $V^TV$: The transpose of the right singular vectors matrix. Columns of V are the eigenvectors of $A^TA$ (or $AA^T$) 
- 
-SVD has several applications and implications:
-
-- **Dimensionality Reduction** 
-- **Image Compression**
-- **Pseudo-Inverse** 
-- **Collaborative Filtering**
-- **Latent Semantic Analysis (LSA)** 
-
-### Q13- What does Independent Component Analysis (ICA) mean ? 
+### Q14- What does Independent Component Analysis (ICA) mean ? 
 
 
 **Note:**
