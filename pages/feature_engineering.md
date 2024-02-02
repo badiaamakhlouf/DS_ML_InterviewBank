@@ -150,7 +150,7 @@ Singular Value Decomposition (SVD) is a mathematical technique widely used in li
 
 It is a method for decomposing a matrix into three other matrices, which can be helpful in various applications, including signal processing, data analysis, and machine learning. The SVD of a matrix A is represented as:
 
-$ A = U Σ V^T $ 
+$A = U Σ V^T$ 
  
 
 Here's a breakdown of the terms:
