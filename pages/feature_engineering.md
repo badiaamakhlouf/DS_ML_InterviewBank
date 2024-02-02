@@ -115,18 +115,34 @@ Here are some common encoding methods:
 - If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
 ### Q9- What does Feature extraction mean?
-One of the primary goals of feature extraction is to reduce the dimensionality of the dataset. High-dimensional data can lead to the curse of dimensionality, making it challenging for models to generalize well.
+- It refers to the process of transforming raw data into a format that is suitable for analysis or modeling.
+- Feature extraction involves selecting, combining, or transforming these features to create a set of new features that are more informative, relevant, or suitable for a specific task.
+- It aims to retain the most relevant information from the original data.
 
-Feature extraction aims to retain the most relevant information from the original data. This involves identifying features that contribute significantly to the variability and patterns within the dataset while discarding redundant or irrelevant information.
+Here are some key points about Feature Extraction:
+  - Feature Transformation : Log,  Square,  Square Root, polynomial, Box-Cox and Quantile Transform
+  - Dimensionality reduction : Principal Component Analysis (PCA), Singular Value Decomposition (SVD) and Independent Component Analysis (ICA) etc.
+  - Domain Knowledge: Domain-specific knowledge is often used to guide the feature extraction process. Understanding the nature of the data and the problem at hand can help in creating meaningful features.
+  - Bag-of-Words (BoW) : it is a feature extraction method commonly used in natural language processing (NLP) and text analysis.
 
-Here are all types of Feature Extraction:
+**Note:**
+- Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
 
-- Principal Component Analysis (PCA)
-- Singular Value Decomposition (SVD)
-- Independent Component Analysis (ICA)
-- Bag-of-Words (BoW)
+### Q10- What does Dimensionality reduction mean?
 
-### Q10- What does Principal Component Analysis (PCA) mean? 
+- It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
+- The goal is to simplify the dataset while retaining its essential information and patterns.
+- High-dimensional datasets, where the number of features is large, can suffer from the curse of dimensionality, leading to increased computational complexity and potential overfitting.
+- Dimensionality reduction methods aim to overcome these challenges by transforming or selecting a subset of features, preserving the most relevant information and reducing noise in the data.
+- Here are popular examples of Dimensionality reduction techniques:
+
+  - Principal Component Analysis (PCA)
+  - Singular Value Decomposition (SVD)
+  - Independent Component Analysis (ICA)
+  - Linear Discriminant Analysis (LDA)
+  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+### Q11- What does Principal Component Analysis (PCA) mean? 
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
@@ -140,12 +156,12 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
  - 3. Select the k largest eigenvalues and their associated eigenvectors.
  - 4. Transform the data into a k dimensional subspace using those k eigenvectors.
     
-#### 10.1- How to choose the correct number of PCA Components ?
+#### Q11.1- How to choose the correct number of PCA Components ?
 
-#### 10.2- Why do we need to find eigenvalues and eigenvectors?
+#### Q11.2- Why do we need to find eigenvalues and eigenvectors?
 Because the principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
 
-### Q11- What does Singular Value Decomposition (SVD) means ? 
+### Q12- What does Singular Value Decomposition (SVD) means ? 
 Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis. 
 
 It is a method for decomposing a matrix into three other matrices, which can be helpful in various applications, including signal processing, data analysis, and machine learning. The SVD of a matrix A is represented as:
@@ -169,10 +185,7 @@ SVD has several applications and implications:
 - **Collaborative Filtering**
 - **Latent Semantic Analysis (LSA)** 
 
-### Q12- What does Independent Component Analysis mean ? 
-
-### Q13- What are the different dimensionality reduction techniques?
-
+### Q13- What does Independent Component Analysis (ICA) mean ? 
 
 
 **Note:**
