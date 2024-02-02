@@ -41,20 +41,20 @@ Here are common techniques for feature scaling:
 - Polynomial transformation
 - Robust scaling
   
-#### 5.1 - Normalization - Min-Max Scaling
+#### Q5.1- How to perform Normalization - Min-Max Scaling
 - Scales the feature values to a specific range, usually between 0 and 1
 - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
 
-#### 5.2 - Standard scaling - Z-score normalization
+#### Q5.2 - How to perform Standard scaling - Z-score normalization
 - Centers the feature values around zero with a standard deviation of 1.
 - Suitable for algorithms that assume a normal distribution of features.
 - Formula: $X_{standardized} ={ X - mean(X) \over std(X)}$
 
-#### 5. 3- Robust Scaling
+#### Q5. 3- How to perform Robust Scaling
 - Scales the features based on the interquartile range (IQR) to handle outliers.
 - Formula: $X_{robust} = {X - median(X)\over IQR(X)}$
 
-#### 5. 4- Log Transformation
+#### Q5. 4- How to perform Log Transformation
 
 - The log transformation is the most popular among the different types of transformations used in machine learning.
 - It aims to make highly skewed distributions (features with high variance) less skewed.
@@ -63,7 +63,7 @@ Here are common techniques for feature scaling:
 - If the original data follows a log-normal distribution or approximately so, then the log-transformed data follows a normal or near normal distribution.
 - However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
 
-#### 5. 5- Polynomial transformation
+#### Q5. 5- How to perform Polynomial transformation
 - It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
 - It involves transforming input features by raising them to the power of an integer, creating polynomial terms. The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
 - Such transformations are often beneficial for machine learning algorithms, particularly in tasks involving numerical input variables, improving predictive accuracy, especially in regression tasks.
