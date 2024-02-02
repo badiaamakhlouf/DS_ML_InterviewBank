@@ -216,6 +216,33 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - PCA Commonly used for dimensionality reduction, data visualization, and noise reduction. SVD Applied in a broader range of applications, including matrix inversion, image compression, collaborative filtering, and solving linear least squares problems.
 
 ### Q14- What does Independent Component Analysis (ICA) mean ? 
+- ICA is a computational technique used in signal processing and data analysis.
+- It aims to separate a multivariate signal into additive, independent components, with the assumption that the original signals are statistically independent and non-Gaussian.
+- Here's a breakdown of key concepts related to Independent Component Analysis:
+  - **Statistical Independence:** ICA assumes that the observed signals are composed of independent source signals. Independence is a crucial assumption, as it allows ICA to uncover the underlying sources.
+  - **Non-Gaussianity:** Unlike Principal Component Analysis (PCA), which assumes that the components are orthogonal and Gaussian, ICA relies on the non-Gaussian nature of the sources. Non-Gaussianity is exploited as a criterion for finding independent components.
+- It consists on finding independent components.
+- Does not focus on variance issues, it focuses on the mutual Independence of the component.
+- The general form of the linear mixing model in ICA is expressed as:
+  - Form: $X=A⋅S$
+  - **X:** is the observed signal (mixture).
+  - **A:** is the mixing matrix (often unknown).
+  - **S:** is the vector of independent source signals.
+- Solution of previous form is :
+  - $S=W⋅X=A^{-1} ⋅X$
+  - S: represents the independent components identified by ICA
+  - W: the inverse of the mixing matriX
+- Here some examples of ICA Applications:
+  - **Blind Source Separation:** Unmixing signals when the mixing matrix is unknown.
+  - **Image Processing:** Separating mixed images into their constituent sources.
+  - **Biomedical Signal Processing:** Separating brain signals (e.g., EEG or fMRI) into independent components.
+**Note:**
+- ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
+  
+### Q15- How to measure gaussianity in ICA? 
+
+- ICA uses Kurtosis to measure gaussianity
+### Q15- Fast-ICA versus ICA ?
 
 
 **Note:**
