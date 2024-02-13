@@ -110,7 +110,7 @@ Here are some common encoding methods:
 
 
 **!! Notes :**
-- Ordianl encoding is a good choice in case we have ranking in our categorical variables (Low, medium, high), most used with DT and Random Forest.
+- Ordinal encoding is a good choice in case we have ranking in our categorical variables (Low, medium, high), most used with DT and Random Forest.
 - One-hot encoding is more used when there is no ranking in the categorical variables.
 - If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
