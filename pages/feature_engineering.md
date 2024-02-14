@@ -240,11 +240,21 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
   
-### Q15- How to measure gaussianity in ICA? 
+### Q15- How to measure non-Gaussianity in ICA? 
 
-- ICA uses Kurtosis to measure gaussianity
-- 
-### Q15- Fast-ICA versus ICA ?
+ICA aims to break down a multivariate signal into independent components. It relies on the assumption that observed data stems from independent sources, and it's essential that these sources exhibit non-Gaussian behavior. This non-Gaussianity enables ICA to effectively discern and isolate the independent components.
+
+Non-Gaussianity in Independent Component Analysis (ICA) can be measured using various statistical metrics or tests. Here are the main measures for non-Gaussianity: 
+
+- Kurtosis: it quantifies the "tailedness" or peakedness of a distribution. In a non-Gaussian distribution, the kurtosis will deviate from the expected value for a Gaussian distribution, which is 3. Higher kurtosis indicates heavier tails than a Gaussian distribution, while lower kurtosis indicates lighter tails.
+- Skewness: it measures the asymmetry of the distribution. In a non-Gaussian distribution, the skewness will deviate from 0, which is the expected value for a symmetric Gaussian distribution. Positive skewness indicates a longer tail on the right side of the distribution, while negative skewness indicates a longer tail on the left side.
+- Negentropy: Negentropy is a measure of non-Gaussianity. It quantifies the difference between the entropy of a Gaussian distribution and the observed distribution. Lower negentropy values indicate closer resemblance to a Gaussian distribution.
+- Mutual Information: it measures the amount of information that one random variable contains about another random variable. Since Gaussian distributions are maximally non-informative, components with low mutual information are more likely to be closer to Gaussian, while those with high mutual information are more likely to be non-Gaussian.
+- Jarque-Bera Test: The Jarque-Bera test is a statistical test that assesses whether sample data have the skewness and kurtosis matching a normal distribution. A low p-value indicates departure from normality.
+
+These measures and tests provide insights into the departure of the data distribution from a Gaussian distribution, which is essential for successful ICA decomposition.
+
+### Q16- Fast-ICA versus ICA ?
 
 
 **Note:**
