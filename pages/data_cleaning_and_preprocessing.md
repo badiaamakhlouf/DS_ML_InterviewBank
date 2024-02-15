@@ -99,7 +99,7 @@ Note : the choice of the right interpolation method depends on:
     - **Robustness to Outliers:** it is less influenced by extreme values because it is not affected by the actual values of data points but rather their order. Outliers have a minimal impact on the median.
     - **Resilient to Skewness:** in a skewed distribution, where the tail is longer in one direction, the mean can be heavily influenced by the skewness. The median, being the middle value, is less affected by the skewness and provides a more representative measure in such situations.
     - **Ability to avoid Biased Estimates:** in the presence of outliers, using the mean for imputation might lead to biased estimates, especially when the distribution is not symmetric. The median provides a more balanced estimate in skewed or asymmetric distributions.
-    - **Ability to maintain Robustness in Non-Normal Distributions:** in case our data does not have a normal distribution, the median is often a more reliable measure of central tendencyas it helps in producing more accurate imputations.
+    - **Ability to maintain Robustness in Non-Normal Distributions:** in case our data does not have a normal distribution, the median is often a more reliable measure of central tendency as it helps in producing more accurate imputations.
     
 ### Q8-  How to perform Forward or Backward Fill   ? 
 Propagate the last valid observation forward or use the next valid observation to fill missing values: 
