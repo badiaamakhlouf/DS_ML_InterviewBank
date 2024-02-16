@@ -44,11 +44,11 @@ Dropping rows or columns is not too advantageous because most values are going t
 
 We have four main methods:
 
-    - Impute with statistical measures
-    - Impute with a Placeholder 
-    - Impute with Machine Learning Algorithms
-    - Impute using Interpolation
-    - Multiple Imputation
+  - Impute with statistical measures
+  - Impute with a Placeholder 
+  - Impute with Machine Learning Algorithms
+  - Impute using Interpolation
+  - Multiple Imputation
 Imputed value won't be exactly right in most cases but it usually leads to more accurate models than you would get from dropping the column entirely  
     
 #### 5. 1- What does impute with a statistical measures mean ? 
