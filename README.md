@@ -27,15 +27,15 @@ Certainly, there are certain data science skills that are exclusively required f
 - [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
     - This step involves mastering the handling of missing data (null values), encoding categorical variables, handling outliers, and executing various data manipulation tasks.
     - This step is essential for extracting accurate insights from the provided data. Successfully completing these cleaning and preprocessing steps is crucial for subsequent stages, such as feature engineering and extraction, where refined features are created to enhance model performance.
-  
-- [Feature Engineering and Feature Extraction](pages/feature_engineering.md):
-    - This step involves identifying and extracting relevant features from raw data or transforming existing ones. As mentioned earlier, feature engineering and extraction are crucial tasks for enhancing model performance and obtaining meaningful insights.
-  
+
 - [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
     - Exploratory Data Analysis (EDA) involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
-      
+  
+- [Feature Engineering and Feature Extraction](pages/feature_engineering.md):
+    - This step involves identifying and extracting relevant features from raw data or transforming existing ones. As mentioned earlier, feature engineering and extraction are crucial tasks for enhancing model performance and obtaining meaningful insights.
+        
 - [Machine Learning Fundamentals](pages/machine_learning_fundamentals.md):
     - Machine learning, a subset of AI, focuses on creating algorithms that enable computers to learn from data and make decisions or predictions.
     - It's essential to understand fundamentals in ML algorithms, including supervised and unsupervised learning methods, and master model evaluation techniques.
