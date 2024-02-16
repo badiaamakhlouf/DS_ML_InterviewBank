@@ -66,7 +66,7 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 - Ridge Regression
 - Neural Networks (Deep Learning)
 
-More details regarding each algorithm could be found under Regression Analysis section here in [Supervised_learning](pages/supervised_learning.md)
+More details regarding each algorithm could be found here in [Regression Analysis](pages/regression_analysis.md)
 
 #### Q7- Examples of well-known machine learning algorithms used to solve Classification problems
 Here are some well-known machine learning algorithms commonly used to solve classification problems:
