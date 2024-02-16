@@ -12,7 +12,7 @@ Feature engineering refers to the process of raw data manipulation such as addit
 Here is a range of significant activities used in Feature Engineering :
 
 - Feature Selection
-- Data Transformation
+- Feature/Data Transformation
 - Text Data Processing
 - Time-Series Feature Engineering
 
