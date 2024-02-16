@@ -15,7 +15,9 @@ Consequently, the repository contains a comprehensive collection of questions ta
 Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
 Certainly, there are certain data science skills that are exclusively required for senior or lead positions. Here, I provide you with a comprehensive list tailored to different proficiency levels:
 
-- [Probability and Statistics](pages/statistics_and_probability.md): it is required to master and understand fundamental statistical concepts such as mean, standard deviation, variance etc. Also, probability distributions, Central Limit Theorem, Bayes’ Theorem and confidence intervals.
+- [Probability and Statistics](pages/statistics_and_probability.md):
+    - It is required to master and understand fundamental statistical concepts such as mean, standard deviation, variance etc.
+    - In addition, probability distributions, Central Limit Theorem, Bayes’ Theorem and confidence intervals.
   
 - [Programming Proficiency](pages/programming_proficiency.md): The primary programming languages used in the data science field are Python and R. The choice between the two depends on various factors. For instance, if you're dealing with intricate data requiring extensive statistical computations and superior data visualization capabilities, R is often preferred. On the other hand, Python is better suited for a wide range of data science tasks, including machine learning, deep learning, and artificial intelligence applications. Ultimately, the decision hinges on the specific requirements of your project and your familiarity with each language's ecosystem.
   
