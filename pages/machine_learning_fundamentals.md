@@ -1,16 +1,16 @@
 # Machine Learning Fundamentals 
 
-This GitHub page is a guide for those gearing up for machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. The content includes detailed questions about three main machine learning approaches: regression, classification, and clustering.
+This article is a guide for those gearing up for machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. The content includes detailed questions about three main machine learning approaches: regression, classification, and clustering.
 
 Whether you're polishing your interview skills or seeking insightful questions as an interviewer, this page is a valuable resource to strengthen your grasp of machine learning basics.
 
 **Note:** Your suggestions for improvement are welcome; please feel free to provide feedback to help maintain the precision and coherence of this page.
-## List Of Questions:
 
-### PART I: ML Basics 
+## List Of Questions:
+### PART I: ML Basics and Fundamentals 
 
 #### Q1- What does Machine Learning mean ? 
-Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks without explicit programming. The core idea behind machine learning is to allow machines to learn patterns, make predictions, or optimize decisions based on data.
+Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks such as taking decisions or giving predictions without explicit been programmed. The core idea behind machine learning is to allow machines to learn patterns, make predictions, or optimize decisions based on given data.
 
 Key concepts in machine learning include:
 - Types of Machine Learning: supervised, unsupervised and semi-supervised
@@ -151,7 +151,7 @@ Ranking problems are common in various applications, including information retri
 - Deductive learning starts with general rules and applies them to make specific predictions or decisions.
 - Inductive learning is data-driven, while deductive learning is rule-driven.
   
-### Part II: Model building
+### Part II: Model Building and Evaluation 
 
 #### Q1- What are three stages of building a machine learning model ? 
 - The process of building a machine learning model includes three main stages, These stages are:
