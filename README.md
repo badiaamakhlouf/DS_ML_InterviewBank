@@ -1,15 +1,12 @@
 # Data Scientist and Machine Learning Engineer Interview Questions
-- 🎉🎉 I'm excited to present this [repo](https://github.com/badiaamakhlouf/data_science_interview_preparation), 
+- 🎉 I'm excited to present this [repo](https://github.com/badiaamakhlouf/data_science_interview_preparation), 
 which contains a comprehensive collection of diverse questions covering various aspects of data science and machine learning 📚. 
 
-- 💡💡 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
+- 💡 This repository serves as an invaluable resource for those preparing for technical interviews in these fields.
 
 - 🤝 My commitment to excellence doesn't stop here—I aspire to continually enhance this repository by incorporating the latest technologies and advancements in data science and machine learning.
 
-This repository is organized into subjects and their corresponding modules. 
-Primarily, we feature two main subjects: data science and machine learning. 
-Each subject comprises a set of modules that zero in on specific areas within data or machine learning. 
-Consequently, the repository contains a comprehensive collection of questions tailored to each module, offering a targeted resource for in-depth exploration of related topics.
+- 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules. 
 
 ## 1- Data science 
 Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
