@@ -62,10 +62,10 @@ Certainly, there are certain data science skills that are exclusively required f
  Here are more key details regarding each skill to focus on:
 
  - 📌 [Communication Skills](pages/how_to_improve_communication_skills.md): develop the ability to convey complex technical concepts to both technical and non-technical stakeholders. This includes clear and concise documentation.
- - 📌[Problem-Solving](pages/problem_solving.md): sharpen problem-solving skills, particularly the ability to approach data-related challenges logically and systematically.
- - 📌[Leadership and Project Management](): leadership roles should emphasize leadership and project management skills, including the ability to guide a team, make strategic decisions, and manage projects effectively.
- - 📌[Continuous Learning](): demonstrate a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
- - 📌[Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
+ - 📌 [Problem-Solving](pages/problem_solving.md): sharpen problem-solving skills, particularly the ability to approach data-related challenges logically and systematically.
+ - 📌 [Leadership and Project Management](): leadership roles should emphasize leadership and project management skills, including the ability to guide a team, make strategic decisions, and manage projects effectively.
+ - 📌 [Continuous Learning](): demonstrate a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
+ - 📌 [Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
 
 **Notes:**
 - 📚 Interview preparation is very important 🔑, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
