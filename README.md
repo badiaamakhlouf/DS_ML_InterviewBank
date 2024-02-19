@@ -8,7 +8,7 @@ which contains a comprehensive collection of diverse questions covering various 
 
 - 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules. 
 
-## 1- Data science 
+## 1- 📊 Data science 
 Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
 Certainly, there are certain data science skills that are exclusively required for senior or lead positions. Here, I provide you with a comprehensive list tailored to different proficiency levels:
 
@@ -53,16 +53,11 @@ Certainly, there are certain data science skills that are exclusively required f
 
 
 
- ## 2- Machine Learning and MLOPS
+ ## 2- 💻 Machine Learning and MLOPS
 
- ## 3- Soft Skills 
- In addition to honing technical skills, cultivating strong soft skills is imperative for a successful interview journey.
- Emphasizing areas like communication skills ensures effective expression of ideas, 
- while adept problem-solving demonstrates analytical prowess.
- Leadership and project management capabilities showcase your ability to guide teams and make strategic decisions. 
- Commitment to continuous learning signifies adaptability and staying abreast of industry trends.
- Moreover, a solid foundation in domain knowledge further enhances your overall readiness for a dynamic interview process.
+ ## 3- 🍀 Soft Skills 
  
+ Building strong soft skills is essential for interview success. Communication skills help you express ideas clearly, while problem-solving shows your analytical abilities. Leadership and project management demonstrate your ability to lead teams and make strategic decisions. Commitment to learning highlights adaptability and staying updated on industry trends. Domain knowledge adds depth to your readiness for interviews.
  Here are more key details regarding each skill to focus on:
 
  - [Communication Skills](pages/how_to_improve_communication_skills.md): develop the ability to convey complex technical concepts to both technical and non-technical stakeholders. This includes clear and concise documentation.
@@ -72,9 +67,9 @@ Certainly, there are certain data science skills that are exclusively required f
  - [Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
 
 **Notes:**
-- 📚 Interview preparation is very important, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
+- 📚 Interview preparation is very important 🔑, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
 - 💻 It is essential to stay updated on industry trends and advancements to showcase a proactive attitude during interviews.
-- 🔑 Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
+- 🙏 Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
 **Feedback:**
 - 😉 Please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
