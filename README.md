@@ -71,9 +71,11 @@ Certainly, there are certain data science skills that are exclusively required f
  - [Continuous Learning](): demonstrate a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
  - [Domain Knowledge](): gain domain-specific knowledge, especially for the industry in which you're applying your data science skills.
 
-**Note:** remember that preparation is key, and practical hands-on experience with real-world datasets can significantly enhance your confidence and proficiency in these fundamental areas.
-Additionally, staying updated on industry trends and advancements is essential to showcase a proactive attitude during interviews. 
-Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
+**Notes:**
+- 📚 Interview preparation is very important, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
+- 💻 It is essential to stay updated on industry trends and advancements to showcase a proactive attitude during interviews.
+- 🔑 Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
-**Note:** please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
-Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
+**Feedback:**
+- Please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement 😉.
+- 🤝 Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
