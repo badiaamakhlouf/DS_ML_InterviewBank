@@ -77,5 +77,5 @@ Certainly, there are certain data science skills that are exclusively required f
 - 🔑 Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
 **Feedback:**
-- Please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement 😉.
+- 😉 Please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
 - 🤝 Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
