@@ -110,3 +110,31 @@ Also known as recommendation systems or engines, are applications or algorithms 
 - Collaborative Filtering Recommender Systems
 
 Recommender systems are widely used in various industries, including e-commerce, streaming services, social media, and more. They help users discover new items, increase user engagement, and contribute to business success by promoting relevant content and products
+
+#### Q8- What is Reinforcement Learning?
+Is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties based on its actions, allowing it to learn optimal strategies over time to maximize cumulative rewards. It is inspired by the way humans and animals learn from trial and error.
+
+Here are some applications of Reinforcement Learning : 
+- Automated Robots
+- Natural Language Processing
+- Marketing and Advertising 
+- Image Processing
+- Recommendation Systems
+- Traffic Control 
+- Healthcare 
+- Etc.
+
+#### Q9- What is Recommender Systems
+Also known as recommendation systems or engines, are applications or algorithms designed to suggest items or content to users based on their preferences and behavior. These systems leverage data about users and items to make personalized recommendations, aiming to enhance user experience and satisfaction. There are two main types of recommender systems:
+
+- Content-Based Recommender Systems
+- Collaborative Filtering Recommender Systems
+Recommender systems are widely used in various industries, including e-commerce, streaming services, social media, and more. They help users discover new items, increase user engagement, and contribute to business success by promoting relevant content and products
+
+#### Q10- What is Content-Based Recommender Systems ? 
+#### Q11- What is Collaborative Filtering Recommender Systems ?
+
+#### Q12- What is Ranking ? 
+Ranking in machine learning refers to the process of assigning a meaningful order or ranking to a set of items based on their relevance or importance. This is often used in scenarios where the goal is to prioritize or sort items based on their predicted or observed characteristics.
+
+Ranking problems are common in various applications, including information retrieval, recommendation systems, and search engines.
