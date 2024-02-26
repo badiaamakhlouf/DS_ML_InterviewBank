@@ -28,7 +28,7 @@ Whether you're building foundational knowledge or preparing for data science int
 ### Q2- What is data science life cycle? 
 The data science life cycle is a systematic and iterative process that data scientists follow to extract meaningful insights from data and solve real-world problems. It typically includes the following key stages:
 
-- 1. Problem Definition : Objective and scope definition 
+- 1- Problem Definition : Objective and scope definition 
 - 2. Data Collection :  identify data sources + data extraction 
 - 3. Data Cleaning and Preparation : cleaning + transformation (NaN +Categorical)
 - 4. Exploratory Data Analysis (EDA) : statistical analysis + visual exploration
