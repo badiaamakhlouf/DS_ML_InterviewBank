@@ -106,7 +106,7 @@ These fields often overlap, and professionals in data science may specialize in 
 
 Also known as recommendation systems or engines, are applications or algorithms designed to suggest items or content to users based on their preferences and behavior. These systems leverage data about users and items to make personalized recommendations, aiming to enhance user experience and satisfaction. There are two main types of recommender systems: 
 
-    - Content-Based Recommender Systems
-    - Collaborative Filtering Recommender Systems
+- Content-Based Recommender Systems
+- Collaborative Filtering Recommender Systems
 
 Recommender systems are widely used in various industries, including e-commerce, streaming services, social media, and more. They help users discover new items, increase user engagement, and contribute to business success by promoting relevant content and products
