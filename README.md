@@ -50,7 +50,10 @@ Certainly, there are certain data science skills that are exclusively required f
     - Indeed, big data shares many similarities with data science.
     - The primary distinction lies in the scale of data involved. In big data, we handle vast volumes of data, necessitating specialized skills and technologies from both data engineering and data science domains.
     - Proficiency in tools like Hadoop, Spark, or Hive is particularly advantageous for this area, especially, for senior positions.
-
+      
+- 📌 [General Concepts](pages/ds_general.md):
+    - In this section, I aim to tackle common questions in the field of data science, covering fundamental concepts like the definition of data science, computer vision, natural language processing, and more.
+    - By exploring these topics, you'll gain insights into various aspects of data science and AI, enhancing your understanding of these interconnected fields.
 
 
  ## 2- 💻 Machine Learning and MLOPS
