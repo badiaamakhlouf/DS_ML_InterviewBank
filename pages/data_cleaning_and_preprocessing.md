@@ -152,7 +152,7 @@ It's often a good practice to combine multiple methods for a more robust outlier
     
     ![title](images/boxplot.png)
 
-  - Her an example of Scatter plot :
+  - Here an example of Scatter plot :
  
     ![title](images/scatter-plot.png) 
       
