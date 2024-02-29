@@ -70,7 +70,8 @@ Here are common techniques for feature scaling:
 
 ### Q11- How to perform Polynomial transformation
 - It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
-- It involves transforming input features by raising them to the power of an integer, creating polynomial terms. The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
+- It involves transforming input features by raising them to the power of an integer, creating polynomial terms.
+- The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
 - Such transformations are often beneficial for machine learning algorithms, particularly in tasks involving numerical input variables, improving predictive accuracy, especially in regression tasks.
 - If X is one input feature ==> $X^2$ is its polynomial feature.
 - The “degree” of the polynomial is used to control the number of features added, e.g. a degree of 3 will add two new variables for each input variable.
