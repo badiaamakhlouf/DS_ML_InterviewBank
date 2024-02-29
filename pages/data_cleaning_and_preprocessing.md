@@ -307,3 +307,17 @@ Here are more analysis to perform during EDA phase:
 Notes:
 - Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
+
+### Q23- What is the difference between covariance and correlation?
+- These two measures are used during the exploratory data analysis to gain insights from the data.
+- **Covariance:** 
+   - It measures the degree to which two variables change together.
+   - It indicates the direction of the linear relationship between the variables.
+   - It can take on any value
+
+- **Correlation:**
+   - It is a standardized measure of the strength and direction of the linear relationship between two variables.
+   - It ranges from -1 to 1, where :
+        - 1: perfect positive linear relationship
+        - -1 indicates a perfect negative linear relationship
+        - 0 indicates no linear relationship.
