@@ -149,7 +149,12 @@ It's often a good practice to combine multiple methods for a more robust outlier
     - Min
     - Max
   - Here is an example of Box plot :
-    ![title](images/boxplot.png)  
+    
+    ![title](images/boxplot.png)
+
+  - Her an example of Scatter plot :
+ 
+    ![title](images/scatter-plot.png) 
       
 ### Q12- How to handle outliers in dataset ? 
 Here are some methods about how we handle outliers :
