@@ -46,9 +46,11 @@ Here are common techniques for feature scaling:
 - Polynomial transformation
 - Robust scaling
   
-### Q7- How to perform Normalization - Min-Max Scaling
-- Scales the feature values to a specific range, usually between 0 and 1
-- Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
+### Q7- Why do we perform normalization and How to do it?
+- **How to do it?**
+ - We normalize data using Min-Max Scaling
+ - It aims to scale the feature values to a specific range, usually between 0 and 1
+ - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
 
 ### Q8 - How to perform Standard scaling - Z-score normalization
 - Centers the feature values around zero with a standard deviation of 1.
