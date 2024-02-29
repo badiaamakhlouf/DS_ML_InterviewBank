@@ -332,3 +332,13 @@ Notes:
         - 1: perfect positive linear relationship
         - -1 indicates a perfect negative linear relationship
         - 0 indicates no linear relationship.
+          
+  ### Q29- Why removing highly correlated features is very important?
+- Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
+- In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
+- Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
+
+
+
+
+
