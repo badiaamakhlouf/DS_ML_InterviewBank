@@ -9,7 +9,7 @@ Whether you're polishing your interview skills or seeking insightful questions a
 ## List Of Questions:
 ### PART I: ML Basics and Fundamentals 
 
-#### Q1- What does Machine Learning mean ? 
+### Q1- What does Machine Learning mean ? 
 Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to perform tasks such as taking decisions or giving predictions without explicit been programmed. The core idea behind machine learning is to allow machines to learn patterns, make predictions, or optimize decisions based on given data.
 
 Key concepts in machine learning include:
@@ -21,7 +21,7 @@ Key concepts in machine learning include:
 - Hyperparameter Tuning
 - Deployment
   
-#### Q2- What are the types of ML algorithms ? 
+### Q2- What are the types of ML algorithms ? 
 Machine learning algorithms can be categorized into several types based on their learning styles and the nature of the task they are designed to solve.
 
 Here are some common types of machine learning algorithms:
@@ -34,26 +34,26 @@ Here are some common types of machine learning algorithms:
 - **Ranking**
 - **Recommendation system**
 
-#### Q3- What does supervised, unsupervised and semi-supervised mean in ML? 
+### Q3- What does supervised, unsupervised and semi-supervised mean in ML? 
 In machine learning, the terms "supervised learning," "unsupervised learning," and "semi-supervised learning" refer to different approaches based on the type of training data available and the learning task at hand:
 
 - **Supervised Learning :** training a model on a labeled dataset, where the algorithm learns the relationship between input features and corresponding target labels. Can be used for Regression (continous output) or Classification (discrete output). 
 - **Unsupervised Learning :** Deals with unlabeled data and aims to find patterns, structures, or relationships within the data. Can be used for Clustering (Groups similar data points together) or association
 - **Semi-Supervised Learning:** Utilizes a combination of labeled and unlabeled data to improve learning performance, often in situations where obtaining labeled data is challenging and expensive.
 
-#### Q4- What are Unsupervised Learning techniques ?
+### Q4- What are Unsupervised Learning techniques ?
  We have two techniques, Clustering and association: 
  - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.. 
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
  
-#### Q5- What are Supervised Learning techniques ? 
+### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classfication and regression: 
 - Regression : involves predicting a continuous output or numerical value based on input features. Examples : predicting house prices, temperature, stock prices etc.
 - Classification : is the task of assigning predefined labels or categories to input data. We have two types of classification algorithms: 
     - Binary classification (two classes). Example: identifying whether an email is spam or not.
     - Multiclass classification (multiple classes). Example: classifying images of animals into different species.
 
-#### Q6- Examples of well-known machine learning algorithms used to solve Regression problems
+### Q6- Examples of well-known machine learning algorithms used to solve Regression problems
 Here are some well-known machine learning algorithms commonly used to solve regression problems:
 
 - Linear Regression
@@ -68,7 +68,7 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 
 More details regarding each algorithm could be found here in [Regression Analysis](pages/regression_analysis.md)
 
-#### Q7- Examples of well-known machine learning algorithms used to solve Classification problems
+### Q7- Examples of well-known machine learning algorithms used to solve Classification problems
 Here are some well-known machine learning algorithms commonly used to solve classification problems:
 
 - Logistic Regression
@@ -86,7 +86,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 
 More details regarding each algorithm could be found in [Classification Analysis](pages/classification_analysis.md)
 
-#### Q8- Examples of well-known machine learning algorithms used to solve Clustering problems
+### Q8- Examples of well-known machine learning algorithms used to solve Clustering problems
 Several well-known machine learning algorithms are commonly used for solving clustering problems. Here are some examples:
 
 - K-Means Clustering 
@@ -99,7 +99,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
 These algorithms address different types of clustering scenarios and have varying strengths depending on the nature of the data and the desired outcomes. The choice of clustering algorithm often depends on factors such as the shape of clusters, noise in the data, and the number of clusters expected.
 
 
-#### Q9- What is Ensemble learning?
+### Q9- What is Ensemble learning?
 Ensemble learning is a machine learning technique that involves combining the predictions of multiple individual models to improve overall performance and accuracy. Instead of relying on a single model, ensemble methods leverage the strengths of diverse models to compensate for each other's weaknesses. The idea is that by aggregating the predictions of multiple models, the ensemble can achieve better generalization and make more robust predictions than any individual model.
 
 There are several ensemble learning methods, with two primary types being:
@@ -110,7 +110,7 @@ There are several ensemble learning methods, with two primary types being:
     - Focuses on sequentially training models, with each subsequent model giving more attention to the instances that the previous models misclassified. 
     - Examples: AdaBoost (Adaptive Boosting), Gradient Boosting, XGBoost (Extreme Gradient Boosting), LightGBM (Light Gradient Boosting Machine), CatBoost, GBM (Gradient Boosting Machine)
       
-#### Q10- What is Reinforcement Learning?
+### Q10- What is Reinforcement Learning?
 Is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties based on its actions, allowing it to learn optimal strategies over time to maximize cumulative rewards. It is inspired by the way humans and animals learn from trial and error.
 
 Here are some applications of Reinforcement Learning : 
@@ -122,21 +122,22 @@ Here are some applications of Reinforcement Learning :
 - Traffic Control 
 - Healthcare 
 - Etc.
-#### Q11- What is Recommender Systems
+  
+### Q11- What is Recommender Systems
 Also known as recommendation systems or engines, are applications or algorithms designed to suggest items or content to users based on their preferences and behavior. These systems leverage data about users and items to make personalized recommendations, aiming to enhance user experience and satisfaction. There are two main types of recommender systems:
 
 - Content-Based Recommender Systems
 - Collaborative Filtering Recommender Systems
 Recommender systems are widely used in various industries, including e-commerce, streaming services, social media, and more. They help users discover new items, increase user engagement, and contribute to business success by promoting relevant content and products
 
-#### Q12- What is Content-Based Recommender Systems ? 
-#### Q13- What is Collaborative Filtering Recommender Systems ?
-#### Q14- What is Ranking ? 
+### Q12- What is Content-Based Recommender Systems ? 
+### Q13- What is Collaborative Filtering Recommender Systems ?
+### Q14- What is Ranking ? 
 Ranking in machine learning refers to the process of assigning a meaningful order or ranking to a set of items based on their relevance or importance. This is often used in scenarios where the goal is to prioritize or sort items based on their predicted or observed characteristics.
 
 Ranking problems are common in various applications, including information retrieval, recommendation systems, and search engines.
 
-## Q15- What is the difference between Inductive ML and Deductive ML?
+### Q15- What is the difference between Inductive ML and Deductive ML?
 - **Inductive Learning:**
     - Inductive machine learning involves learning patterns, rules, or models from specific examples or instances.
     - It generalizes from observed examples to make predictions or classifications for new, unseen instances.
@@ -153,13 +154,13 @@ Ranking problems are common in various applications, including information retri
   
 ### Part II: Model Building and Evaluation 
 
-#### Q1- What are three stages of building a machine learning model ? 
+### Q1- What are three stages of building a machine learning model ? 
 - The process of building a machine learning model includes three main stages, These stages are:
     - **Training phase:** after splitting the data into training and testing sets, training data is used to train our model on a labeled dataset. During the training phase, the model tries to learn relationships between input data and the corresponding output target values while adjusting its internal parameters. Throughout this phase, the model aims to maximise the accuracy of making precise predictions or classifications when exposed to unseen data.
     - **Validation phase:** after the model is well trained, we evaluate it on a seperate dataset known as the validation set (maximum 10% of our data). This dataset is not used during the training process. Validation stage helps identify the existence of certain overfitting (model performing well on training data but poorly on new data) or certain underfitting (model needs more training to capture the underlying patterns in the data).
     - **Testing (Inference) phase:** during this phase, the trained and validated model is applied to unseen dataset, called test dataset. This phase aims to evaluate the model's performance and provides a measure regarding the model's effectiveness and its ability to make accurate predictions in a production environment.
 
-#### Q2- How to split your data while building a machine learning model ?    
+### Q2- How to split your data while building a machine learning model ?    
 - During the model building phase, it is required to split the data into three main sets to evaluate the model's performance and effectiveness. The three sets are: 
     - Training: used to train the model and learn relationship between inputs and outputs, contains 70-80% of our total dataset
     - Validation: used to validate the model, fine-tune the model's hyperparameters and assess its performance during training, it helps to prevent overfitting and underfitting. It contains 10-15% of the total data
@@ -170,7 +171,7 @@ Ranking problems are common in various applications, including information retri
 - It is favorable to use cross-validation technique. 
 - No fixed rule to split data between training, validation and testing, portions can vary based on individual preferences.
   
-#### Q3- How to choose which ML algorithm to use given a dataset?
+### Q3- How to choose which ML algorithm to use given a dataset?
 - Choosing the right machine learning algorithm for a given dataset involves considering various factors related to the nature of the data and the problem at hand.
 - No master algorithm it all depends on the situation
 - Here's a step-by-step guide to take the right decision : 
@@ -213,12 +214,12 @@ Ranking problems are common in various applications, including information retri
 - Additionally, ensemble methods, which combine multiple models, can sometimes provide robust solutions.
 - Keep in mind that the performance of an algorithm depends on the specific characteristics of your dataset and the goals of your analysis.      
 
-#### Q4- What is Overfitting, causes and mitigation? 
+### Q4- What is Overfitting, causes and mitigation? 
 - Overfitting is a common challenges in machine learning that relate to the performance of a model on unseen data.
 - It occurs when a machine learning model learns the training data too well, capturing noise and random fluctuations in addition to the underlying patterns (as concept).
 - High error on testing dataset.
 
-#### Q4. 1-Key characteristics of Overfitting :
+#### Q4. 1- Key characteristics of Overfitting :
 - Excellent Performance on Training Data.
 - Poor Generalization to New Data
 - Low Bias, High Variance: the model is not biased toward any particular assumption, but its predictions are highly sensitive to variations in the training data.
@@ -240,7 +241,7 @@ Ranking problems are common in various applications, including information retri
 **Note:**
 - It is important to find balance between model complexity and the ability to generalize to new, unseen data.
 
-#### Q5- What is Underfitting, causes and mitigation? 
+### Q5- What is Underfitting, causes and mitigation? 
 - It is the case when the model is too simple to capture the underlying patterns in the training data.
 - Besides, the model performs poorly not only on the training data but also on new, unseen data.
 - High error rate on both training and testing datasets.
@@ -271,7 +272,7 @@ Ranking problems are common in various applications, including information retri
 - This balance, often referred to as the model's "sweet spot", results in a model that generalizes well to new, unseen data. 
 - Techniques like cross-validation, hyperparameter tuning, and monitoring learning curves can help strike this balance during the model development process.
   
-#### Q6- What are the types of Regularization in Machine Learning?
+### Q6- What are the types of Regularization in Machine Learning?
 - Regularization is a technique used in machine learning to prevent overfitting by adding a penalty term to the objective/loss function.
 - It consists on adding a cost term that penalize the large weights of model.
 - There are mainly two types of regularization commonly used: L1 regularization (Lasso) and L2 regularization (Ridge). - Additionally, Elastic Net is a combination of both L1 and L2 regularization. 
@@ -295,7 +296,7 @@ Elastic Net combines both L1 and L2 penalties in the objective function. It has 
 - These regularization techniques help improve the generalization performance of machine learning models by preventing them from becoming too complex and fitting noise in the training data.
 - The choice between L1, L2, or Elastic Net depends on the specific characteristics of the dataset and the modeling goals.
 
-#### Q7- What is Model Validation Technique?
+### Q7- What is Model Validation Technique?
 Validation techniques in machine learning are essential for assessing the performance of a model and ensuring its ability to generalize well to unseen data. 
 
 Here are some common validation techniques:
@@ -306,7 +307,7 @@ Here are some common validation techniques:
 - Holdout Validation
 - Time Series Cross-Validation
 
-#### Q8- What is train-test-validation split?
+### Q8- What is train-test-validation split?
 - It is an important step to indicate how well a model will perform with real-world, unseen data.
 - A good train-test-validation split helps mitigate overfitting and ensures that evaluation is not biased.
 - It consists on dividing input dataset into three subsets:
