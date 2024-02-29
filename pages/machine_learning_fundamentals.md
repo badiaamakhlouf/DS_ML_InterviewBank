@@ -613,16 +613,21 @@ Here are some common validation techniques:
     - Perform pre-processing such as normalization or standardisation
     - Exculde validation data from any type of fitting, including the fitting of pre-processing steps.
     - It is better to use Scikit-learn pipelines
-- It is recommended to split training and validation sets carefully so we can prevent Train-Test Contamination and pipelines can help implement this seperation
+- It is recommended to split training and validation sets carefully so we can prevent Train-Test Contamination and pipelines can help implement this seperation.
+  
+### Q31- What is one-shot learning?
+- It is a concept in machine learning
+- It aims to train the model to recognize the patterns in datasets from a single example and not on large datasets.
+- It is very useful especially, if we haven’t large datasets. It is applied to find the similarity and dissimilarities between the two images.
 
-### Q31- What is Target Leakage?
+### Q32- What is Target Leakage?
 
 - It happens when predictors include data that will not be available at the time you make predictions.
 - It often happens when we work with timing or chronological order (time series data)
 - For instance, if you use information in the training set that is derived from the target variable (the variable you are trying to predict) but would not be known at the time of prediction, it can lead to a model that performs well on the training data but poorly on new, unseen data.
 - Example : detection the existence of pneumonia, feature "took anti-biotic" does not help because it comes after gotting the disease.==> All not usuable variables, those which were created after the Target parameter should be excluded.
 
-### Q32- How to avoid data leakage? 
+### Q33- How to avoid data leakage? 
 - Preventing data leakage is crucial for building reliable and generalizable machine learning models.
 - To avoid data leakage, it's important to:
     - Strictly separate training and testing data
