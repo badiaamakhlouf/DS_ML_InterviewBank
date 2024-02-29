@@ -140,8 +140,16 @@ It's often a good practice to combine multiple methods for a more robust outlier
 ### Q11- What Visualization techniques can be used to determine outliers?
 
 - Performing some plots and analysis:   
-    - Box plot is considered as Uni-variate analysis
+    - Box plot is considered as Uni-variate analysis 
     - Scatter plot is considered as Bi-variate analysis
+- Box plot represents five statistical measures :
+    - Q1 : Lower quartile 
+    - Q2 : Median
+    - Q3 : Upper quartile 
+    - Min
+    - Max
+  - Here is an example of Box plot :
+    ![title](images/boxplot.png)  
       
 ### Q12- How to handle outliers in dataset ? 
 Here are some methods about how we handle outliers :
