@@ -47,6 +47,11 @@ Here are common techniques for feature scaling:
 - Robust scaling
   
 ### Q7- Why do we perform normalization and How to do it?
+- **Why?**
+  - To achieve stable and fast training of the model
+  - It aims to bring all the features to a certain scale or range of values.
+  - Without normalization, there's a higher risk of the gradient failing to converge to the global or local minima and instead oscillating back and forth.
+  
 - **How to do it?**
    - We normalize data using Min-Max Scaling
    - It aims to scale the feature values to a specific range, usually between 0 and 1
