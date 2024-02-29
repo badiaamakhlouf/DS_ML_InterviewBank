@@ -236,6 +236,7 @@ Effective EDA aims to perform more targeted and informed analyses, leading to be
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
+
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
