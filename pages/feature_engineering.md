@@ -16,7 +16,12 @@ Here is a range of significant activities used in Feature Engineering :
 - Text Data Processing
 - Time-Series Feature Engineering
 
-### Q2- What does data transformation mean?
+### Q2- How feature engineering affect the model’s performance? 
+- Sometimes, multiple pieces of information may be combined into a single data column.
+- Creating new meaningful features from this combined data can provide deeper insights and enhance the model's performance.
+- These new features can capture complex relationships and patterns in the data, leading to improved predictive accuracy and better understanding of the underlying phenomena.
+
+### Q3- What does data transformation mean?
 
 Data transformation is indeed one subtask within the broader field of feature engineering in machine learning. It is a specific aspect of feature engineering that involves modifying the raw data to make it more suitable for the learning algorithm.
 It includes : 
@@ -26,13 +31,13 @@ It includes :
 - Binning or Discretization
 - Creating Interaction Terms
   
-### Q3- What does feature scaling mean ?
+### Q4- What does feature scaling mean ?
 Feature scaling is a preprocessing step in machine learning that involves transforming the numerical features of a dataset to a common scale. Feature scaling is particularly important for algorithms that rely on distance metrics or gradient descent optimization.
 
-### Q4- Why do we need perform feature scaling ? 
+### Q5- Why do we need perform feature scaling ? 
 The goal is to ensure that all features contribute equally to the learning process and to prevent certain features from dominating due to differences in their magnitudes.
 
-### Q5- What are the common techniques for feature scaling?
+### Q6- What are the common techniques for feature scaling?
 
 Here are common techniques for feature scaling:
 - Normalization
@@ -41,20 +46,20 @@ Here are common techniques for feature scaling:
 - Polynomial transformation
 - Robust scaling
   
-#### Q5.1- How to perform Normalization - Min-Max Scaling
+### Q7- How to perform Normalization - Min-Max Scaling
 - Scales the feature values to a specific range, usually between 0 and 1
 - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
 
-#### Q5.2 - How to perform Standard scaling - Z-score normalization
+### Q8 - How to perform Standard scaling - Z-score normalization
 - Centers the feature values around zero with a standard deviation of 1.
 - Suitable for algorithms that assume a normal distribution of features.
 - Formula: $X_{standardized} ={ X - mean(X) \over std(X)}$
 
-#### Q5. 3- How to perform Robust Scaling
+### Q9- How to perform Robust Scaling
 - Scales the features based on the interquartile range (IQR) to handle outliers.
 - Formula: $X_{robust} = {X - median(X)\over IQR(X)}$
 
-#### Q5. 4- How to perform Log Transformation
+### Q10- How to perform Log Transformation
 
 - The log transformation is the most popular among the different types of transformations used in machine learning.
 - It aims to make highly skewed distributions (features with high variance) less skewed.
@@ -63,7 +68,7 @@ Here are common techniques for feature scaling:
 - If the original data follows a log-normal distribution or approximately so, then the log-transformed data follows a normal or near normal distribution.
 - However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
 
-#### Q5. 5- How to perform Polynomial transformation
+### Q11- How to perform Polynomial transformation
 - It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
 - It involves transforming input features by raising them to the power of an integer, creating polynomial terms. The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
 - Such transformations are often beneficial for machine learning algorithms, particularly in tasks involving numerical input variables, improving predictive accuracy, especially in regression tasks.
@@ -76,7 +81,7 @@ Here are common techniques for feature scaling:
 - It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
 
 
-### Q6- What does IQR : interquartile range mean?
+### Q12- What does IQR : interquartile range mean?
 - The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
 - Q1: It represents the median of the lower 50% of the data.
 - Q3 : It represents the median of the upper 50% of the data
@@ -93,11 +98,11 @@ Here's how you calculate the IQR:
 
 The IQR provides a robust measure of the spread of the middle 50% of the data, making it less sensitive to extreme values or outliers. It is commonly used in box plots to visually represent the dispersion of data.
 
-### Q7- How to deal with categorical values ?
-- Drop categorical variables
+### Q13- How to deal with categorical values ?
+- Drop categorical variables (columns)
 - Perform feature encoding
 
-### Q8- What does feature encoding mean? 
+### Q14- What does feature encoding mean? 
 
 Feature encoding is the process of converting categorical data or text data into a numerical format that can be easily used for machine learning algorithms. In many machine learning models, the input features are expected to be numerical, and encoding is necessary when dealing with non-numeric data.
 
@@ -114,7 +119,7 @@ Here are some common encoding methods:
 - One-hot encoding is more used when there is no ranking in the categorical variables.
 - If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
-### Q9- What does Feature extraction mean?
+### Q15- What does Feature extraction mean?
 - It refers to the process of transforming raw data into a format that is suitable for analysis or modeling.
 - Feature extraction involves selecting, combining, or transforming these features to create a set of new features that are more informative, relevant, or suitable for a specific task.
 - It aims to retain the most relevant information from the original data.
@@ -128,7 +133,7 @@ Here are some key points about Feature Extraction:
 **Note:**
 - Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
 
-### Q10- What does Dimensionality reduction mean?
+### Q16- What does Dimensionality reduction mean?
 
 - It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
 - The goal is to simplify the dataset while retaining its essential information and patterns.
@@ -142,7 +147,7 @@ Here are some key points about Feature Extraction:
   - Linear Discriminant Analysis (LDA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
 
-### Q11- What does Principal Component Analysis (PCA) mean? 
+### Q17- What does Principal Component Analysis (PCA) mean? 
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
@@ -159,14 +164,14 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
  - 3. Select the k largest eigenvalues and their associated eigenvectors.
  - 4. Transform the data into a k dimensional subspace using those k eigenvectors.
     
-#### Q11.1- Case 1 : Using scikit-learn library
+#### Q17.1- Case 1 : Using scikit-learn library
 - This method is based on using `sklearn.decomposition.PCA()`, where n is the number of PCA components 
 - How to choose the correct number of PCA Components ?
   - The first principal components that capture the most significant variance in the data
   - Example 97% or 99% of data variability.
 - If we found the correct component number, example: n=2,  then we use the next code : PCA(n_components=2)  
 
-#### Q11.2- Case 2: Using NumPy, SciPy libraries: 
+#### Q17.2- Case 2: Using NumPy, SciPy libraries: 
 - This method consists on applying PCA using the eigenvalue decomposition, which is based on finding the eigenvectors and eigenvalues.
 -  Here are the consecutive steps to apply this method:
     1. Standardise the data
@@ -174,7 +179,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
     3. Select the k largest eigenvalues and their associated eigenvectors.
     4. Transform the data into a k dimensional subspace using those k eigenvectors.
        
-#### Q11.3- Why do we need to find eigenvalues and eigenvectors in PCA?
+### Q18- Why do we need to find eigenvalues and eigenvectors in PCA?
 - In PCA, finding eigenvalues and eigenvectors is a crucial step in transforming the original data into a new coordinate system (principal components) that captures the maximum variance.
 - PCA begins by calculating the **covariance matrix** of the original data. This matrix summarizes the relationships between different variables.
 - **Eigenvalues:** The eigenvalues of the covariance matrix represent the variance of the data along the corresponding eigenvectors. Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
@@ -187,7 +192,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - Eigenvectors are orthogonal, meaning they are perpendicular to each other. This orthogonality ensures that the principal components are uncorrelated, simplifying the interpretation of the transformed data.
 
-### Q12- What does Singular Value Decomposition (SVD) means ? 
+### Q19- What does Singular Value Decomposition (SVD) means ? 
 - Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis.
 - is often used to reduce the number of features or dimensions in a dataset.
 - The singular values obtained from the decomposition can be used to identify the most important components or features, and the corresponding vectors can be used to transform the data into a lower-dimensional space.
@@ -205,7 +210,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - **Collaborative Filtering**
   - **Latent Semantic Analysis (LSA)**
     
-### Q13- PCA Versus SVD? 
+### Q20- PCA Versus SVD? 
 - PCA is a specific method for dimensionality reduction and data analysis, SVD is a more general matrix decomposition technique.
 - PCA can be viewed as a special case of SVD when applied to the covariance matrix of the data.
 - Both techniques have their applications and are widely used in various fields, often complementing each other in data analysis and modeling.
@@ -215,7 +220,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - PCA typically involves centering the data (subtracting the mean) before computing the covariance matrix. SVD can be applied directly to the original data matrix without the need for centering.
   - PCA Commonly used for dimensionality reduction, data visualization, and noise reduction. SVD Applied in a broader range of applications, including matrix inversion, image compression, collaborative filtering, and solving linear least squares problems.
 
-### Q14- What does Independent Component Analysis (ICA) mean ? 
+### Q21- What does Independent Component Analysis (ICA) mean ? 
 - ICA is a computational technique used in signal processing and data analysis.
 - It aims to separate a multivariate signal into additive, independent components, with the assumption that the original signals are statistically independent and non-Gaussian.
 - Here's a breakdown of key concepts related to Independent Component Analysis:
@@ -240,7 +245,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
   
-### Q15- How to measure non-Gaussianity in ICA? 
+### Q22- How to measure non-Gaussianity in ICA? 
 
 ICA aims to break down a multivariate signal into independent components. It relies on the assumption that observed data stems from independent sources, and it's essential that these sources exhibit non-Gaussian behavior. This non-Gaussianity enables ICA to effectively discern and isolate the independent components.
 
@@ -254,7 +259,7 @@ Non-Gaussianity in Independent Component Analysis (ICA) can be measured using va
 
 These measures and tests provide insights into the departure of the data distribution from a Gaussian distribution, which is essential for successful ICA decomposition.
 
-### Q16- Fast-ICA versus ICA ?
+### Q23- Fast-ICA versus ICA ?
 
 Fast Independent Component Analysis (Fast-ICA) and Independent Component Analysis (ICA) are both techniques used for separating mixed signals into statistically independent components.
 Here's a comparison between the two:
