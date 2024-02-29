@@ -235,7 +235,10 @@ Effective EDA aims to perform more targeted and informed analyses, leading to be
     - **Skewness < 0 :** left (or negative) skewness. It means the tail on the left side is longer or fatter than the right side, and the majority of the data points are concentrated on the right side.
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
-<img src="images/Skewness.png" width="400">
+<img src="images/Skewness.png" width="500">
+- If we have a positively skewed distribution:  Mode < Median < Mean 
+- If we have a left-skewed distribution: Mean < Median < Mode 
+
     
 **Kurtosis:**
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
