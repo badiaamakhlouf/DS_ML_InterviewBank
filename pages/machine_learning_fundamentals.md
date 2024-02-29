@@ -315,7 +315,16 @@ Here are some common validation techniques:
     - Testing: 10-15% of the data
 - This split aims to ensure that the model is trained on a sufficiently large dataset, validated on a separate set to fine-tune parameters, and tested on a completely independent set to provide an unbiased evaluation of its performance.
 
-#### Q9- What is K-Fold Cross-Validation?
+### Q9- Is it always necessary to use an 80% of my data for training and 20% for testing?
+- No, it is not necessary!
+- The choice of data split depends on various factors :
+    - The Dataset size
+    - The Model complexity
+    - The problem/the situation
+- 80:20 ratio is commonly used
+- **Example:** if my total data size is 50,000 samples then only 1000 or maybe 2000 rows of data is enough to evaluate the model’s performance.
+
+### Q10- What is K-Fold Cross-Validation?
 - It is a technique used to assess the performance and generalization ability of a model. 
 - The input dataset will be divided into k equally sized folds/groups.
 - (K-1) folds are used for training and one fold is used for testing. Then, we evaluate the model. 
@@ -331,7 +340,7 @@ Here are some common validation techniques:
 - A higher K value can result in a more reliable performance estimate but may increase computational costs.
 - K-fold is very helpful to limit issues related to the variability of a single train-test split.==> It provides a more robust evaluation of a model's performance by ensuring that every data point is used for testing exactly once.
   
- #### Q10- What is Stratified K-Fold Cross-Validation? 
+ ### Q11- What is Stratified K-Fold Cross-Validation? 
 - It is an extension of K-Fold Cross-Validation that ensures the distribution of the target variable's classes is approximately the same in each fold as it is in the entire dataset.
 - In case of imbalanced datasets, this technique is prefered because some classes may be underrepresented.
 - It helps in addressing issues related to  overrepresented or underrepresented classes in specific folds, which could lead to biased model evaluations.
@@ -340,7 +349,7 @@ Here are some common validation techniques:
     - Model Training and Evaluation: the same K-fold cross-validation, steps repeated K times
     - Average Performance : the average performance is calculated at the end of all K iterations to provide a robust performance estimate.
     
-#### Q11- What is Leave-One-Out Cross-Validation (LOOCV)?
+### Q12- What is Leave-One-Out Cross-Validation (LOOCV)?
 - It is a specific case of k-fold cross-validation where the number of folds (K) is set equal to the number of data points in the dataset. 
 - Each iteration one point is dedicated to testing while the remaining samples are dedicated for training
 - The same as k-fold, we calculate the performance metric for each iteration then we evaluate the average.
@@ -351,7 +360,7 @@ Here are some common validation techniques:
     - It is computationally expensive, especially for large datasets, as we are going to create a model for each sample.
     - It is preferably to be used with only small datasets.
       
-#### Q12- What is Holdout Validation ?
+### Q13- What is Holdout Validation ?
 - It is known as a train-test split. 
 - The input dataset will be divided into two subsets: a training set (70-80%) and a testing set (20-30%).
 - The exact split ratio depends on factors such as the size of the dataset and the nature of the machine learning task.
@@ -361,13 +370,13 @@ Here are some common validation techniques:
 - This technique could be not too reliable as the model performance can be influenced by the specific random split of data into training and testing sets. 
 - To address this variability, multiple iterations of the holdout process can be performed, and the results can be averaged.
 
-#### Q13- What does bias term mean?
+### Q14- What does bias term mean?
 - In the context of machine learning, the term "bias" can refer to two different concepts:
     - Data bias
     - bias in the context of bias-variance tradeoff
     - And bias term in the context of linear models. 
     
-#### Q13. 1-  What does data bias mean?
+### Q15-  What does data bias mean?
 - It is when the available data used in the training phase is not representative of the real-world population or phenomen of study.
 - It refers to the presence of systematic errors or inaccuracies in a dataset that can lead to unfair, unrepresentative, or skewed results when analyzing or modeling the data.
 - The existence of biased data can lead to undesired and often unfair outcomes (discriminatory results) when the model is applied to testing data because the model will learn these biases too. 
@@ -384,7 +393,7 @@ Here are some common validation techniques:
 **Note:**
     - Addressing data bias is an ongoing challenge in the field of machine learning, and researchers and practitioners are actively working to develop methods and tools to identify, measure, and mitigate bias in models.
     
-#### Q13. 2- What does Bias-variance trade off mean?
+### Q16- What does Bias-variance trade off mean?
 - It is a fundamental concept in machine learning that involves finding the right balance between two sources of error, namely bias and variance, when building predictive models.
 - The tradeoff arises because decreasing bias often increases variance, and vice versa. 
 - Key points about the bias-variance tradeoff: 
@@ -395,11 +404,11 @@ Here are some common validation techniques:
 <img src="images/bias_variance_tradeoff.jpeg" width="300"/>
 </div>
 
-#### Q13. 3- How to find the right balance between variance and bias?
+### Q17- How to find the right balance between variance and bias?
 - Cross-validation techniques, such as k-fold cross-validation, can be used to estimate a model's bias and variance and guide the selection of an appropriate model complexity.
 - Techniques like regularization can be employed to penalize overly complex models, helping to mitigate overfitting and find a better bias-variance tradeoff.
 
-####  Q13. 4- What is Bias-Variance Decomposition? 
+### Q18- What is Bias-Variance Decomposition? 
 - It is a mathematical expression that breaks down the mean squared error (MSE) of a predictive model into three components: bias squared, variance, and irreducible error. 
 - Formula : $$MSE=Bias^2 +Variance+Irreducible Error$$
 - Irreducible error is the inherent noise or randomness in the data that cannot be reduced by any model. It represents the minimum achievable error, even with a perfect model.
@@ -409,7 +418,7 @@ Here are some common validation techniques:
 **Note:**
 - Balancing bias and variance is a central challenge in machine learning, and understanding this tradeoff is essential for model selection, training, and evaluation. 
     
-#### Q13. 5- How to mitigate Bias in ML?      
+### Q19- How to mitigate Bias in ML?      
 - To mitigate bias it's crucial to accomplish well studied steps:
     - Collecting diverse and representative data.
     - Implement ethical data collection practices.
@@ -417,7 +426,7 @@ Here are some common validation techniques:
     - Regularly checking model predictions to ensure fairness and to detect and rectify biases in the model predictions.
     - Develop and use algorithms that are designed to be aware of and mitigate biases : `Fairness-aware Algorithms`
       
-#### Q14- What is bias term in the context of linear models? 
+### Q20- What is bias term in the context of linear models? 
 - Also, it is known as the intercept or constant term.
 - It is a constant value added to the linear combination of input features.
 - In simple linear regression model:
@@ -437,7 +446,7 @@ Here are some common validation techniques:
         - b: is the bias term vector.
 - Bias term provides flexibility and allows the model to make predictions ( even when all input features are zero) that are not strictly dependent on the input features alone.
   
-#### Q15- What does hyperparameter mean?
+### Q21- What does hyperparameter mean?
 - Hyperparameters are external configuration settings that are not learned from the data but are set before the training process begins.
 - These settings influence the learning process and the overall behavior of the model.
 - Examples of hyperparameters :
@@ -449,7 +458,7 @@ Here are some common validation techniques:
 - The choice of hyperparameters, which is called hyperparameter tuning can influence the performance of a machine learning model. 
 - It is crucial to find the optimal values and achieve the best possible predictive performance.
   
-#### Q16-  What is the difference between a parameter and an hyperparameter?
+### Q22-  What is the difference between a parameter and an hyperparameter?
 - Each machine learning model has : 
     - Parameters
     - Hyperparameters
@@ -486,7 +495,7 @@ Here are some common validation techniques:
 - Adjusting parameters improves the model's fit to the training data, while selecting appropriate hyperparameter values affects the model's overall behavior and generalization performance.
 - Understanding the distinction between parameters and hyperparameters is crucial for effectively building and optimizing machine learning models.
           
-#### Q17 - What does Hyperparameters tuning mean?
+### Q23 - What does Hyperparameters tuning mean?
 - It is called hyperparameter optimization or model selection.
 - It corresponds to finding the best set of hyperparameters for a machine learning model.
 - Here are common steps of Hyperparameter tuning :
@@ -504,7 +513,7 @@ Here are some common validation techniques:
 - Hyperparameter tuning is essential for improving the generalization performance of a machine learning model.
 - It helps to avoid overfitting and ensures that the model is well-configured to handle new, unseen data effectively.
 
-#### Q17. 1- What is Grid Search? 
+### Q24- What is Grid Search? 
 
 - Performed using `GridSearchCV` of `scikit-learn`.
 - It consists on performing an exhaustive search for selecting a model using a predefined hyperparameter grid.
@@ -514,7 +523,7 @@ Here are some common validation techniques:
 - It is deep as it guarantees that every combination is evaluated.
 - However, it is computationally intensive especially when dealing with a large number of hyperparameters or a broad range of values.
     
-#### Q17. 2- What is Random search?
+### Q25- What is Random search?
     
 - Set up a grid of hyperparameter values and selects random combinations to train the model and score.  
 - Method: Random search randomly samples a specified number of hyperparameter combinations from the defined search space.
@@ -522,7 +531,7 @@ Here are some common validation techniques:
 - Search Space: The search space is defined similarly to grid search but does not require discretization; it can handle continuous and discrete hyperparameters.
 - Computational Efficiency: Random search is often more computationally efficient than grid search because it does not exhaustively evaluate every combination.    
     
-#### Q17. 3- How to choose between Random Search and Grid Search  ?
+### Q26- How to choose between Random Search and Grid Search  ?
 
 - Choosing between Random Search and Grid Search for hyperparameter tuning depends on:
     - The specific characteristics of the machine learning model
@@ -549,7 +558,7 @@ Here are some common validation techniques:
 - It is preferred to use cross-validation to evaluate the performance of different hyperparameter combinations and avoid overfitting to the training data.
 - For complex models or large datasets, Random Search is often preferred. For simpler models or smaller datasets, Grid Search may be feasible.
 
-#### Q18- What is the difference between paramter tuning, hyperparamter tuning and fine tuning?
+### Q27- What is the difference between paramter tuning, hyperparamter tuning and fine tuning?
 - In the context of optimization:
     - Parameter tuning: involves finding the optimal values for the internal variables
     - hyperparameter tuning: involves finding the best configuration for external settings.
@@ -565,7 +574,7 @@ Here are some common validation techniques:
 - Fine-tuning can have a broader interpretation, including adjusting pre-trained models or making small adjustments to algorithms for better alignment with specific tasks or datasets.
 - Fine-tuning may involve parameter tuning, but it can encompass a more comprehensive process of model adaptation or algorithm customization.
 
-#### Q19- What is the difference between Type I error and Type II error ?
+### Q28- What is the difference between Type I error and Type II error ?
 - Type I error (False Positive):
     - Occurs when the null hypothesis is true and we incorrectly reject it
     - It represents the situation of False positive, where the test incorrectly concludes that there is an effect or difference when, in reality, there is none.
@@ -579,7 +588,7 @@ Here are some common validation techniques:
     - 1−β represents the probability of correctly rejecting a false null hypothesis.
     - Example: Failing to conclude that a new drug is effective when it actually has a positive effect.
       
-#### Q20- What is Data leakage ? 
+### Q29- What is Data leakage ? 
 - It refers to the situation where information from outside the training dataset is used to create a model. 
 - The training data contains Information about the target but similar data will not be available when the model is used for testing.
 - Data leakage can significantly impact the generalization ability of the model:
@@ -589,7 +598,7 @@ Here are some common validation techniques:
     - **Train-Test Contamination**
     - **Target Leakage**
 
-#### Q20. 1- What is Train-Test Contamination?
+### Q30- What is Train-Test Contamination?
 
 - This type of leakage occurs when information from the test set or validation set( any data that the model should not have access to during training) inadvertently influences the model training process.
 - For example, if you preprocess the entire dataset (including the test set) before splitting it into training and testing sets, and your preprocessing involves calculations or transformations based on information that should only be available in the future, then you have introduced data leakage.
@@ -600,14 +609,14 @@ Here are some common validation techniques:
     - It is better to use Scikit-learn pipelines
 - It is recommended to split training and validation sets carefully so we can prevent Train-Test Contamination and pipelines can help implement this seperation
 
-#### Q20. 2- What is Target Leakage?
+### Q31- What is Target Leakage?
 
 - It happens when predictors include data that will not be available at the time you make predictions.
 - It often happens when we work with timing or chronological order (time series data)
 - For instance, if you use information in the training set that is derived from the target variable (the variable you are trying to predict) but would not be known at the time of prediction, it can lead to a model that performs well on the training data but poorly on new, unseen data.
 - Example : detection the existence of pneumonia, feature "took anti-biotic" does not help because it comes after gotting the disease.==> All not usuable variables, those which were created after the Target parameter should be excluded.
 
-#### Q20. 3- How to avoid data leakage? 
+### Q32- How to avoid data leakage? 
 - Preventing data leakage is crucial for building reliable and generalizable machine learning models.
 - To avoid data leakage, it's important to:
     - Strictly separate training and testing data
