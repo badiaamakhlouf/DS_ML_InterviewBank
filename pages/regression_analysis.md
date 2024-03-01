@@ -339,8 +339,8 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
 - It is highly parallelizable since each base model can be trained independently on a separate bootstrap sample
 - Bagging is widely used in various machine learning applications, including classification, regression, and anomaly detection, to improve predictive performance and generalization ability.
 - Bagging can be used for :
- - Classification 
- - Regression
+  - Classification 
+  - Regression
    
 ### Q30- How Bagging algorithm works?
 - Bagging starts by creating multiple bootstrap samples (Bootstrapping) from the original training data.
@@ -349,8 +349,8 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
 - Then, a machine learning algorithm is applied to each of these subsets. 
 - After training each single model, bagging combines predictions from all models using an aggregation method.
 - The aggregation method changes based on the task and the problem: 
-  - For classification tasks, the most common aggregation method is to use a majority voting scheme.
-  - For regression tasks, the predictions of base models are typically averaged to obtain the final prediction. This means adding up the predictions from all the models and dividing by the total number of models to get the average prediction.
+    - For classification tasks, the most common aggregation method is to use a majority voting scheme.
+    - For regression tasks, the predictions of base models are typically averaged to obtain the final prediction. This means adding up the predictions from all the models and dividing by the total number of models to get the average prediction.
 <img src="images/bootstrap.png" width="500"> 
 
 *source:https://www.researchgate.net/publication/322179244_Data_Mining_Accuracy_and_Error_Measures_for_Classification_and_Prediction      
@@ -364,36 +364,35 @@ Here is the list :
 ### Q32- How Random Forest works? 
 - It is a specific ensemble learning technique that combines multiple decision trees trained on random subsets of the data and features.
 - It can be used for both :
- - Classification 
- - Regression
+   - Classification 
+   - Regression
 - It works as follow:
- - **Bootstrapping:** Randomly sample the dataset **with replacement** to create multiple subsets. Random Subset Selection. 
- - **Feature Selection:** Randomly select a subset of features for each subset. They are consider when splitting a node in the decision tree. 
- - **Tree Building:** Build a decision tree for each subset using the selected features. Multiple trees are built.
- - **Final Prediction:** Aggregate the predictions of all trees to make the final prediction:
-  - Classification:using voting
-  - Regression: compute the average.
+   - **Bootstrapping:** Randomly sample the dataset **with replacement** to create multiple subsets. Random Subset Selection. 
+   - **Feature Selection:** Randomly select a subset of features for each subset. They are consider when splitting a node in the decision tree. 
+   - **Tree Building:** Build a decision tree for each subset using the selected features. Multiple trees are built.
+   - **Final Prediction:** Aggregate the predictions of all trees to make the final prediction:
+      - Classification:using voting
+      - Regression: compute the average.
  
 ### Q33- What are the advantages and the disadvantages of Random Forest?
 - **Advantages:**
-  - Randomness and diversity Introduction
-  - Reducing correlation among the trees in the forest. 
-  - High Accuracy
-  - Robustness to Overfitting
-  - Ability to Handle Large Datasets
-  - Implicit Feature Selection
-  
+    - Randomness and diversity Introduction
+    - Reducing correlation among the trees in the forest. 
+    - High Accuracy
+    - Robustness to Overfitting
+    - Ability to Handle Large Datasets
+    - Implicit Feature Selection
 - **Disadvantages:** 
-  - Less interpretable compared to simpler models.
-  - Can overfit noisy data.
-  - Requires careful tuning of hyperparameters.
+    - Less interpretable compared to simpler models.
+    - Can overfit noisy data.
+    - Requires careful tuning of hyperparameters.
 
 ### Q34-What are some of the hyperparameters of the random forest regressor which help to avoid overfitting?
 - The key hyperparameters of a Random Forest include:
-  - max_depth: Limits the depth of each tree to prevent overfitting.
-  - n_estimators: Determines the number of decision trees in the forest.
-  - min_samples_split: Specifies the minimum number of samples required for a node to split.
-  - max_leaf_nodes: Controls node splitting and helps restrict the model's depth.
+    - max_depth: Limits the depth of each tree to prevent overfitting.
+    - n_estimators: Determines the number of decision trees in the forest.
+    - min_samples_split: Specifies the minimum number of samples required for a node to split.
+    - max_leaf_nodes: Controls node splitting and helps restrict the model's depth.
     
 ### Q35- What does Boosting Ensemble Learning mean?
 - It is an ensemble learning technique that combines multiple weak learners to create a strong learner.
@@ -402,10 +401,10 @@ Here is the list :
 - weak learner means a simple model
 - Boosting algorithms are widely used in both classification and regression tasks and are known for their ability to achieve high accuracy and generalization performance.
 - Here is some examples of boosting techniques:
- - Adaptive Boosting: AdaBoost
- - Gradient Boosting 
- - Extreme Gradient Boosting: XGBoost
- - Light Gradient Boosting Machine: LightGBM
+   - Adaptive Boosting: AdaBoost
+   - Gradient Boosting 
+   - Extreme Gradient Boosting: XGBoost
+   - Light Gradient Boosting Machine: LightGBM
 - Each boosting algorithm has its own variations and enhancements
 
 ### Q36- How Boosting techniques works in Regression?
@@ -422,45 +421,43 @@ Here is the list :
 - Loss function measures the difference between predicted and actual values such as MSE
 - It uses a gradient descent algorithm to optimization (minimise) the loss fucntion.
 - Here is more details how it works :
- - The first weak learner in the gradient boosting algorithm will not be trained on the dataset.
- - It will predict the average of the relevant column.
- - Then, subsequent learners focus on minimizing the errors (residuals) made by the previous ones.
- - Each learner is trained to predict the residuals of the ensemble so far.
- - This process continues until the residuals become almost zero.
+   - The first weak learner in the gradient boosting algorithm will not be trained on the dataset.
+   - It will predict the average of the relevant column.
+   - Then, subsequent learners focus on minimizing the errors (residuals) made by the previous ones.
+   - Each learner is trained to predict the residuals of the ensemble so far.
+   - This process continues until the residuals become almost zero.
  
 ### Q38- Advantages Vs disadvantages of Gradient Boosting
 - **Advantages:**
- - Excellent predictive accuracy, often outperforming other algorithms.
- - Handles mixed data types (numeric, categorical) well.
- - Automatically handles missing data.
-
+   - Excellent predictive accuracy, often outperforming other algorithms.
+   - Handles mixed data types (numeric, categorical) well.
+   - Automatically handles missing data.
 - **Disadvantages:**
- - Prone to overfitting if not properly tuned.
- - Can be computationally expensive and time-consuming.
- - Requires careful hyperparameter tuning.
+   - Prone to overfitting if not properly tuned.
+   - Can be computationally expensive and time-consuming.
+   - Requires careful hyperparameter tuning.
 
 ### Q39- How AdaBoost works?
 - Short for Adaptive Boosting
 - Here how it works: 
- - Initially, all data points  is assigned an equal weight.
- - After training the first weak learner (usually decision tree), AdaBoost increases the importance of larger errors (regression) points.
- - This makes them more influential in training subsequent weak learners, which focus more on correcting these mistakes.
- - This iterative process continues until a perfect model is achieved.
- - In the end, AdaBoost combines the predictions of all weak learners using weighted averaging to make the final prediction.
+   - Initially, all data points  is assigned an equal weight.
+   - After training the first weak learner (usually decision tree), AdaBoost increases the importance of larger errors (regression) points.
+   - This makes them more influential in training subsequent weak learners, which focus more on correcting these mistakes.
+   - This iterative process continues until a perfect model is achieved.
+   - In the end, AdaBoost combines the predictions of all weak learners using weighted averaging to make the final prediction.
  
 ### Q40- Advantages Vs disadvantages of AdaBoost
 - **Advantages:**
- - Versatile: works well with various types of data and base learners.
- - High Accuracy
- - Implicit Feature Selection: identifies important features through weighting.
- - Generalization: tends to generalize well and avoid overfitting.
- - Robustness: less affected by noisy data and outliers.
- 
-- **Disadvantages:
- - Computational Cost: Requires more resources and time due to iterations.
- - Base Learner Dependency: performance relies heavily on base learner quality.
- - Data Requirements: needs sufficient data to avoid overfitting.
- - Imbalanced Classes: struggles with imbalanced class distributions.
+   - Versatile: works well with various types of data and base learners.
+   - High Accuracy
+   - Implicit Feature Selection: identifies important features through weighting.
+   - Generalization: tends to generalize well and avoid overfitting.
+   - Robustness: less affected by noisy data and outliers.
+- **Disadvantages:**
+   - Computational Cost: Requires more resources and time due to iterations.
+   - Base Learner Dependency: performance relies heavily on base learner quality.
+   - Data Requirements: needs sufficient data to avoid overfitting.
+   - Imbalanced Classes: struggles with imbalanced class distributions.
 
 ### Q41- How XGBoost works?
 - The full name of the XGBoost algorithm is the eXtreme Gradient Boosting.
@@ -470,17 +467,16 @@ Here is the list :
 
 ### Q42- Advantages Vs disadvantages of XGBoost
 - **Advantages:**
-  - Superior performance and scalability due to parallel processing.
-  - Handles missing data efficiently.
-  - Regularization techniques prevent overfitting.
-  - Supports both classification and regression tasks.
-  - Feature importance ranking aids in interpretability: identify which features have the most significant impact on the model's output.
-
+    - Superior performance and scalability due to parallel processing.
+    - Handles missing data efficiently.
+    - Regularization techniques prevent overfitting.
+    - Supports both classification and regression tasks.
+    - Feature importance ranking aids in interpretability: identify which features have the most significant impact on the model's output.
 - **Disadvantages:**
-  - More complex and computationally intensive compared to simpler algorithms.
-  - Requires careful tuning of hyperparameters.
-  - Prone to overfitting with large datasets if not properly regularized.
-  - May struggle with highly imbalanced datasets.
+    - More complex and computationally intensive compared to simpler algorithms.
+    - Requires careful tuning of hyperparameters.
+    - Prone to overfitting with large datasets if not properly regularized.
+    - May struggle with highly imbalanced datasets.
 
 ### Q43- How LightGBM works?
 - The full name Light Gradient Boosting Machine
@@ -490,30 +486,29 @@ Here is the list :
 - It prioritize leaves that minimize loss, resulting in faster convergence compared to traditional depth-wise growth.
 - This approach ensures faster training and improved accuracy.
 - It employs two techniques to mitigate overfitting and improve training speed:
-  - **Gradient-based One-Side Sampling (GOSS):** selects data instances based on gradients
-  - **Exclusive Feature Bundling (EFB):** bundles less significant features together, reducing the feature set during training.
+    - **Gradient-based One-Side Sampling (GOSS):** selects data instances based on gradients
+    - **Exclusive Feature Bundling (EFB):** bundles less significant features together, reducing the feature set during training.
 
 ### Q44- Advantages Vs disadvantages of LightGBM
 - **Advantages:**
-  - Efficient: fast and memory-friendly.
-  - High predictive performance /accuracy.
-  - Flexible: works well with various data types.
-  - Supports parallel and distributed training.
-  - Feature importance.
-
+   - Efficient: fast and memory-friendly.
+   - High predictive performance /accuracy.
+   - Flexible: works well with various data types.
+   - Supports parallel and distributed training.
+   - Feature importance.
 - **Disadvantages:**
-  - Complexity: configuring LightGBM parameters may require some expertise..
-  - Overfitting: risk if not tuned properly.
-  - Black-box: the model's inner workings may be less interpretable compared to simpler models like linear regression..
-  - Preprocessing: requires careful data preparation.
-  - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
+   - Complexity: configuring LightGBM parameters may require some expertise..
+   - Overfitting: risk if not tuned properly.
+   - Black-box: the model's inner workings may be less interpretable compared to simpler models like linear regression..
+   - Preprocessing: requires careful data preparation.
+   - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
 
 ### Q45-  How can we use CatBoost to resolve classification problem?
 - It is a powerful gradient boosting algorithm
 - Specifically, it is designed for handling categorical features in machine learning tasks
 - It can be used for both tasks:
- - Classification
- - Regression 
+  - Classification
+  - Regression 
 - The full name is Categorical Boosting
 - It automatically handles categorical variables without requiring preprocessing like one-hot encoding.
 - It uses an efficient algorithm to convert categorical features into numerical representations during training.
@@ -524,28 +519,26 @@ Here is the list :
 
 ### Q46- Advantages Vs disadvantages of CatBoost
 - **Advantages:**
-  - Handles categorical features automatically without preprocessing.
-  - Robust to overfitting due to built-in regularization techniques.
-  - Efficient training speed, especially for large datasets.
-  - Superior performance compared to other gradient boosting libraries.
-  - Supports both classification and regression tasks.
-
+    - Handles categorical features automatically without preprocessing.
+    - Robust to overfitting due to built-in regularization techniques.
+    - Efficient training speed, especially for large datasets.
+    - Superior performance compared to other gradient boosting libraries.
+    - Supports both classification and regression tasks.
 - **Disadvantages:**
-  - Requires more memory during training compared to some other algorithms.
-  - Limited interpretability of models compared to simpler algorithms like decision trees.
-  - May require parameter tuning to achieve optimal performance.
+    - Requires more memory during training compared to some other algorithms.
+    - Limited interpretability of models compared to simpler algorithms like decision trees.
+    - May require parameter tuning to achieve optimal performance.
 
-  ### Q47- Advantages  Vs Disadvantages of Boosting 
+### Q47- Advantages  Vs Disadvantages of Boosting 
 - **Advantages:**
-  - Improved Accuracy
-  - Robustness to Overfitting 
-  - Better handling of imbalanced data: by focusing more on the data points that are misclassified 
-  - Better Interpretability : by breaking the model decision process into multiple processes.  
-
+    - Improved Accuracy
+    - Robustness to Overfitting 
+    - Better handling of imbalanced data: by focusing more on the data points that are misclassified 
+    - Better Interpretability : by breaking the model decision process into multiple processes.  
 - **Disadvantages:** 
-  - Vulnerability to the outliers 
-  - It is difficult to use for Real-Time applications.
-  - It is computationally expensive for large datasets
+    - Vulnerability to the outliers 
+    - It is difficult to use for Real-Time applications.
+    - It is computationally expensive for large datasets
 
 ### Q48- Boosting vs Bagging 
 Boosting and bagging are both ensemble learning techniques used to improve model performance.
@@ -556,9 +549,9 @@ Boosting and bagging are both ensemble learning techniques used to improve model
 - It is known as averaging methods or simple averaging. 
 - It involves combining predictions from multiple models by averaging them, which can help reduce overfitting and improve generalization.
 - Here are the main three steps :
-  - Multiple base models are trained independently on the training data.
-  - Each base model makes predictions on unseen data.
-  - The predictions of all base models are combined by taking the average (or weighted average) to obtain the final prediction.
+    - Multiple base models are trained independently on the training data.
+    - Each base model makes predictions on unseen data.
+    - The predictions of all base models are combined by taking the average (or weighted average) to obtain the final prediction.
 - It can be applied to various types of models, including decision trees, neural networks, and linear models etc.
 ### Q50- What does Stacking Ensemble Learning mean?
 - It is known as stacked generalization or stacked ensemble. 
@@ -574,17 +567,17 @@ Boosting and bagging are both ensemble learning techniques used to improve model
 ### Q51- What is Lasso Regression and how it works?
 - It is short for Least Absolute Shrinkage and Selection Operator.
 - It is a linear regression technique used for: 
- - Feature selection
- - L1 regularization : used over regression methods for a more accurate prediction.
+   - Feature selection
+   - L1 regularization : used over regression methods for a more accurate prediction.
 - It consists on adding a penalty term to the objective function, which is ordinary least squares (OLS). 
 - This penalty term penalizes the absolute values of the coefficients of the regression variables.
 - Here is the formula of Lasso Regression objective function : $$ RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
 - Where :
- - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
- - λ is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+   - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+   - λ is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
 - It works as follow : 
- - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
- - It encourages sparsity in the model which involves selecting only the most important features while setting the coefficients of less important features to zero.
+   - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
+   - It encourages sparsity in the model which involves selecting only the most important features while setting the coefficients of less important features to zero.
  
 **Notes:**
 - Lasso and Ridge regression are most used when dataset has high number of features.
@@ -602,8 +595,8 @@ Boosting and bagging are both ensemble learning techniques used to improve model
 - It penalizes the square of the coefficients of the regression variables by adding a penalty term to the ordinary least squares (OLS) objective function.
 - Here is the formula of Ridge Regression objective function : $$RSS + λ * (sum\ of\ the\ squares\ of\ the\ coefficients)$$
 - Where : 
- - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
- - λ (lambda) is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+  - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+  - λ (lambda) is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
 - It works by shrinking the coefficients of less important features towards zero. 
 - However, unlike Lasso Regression, it does not set coefficients exactly to zero.
 - Instead, it shrinks them towards zero while still keeping them in the model.
@@ -624,11 +617,11 @@ Ridge Regression penalizes coefficients based on their squares, while Lasso Regr
 ### Q56- How to choose the right Shrinkage coefficient for Lasso and Ridge?
 - It is important to choose the right shrinkage coefficient (know as regularization parameter or penalty parameter).
 - By leveraging the next approaches, you can systematically select the shrinkage coefficient that optimizes the trade-off between model complexity and performance: 
- - **Cross-Validation:** use cross-validation to assess model performance with various shrinkage coefficients.
- - **Grid Search:** perform a grid search to test different values of the coefficient and selecting the one that yields the best performance metrics. 
- - **Regularization Path:** plot the regularization path to visualize how feature coefficients change with varying shrinkage coefficients.
- - **Information Criteria:** use AIC or BIC to compare models with different shrinkage coefficients. They penalize model complexity and aid in selecting the best balance between fit and complexity.
- - **Domain Knowledge:** any prior knowledge or domain expertise that may inform the choice of the shrinkage coefficient. For example, in case of Lasso regression,  if you know that certain features are likely to be more important than others, you may want to use a higher shrinkage coefficient to encourage sparsity in the coefficients.
+   - **Cross-Validation:** use cross-validation to assess model performance with various shrinkage coefficients.
+   - **Grid Search:** perform a grid search to test different values of the coefficient and selecting the one that yields the best performance metrics. 
+   - **Regularization Path:** plot the regularization path to visualize how feature coefficients change with varying shrinkage coefficients.
+   - **Information Criteria:** use AIC or BIC to compare models with different shrinkage coefficients. They penalize model complexity and aid in selecting the best balance between fit and complexity.
+   - **Domain Knowledge:** any prior knowledge or domain expertise that may inform the choice of the shrinkage coefficient. For example, in case of Lasso regression,  if you know that certain features are likely to be more important than others, you may want to use a higher shrinkage coefficient to encourage sparsity in the coefficients.
  
 **Notes:**
 - AIC : Akaike Information Criterion
@@ -642,27 +635,27 @@ Ridge Regression penalizes coefficients based on their squares, while Lasso Regr
 - There are no limitations on the number of selected variables. 
 - Formula : $$\min_{\beta} \left( \frac{1}{N} \sum_{i=1}^{N} (y_i - X_i \beta)^2 + \lambda_1 \sum_{j=1}^{p} |\beta_j| + \lambda_2 \sum_{j=1}^{p} \beta_j^2 \right)$$
 - Where : 
-  - β represents the coefficients.
-  - $y_i$ represents the observed values.
-  - $X_i$ represents the predictor variables.
-  - N represents the number of observations.
-  - p represents the number of predictors.
-  - $λ_1$ regularization parameter controlling the strength of the L1 (Lasso).
-  - $λ_2$ regularization parameter controlling the strength of the L2 (Ridge) penalties.
+    - β represents the coefficients.
+    - $y_i$ represents the observed values.
+    - $X_i$ represents the predictor variables.
+    - N represents the number of observations.
+    - p represents the number of predictors.
+    - $λ_1$ regularization parameter controlling the strength of the L1 (Lasso).
+    - $λ_2$ regularization parameter controlling the strength of the L2 (Ridge) penalties.
 
 ### Q58- Advantages Vs Disadvantages of Elastic Net Regression
 - **Advantages:**
-  - Highly effective when dealing with datasets that have many predictors.
-  - Handles multicollinearity. Especially, when predictors are highly correlated.
-  - Feature selection
-  - Prevent overfitting
-  - Balance between Lasso and Ridge: combining their strengths to overcome their individual limitations.
-  - Greater flexibility in controlling model complexity
+    - Highly effective when dealing with datasets that have many predictors.
+    - Handles multicollinearity. Especially, when predictors are highly correlated.
+    - Feature selection
+    - Prevent overfitting
+    - Balance between Lasso and Ridge: combining their strengths to overcome their individual limitations.
+    - Greater flexibility in controlling model complexity
 - **Disadvantages :**
-  - Complexity in tuning parameters: selecting the optimal values for the mixing parameter and regularization strength can be challenging.
-  - It can suffer with double shrinkage
-  - Computational complexity: requires more computational resources, especially for large datasets.
-  - Interpretability:  more challenging to interpret the coefficients of the model compared to simple regression model
+    - Complexity in tuning parameters: selecting the optimal values for the mixing parameter and regularization strength can be challenging.
+    - It can suffer with double shrinkage
+    - Computational complexity: requires more computational resources, especially for large datasets.
+     - Interpretability:  more challenging to interpret the coefficients of the model compared to simple regression model
 
 ### Q59- What does Bayesian Regression mean? 
 - It is a type of linear regression that uses Bayesian statistics/inference to estimate the unknown parameters of a model.
@@ -687,22 +680,22 @@ Ridge Regression penalizes coefficients based on their squares, while Lasso Regr
 
 ### Q61- The advantages and disadvantages of Bayesian regression
 - **Advantages:**
-  - Effective for small datasets.
-  - Well-suited for online learning due to its real-time data processing capabilities.
-  - Robust and mathematically sound approach without requiring extensive prior knowledge.
-  - Employs skewed distributions to incorporate external information into the model.
+    - Effective for small datasets.
+    - Well-suited for online learning due to its real-time data processing capabilities.
+    - Robust and mathematically sound approach without requiring extensive prior knowledge.
+    - Employs skewed distributions to incorporate external information into the model.
 
 - **Disadvantages:**
-  - Model inference can be time-consuming.
-  - Less efficient than frequentist approaches for large datasets.
-  - Dependency on external packages can pose challenges in certain environments.
-  - Vulnerable to common modeling mistakes like linearity assumptions.
+    - Model inference can be time-consuming.
+    - Less efficient than frequentist approaches for large datasets.
+    - Dependency on external packages can pose challenges in certain environments.
+    - Vulnerable to common modeling mistakes like linearity assumptions.
 
 ### Q62- When to use Bayesian regression ?
 Bayesian regression is particularly useful in the following scenarios:
-- **Limited Data:** in case of small sample sizes, BR is a great choice for complex models
-- **Prior Knowledge:** if you have strong prior knowledge to incorporate into your model, BR offers a straightforward way to do so.
-- **Real-time Learning**
+   - **Limited Data:** in case of small sample sizes, BR is a great choice for complex models
+   - **Prior Knowledge:** if you have strong prior knowledge to incorporate into your model, BR offers a straightforward way to do so.
+   - **Real-time Learning**
 
 ### Q63 - How determine whether a predictive model is underfitting
 To determine if a predictive model is underfitting, consider these indicators:
@@ -735,15 +728,15 @@ To select the right regression model, consider these key factors:
 - Neural networks can be used to solve both regression and classification problems.
 - For regression probelms, it involves training a network to learn the mapping between input features and continuous output values.
 - Here are the steps to use a neural network for regression:
- - 1. **Data Preparation:** organize your dataset with input features and corresponding continuous output values.
- - 2. **Model Architecture:** design the neural network architecture, including the number of input nodes (features), hidden layers, and output nodes. In case of regression, we use an input layer, one or more hidden layers, and an output layer.
- - 3. **Initialization:** initialize the weights and biases of the neural network randomly or using predefined methods.
- - 4. **Forward Propagation:** pass input data through the network to compute output predictions.
- - 5. **Loss Calculation:** calculate the difference between predicted and actual output values using a loss function (e.g., mean squared error).
- - 6. **Backpropagation:** propagate the error backward through the network to update the weights and biases using optimization algorithms like gradient descent.
- - 7. **Iterative Training:** repeat steps 4-6 for multiple iterations (epochs) or until convergence, adjusting the model parameters to minimize the loss function.
- - 8. **Prediction:** once the model is trained, use it to make predictions on new data by passing input features through the trained network.
- - 9. **Evaluation:** Evaluate the performance of the model using metrics such as mean squared error, mean absolute error, or R-squared value on a separate validation or test dataset.
+   - 1. **Data Preparation:** organize your dataset with input features and corresponding continuous output values.
+   - 2. **Model Architecture:** design the neural network architecture, including the number of input nodes (features), hidden layers, and output nodes. In case of regression, we use an input layer, one or more hidden layers, and an output layer.
+   - 3. **Initialization:** initialize the weights and biases of the neural network randomly or using predefined methods.
+   - 4. **Forward Propagation:** pass input data through the network to compute output predictions.
+   - 5. **Loss Calculation:** calculate the difference between predicted and actual output values using a loss function (e.g., mean squared error).
+   - 6. **Backpropagation:** propagate the error backward through the network to update the weights and biases using optimization algorithms like gradient descent.
+   - 7. **Iterative Training:** repeat steps 4-6 for multiple iterations (epochs) or until convergence, adjusting the model parameters to minimize the loss function.
+   - 8. **Prediction:** once the model is trained, use it to make predictions on new data by passing input features through the trained network.
+   - 9. **Evaluation:** Evaluate the performance of the model using metrics such as mean squared error, mean absolute error, or R-squared value on a separate validation or test dataset.
  
 **Notes:**
 - Sometimes, it is important to fine-tune the model architecture, hyperparameters, and training process to improve performance if needed.
@@ -752,20 +745,20 @@ To select the right regression model, consider these key factors:
 ### Q67- What are the activation functions commonly used in the output layer of neural networks?
 - They help in transforming the output of the neural network into a suitable format for the specific problem domain.
 - The choice of the activation function depends on the tak: 
- - Binary Classification (Single Output Neuron): Sigmoid or Logistic function.
- - Multiclass Classification (Multiple Output Neurons): Softmax function.
- - Regression (Single Output Neuron): ReLU (Rectified Linear Unit) or no activation function (identity function).
+   - Binary Classification (Single Output Neuron): Sigmoid or Logistic function.
+   - Multiclass Classification (Multiple Output Neurons): Softmax function.
+   - Regression (Single Output Neuron): ReLU (Rectified Linear Unit) or no activation function (identity function).
 
 **Notes:**
 - Sigmoid: 
- - Formula : $σ(x) = {1 \over 1 + e^{-x}}$
- - Illustration : <img src="images/sigmoid-function.png" width="350"/>
+   - Formula : $σ(x) = {1 \over 1 + e^{-x}}$
+   - Illustration : <img src="images/sigmoid-function.png" width="350"/>
 - Softmax :
- - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
- - Illustration : <img src="images/Softmax1.png" width="350"/>
+   - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
+   - Illustration : <img src="images/Softmax1.png" width="350"/>
 - ReLU (Rectified Linear Unit):
- - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
- - Illustration : <img src="images/Relu.png" width="350"/>
+   - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
+   - Illustration : <img src="images/Relu.png" width="350"/>
 
 - ** Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid-activation-function
 - ** Source (2) : https://botpenguin.com/glossary/softmax-function
@@ -798,36 +791,36 @@ To select the right regression model, consider these key factors:
 ### Q71- What does K-Nearest Neighbors mean?
 - Simple supervised ML algorithm
 - Used for both :
- - Regression
- - Classification
+   - Regression
+   - Classification
 - For classification, the prediction for a new data point is made based on the majority class
 - For regression, the prediction for a new data point is made based on the average of the nearest K neighbors
 - K :  the number of nearest neighbors considered for making predictions.
 - It works as follow:
- - Calculating the distance between the new data point and all other data points in the training set, typically using Euclidean distance
- - Then selecting the K nearest neighbors
- - The prediction is then determined based on the majority class of the K neighbors
+   - Calculating the distance between the new data point and all other data points in the training set, typically using Euclidean distance
+   - Then selecting the K nearest neighbors
+   - The prediction is then determined based on the majority class of the K neighbors
 - It is a non-parametric and instance-based learning algorithm : no strong assumptions about the data distribution and instead relies on the local structure of the data to make predictions.
 
 ### Q72- How to select the best value for the number of neighbors (K)?
 - It is important to find optimal value that balance between bias and variance.
 - Here's a simple approach: 
- - **Cross-Validation:** split the data and for each value of K, train the KNN model on the training data and evaluate its performance on the validation data.
- - **Grid Search:** use a range of K values to test.
- - **Evaluate Performance:** evaluate each model using the appropriate evaluation metric such as accuracy (classification) or MSE (regression).
+   - **Cross-Validation:** split the data and for each value of K, train the KNN model on the training data and evaluate its performance on the validation data.
+   - **Grid Search:** use a range of K values to test.
+   - **Evaluate Performance:** evaluate each model using the appropriate evaluation metric such as accuracy (classification) or MSE (regression).
  - Choose Optimal K that gives the best performance first validation set then, test it on testing sets.
 
 ### Q73- The advantages Vs disadvantages of K-Nearest Neighbors (KNN)
 - **Advantages:**
-  - **Simple**
-  - **No Training Phase:** doesn't need training; it uses stored data for predictions based on neighbor proximity.
-  - **Non-Parametric:** does not make any assumptions about the underlying data distribution.
-  - **Versatile:** used for both classification and regression tasks
-  - **Interpretable:** predictions are easily interpreted, as they are based on the majority class or the average of neighboring points.
+    - **Simple**
+    - **No Training Phase:** doesn't need training; it uses stored data for predictions based on neighbor proximity.
+    - **Non-Parametric:** does not make any assumptions about the underlying data distribution.
+    - **Versatile:** used for both classification and regression tasks
+    - **Interpretable:** predictions are easily interpreted, as they are based on the majority class or the average of neighboring points.
 - **Disadvantages:**
-  - High computational cost during prediction :as it needs to calculate distances to all training samples
-  - Sensitivity to irrelevant features
-  - Inefficiency with high-dimensional data
+    - High computational cost during prediction :as it needs to calculate distances to all training samples
+    - Sensitivity to irrelevant features
+    - Inefficiency with high-dimensional data
     
 ###  Q74- What does Principal Component Regression mean?
 - It is a technique used in regression analysis.
