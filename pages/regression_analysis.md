@@ -36,8 +36,8 @@ Here are some well-known machine learning algorithms commonly used to solve regr
     - Simple Linear Regression : to model relationship between an independent variable (x) and a dependent variable (y).
     - Multiple Linear Regression : involves using more than one independent variable (X) to model the relationship with the dependent variable (y).
 - It can be used for both continuous and categorical dependent variables (y) and can handle multiple independent variables.
+  
 ## Q4- How Simple Linear Regression works? 
-
 - It is used to model relationship between an independent variable (x) and a dependent variable (y).
 - Example: Predicting the price of a house based on its size.
 
@@ -68,6 +68,7 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 - Where $b_0$ represents the intercept, and $b_1, b_2, ..., b_n$ represent the coefficients of the independent variables.
 - Simple linear regression involves one independent variable, while multiple linear regression involves two or more independent variables.
 - Example: Predicting the performance of a student based on their age, gender, IQ, etc.
+  
 ### Q6-  What assumptions should you consider before starting a linear regression analysis?
 Here are some important assumptions of Linear Regression: 
 
@@ -82,6 +83,7 @@ Here are some important assumptions of Linear Regression:
 - Multicollinearity involves high-correlation between the independent variables.
 - In this situation, it become difficult to find the true relationship between the predictors and target variables.
 - More precisely, it is challenging to point which predictor variable has the major influence on the target variable.
+  
 ### Q7- What are the performance metrics for Regression Analysis? 
 - Several performance metrics are commonly used to evaluate the accuracy and goodness of fit of regression models.
 - Here are some common performance metrics for regression:
@@ -94,8 +96,8 @@ Here are some important assumptions of Linear Regression:
 - It is possible to use one of the above metrics next to accuracy, precision, and the ability to explain variance.
 - Considering multiple metrics is better solution to gain a comprehensive understanding about the model performance.
 - Almost, all regression tasks uses error to evaluate the model: if error is high ==> we need either to change the model or retrain it with more data.
+  
 ### Q8- What is Mean Absolute Error (MAE) ? 
-
 - As its name indicates, it represents the average absolute difference between the predicted values and the actual values.
 - **Formula :** $$MAE = {1\over n} {\sum \limits _{i=1} ^{n}|y_{i}-\hat{y}_{i}|}$$
 
@@ -113,6 +115,7 @@ Here are some important assumptions of Linear Regression:
 - It calculates the average percentage difference between the predicted and actual values.
 - It is a relative error metric
 - **Formula:** $$MAPE={1\over n} {\sum \limits _{i=1} ^{n}({|y_{i}-\hat{y}_{i}| \over |y_{i}|})} \times 100$$
+  
 ### Q12- What is R-squared (R2)
 - Known also as the coefficient of determination.
 - It corresponds to the degree to which the variance in the dependent variable (the target, y) can be explained by the independent variables (features). 
@@ -133,6 +136,7 @@ Notes:
 - This is because MAE calculates the average absolute difference between predicted and actual values, which makes it less sensitive to extreme values or outliers. 
 - MSE and RMSE involve squaring the differences, which can amplify the impact of outliers on the overall error. 
 - Therefore, in datasets with outliers, MAE is often preferred as a more resilient metric for evaluating model performance.
+  
 ##  Decision Trees
 ### Q14- What does decision tree mean ? 
 - It is a non-parametric supervised learning algorithm. 
@@ -140,7 +144,6 @@ Notes:
 - It can be used to solve both Classification and Regression problems.
 - We build a tree with datasets broken up into smaller subsets while developing the decision tree
 - It can handle both categorical and numerical data 
-
 <img src="images/tree_structure.png" width="400"> 
 
 ### Q15- What are the types of decision tree 
@@ -165,15 +168,12 @@ Here is the list of methods:
     - It determines the best split to build an informative decision tree model.
     - High entropy means that data is heterogeneous (mixed), Low entropy means data is homogeneous and well organized.
     - Formula: $$Entropy =-{\sum p_{i} log_{2}p_{i}}$$
-    
 - **Information gain :**
     - It is criteria used to decide whether a feature should be used to split a node or not.
     - Prefered when the target variable is categorical (classification)
     - It corresponds to the mutual information betwee input attribute A and target variable Y.
     - It quantifies the effectiveness of input attribute A in classifying the data by measuring the reduction in entropy or impurity achieved by splitting the data based on that attribute.
-    - Formula : $$IG=1- Entropy$$ 
-   
-    
+    - Formula : $$IG=1- Entropy$$  
 - **Gini Impurity :**
     - It is one method to split DT nodes prefered when the target variable is categorical (Classification)
     - Formula : $$Gini Impurity =1−\sum_{i=1}^{c}(p_{i})^2$$
@@ -186,7 +186,6 @@ Here is the list of methods:
         - If value is high, the homogeneity of the node is low
         - The Gini Impurity of a pure node is zero
     - Gini Impurity is preferred to information gain because it does not contain logarithms which are computationally intensive an expensive.
-
 - **Chi-Square:**
     - Again, it is one method to split DT nodes prefered when the target variable is categorical (Classification)
     - Formula : $$Chi-Square_{class}=\sqrt{(Actual-Expected_Value)^2 \over Expected_Value}$$
@@ -195,7 +194,7 @@ Here is the list of methods:
     - Evaluation of total Chi-Square value: 
         - If it is high, the differences between parent and child nodes is high ==> high homogeneity.
         - If it is low, the differences between parent and child nodes is low ==> low homogeneity.
-          
+                  
 ### Q17- How many splits are there in a decision tree?
  - As mentioned before, the splitting criteria used by the regression tree and the classification tree are different.
  - For classification problems, if we have n classes in a decision tree, the maximum splits will be $2^{(n -1)} – 1$. 
@@ -344,7 +343,6 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
  - Regression
    
 ### Q30- How Bagging algorithm works?
-
 - Bagging starts by creating multiple bootstrap samples (Bootstrapping) from the original training data.
 - The extracted subsets with replacement have the same size as the original datasets.
 - Some data points may be repeated in each bootstrap sample, while others may be left out because bootstrap sampling involves random selection with replacement.
@@ -353,7 +351,6 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
 - The aggregation method changes based on the task and the problem: 
   - For classification tasks, the most common aggregation method is to use a majority voting scheme.
   - For regression tasks, the predictions of base models are typically averaged to obtain the final prediction. This means adding up the predictions from all the models and dividing by the total number of models to get the average prediction.
-
 <img src="images/bootstrap.png" width="500"> 
 
 *source:https://www.researchgate.net/publication/322179244_Data_Mining_Accuracy_and_Error_Measures_for_Classification_and_Prediction      
@@ -397,6 +394,7 @@ Here is the list :
   - n_estimators: Determines the number of decision trees in the forest.
   - min_samples_split: Specifies the minimum number of samples required for a node to split.
   - max_leaf_nodes: Controls node splitting and helps restrict the model's depth.
+    
 ### Q35- What does Boosting Ensemble Learning mean?
 - It is an ensemble learning technique that combines multiple weak learners to create a strong learner.
 - Boosting trains weak learners sequentially.
@@ -416,14 +414,10 @@ Here is the list :
 - The algorithm assigns higher weights to the instances where the previous models had larger errors, effectively boosting their importance in subsequent iterations.
 - This iterative process continues until a strong regression model, which combines the predictions of all weak models, is obtained.
 - Generally, it aims to enhance the accuracy and predictive power of the final regression model.
-
 <img src="images/Boosting.png" width="500"> 
-
-
 *Source: https://www.geeksforgeeks.org/boosting-in-machine-learning-boosting-and-adaboost/
 
 ### Q37- How Gradient Boosting works?
-
 - It builds an ensemble of decision trees, where each tree is trained to correct the errors of the previous ones by minimizing a loss function.
 - Loss function measures the difference between predicted and actual values such as MSE
 - It uses a gradient descent algorithm to optimization (minimise) the loss fucntion.
@@ -455,7 +449,6 @@ Here is the list :
  - In the end, AdaBoost combines the predictions of all weak learners using weighted averaging to make the final prediction.
  
 ### Q40- Advantages Vs disadvantages of AdaBoost
-
 - **Advantages:**
  - Versatile: works well with various types of data and base learners.
  - High Accuracy
@@ -470,7 +463,6 @@ Here is the list :
  - Imbalanced Classes: struggles with imbalanced class distributions.
 
 ### Q41- How XGBoost works?
-
 - The full name of the XGBoost algorithm is the eXtreme Gradient Boosting.
 - It is another boosting machine learning approach.
 - It is a regularised version of the current gradient-boosting technique. 
@@ -491,7 +483,6 @@ Here is the list :
   - May struggle with highly imbalanced datasets.
 
 ### Q43- How LightGBM works?
-
 - The full name Light Gradient Boosting Machine
 - It uses histogram-based algorithms for tree construction (ensemble learning), which groups data points into discrete bins based on feature values. 
 - This reduces memory usage and speeds up training by avoiding the need to sort data points at each split.
@@ -503,7 +494,6 @@ Here is the list :
   - **Exclusive Feature Bundling (EFB):** bundles less significant features together, reducing the feature set during training.
 
 ### Q44- Advantages Vs disadvantages of LightGBM
-
 - **Advantages:**
   - Efficient: fast and memory-friendly.
   - High predictive performance /accuracy.
@@ -605,6 +595,7 @@ Boosting and bagging are both ensemble learning techniques used to improve model
 - Very useful when dealing with high-dimensional datasets (large number of features)
 - Prevent overfitting by penalizing large coefficients
 - Gives models that are more generalizable to unseen data.
+  
 ### Q53- What is Ridge Regression and how it works?
 - It is a linear regression technique used for L2 regularization. 
 - It adds penalty equivalent to the square of the magnitude of coefficients
@@ -629,6 +620,7 @@ Boosting and bagging are both ensemble learning techniques used to improve model
 
 ### Q55- Ridge Regression Vs Lasso Regression
 Ridge Regression penalizes coefficients based on their squares, while Lasso Regression penalizes coefficients based on their absolute values, potentially selecting variables by driving some coefficients to zero.
+
 ### Q56- How to choose the right Shrinkage coefficient for Lasso and Ridge?
 - It is important to choose the right shrinkage coefficient (know as regularization parameter or penalty parameter).
 - By leveraging the next approaches, you can systematically select the shrinkage coefficient that optimizes the trade-off between model complexity and performance: 
@@ -639,7 +631,6 @@ Ridge Regression penalizes coefficients based on their squares, while Lasso Regr
  - **Domain Knowledge:** any prior knowledge or domain expertise that may inform the choice of the shrinkage coefficient. For example, in case of Lasso regression,  if you know that certain features are likely to be more important than others, you may want to use a higher shrinkage coefficient to encourage sparsity in the coefficients.
  
 **Notes:**
-
 - AIC : Akaike Information Criterion
 - BIC : Bayesian Information Criterion
 
@@ -722,7 +713,6 @@ To determine if a predictive model is underfitting, consider these indicators:
 - **Visual Inspection of Learning Curves:** Learning curves showing the model's performance on training and test data as a function of training set size can indicate underfitting if both error rates converge to a high value.
 - **Increasing Training Size Doesn't Improve Performance:** If increasing the size of the training set does not significantly improve model performance, it suggests underfitting, as the model is unable to learn from additional data.
 
-
 ### Q64 - How to determine whether a predictive model is overfitting ?
 To determine if a predictive model is overfitting, consider these indicators:
 - **High Training Accuracy, Low Test Accuracy:** If the model performs significantly better on the training data compared to unseen test data, it may be overfitting.
@@ -734,7 +724,6 @@ To determine if a predictive model is overfitting, consider these indicators:
 
 ### Q65 - Which factors do we consider while selecting Regression Model ?
 To select the right regression model, consider these key factors:
-
 - **Data Exploration:** Begin by exploring your data to understand variable relationships and impacts.
 - **Model Evaluation Metrics:** Compare models using metrics like statistical significance, R-square, Adjusted R-square, AIC, BIC, and Mallow’s Cp criterion to assess goodness of fit and potential bias.
 - **Cross-Validation:** Use cross-validation to evaluate predictive models, dividing data into training and validation sets to measure prediction accuracy.
@@ -759,7 +748,6 @@ To select the right regression model, consider these key factors:
 **Notes:**
 - Sometimes, it is important to fine-tune the model architecture, hyperparameters, and training process to improve performance if needed.
 - You can find more in-depth information about neural networks in the sections dedicated to deep learning and advanced machine learning. 
- 
 
 ### Q67- What are the activation functions commonly used in the output layer of neural networks?
 - They help in transforming the output of the neural network into a suitable format for the specific problem domain.
@@ -836,7 +824,6 @@ To select the right regression model, consider these key factors:
   - **Non-Parametric:** does not make any assumptions about the underlying data distribution.
   - **Versatile:** used for both classification and regression tasks
   - **Interpretable:** predictions are easily interpreted, as they are based on the majority class or the average of neighboring points.
-
 - **Disadvantages:**
   - High computational cost during prediction :as it needs to calculate distances to all training samples
   - Sensitivity to irrelevant features
