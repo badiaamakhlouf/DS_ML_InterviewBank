@@ -357,3 +357,289 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
 <img src="images/bootstrap.png" width="500"> 
 
 *source:https://www.researchgate.net/publication/322179244_Data_Mining_Accuracy_and_Error_Measures_for_Classification_and_Prediction      
+### Q31- Some examples of  of bagging algorithms?
+Here is the list :
+- Random Forest
+- Bagged Decision Trees
+- Bagged Support Vector Machines (Bagged SVM)
+- Bagged Neural Networks
+
+### Q32- How Random Forest works? 
+- It is a specific ensemble learning technique that combines multiple decision trees trained on random subsets of the data and features.
+- It can be used for both :
+ - Classification 
+ - Regression
+- It works as follow:
+ - **Bootstrapping:** Randomly sample the dataset **with replacement** to create multiple subsets. Random Subset Selection. 
+ - **Feature Selection:** Randomly select a subset of features for each subset. They are consider when splitting a node in the decision tree. 
+ - **Tree Building:** Build a decision tree for each subset using the selected features. Multiple trees are built.
+ - **Final Prediction:** Aggregate the predictions of all trees to make the final prediction:
+  - Classification:using voting
+  - Regression: compute the average.
+ 
+### Q33- What are the advantages and the disadvantages of Random Forest?
+- **Advantages:**
+  - Randomness and diversity Introduction
+  - Reducing correlation among the trees in the forest. 
+  - High Accuracy
+  - Robustness to Overfitting
+  - Ability to Handle Large Datasets
+  - Implicit Feature Selection
+  
+- **Disadvantages:** 
+  - Less interpretable compared to simpler models.
+  - Can overfit noisy data.
+  - Requires careful tuning of hyperparameters.
+
+### Q34-What are some of the hyperparameters of the random forest regressor which help to avoid overfitting?
+- The key hyperparameters of a Random Forest include:
+  - max_depth: Limits the depth of each tree to prevent overfitting.
+  - n_estimators: Determines the number of decision trees in the forest.
+  - min_samples_split: Specifies the minimum number of samples required for a node to split.
+  - max_leaf_nodes: Controls node splitting and helps restrict the model's depth.
+### Q35- What does Boosting Ensemble Learning mean?
+- It is an ensemble learning technique that combines multiple weak learners to create a strong learner.
+- Boosting trains weak learners sequentially.
+- Each new learner corrects the mistakes of the previous ones, enhancing the ensemble's performance over time.
+- weak learner means a simple model
+- Boosting algorithms are widely used in both classification and regression tasks and are known for their ability to achieve high accuracy and generalization performance.
+- Here is some examples of boosting techniques:
+ - Adaptive Boosting: AdaBoost
+ - Gradient Boosting 
+ - Extreme Gradient Boosting: XGBoost
+ - Light Gradient Boosting Machine: LightGBM
+- Each boosting algorithm has its own variations and enhancements
+
+### Q36- How Boosting techniques works in Regression?
+- Iteratively training a series of weak regression models to predict continuous target values.
+- Each subsequent model aims to  reduce the errors made by the previous ones.
+- The algorithm assigns higher weights to the instances where the previous models had larger errors, effectively boosting their importance in subsequent iterations.
+- This iterative process continues until a strong regression model, which combines the predictions of all weak models, is obtained.
+- Generally, it aims to enhance the accuracy and predictive power of the final regression model.
+
+<img src="images/Boosting.png" width="500"> 
+
+
+*Source: https://www.geeksforgeeks.org/boosting-in-machine-learning-boosting-and-adaboost/
+
+### Q37- How Gradient Boosting works?
+
+- It builds an ensemble of decision trees, where each tree is trained to correct the errors of the previous ones by minimizing a loss function.
+- Loss function measures the difference between predicted and actual values such as MSE
+- It uses a gradient descent algorithm to optimization (minimise) the loss fucntion.
+- Here is more details how it works :
+ - The first weak learner in the gradient boosting algorithm will not be trained on the dataset.
+ - It will predict the average of the relevant column.
+ - Then, subsequent learners focus on minimizing the errors (residuals) made by the previous ones.
+ - Each learner is trained to predict the residuals of the ensemble so far.
+ - This process continues until the residuals become almost zero.
+ 
+### Q38- Advantages Vs disadvantages of Gradient Boosting
+- **Advantages:**
+ - Excellent predictive accuracy, often outperforming other algorithms.
+ - Handles mixed data types (numeric, categorical) well.
+ - Automatically handles missing data.
+
+- **Disadvantages:**
+ - Prone to overfitting if not properly tuned.
+ - Can be computationally expensive and time-consuming.
+ - Requires careful hyperparameter tuning.
+
+### Q39- How AdaBoost works?
+- Short for Adaptive Boosting
+- Here how it works: 
+ - Initially, all data points  is assigned an equal weight.
+ - After training the first weak learner (usually decision tree), AdaBoost increases the importance of larger errors (regression) points.
+ - This makes them more influential in training subsequent weak learners, which focus more on correcting these mistakes.
+ - This iterative process continues until a perfect model is achieved.
+ - In the end, AdaBoost combines the predictions of all weak learners using weighted averaging to make the final prediction.
+ 
+### Q40- Advantages Vs disadvantages of AdaBoost
+
+- **Advantages:**
+ - Versatile: works well with various types of data and base learners.
+ - High Accuracy
+ - Implicit Feature Selection: identifies important features through weighting.
+ - Generalization: tends to generalize well and avoid overfitting.
+ - Robustness: less affected by noisy data and outliers.
+ 
+- **Disadvantages:
+ - Computational Cost: Requires more resources and time due to iterations.
+ - Base Learner Dependency: performance relies heavily on base learner quality.
+ - Data Requirements: needs sufficient data to avoid overfitting.
+ - Imbalanced Classes: struggles with imbalanced class distributions.
+
+### Q41- How XGBoost works?
+
+- The full name of the XGBoost algorithm is the eXtreme Gradient Boosting.
+- It is another boosting machine learning approach.
+- It is a regularised version of the current gradient-boosting technique. 
+- This regularisation approach makes it faster and more performant than old approach.
+
+### Q42- Advantages Vs disadvantages of XGBoost
+- **Advantages:**
+  - Superior performance and scalability due to parallel processing.
+  - Handles missing data efficiently.
+  - Regularization techniques prevent overfitting.
+  - Supports both classification and regression tasks.
+  - Feature importance ranking aids in interpretability: identify which features have the most significant impact on the model's output.
+
+- **Disadvantages:**
+  - More complex and computationally intensive compared to simpler algorithms.
+  - Requires careful tuning of hyperparameters.
+  - Prone to overfitting with large datasets if not properly regularized.
+  - May struggle with highly imbalanced datasets.
+
+### Q43- How LightGBM works?
+
+- The full name Light Gradient Boosting Machine
+- It uses histogram-based algorithms for tree construction (ensemble learning), which groups data points into discrete bins based on feature values. 
+- This reduces memory usage and speeds up training by avoiding the need to sort data points at each split.
+- It grows trees **leaf-wise** (and not depth-wise like traditional methods). 
+- It prioritize leaves that minimize loss, resulting in faster convergence compared to traditional depth-wise growth.
+- This approach ensures faster training and improved accuracy.
+- It employs two techniques to mitigate overfitting and improve training speed:
+  - **Gradient-based One-Side Sampling (GOSS):** selects data instances based on gradients
+  - **Exclusive Feature Bundling (EFB):** bundles less significant features together, reducing the feature set during training.
+
+### Q44- Advantages Vs disadvantages of LightGBM
+
+- **Advantages:**
+  - Efficient: fast and memory-friendly.
+  - High predictive performance /accuracy.
+  - Flexible: works well with various data types.
+  - Supports parallel and distributed training.
+  - Feature importance.
+
+- **Disadvantages:**
+  - Complexity: configuring LightGBM parameters may require some expertise..
+  - Overfitting: risk if not tuned properly.
+  - Black-box: the model's inner workings may be less interpretable compared to simpler models like linear regression..
+  - Preprocessing: requires careful data preparation.
+  - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
+
+### Q45-  How can we use CatBoost to resolve classification problem?
+- It is a powerful gradient boosting algorithm
+- Specifically, it is designed for handling categorical features in machine learning tasks
+- It can be used for both tasks:
+ - Classification
+ - Regression 
+- The full name is Categorical Boosting
+- It automatically handles categorical variables without requiring preprocessing like one-hot encoding.
+- It uses an efficient algorithm to convert categorical features into numerical representations during training.
+- It is based on the gradient boosting framework, where decision trees are sequentially trained to correct errors made by the previous trees.
+- It optimizes a loss function by iteratively adding new trees to the ensemble.
+- It incorporates regularization techniques to prevent overfitting, such as L2 regularization and feature permutation importance. ==> The model generalize well to unseen data.
+- It employs parallelized algorithms and advanced optimization techniques to achieve high performance. ==> faster training and inference times
+
+### Q46- Advantages Vs disadvantages of CatBoost
+- **Advantages:**
+  - Handles categorical features automatically without preprocessing.
+  - Robust to overfitting due to built-in regularization techniques.
+  - Efficient training speed, especially for large datasets.
+  - Superior performance compared to other gradient boosting libraries.
+  - Supports both classification and regression tasks.
+
+- **Disadvantages:**
+  - Requires more memory during training compared to some other algorithms.
+  - Limited interpretability of models compared to simpler algorithms like decision trees.
+  - May require parameter tuning to achieve optimal performance.
+
+  ### Q47- Advantages  Vs Disadvantages of Boosting 
+- **Advantages:**
+  - Improved Accuracy
+  - Robustness to Overfitting 
+  - Better handling of imbalanced data: by focusing more on the data points that are misclassified 
+  - Better Interpretability : by breaking the model decision process into multiple processes.  
+
+- **Disadvantages:** 
+  - Vulnerability to the outliers 
+  - It is difficult to use for Real-Time applications.
+  - It is computationally expensive for large datasets
+
+### Q48- Boosting vs Bagging 
+Boosting and bagging are both ensemble learning techniques used to improve model performance.
+- Boosting: Focuses on sequentially training weak learners, with each subsequent learner learning from the mistakes of its predecessors. This results in a strong learner with improved predictive performance. Examples include AdaBoost and Gradient Boosting.
+- Bagging: Involves training multiple weak learners independently on random subsets of the training data and combining their predictions. This helps to reduce overfitting and improve stability. Random Forest is a popular example of a bagging algorithm.
+
+### Q49- What does Averaging Ensemble Learning mean?
+- It is known as averaging methods or simple averaging. 
+- It involves combining predictions from multiple models by averaging them, which can help reduce overfitting and improve generalization.
+- Here are the main three steps :
+  - Multiple base models are trained independently on the training data.
+  - Each base model makes predictions on unseen data.
+  - The predictions of all base models are combined by taking the average (or weighted average) to obtain the final prediction.
+- It can be applied to various types of models, including decision trees, neural networks, and linear models etc.
+### Q50- What does Stacking Ensemble Learning mean?
+- It is known as stacked generalization or stacked ensemble. 
+- It is a technique where multiple diverse base models are trained independently.
+- Then, their predictions are used as input features for a meta-model, which combines these predictions to make the final prediction.
+- The process of stacking ensemble learning has the next steps:
+ - Base Models: A set of diverse base models (e.g., decision trees, support vector machines, neural networks) are trained on the training data.
+ - Predictions: Each base model makes predictions on the validation set or a holdout set of the training data.
+ - Meta-Model: The predictions from the base models are used as input features for a meta-model (e.g., logistic regression, random forest, gradient boosting). The meta-model is trained on the validation set, where the true target values are known.
+ - Final Prediction: Once the meta-model is trained, it can make predictions on unseen data by using the predictions of the base models as input features. The final prediction is typically the output of the meta-model.
+- It is a powerful technique for building robust and accurate machine learning models.
+
+### Q51- What is Lasso Regression and how it works?
+- It is short for Least Absolute Shrinkage and Selection Operator.
+- It is a linear regression technique used for: 
+ - Feature selection
+ - L1 regularization : used over regression methods for a more accurate prediction.
+- It consists on adding a penalty term to the objective function, which is ordinary least squares (OLS). 
+- This penalty term penalizes the absolute values of the coefficients of the regression variables.
+- Here is the formula of Lasso Regression objective function : $$ RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
+- Where :
+ - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+ - λ is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+- It works as follow : 
+ - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
+ - It encourages sparsity in the model which involves selecting only the most important features while setting the coefficients of less important features to zero.
+ 
+**Notes:**
+- Lasso and Ridge regression are most used when dataset has high number of features.
+- Large means can cause overfiting + Can cause computational challenges.
+ 
+### Q52- Advantages of Lasso Regression
+- The ability to perform feature selection automatically. 
+- Very useful when dealing with high-dimensional datasets (large number of features)
+- Prevent overfitting by penalizing large coefficients
+- Gives models that are more generalizable to unseen data.
+### Q53- What is Ridge Regression and how it works?
+- It is a linear regression technique used for L2 regularization. 
+- It adds penalty equivalent to the square of the magnitude of coefficients
+- It penalizes the square of the coefficients of the regression variables by adding a penalty term to the ordinary least squares (OLS) objective function.
+- Here is the formula of Ridge Regression objective function : $$RSS + λ * (sum\ of\ the\ squares\ of\ the\ coefficients)$$
+- Where : 
+ - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+ - λ (lambda) is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+- It works by shrinking the coefficients of less important features towards zero. 
+- However, unlike Lasso Regression, it does not set coefficients exactly to zero.
+- Instead, it shrinks them towards zero while still keeping them in the model.
+
+### Q54- Advantages of Ridge Regression :
+- Reducing the model complexity.
+- Improving model performance by reducing variance, especially in cases of multicollinearity.
+- Stabilizes the model and reduces sensitivity to changes in training data.
+- More robust predictions on unseen data.
+- It helps prevent overfitting in predictive models.
+
+**Notes:**
+- Multicollinearity means high correlation between predictor /input variables .
+
+### Q55- Ridge Regression Vs Lasso Regression
+Ridge Regression penalizes coefficients based on their squares, while Lasso Regression penalizes coefficients based on their absolute values, potentially selecting variables by driving some coefficients to zero.
+### Q56- How to choose the right Shrinkage coefficient for Lasso and Ridge?
+- It is important to choose the right shrinkage coefficient (know as regularization parameter or penalty parameter).
+- By leveraging the next approaches, you can systematically select the shrinkage coefficient that optimizes the trade-off between model complexity and performance: 
+ - **Cross-Validation:** use cross-validation to assess model performance with various shrinkage coefficients.
+ - **Grid Search:** perform a grid search to test different values of the coefficient and selecting the one that yields the best performance metrics. 
+ - **Regularization Path:** plot the regularization path to visualize how feature coefficients change with varying shrinkage coefficients.
+ - **Information Criteria:** use AIC or BIC to compare models with different shrinkage coefficients. They penalize model complexity and aid in selecting the best balance between fit and complexity.
+ - **Domain Knowledge:** any prior knowledge or domain expertise that may inform the choice of the shrinkage coefficient. For example, in case of Lasso regression,  if you know that certain features are likely to be more important than others, you may want to use a higher shrinkage coefficient to encourage sparsity in the coefficients.
+ 
+**Notes:**
+
+- AIC : Akaike Information Criterion
+- BIC : Bayesian Information Criterion
+ 
