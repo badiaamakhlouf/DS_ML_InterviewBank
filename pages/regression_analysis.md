@@ -763,12 +763,13 @@ To select the right regression model, consider these key factors:
 - Sigmoid: 
    - Formula : $σ(x) = {1 \over 1 + e^{-x}}$
    - Illustration :
-
    <img src="images/sigmoid-function.png" width="350"/>
+   
 - Softmax :
    - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
    - Illustration :
       <img src="images/Softmax1.png" width="350"/>
+      
 - ReLU (Rectified Linear Unit):
    - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
    - Illustration :
