@@ -54,7 +54,7 @@ Some examples of real-life applications of regression algorithms are:
 - Example: Predicting the price of a house based on its size.
 <img src="images/lin_reg.png" width="400">
 
-- The line of regression, is a line of best fit is plotted on a scatter plot of the data points as it is shown in the Figure below
+- The line of regression, is a line of best fit is plotted on a scatter plot of the data points as it is shown in the Figure above
 - The equation of this line is : $$y=w \times x + b$$
 - Where : 
     - y: dependent/response/target variable, we want to predict it or explain it.
