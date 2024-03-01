@@ -1,7 +1,7 @@
 # ML : Regression Analysis
 This page is a one-stop resource for mastering regression analysis, offering essential information and detailed insights tailored for technical interviews. Whether you're reinforcing foundational knowledge or delving into specific regression concepts, this page serves as a concise yet comprehensive guide. It's a valuable resource for anyone aspiring to excel in data science interviews, providing an edge in understanding regression analysis within the machine learning domain.
-## List of questions:
 
+## List of questions:
 ### Q0- What does regression analysis mean?
 
 - It is a statistical technique used in data science and machine learning fields. 
