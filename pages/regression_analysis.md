@@ -1,1 +1,2 @@
-
+# ML : Regression Analysis
+This page serves as a comprehensive resource to prepare essential information and detailed insights regarding regression analysis for technical interviews. Whether strengthening foundational knowledge or delving into specific regression concepts, this notebook provides a concise yet thorough guide. For those aspiring to excel in data science interviews, exploring this resource offers a valuable edge in understanding regression analysis within the machine learning domain.
