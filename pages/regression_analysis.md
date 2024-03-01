@@ -46,10 +46,10 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 - The line of regression, is a line of best fit is plotted on a scatter plot of the data points as it is shown in the Figure below
 - The equation of this line is : $$y=w \times x + b$$
 - Where : 
-        - y: dependent/response/target variable, we want to predict it or explain it.
-        - x: independent/input/predictor variable(s), it is (they are) used to predict or explain the variability of y
-        - w: regression coefficients: the parameters in the regression equation that indicate the strength and direction of the relationship between variables.
-        - b:bias term which represents patterns that do not pass through the origin
+    - y: dependent/response/target variable, we want to predict it or explain it.
+    - x: independent/input/predictor variable(s), it is (they are) used to predict or explain the variability of y
+    - w: regression coefficients: the parameters in the regression equation that indicate the strength and direction of the relationship between variables.
+    - b:bias term which represents patterns that do not pass through the origin
         
 - The line is determined by finding the values of the slope (w) and intercept (b) that minimize the sum of residuals.
 - Residuals: 
