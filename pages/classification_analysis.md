@@ -396,11 +396,11 @@ Actually, you can find more details in the regression section. Here is the list 
   - Regression
 
 ### Q40- What are the common techniques used by ensemble learning?
-- Various techniques are used in Ensemble Learning approach. Here are some common techniques:
-    - Bagging (Bootstrap Aggregating) 
-    - Boosting
-    - Averaging
-    - Stacking
+Various techniques are used in Ensemble Learning approach. Here are some common techniques:
+  - Bagging (Bootstrap Aggregating) 
+  - Boosting
+  - Averaging
+  - Stacking
 
 ### Q41- Some examples of  of bagging algorithms?
 Here is the list :
