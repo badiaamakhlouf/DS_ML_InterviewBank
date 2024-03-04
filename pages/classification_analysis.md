@@ -161,3 +161,75 @@ Here are some well-known machine learning algorithms commonly used to solve clas
     - ROC curves: preferable to be used when there are roughly equal numbers of observations for each class.
     - ROC curves provide a good picture of the model when the dataset has large class imbalance.
     - Precision-Recall curves should be used when there is a moderate to large class imbalance.
+
+### Q15- Classification Report Scikit-learn? 
+- The `classification_report` function of `scikit-learn` provides a detailed summary of classification metrics for each class in a classification problem. 
+- The report contains the next metrics:
+    - Precision
+    - Recall- sensitivity
+    - F1-score
+    - Specificity
+    - Support
+- Support: the number of actual instances of each class in the dataset.
+- Classification reports are evaluated using classification metrics that have precision, recall, and f1-score on a per-class basis.
+  
+### Q16 - How do we evaluate a classification report?
+- High recall + high precision ==> the class is perfectly handled by the model. 
+- Low recall + high precision ==> the model can not detect the class well but is highly trustable when it does.
+- High recall + low precision ==> the class is well detected but model also includes points of other class in it. 
+- Low recall + low precision ==> class is poorly handled by the model
+  
+### Q17- What is log loss fucntion?
+- It is an evaluation metric used in logistic regression
+- Called logistic regression loss or cross-entropy loss
+- Input of this loss function is probability value that belongs to [0,1].
+- It measures the uncertaintly of our prediction based on how much it varies from the actual label.
+
+### Q18- Is accuracy always a reliable metric for evaluating classification models?
+- No, it is not true. 
+- In cases of imbalanced datasets, accuracy may not be reliable for evaluating model performance.
+- Instead, precision and recall are preferred metrics for classification models. 
+- Additionally, the f1-score, which combines precision and recall, provides a comprehensive measure of performance.
+
+### Q19- What is Logistic Regression and how it works?
+- It is a classification algorithm used to predict a discret output.
+- Types of outputs: 
+    - Binary (2 classes)
+    - Multiple (>2 classes)
+    - Ordianl (Low, medium, High)
+- An activation function is applied to transform the linear combination of features into probabilities (predictions). 
+- The activation function = the logistic function = The sigmoid function.
+- Output:mx+b
+- Sigmoid function formula: $$S(z)={1\over 1+ e^{-z}}$$
+<div>
+<img src="images/sigmoid-function.png" width="350"/>
+</div>
+Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid-activation-function
+### Q20- What is Decision Trees?
+- It is a non-parametric supervised learning algorithm. 
+- It has the tree structure: root node, edges (branches), internal and leaf nodes
+- It can be used to solve both Classification and Regression problems.
+- We build a tree with datasets broken up into smaller subsets while developing the decision tree
+- It can handle both categorical and numerical data 
+
+<img src="images/tree_structure.png" width="400"> 
+### Q21- What are the types of decision tree 
+- We have three main types :
+    - **ID3:** Iterative Dichotomiser 3: splitting datasets is based on metrics like entropy and information gain. 
+    - **C4.5:** it is identified as a later iteration of ID3, where it uses information gain or gain ratios to split datasets.
+    - **CART:** Classification And Regression Trees: it utilizes Gini impurity to identify the ideal attribute to split the dataset on.
+    
+### Q22- What are the different DT menthods to split datasets?
+Actually, you can find more details in the regression section. Here is the list of methods:
+- **Variance** 
+- **Entropy** 
+- **Information gain**
+- **Gini Impurity**
+- **Chi-Square**
+
+### Q23- How can we use Decision Trees to resolve classification tasks ?
+- Decision trees are extensively for classification tasks.
+- They work by recursively splitting the data into subsets based on the value of features.
+- At each split, the algorithm selects the feature that best separates the data into classes.
+- This process continues until a stopping criterion is met, such as reaching a maximum tree depth or having only samples from one class in a node.
+- Decision trees are intuitive, easy to interpret, and can handle both numerical and categorical data.
