@@ -62,7 +62,7 @@ Certainly, there are certain data science skills that are exclusively required f
  Here are more key details regarding each skill to focus on:
 
  - 📌 [Effective Communication Skills](pages/how_to_improve_communication_skills.md): Strong communication skills are essential for discussing technical concepts and presenting findings to both technical and non-technical stakeholders. Effective communication entails clear documentation of code, results, and statistical assumptions.
- - 
+   
  - 📌 [Proactive Problem-Solving](pages/problem_solving.md): honing problem-solving skills, particularly the ability to identify data-related opportunities and challenges, to explain problems and solutions by identifying existing assumptions and resources and to select the most effective approach to get the right answers. 
    
  - 📌 [Leadership and Project Management](): For senior positions like Data Science Manager or Team Lead, mastering leadership and project management skills is crucial. This includes guiding teams, making strategic decisions, and managing projects effectively. A good manager or leader listens actively and empathetically to team members to foster a positive and productive work environment.
