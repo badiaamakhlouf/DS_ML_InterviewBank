@@ -25,6 +25,7 @@ Key concepts in machine learning include:
 Machine learning algorithms can be categorized into several types based on their learning styles and the nature of the task they are designed to solve.
 
 Here are some common types of machine learning algorithms:
+
 - **Supervised Learning** 
 - **Unsupervised Learning**
 - **Semi-Supervised Learning**
@@ -46,7 +47,8 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
  - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.. 
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
 
-To gather more details about these techniques, please consult [Unsupervised Learning techniques](pages/unsupervised_learning_analysis.md)
+
+For more in-depth information on unsupervised learning techniques, click [here](pages/unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classfication and regression: 
