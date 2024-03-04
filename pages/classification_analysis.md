@@ -124,11 +124,13 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - **Formula:** $$Specificity={True\ Negatives \over True\ Negatives + False\ Positives}$$ 
 
 ### Q12- What is Receiver Operating Characteristic (ROC) and Area under-ROC curve (AUC-ROC)?
+
 - ROC curve is a graphical representation of the model's performance across different classification thresholds.
 - The shape of the curve contains a lot of information
 - Area under the ROC curve : AUC-ROC provides a single metric indicating the model's ability to distinguish between classes.
 - Here is ROC and AUC-ROC illustration:
-<img src="images/roc-curve-original.png" width="400"> 
+<img src="images/roc-curve-original.png" width="400">
+
 - If AUC-ROC is high, then we have better model. Else, we have poor model performance.
 - Smaller values on the x-axis of the curve point out lower false positives and higher true negatives.
 - Larger values on the y-axis of the plot indicate higher true positives and lower false negatives.
