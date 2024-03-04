@@ -1,6 +1,6 @@
 # ML : Supervised Learning 
 # Regression Analysis
-This page is a one-stop resource for mastering regression analysis, offering essential information and detailed insights tailored for technical interviews. Whether you're reinforcing foundational knowledge or delving into specific regression concepts, this page serves as a concise yet comprehensive guide. It's a valuable resource for anyone aspiring to excel in data science interviews, providing an edge in understanding regression analysis within the machine learning domain.
+Supervised learning encompasses two main techniques: classification and regression. This page is your go-to for mastering regression analysis, covering essential information tailored for technical interviews. Whether you're brushing up on foundational knowledge or diving into specific concepts, it offers concise yet comprehensive guidance. Gain an edge in understanding regression analysis for data science interviews here.
 
 ## List of questions:
 ### Q0- What does regression analysis mean?
