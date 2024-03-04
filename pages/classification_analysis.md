@@ -112,7 +112,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - An evaluation metric that measures the ability of the model to capture all the positive samples.
 - It divides number of true positives samples by the sum of true positives and false negatives.
 - Recall = Sensitivity = True Positive Rate. 
-- **Formula:** $$ Recall= {True\ Positives \over True\ Positives + False\ Negatives}$$
+- **Formula:** $$Recall= {True\ Positives \over True\ Positives + False\ Negatives}$$
   
 ### Q10- How to define F1-score? 
 - An evaluation metric that combines both Precision and Recall.
