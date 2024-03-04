@@ -37,3 +37,16 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - CatBoost
 - LightGBM
 - Neural Networks (Deep Learning)
+
+### Q3. how to choose a classifier based on training dataset size?
+- For small training datasets:
+  - Choose simpler classifiers like Naive Bayes or k-Nearest Neighbors (kNN).
+  - It is better to use simple model with high bias and low variance.
+  - They work better because they are less likely to overfit. 
+- For Larger datasets:
+  - It is better to use more complex classifiers such as Support Vector Machines (SVMs) or Random Forests.
+  - It is better to use model with low bias and high variance
+  - This model type will tend to perform better with complex relationships. 
+-  Balancing variance and bias is essential for developing models that perform well on both training and unseen data.
+- Simple classifiers are preferred to avoid overfitting and reduce computational complexity with limited data.
+- Complex classifiers excel in capturing intricate patterns in larger datasets and handling higher dimensionality.
