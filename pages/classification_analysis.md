@@ -205,6 +205,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 <img src="images/sigmoid-function.png" width="350"/>
 </div>
 Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid-activation-function
+
 ### Q20- What is Decision Trees?
 - It is a non-parametric supervised learning algorithm. 
 - It has the tree structure: root node, edges (branches), internal and leaf nodes
@@ -213,6 +214,7 @@ Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid
 - It can handle both categorical and numerical data 
 
 <img src="images/tree_structure.png" width="400"> 
+
 ### Q21- What are the types of decision tree 
 - We have three main types :
     - **ID3:** Iterative Dichotomiser 3: splitting datasets is based on metrics like entropy and information gain. 
@@ -242,9 +244,9 @@ Actually, you can find more details in the regression section. Here is the list 
      
 - **Disadvantages:**
   - Prone to overfitting, especially with complex trees.
- - Can be unstable, as small changes in the data can result in a different tree structure.
- - Biased towards features with more levels (categories) even they are not relevant to predict the target.
- - Not suitable for capturing complex relationships in the data.
+  - Can be unstable, as small changes in the data can result in a different tree structure.
+  - Biased towards features with more levels (categories) even they are not relevant to predict the target.
+  - Not suitable for capturing complex relationships in the data.
 
 ### Q25- What does K-Nearest Neighbors (KNN) mean?
 - Simple supervised ML algorithm
