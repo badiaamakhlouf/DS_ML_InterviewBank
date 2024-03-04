@@ -740,15 +740,15 @@ To select the right regression model, consider these key factors:
 - Neural networks can be used to solve both regression and classification problems.
 - For regression probelms, it involves training a network to learn the mapping between input features and continuous output values.
 - Here are the steps to use a neural network for regression:
-    1. **Data Preparation:** organize your dataset with input features and corresponding continuous output values.
-    2. **Model Architecture:** design the neural network architecture, including the number of input nodes (features), hidden layers, and output nodes. In case of regression, we use an input layer, one or more hidden layers, and an output layer.
-    3. **Initialization:** initialize the weights and biases of the neural network randomly or using predefined methods.
-    4. **Forward Propagation:** pass input data through the network to compute output predictions.
-    5. **Loss Calculation:** calculate the difference between predicted and actual output values using a loss function (e.g., mean squared error).
-    6. **Backpropagation:** propagate the error backward through the network to update the weights and biases using optimization algorithms like gradient descent.
-    7. **Iterative Training:** repeat steps 4-6 for multiple iterations (epochs) or until convergence, adjusting the model parameters to minimize the loss function.
-    8. **Prediction:** once the model is trained, use it to make predictions on new data by passing input features through the trained network.
-    9. **Evaluation:** Evaluate the performance of the model using metrics such as mean squared error, mean absolute error, or R-squared value on a separate validation or test dataset.
+1. **Data Preparation:** organize your dataset with input features and corresponding continuous output values.
+2. **Model Architecture:** design the neural network architecture, including the number of input nodes (features), hidden layers, and output nodes. In case of regression, we use an input layer, one or more hidden layers, and an output layer.
+3. **Initialization:** initialize the weights and biases of the neural network randomly or using predefined methods.
+4. **Forward Propagation:** pass input data through the network to compute output predictions.
+5. **Loss Calculation:** calculate the difference between predicted and actual output values using a loss function (e.g., mean squared error).
+6. **Backpropagation:** propagate the error backward through the network to update the weights and biases using optimization algorithms like gradient descent.
+7. **Iterative Training:** repeat steps 4-6 for multiple iterations (epochs) or until convergence, adjusting the model parameters to minimize the loss function.
+8. **Prediction:** once the model is trained, use it to make predictions on new data by passing input features through the trained network.
+9. **Evaluation:** Evaluate the performance of the model using metrics such as mean squared error, mean absolute error, or R-squared value on a separate validation or test dataset.
  
 **Notes:**
 - Sometimes, it is important to fine-tune the model architecture, hyperparameters, and training process to improve performance if needed.
