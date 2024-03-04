@@ -613,7 +613,10 @@ Here is the list :
   - Illustration : <img src="images/sigmoid-function.png" width="350"/>
 - Softmax :
   - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
-  - Illustration : <img src="images/Softmax1.png" width="350"/>
+  - Illustration :
+    
+ <img src="images/Softmax1.png" width="350"/>
+ 
 - ReLU (Rectified Linear Unit):
   - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
   - Illustration : <img src="images/Relu.png" width="350"/>
