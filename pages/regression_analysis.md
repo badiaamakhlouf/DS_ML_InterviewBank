@@ -156,8 +156,9 @@ Notes:
 - It can be used to solve both Classification and Regression problems.
 - We build a tree with datasets broken up into smaller subsets while developing the decision tree
 - It can handle both categorical and numerical data 
-<img src="images/tree_structure.png" width="400"> 
+<img src="images/tree_structure.png" width="400">
 
+*Source: https://www.ibm.com/topics/decision-trees
 ### Q15- What are the types of decision tree 
 - We have three main types :
     - **ID3:** Iterative Dichotomiser 3: splitting datasets is based on metrics like entropy and information gain. 
