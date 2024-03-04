@@ -106,7 +106,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - It divides the number of true positive predictions by the sum of true positives and false positives.
 - It belongs to [0,1] interval, 0 corresponds to no precision and 1 corresponds to perfect precision.
 - Precision = Positive Predictive Power
-- **Formula:** $$Precision = {True Positives \over True Positives + False Positives}$$ 
+- **Formula:** $$Precision = {True Positives \over True\ Positives + False\ Positives}$$ 
 
 ### Q9- How to define Recall, Sensitivity or True Positive Rate?
 - An evaluation metric that measures the ability of the model to capture all the positive samples.
