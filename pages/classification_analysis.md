@@ -120,3 +120,24 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - It can be calculated using the `f1_score()` function of `scikit-learn`
 - F1 belongs to [0,1]: 0 is the worst case and 1 is the best.
 - **Formula :** $$F1= {2×Precision×Recall \over Precision+Recall}$$
+  
+### Q11- How to define Specificity or True Negative Rate ?
+- Specificity measures the ability of the model to correctly identify negative instances.
+- It divides the true negatives samples by the sum of true negatives observations and false positives observations.
+- True Negative Rate = Specificity
+- **Formula:** $$Specificity={True Negatives \over True Negatives + False Positives}$$ 
+
+### Q12- What is Receiver Operating Characteristic (ROC) and Area under-ROC curve (AUC-ROC)?
+- ROC curve is a graphical representation of the model's performance across different classification thresholds.
+- The shape of the curve contains a lot of information
+- Area under the ROC curve : AUC-ROC provides a single metric indicating the model's ability to distinguish between classes.
+- Here is ROC and AUC-ROC illustration:
+<img src="images/roc-curve-original.png" width="400"> 
+- If AUC-ROC is high, then we have better model. Else, we have poor model performance.
+- Smaller values on the x-axis of the curve point out lower false positives and higher true negatives.
+- Larger values on the y-axis of the plot indicate higher true positives and lower false negatives.
+- We can plot the ROC curve using the `roc_curve()` scikit-learn function.
+- To calculate the accuracy, we use `roc_auc_score()` function of `scikit-learn`.
+* Note: False Positive Rate = 1- Specificity
+
+*source: https://sefiks.com/2020/12/10/a-gentle-introduction-to-roc-curve-and-auc/
