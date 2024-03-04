@@ -48,7 +48,7 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
 
 
-For more in-depth information on unsupervised learning techniques, click [here](pages/unsupervised_learning_analysis.md)
+For more in-depth information on unsupervised learning techniques, click [here](unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classification and regression: 
@@ -75,7 +75,7 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 - Ridge Regression
 - Neural Networks (Deep Learning)
 
-More details regarding each algorithm could be found here in [Regression Analysis](pages/regression_analysis.md)
+More details regarding each algorithm could be found here in [Regression Analysis](regression_analysis.md)
 
 ### Q8- Examples of well-known machine learning algorithms used to solve Classification problems
 Here are some well-known machine learning algorithms commonly used to solve classification problems:
