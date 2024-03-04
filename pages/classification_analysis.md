@@ -233,3 +233,266 @@ Actually, you can find more details in the regression section. Here is the list 
 - At each split, the algorithm selects the feature that best separates the data into classes.
 - This process continues until a stopping criterion is met, such as reaching a maximum tree depth or having only samples from one class in a node.
 - Decision trees are intuitive, easy to interpret, and can handle both numerical and categorical data.
+### Q24- Advantages Vs Disadvantages of DT in classification tasks?
+- **Advantages:**
+ - Easy to interpret and visualize.
+ - Can handle both numerical and categorical data.
+ - Requires little data preprocessing.
+ - Non-parametric, so no assumptions about the underlying data distribution.
+- **Disadvantages:**
+ - Prone to overfitting, especially with complex trees.
+ - Can be unstable, as small changes in the data can result in a different tree structure.
+ - Biased towards features with more levels (categories) even they are not relevant to predict the target.
+ - Not suitable for capturing complex relationships in the data.
+
+### Q25- What does K-Nearest Neighbors (KNN) mean?
+- Simple supervised ML algorithm
+- Used for both :
+ - Regression
+ - Classification
+- For classification, the prediction for a new data point is made based on the majority class
+- For regression, the prediction for a new data point is made based on the average of the nearest K neighbors
+- K :  the number of nearest neighbors considered for making predictions.
+- It works as follow:
+ - Calculating the distance between the new data point and all other data points in the training set, typically using Euclidean distance
+ - Then selecting the K nearest neighbors
+ - The prediction is then determined based on the average value of the K neighbors
+- It is a non-parametric and instance-based learning algorithm : no strong assumptions about the data distribution and instead relies on the local structure of the data to make predictions.
+
+### Q26- How to select the best value for the number of neighbors (K)?
+- It is important to find optimal value that balance between bias and variance.
+- Here's a simple approach: 
+ - **Cross-Validation:** split the data and for each value of K, train the KNN model on the training data and evaluate its performance on the validation data.
+ - **Grid Search:** use a range of K values to test.
+ - **Evaluate Performance:** evaluate each model using the appropriate evaluation metric such as accuracy (classification) or MSE (regression).
+ - Choose Optimal K that gives the best performance first validation set then, test it on testing sets.
+
+### Q27- The advantages of K-Nearest Neighbors (KNN)
+- **Simple**
+- **No Training Phase:** doesn't need training; it uses stored data for predictions based on neighbor proximity.
+- **Non-Parametric:** does not make any assumptions about the underlying data distribution.
+- **Versatile:** used for both classification and regression tasks
+- **Interpretable:** predictions are easily interpreted, as they are based on the majority class or the average of neighboring points.
+
+### Q28- The disadvantages of K-Nearest Neighbors (KNN)
+- High computational cost during prediction :as it needs to calculate distances to all training samples
+- Sensitivity to irrelevant features
+- Inefficiency with high-dimensional data
+
+### Q29- What does Support Vector Machines (SVM) mean?
+- It is a powerful machine learning algorithm used for Classification (SVR used for regression tasks)
+- It aims to find the optimal hyperplane that separates different classes.
+- It aims to maximize the margin between classes. 
+- It is widely used in various fields, including image recognition, text classification, and bioinformatics.
+- It can handle, use different kernel functions, both decisions :
+ - Linear
+ - nonlinear 
+- If the hyperplane that used by the model for classification is in linear, then the algorithm is Support Vector Classifier (SVC).
+ 
+### Q30- What are the basic equations for SVM?
+- The **Linear model** equation: $$ y = w^T x + b$$
+ - Where :
+   - x: independent / input variable / predictors
+   - y : target / output 
+   - w: represents the weight vector
+   - b represents the bias term
+- The non Linear model equation: $$y = \sum_{i=1}^{n} \alpha_i y_i K(x_i, x) + b$$
+ - Where :
+   - y : target / output 
+   - $y_i$ the class labels
+   - $α_i$ the Lagrange multipliers
+   - K(x,$x_i$)  the kernel function that computes the similarity between:
+     - Input features x  & 
+     - $x_i$ support vectors 
+   - b represents the bias term
+     
+### Q31- What are support vectors in SVM?
+- Support vectors are data points closest to the decision boundary / the hyperplane .
+- They define the margin between different classes in the dataset.
+- Support vectors influence the positioning and orientation of the decision boundary.
+- These points are crucial for determining the classification of new data points.
+- SVM uses support vectors to construct the hyperplane that separates classes effectively.
+- The margin is the distance between the hyperplane and the support vectors.
+- We aim to find a hyperplane that maximizes this margin.
+<img src="images/svm.jpg" width="300"> 
+*Source : https://www.sciencedirect.com/topics/computer-science/support-vector-machine
+
+### Q32- What is kernel SVM?
+- Kernel SVM extends traditional SVM to handle nonlinear relationships between features and class labels.
+- It applies a kernel functions to transform input features into a higher-dimensional space.
+- It is widely used in various classification tasks where linear separation is not sufficient.
+- Examples of kernel functions: polynomial, radial basis function (RBF), and sigmoid kernels.
+
+### Q33- What are the different kernel functions used in SVM?
+- Kernels are functions used to transform input data into higher-dimensional space.
+- Some common kernels include:
+ - Linear Kernel: for linearly separable data.
+ - Polynomial Kernel: maps data into a higher-dimensional space using polynomial functions.
+ - Radial Basis Function (RBF) Kernel: maps data into infinite-dimensional space using Gaussian functions.
+ - Sigmoid Kernel: applies a hyperbolic tangent function to map data into higher dimensions.
+ - Custom Kernels: you can define your own kernel functions tailored to specific data characteristics.
+ 
+**Notes:**
+- Only linear kernel are used in normal SVM models to find a linear decision boundary between classes.
+- The remaining kernel functions are used kernel SVM
+  
+### Q34- How does SVM handle self learning 
+- Self-learning, involves using a small amount of labeled data initially and then iteratively labeling unlabeled data points based on the confidence of the model's predictions.
+- SVM alone doesn't do self-learning. It can be adapted for self-learning by using its confidence scores to label more data, but this needs extra steps.
+  
+### Q35 SVM: Advantages Vs Disadvantages 
+- **Advantages:**
+ - Effective in high-dimensional spaces.
+ - Memory efficient as it only uses a subset of training points (support vectors).
+ - Versatile due to the various kernel functions that can be used for different data distributions.
+ - Robust against overfitting, especially in high-dimensional spaces.
+ 
+- **Disadvantages:**
+ - Computationally intensive, especially with large datasets.
+ - Sensitivity to the choice of kernel and its parameters.
+ - Limited interpretability compared to simpler models like logistic regression.
+ - Not suitable for very large datasets due to its computational complexity.
+   
+### Q36- What does Naive Bayes mean?
+- It is a classification algorithm based on Bayes' theorem. 
+- The classifier is called 'naive' because it makes assumptions that may or may not turn out to be correct
+- The "naive" assumption implies independence between features.
+- The algorithm assumes the absolute independence of features which means the presence of one feature of a class is not related to the presence of any other feature. 
+- Example: any fruit that is red and round is cherry ==> it can be true or false
+- It calculates the probability of a given sample belonging to a particular class based on the probabilities of its features.
+- Despite its simplicity, Naive Bayes can be effective in many real-world scenarios and is particularly popular for text classification tasks.
+
+
+### Q37- What are the probability functions used by Naive Bayes?
+- Two main probabilities:
+ - **Prior Probability:** the probability of each class occurring in the dataset before observing the input features. 
+ - **Conditional Probability:** the probability of observing each feature given the class label. Naive Bayes assumes that the features are conditionally independent given the class label, which simplifies the calculation of this probability. Examples : posterior and likelihood probabilities
+
+### Q38- Naive Bayes Advantages versus Disadvantages 
+- **Advantages:**
+ - Simple and easy to implement.
+ - Efficient in training and prediction, especially for large datasets.
+ - Handles both numerical and categorical data well.
+ - Performs well with high-dimensional data.
+ - Robust to irrelevant features.
+- **Disadvantages:**
+ - Assumes independence among features, which may not hold true in real-world data.
+ - Sensitive to the presence of irrelevant features.
+ - Unable to capture complex relationships between features.
+ - Biased towards the majority class in imbalanced datasets.
+ - Requires careful handling of numerical features to avoid issues with zero probabilities.
+   
+###  Q39- What does Ensemble learning algorithm mean?
+- Ensemble involves taking a group of things (models) instead of individual (models)
+- It is a ML algorthim that makes improved decision by combining the predictions from multiple models.
+- It leverages the diversity of multiple models to make more robust and accurate predictions.
+- It seeks better predictive performance and to increase the accuracy because we could have high variance using a single model.
+- Can be used for both :
+ - Classification
+ - Regression
+
+### Q40- What are the common techniques used by ensemble learning?
+- Various techniques are used in Ensemble Learning approach. Here are some common techniques:
+    - Bagging (Bootstrap Aggregating) 
+    - Boosting
+    - Averaging
+    - Stacking
+
+### Q41- Some examples of  of bagging algorithms?
+Here is the list :
+- Random Forest
+- Bagged Decision Trees
+- Bagged Support Vector Machines (Bagged SVM)
+- Bagged Neural Networks
+
+### Q42- How Random Forest works? 
+- It is a specific ensemble learning technique that combines multiple decision trees trained on random subsets of the data and features.
+- It can be used for both :
+ - Classification 
+ - Regression
+- It works as follow:
+ - **Bootstrapping:** Randomly sample the dataset **with replacement** to create multiple subsets. Random Subset Selection. 
+ - **Feature Selection:** Randomly select a subset of features for each subset. They are consider when splitting a node in the decision tree. 
+ - **Tree Building:** Build a decision tree for each subset using the selected features. Multiple trees are built.
+ - **Final Prediction:** Aggregate the predictions of all trees to make the final prediction:
+  - Classification:using voting
+  - Regression: compute the average.
+
+### Q43- What are the advantages of Random Forest?
+- Randomness and diversity introduction
+- Reducing correlation among the trees in the forest. 
+- High Accuracy
+- Robustness to Overfitting
+- Ability to Handle Large Datasets
+- Implicit Feature Selection (while building the tree model)
+
+### Q44- What are the disadvantages of Random Forest?
+- Less interpretable compared to simpler models.
+- Can overfit noisy data.
+- Requires careful tuning of hyperparameters.
+
+### Q45- How Boosting techniques works in classification?
+- Iteratively training a series of weak classifiers, where each subsequent classifier corrects the errors of the previous ones. 
+- The algorithm gives more importance to misclassified instances via assigning  higher weights to then. 
+- Also, the algorithm focus more on hard-to-classify cases in each round.
+- This process continues until a strong classifier, which combines the predictions of all weak classifiers, is obtained.
+- Again, the final model has high performance and accuracy.
+- Here is a simple illustration of Boosting techniques with classifiers 
+
+<img src="images/Boosting.png" width="500"> 
+*Source: https://www.geeksforgeeks.org/boosting-in-machine-learning-boosting-and-adaboost/
+
+### Q46- How Gradient Boosting works?
+- It is know as Gradient Boosting Machines (GBM).
+- It works by sequentially training a series of weak learners, typically decision trees.
+- It builds an ensemble of decision trees, where each tree is trained to correct the errors of the previous ones by minimizing a loss function.
+- Actually, each new tree is trained on the residuals that corresponds to the differences between the actual and predicted values.
+- Loss function measures the difference between predicted and actual values such as softmax
+- The gradient descent algorithm is used to optimize (minimise) the loss fucntion.
+- Here is more details how it works :
+ - The agorithm builds the first weak classifier, typically a decision tree with a small depth.
+ - Then, calculate the residuals by subtracting the predictions of the current model from the actual target values.
+ - Train a simple model like a decision tree to predict the residuals from the previous step. It aims to find a model that can capture the patterns in the residuals.
+ - Update the predictions of the ensemble by adding the predictions of the weak learner, scaled by a learning rate parameter.
+ - The previous step aims to adjust the current model to reduce the residuals.
+ - Repeat the previous steps and each iteration a new weak learner is trained to predict the residuals of the previous ensemble.
+ - This process continues until the residuals become almost zero.
+ - Finally, combine the predicted class probabilities across all weak learners.
+ 
+### Q47- Advantages Vs disadvantages of Gradient Boosting
+- **Advantages:**
+ - Excellent predictive accuracy, often outperforming other algorithms.
+ - Handles mixed data types (numeric, categorical) well.
+ - Automatically handles missing data.
+
+- **Disadvantages:**
+ - Prone to overfitting if not properly tuned.
+ - Can be computationally expensive and time-consuming.
+ - Requires careful hyperparameter tuning.
+
+### Q48- How AdaBoost works in classification problems?
+- Short for Adaptive Boosting
+- Here how it works: 
+ - 1. Train a base learner on the original dataset.
+ - 2. Assign higher weights to the misclassified data points. ==> increases the importance of misclassified points.
+ - 3. Train a new base learner on the updated dataset. ==> Misclassified points become more influential in training subsequent weak learners, which focus more on correcting these mistakes.
+ - 4. Repeat steps 2 and 3 for a predefined number of iterations (or until a stopping criterion is met).
+ - 5. At the end, AdaBoost combines the predictions of all weak learners using a weighted sum to form the final ensemble prediction. 
+ - This weighted sum are determined based on the performance of each base learner and forms the intermediate prediction of the ensemble.
+ - 6. The final ensemble prediction is made by taking a:
+   - Majority vote (for binary classification)
+   - Weighted vote (for multiclass classification) 
+   
+### Q49- Advantages Vs disadvantages of AdaBoost
+- **Advantages:**
+ - Versatile: works well with various types of data and base learners.
+ - High Accuracy
+ - Implicit Feature Selection: identifies important features through weighting.
+ - Generalization: tends to generalize well and avoid overfitting.
+ - Robustness: less affected by noisy data and outliers.
+ 
+- **Disadvantages:**
+ - Computational Cost: Requires more resources and time due to iterations.
+ - Base Learner Dependency: performance relies heavily on base learner quality.
+ - Data Requirements: needs sufficient data to avoid overfitting.
+ - Imbalanced Classes: struggles with imbalanced class distributions.
