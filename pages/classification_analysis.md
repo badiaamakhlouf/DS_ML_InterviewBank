@@ -96,7 +96,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 
 - Divides the number of correctly classified observations by the total number of samples.
 
-- **Formula:** $$Accuracy ={ Number  of Correct Predictions \over Total number of predictions }$$
+- **Formula:** $$Accuracy ={ Number\ of\ Correct\ Predictions \over Total\ number\ of\ predictions }$$
 
 
 - Here a second formula : $$Accuracy ={ TP + TN \over TP + TN + FP + FN }$$
@@ -106,13 +106,13 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - It divides the number of true positive predictions by the sum of true positives and false positives.
 - It belongs to [0,1] interval, 0 corresponds to no precision and 1 corresponds to perfect precision.
 - Precision = Positive Predictive Power
-- **Formula:** $$Precision = {True Positives \over True\ Positives + False\ Positives}$$ 
+- **Formula:** $$Precision = {True\ Positives \over True\ Positives + False\ Positives}$$ 
 
 ### Q9- How to define Recall, Sensitivity or True Positive Rate?
 - An evaluation metric that measures the ability of the model to capture all the positive samples.
 - It divides number of true positives samples by the sum of true positives and false negatives.
 - Recall = Sensitivity = True Positive Rate. 
-- **Formula:** $$ Recall= {True Positives \over True \Positives + False \Negatives}$$
+- **Formula:** $$ Recall= {True\ Positives \over True\ Positives + False\ Negatives}$$
   
 ### Q10- How to define F1-score? 
 - An evaluation metric that combines both Precision and Recall.
