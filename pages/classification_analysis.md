@@ -210,6 +210,7 @@ Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid
 - It can handle both categorical and numerical data 
 
 <img src="images/tree_structure.png" width="400"> 
+*Source : https://www.ibm.com/topics/decision-trees
 
 ### Q21- What are the types of decision tree 
 - We have three main types :
