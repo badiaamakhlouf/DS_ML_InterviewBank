@@ -93,12 +93,8 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 ### Q7- How to define Accuracy?
 
 - An evaluation metric used to evaluate the performance of classification model.
-
 - Divides the number of correctly classified observations by the total number of samples.
-
 - **Formula:** $$Accuracy ={ Number\ of\ Correct\ Predictions \over Total\ number\ of\ predictions }$$
-
-
 - Here a second formula : $$Accuracy ={ TP + TN \over TP + TN + FP + FN }$$
 
 ### Q8- How to define Precision ?
@@ -365,7 +361,6 @@ Actually, you can find more details in the regression section. Here is the list 
 - It calculates the probability of a given sample belonging to a particular class based on the probabilities of its features.
 - Despite its simplicity, Naive Bayes can be effective in many real-world scenarios and is particularly popular for text classification tasks.
 
-
 ### Q37- What are the probability functions used by Naive Bayes?
 - Two main probabilities:
   - **Prior Probability:** the probability of each class occurring in the dataset before observing the input features. 
@@ -477,15 +472,15 @@ Here is the list :
 ### Q48- How AdaBoost works in classification problems?
 - Short for Adaptive Boosting
 - Here how it works: 
-   1. Train a base learner on the original dataset.
-   2. Assign higher weights to the misclassified data points. ==> increases the importance of misclassified points.
-   3. Train a new base learner on the updated dataset. ==> Misclassified points become more influential in training subsequent weak learners, which focus more on correcting these mistakes.
-   4. Repeat steps 2 and 3 for a predefined number of iterations (or until a stopping criterion is met).
-   5. At the end, AdaBoost combines the predictions of all weak learners using a weighted sum to form the final ensemble prediction. 
+1. Train a base learner on the original dataset.
+2. Assign higher weights to the misclassified data points. ==> increases the importance of misclassified points.
+3. Train a new base learner on the updated dataset. ==> Misclassified points become more influential in training subsequent weak learners, which focus more on correcting these mistakes.
+4. Repeat steps 2 and 3 for a predefined number of iterations (or until a stopping criterion is met).
+5. At the end, AdaBoost combines the predictions of all weak learners using a weighted sum to form the final ensemble prediction. 
    This weighted sum are determined based on the performance of each base learner and forms the intermediate prediction of the ensemble.
-   6. The final ensemble prediction is made by taking a:
-     - Majority vote (for binary classification)
-     - Weighted vote (for multiclass classification) 
+6. The final ensemble prediction is made by taking a:
+   - Majority vote (for binary classification)
+   - Weighted vote (for multiclass classification) 
    
 ### Q49- Advantages Vs disadvantages of AdaBoost
 - **Advantages:**
@@ -516,17 +511,17 @@ Here is the list :
 
 ### Q51- Advantages Vs disadvantages of XGBoost
 - **Advantages:**
- - Superior performance and scalability due to parallel processing.
- - Handles missing data efficiently.
- - Regularization techniques prevent overfitting.
- - Supports both classification and regression tasks.
- - Feature importance ranking aids in interpretability: identify which features have the most significant impact on the model's output.
+  - Superior performance and scalability due to parallel processing.
+  - Handles missing data efficiently.
+  - Regularization techniques prevent overfitting.
+  - Supports both classification and regression tasks.
+  - Feature importance ranking aids in interpretability: identify which features have the most significant impact on the model's output.
 
 - **Disadvantages:**
- - More complex and computationally intensive compared to simpler algorithms.
- - Requires careful tuning of hyperparameters.
- - Prone to overfitting with large datasets if not properly regularized.
- - May struggle with highly imbalanced datasets.
+  - More complex and computationally intensive compared to simpler algorithms.
+  - Requires careful tuning of hyperparameters.
+  - Prone to overfitting with large datasets if not properly regularized.
+  - May struggle with highly imbalanced datasets.
 
 ### Q52- How LightGBM works in classification tasks?
 - The full name Light Gradient Boosting Machine
@@ -541,25 +536,25 @@ Here is the list :
 
 ### Q53- Advantages Vs disadvantages of LightGBM
 - **Advantages:**
- - Efficient: fast and memory-friendly.
- - High predictive performance /accuracy.
- - Flexible: works well with various data types.
- - Supports parallel and distributed training.
- - Feature importance.
+  - Efficient: fast and memory-friendly.
+  - High predictive performance /accuracy.
+  - Flexible: works well with various data types.
+  - Supports parallel and distributed training.
+  - Feature importance.
 
 - **Disadvantages:**
- - Complexity: configuring LightGBM parameters may require some expertise..
- - Overfitting: risk if not tuned properly.
- - Black-box: the model's inner workings may be less interpretable compared to simpler models like linear regression..
- - Preprocessing: requires careful data preparation.
- - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
+  - Complexity: configuring LightGBM parameters may require some expertise..
+  - Overfitting: risk if not tuned properly.
+  - Black-box: the model's inner workings may be less interpretable compared to simpler models like linear regression..
+  - Preprocessing: requires careful data preparation.
+  - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
    
 ### Q54-  How can we use CatBoost to resolve classification problem?
 - It is a powerful gradient boosting algorithm
 - Specifically, it is designed for handling categorical features in machine learning tasks
 - It can be used for both tasks:
- - Classification
- - Regression 
+  - Classification
+  - Regression 
 - The full name is Categorical Boosting
 - It automatically handles categorical variables without requiring preprocessing like one-hot encoding.
 - It uses an efficient algorithm to convert categorical features into numerical representations during training.
