@@ -570,16 +570,16 @@ Here is the list :
 
 ### Q55- Advantages Vs disadvantages of CatBoost
 - **Advantages:**
- - Handles categorical features automatically without preprocessing.
- - Robust to overfitting due to built-in regularization techniques.
- - Efficient training speed, especially for large datasets.
- - Superior performance compared to other gradient boosting libraries.
- - Supports both classification and regression tasks.
+  - Handles categorical features automatically without preprocessing.
+  - Robust to overfitting due to built-in regularization techniques.
+  - Efficient training speed, especially for large datasets.
+  - Superior performance compared to other gradient boosting libraries.
+  - Supports both classification and regression tasks.
 
 - **Disadvantages:**
- - Requires more memory during training compared to some other algorithms.
- - Limited interpretability of models compared to simpler algorithms like decision trees.
- - May require parameter tuning to achieve optimal performance.
+  - Requires more memory during training compared to some other algorithms.
+  - Limited interpretability of models compared to simpler algorithms like decision trees.
+  - May require parameter tuning to achieve optimal performance.
 
 ### Q56- How  Neural Networks is used with classification problems?
 
@@ -612,19 +612,17 @@ Here is the list :
   - Formula : $σ(x) = {1 \over 1 + e^{-x}}$
   - Illustration :
     
-  <img src="images/sigmoid-function.png" width="350"/>
+<img src="images/sigmoid-function.png" width="350"/>
   
 - Softmax :
-  - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
-  - Illustration :
-    
-  <img src="images/Softmax1.png" width="350"/>
+   - Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
+   - Illustration :
+<img src="images/Softmax1.png" width="350"/>
  
 - ReLU (Rectified Linear Unit):
-  - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
-  - Illustration :
-    
-  <img src="images/Relu.png" width="350"/>
+   - Formula : f(x)=max(0,x), f  returns x if x is positive, and 0 otherwise.
+   - Illustration :   
+<img src="images/Relu.png" width="350"/>
 
 - ** Source (1): https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid-activation-function
 - ** Source (2) : https://botpenguin.com/glossary/softmax-function
