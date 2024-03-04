@@ -125,7 +125,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - Specificity measures the ability of the model to correctly identify negative instances.
 - It divides the true negatives samples by the sum of true negatives observations and false positives observations.
 - True Negative Rate = Specificity
-- **Formula:** $$Specificity={True Negatives \over True Negatives + False Positives}$$ 
+- **Formula:** $$Specificity={True\ Negatives \over True\ Negatives + False\ Positives}$$ 
 
 ### Q12- What is Receiver Operating Characteristic (ROC) and Area under-ROC curve (AUC-ROC)?
 - ROC curve is a graphical representation of the model's performance across different classification thresholds.
@@ -141,3 +141,23 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 * Note: False Positive Rate = 1- Specificity
 
 *source: https://sefiks.com/2020/12/10/a-gentle-introduction-to-roc-curve-and-auc/
+
+### Q13- What is Area Under the Precision-Recall Curve (AUC-PR)?
+- Similar to AUC-ROC, AUC-PR represents the area under the precision-recall curve.
+- It provides a summary measure of a model's performance across various levels of precision and recall.
+- It can be calculated using the `precision_recall_curve()` function of `scikit-learn`.
+- The area under the precision-recall curve can be calculated using the `auc()` function of `scikit-learn` taking the recall and precision as input.
+
+<img src="images/precision_recall_curve.png" width="400"> 
+
+*source: https://analyticsindiamag.com/complete-guide-to-understanding-precision-and-recall-curves/
+
+- The same here if AUC-PR is high, then we have better model. Else, we have poor model performance.
+- The recall is provided as the x-axis and precision is provided as the y-axis.
+
+### Q14- When to Use ROC vs. Precision-Recall Curves?
+
+- Choosing either the ROC curves or precision-recall curves depends on your data distribution:
+    - ROC curves: preferable to be used when there are roughly equal numbers of observations for each class.
+    - ROC curves provide a good picture of the model when the dataset has large class imbalance.
+    - Precision-Recall curves should be used when there is a moderate to large class imbalance.
