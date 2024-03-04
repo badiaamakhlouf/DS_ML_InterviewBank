@@ -51,7 +51,7 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
 For more in-depth information on unsupervised learning techniques, click [here](pages/unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
-We have two techniques: classfication and regression: 
+We have two techniques: classification and regression: 
 - Regression : involves predicting a continuous output or numerical value based on input features. Examples : predicting house prices, temperature, stock prices etc.
 - Classification : is the task of assigning predefined labels or categories to input data. We have two types of classification algorithms: 
     - Binary classification (two classes). Example: identifying whether an email is spam or not.
