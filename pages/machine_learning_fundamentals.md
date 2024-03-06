@@ -48,7 +48,7 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
 
 
-For more in-depth information on unsupervised learning techniques, click [here](unsupervised_learning_analysis.md)
+For more in-depth information on unsupervised learning techniques, click [here](./unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classification and regression: 
