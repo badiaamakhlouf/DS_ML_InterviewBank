@@ -93,7 +93,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - LightGBM
 - Neural Networks (Deep Learning)
 
-More details regarding each algorithm could be found in [Classification Analysis](classification_analysis.md)
+More details regarding each algorithm could be found in [Classification Analysis](./classification_analysis.md)
 
 ### Q9- Examples of well-known machine learning algorithms used to solve Clustering problems
 Several well-known machine learning algorithms are commonly used for solving clustering problems. Here are some examples:
