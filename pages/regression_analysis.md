@@ -127,7 +127,7 @@ $$MAE ={1\over n}{\sum_{i=1}^{n}|y_{i}-\hat{y}_{i}|}$$
 ### Q11- What is Mean Absolute Percentage Error (MAPE) ? 
 - It calculates the average percentage difference between the predicted and actual values.
 - It is a relative error metric
-- **Formula:** $$MAPE={1\over n}{\sum_{i=1}^{n}|y_{i}- \hat{y}_{i}| \over |y_{i}|\times 100}$$
+- **Formula:** $$MAPE = {1\over n}{\sum_{i=1}^{n}|y_{i}- \hat{y}_{i}| \over |y_{i}|\times 100}$$
   
 ### Q12- What is R-squared (R2)
 - Known also as the coefficient of determination.
