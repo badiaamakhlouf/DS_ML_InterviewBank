@@ -128,7 +128,7 @@ $$MAE ={1\over n}{\sum_{i=1}^{n}|y_{i}-\hat{y}_{i}|}$$
 - It calculates the average percentage difference between the predicted and actual values.
 - It is a relative error metric
 - **Formula:** $$MAPE = {1\over n}{\sum_{i=1}^{n}|y_{i}- \hat{y}_{i}| \over |y_{i}|\times 100}$$
-  
+
 ### Q12- What is R-squared (R2)
 - Known also as the coefficient of determination.
 - It corresponds to the degree to which the variance in the dependent variable (the target, y) can be explained by the independent variables (features). 
