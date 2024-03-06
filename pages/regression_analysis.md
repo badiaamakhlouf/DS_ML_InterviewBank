@@ -112,7 +112,7 @@ Here are some important assumptions of Linear Regression:
 ### Q8- What is Mean Absolute Error (MAE) ? 
 - As its name indicates, it represents the average absolute difference between the predicted values and the actual values.
 - **Formula :**
-$$MAE = {1\over n} {\sum \limits _{i=1} ^{n}|y_{i}-\hat{y}_{i}|}$$
+$$MAE = {1 \over n} {\sum \limits _{i=1}^{n}|y_{i}-\hat{y}_{i}|}$$
 
 ### Q9- What is Mean Squared Error (MSE) ?
 - It represents the average squared difference between the predicted values and the actual values.
