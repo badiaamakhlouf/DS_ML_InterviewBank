@@ -133,7 +133,7 @@ $$MAE ={1\over n}{\sum_{i=1}^{n}|y_{i}-\hat{y}_{i}|}$$
 - Known also as the coefficient of determination.
 - It corresponds to the degree to which the variance in the dependent variable (the target, y) can be explained by the independent variables (features). 
 - Generally, it measures the proportion of variance explained by our regression model model via representing the correlation between true value and predicted value.
-- **Formula:** $$R^2= 1 - {MSE \over Var(y)}= 1- {\sum_{i=1}^{n}(y_i-\hat{y}_{i})^2 \over {\sum_{i=1}^{n}(y_i-\overline{y})^2}}$$
+- **Formula:** $$R^2= 1 - {MSE \over Var(y)}= 1- {\sum_{i=1}^{n}(y_i-\hat{y}_{i})^2 \over {\sum_i(y_i-\overline{y})^2}}$$
 - $\overline{y}$: is the mean of the target variable.
 - MSE: Mean Square Error, captures the prediction error of a model
 - It is a relative metric where value varies between 0 and 1, the closer is to 1, the better is the fit.
