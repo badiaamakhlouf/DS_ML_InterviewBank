@@ -10,7 +10,7 @@ This page presents the second part of the comprehensive guide to mastering regre
    - L1 regularization : used over regression methods for a more accurate prediction.
 - It consists on adding a penalty term to the objective function, which is ordinary least squares (OLS). 
 - This penalty term penalizes the absolute values of the coefficients of the regression variables.
-- Here is the formula of Lasso Regression objective function : $$ RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
+- Here is the formula of Lasso Regression objective function : $$RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
 - Where :
    - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
    - λ is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
