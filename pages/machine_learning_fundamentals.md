@@ -48,7 +48,7 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
 
 
-For more in-depth information on unsupervised learning techniques, click [here](./unsupervised_learning_analysis.md)
+For more in-depth information on unsupervised learning techniques, check [here](./unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classification and regression: 
@@ -75,7 +75,6 @@ Here are some well-known machine learning algorithms commonly used to solve regr
 - Ridge Regression
 - Neural Networks (Deep Learning)
 
-More details regarding each algorithm could be found here in [Regression Analysis](./regression_analysis.md)
 
 ### Q8- Examples of well-known machine learning algorithms used to solve Classification problems
 Here are some well-known machine learning algorithms commonly used to solve classification problems:
@@ -93,7 +92,6 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - LightGBM
 - Neural Networks (Deep Learning)
 
-More details regarding each algorithm could be found in [Classification Analysis](./classification_analysis.md)
 
 ### Q9- Examples of well-known machine learning algorithms used to solve Clustering problems
 Several well-known machine learning algorithms are commonly used for solving clustering problems. Here are some examples:
@@ -145,6 +143,12 @@ Recommender systems are widely used in various industries, including e-commerce,
 Ranking in machine learning refers to the process of assigning a meaningful order or ranking to a set of items based on their relevance or importance. This is often used in scenarios where the goal is to prioritize or sort items based on their predicted or observed characteristics.
 
 Ranking problems are common in various applications, including information retrieval, recommendation systems, and search engines.
+
+
+**Notes:**
+- Please, check the next subsequent pages for more details and questions:
+     - [Supervised Learning](./supervised_learning.md)
+     - [Unsupervised Learning]((./unsupervised_learning_analysis.md))
 
 ### Q16- What is the difference between Inductive ML and Deductive ML?
 - **Inductive Learning:**
