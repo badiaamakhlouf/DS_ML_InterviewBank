@@ -1,7 +1,7 @@
 # ML : Supervised Learning 
 # Part I: Regression Analysis
 
-This page serves as a comprehensive resource for mastering regression analysis, providing essential information and detailed insights tailored for technical interviews. Whether you're strengthening foundational knowledge or delving into specific regression concepts, this page offers the first part of a comprehensive guide. For the second part, please check [Regression Analysis II]((./regression_analysis_II))
+This page serves as a comprehensive resource for mastering regression analysis, providing essential information and detailed insights tailored for technical interviews. Whether you're strengthening foundational knowledge or delving into specific regression concepts, this page offers the first part of a comprehensive guide. For the second part, please check [Regression Analysis II](./regression_analysis_II.md)
 
 ## List of questions:
 ### Q0- What does regression analysis mean?
