@@ -25,7 +25,9 @@ This GitHub page provides essential information and detailed insights into each 
     - Biology
     - Psychology
     - Machine learning
-- More details and additional questions regarding regression analysis can be found in the subsequent pages : [Regression analysis Part I](./unsupervised_learning_analysis.md)
+- More details and additional questions regarding regression analysis can be found in the subsequent pages :
+    -  [Regression analysis Part I](./regression_analysis_I.md)
+    -  [Regression analysis Part II](./regression_analysis_II.md)
 
 
 
