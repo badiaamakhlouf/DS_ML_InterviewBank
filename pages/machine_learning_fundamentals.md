@@ -46,9 +46,6 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
  We have two techniques, Clustering and association: 
  - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.. 
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
-
-
-For more in-depth information on unsupervised learning techniques, check [here](./unsupervised_learning_analysis.md)
  
 ### Q5- What are Supervised Learning techniques ? 
 We have two techniques: classification and regression: 
@@ -56,6 +53,11 @@ We have two techniques: classification and regression:
 - Classification : is the task of assigning predefined labels or categories to input data. We have two types of classification algorithms: 
     - Binary classification (two classes). Example: identifying whether an email is spam or not.
     - Multiclass classification (multiple classes). Example: classifying images of animals into different species.
+
+**Notes:**
+- Please, check the next subsequent pages for more in-depth information and detailed questions:
+     - [Supervised Learning](./supervised_learning.md)
+     - [Unsupervised Learning]((./unsupervised_learning_analysis.md))
 
 ### Q6- What is a Hypothesis in Machine Learning?
 - Mainly used in supervised machine learning approach. 
@@ -143,12 +145,6 @@ Recommender systems are widely used in various industries, including e-commerce,
 Ranking in machine learning refers to the process of assigning a meaningful order or ranking to a set of items based on their relevance or importance. This is often used in scenarios where the goal is to prioritize or sort items based on their predicted or observed characteristics.
 
 Ranking problems are common in various applications, including information retrieval, recommendation systems, and search engines.
-
-
-**Notes:**
-- Please, check the next subsequent pages for more details and questions:
-     - [Supervised Learning](./supervised_learning.md)
-     - [Unsupervised Learning]((./unsupervised_learning_analysis.md))
 
 ### Q16- What is the difference between Inductive ML and Deductive ML?
 - **Inductive Learning:**
