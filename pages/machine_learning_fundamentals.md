@@ -57,7 +57,7 @@ We have two techniques: classification and regression:
 **Notes:**
 - Please, check the next subsequent pages for more in-depth information and detailed questions :
      - For [Supervised Learning](./supervised_learning.md)
-     - For [Unsupervised Learning]((./unsupervised_learning_analysis.md))
+     - For [Unsupervised Learning](./unsupervised_learning_analysis.md)
 
 ### Q6- What is a Hypothesis in Machine Learning?
 - Mainly used in supervised machine learning approach. 
