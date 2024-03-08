@@ -44,7 +44,7 @@ In machine learning, the terms "supervised learning," "unsupervised learning," a
 
 ### Q4- What are Unsupervised Learning techniques ?
  We have two techniques, Clustering and association: 
- - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.. 
+ - Custering :  involves grouping similar data points together based on inherent patterns or similarities. Example: grouping customers with similar purchasing behavior for targeted marketing.
  - Association : identifying patterns of associations between different variables or items. Example: e-commerse website suggest other items for you to buy based on prior purchases.
  
 ### Q5- What are Supervised Learning techniques ? 
