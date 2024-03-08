@@ -2,7 +2,7 @@
 
 Machine learning algorithms can be categorized into different types based on their learning approaches, data characteristics, and task objectives. Supervised learning is one such type, where the model learns patterns from labeled data. In supervised learning, the input data is divided into features (input) and target (output). The goal is to predict the target or output using the provided features.
 
-Supervised learning encompasses two main techniques:
+💡 Supervised learning encompasses two main techniques:
    - Classification
    - Regression
 
