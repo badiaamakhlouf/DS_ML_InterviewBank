@@ -39,6 +39,32 @@ This GitHub page provides essential information and detailed insights into each 
     -  Sentiment analysis
     -  Medical diagnosis
     -  Fraud detection
-- More detailed questions and informations, regarding classification analysis, is provided in the subsequent pages :  [Classification analysis](./classification_analysis_I.md)
+- More detailed questions and informations, regarding classification analysis, is provided in the subsequent pages :  [Classification analysis](./classification_analysis.md)
 
+### Q2- How to determine whether to perform regression or classification analysis ?
+- Briefly, it all depends on your target or output variable:
+     - Continuous or numerical : Regression
+     - Discrete or categorical or qualitative: Classification
+- Examples of regression:
+     - Predicting item prices
+     - Estimating stock prices
+     - Forecasting temperature
+- Examples of classification:
+     - Email is spam or not
+     - Customer churn or not
+     - Disease exist or not
+     - Image classification
+       
+### Q3- What are the main differences between classification and regression problems?
+- Target or output variable:
+     - For regression is Continuous or numerical
+     - For classification is categorical or qualitative
+- Machine learning Models :
+     - Some models are used for both classification and regression such as Decision trees, Random forests and neural networks etc.
+     - Some models are only used for :
+        - Classification: Logistic Regression , SVM etc.
+        - Regression: Linear Regression, polynomial regression etc.
+- Evaluation metrics are also different:
+     - For regression : mean squared error (MSE), root mean squared error (RMSE), and mean absolute error (MAE).
+     - For classification: accuracy, precision, recall, and F1-score   
 
