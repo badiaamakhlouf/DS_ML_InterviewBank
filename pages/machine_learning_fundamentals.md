@@ -1,6 +1,6 @@
 # Machine Learning Fundamentals 
 
-This article is a guide for those gearing up for machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. The content includes detailed questions about three main machine learning approaches: regression, classification, and clustering.
+This page is a guide for those gearing up for data science and machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. 
 
 Whether you're polishing your interview skills or seeking insightful questions as an interviewer, this page is a valuable resource to strengthen your grasp of machine learning basics.
 
