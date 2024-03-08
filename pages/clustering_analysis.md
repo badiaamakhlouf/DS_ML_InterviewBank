@@ -110,11 +110,11 @@ Several well-known machine learning algorithms are commonly used for solving clu
 
 ### Q10- How Agglomerative Hierarchical Clustering works ? 
 - Here are the steps:
-    1. Each data point starts as a singleton cluster
-    2. The similarity or dissimilarity between data points is calculated using a chosen distance metric. 
-    3. Based on the similarity/dissimilarity values, the algorithm either merges clusters into new clusters.
-    4. After merging clusters, a dendrogram is constructed.
-    5. The algorithm continues until all data points belong to a single cluster (convergence) or until a predefined stopping criterion is met.
+1. Each data point starts as a singleton cluster
+2. The similarity or dissimilarity between data points is calculated using a chosen distance metric. 
+3. Based on the similarity/dissimilarity values, the algorithm either merges clusters into new clusters.
+4. After merging clusters, a dendrogram is constructed.
+5. The algorithm continues until all data points belong to a single cluster (convergence) or until a predefined stopping criterion is met.
 
 ### Q11- Advantages Vs Disadvantages of Hierarchical Clustering
 - **Advantages :**
