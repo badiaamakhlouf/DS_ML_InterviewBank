@@ -1,6 +1,6 @@
 # Machine Learning Fundamentals 
 
-💡 This page is a guide for those gearing up for data science and machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. 
+🧭 This page is a guide for those gearing up for data science and machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. 
 
 🚀 Whether you're polishing your interview skills or seeking insightful questions as an interviewer, this page is a valuable resource to strengthen your grasp of machine learning basics.
 
