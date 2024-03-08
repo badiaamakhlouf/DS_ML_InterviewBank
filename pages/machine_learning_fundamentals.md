@@ -55,9 +55,9 @@ We have two techniques: classification and regression:
     - Multiclass classification (multiple classes). Example: classifying images of animals into different species.
 
 **Notes:**
-- Please, check the next subsequent pages for more in-depth information and detailed questions:
-     - [Supervised Learning](./supervised_learning.md)
-     - [Unsupervised Learning]((./unsupervised_learning_analysis.md))
+- Please, check the next subsequent pages for more in-depth information and detailed questions :
+     - For [Supervised Learning](./supervised_learning.md)
+     - For [Unsupervised Learning]((./unsupervised_learning_analysis.md))
 
 ### Q6- What is a Hypothesis in Machine Learning?
 - Mainly used in supervised machine learning approach. 
