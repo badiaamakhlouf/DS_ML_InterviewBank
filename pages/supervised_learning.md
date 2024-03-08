@@ -29,6 +29,16 @@ This GitHub page provides essential information and detailed insights into each 
     -  [Regression analysis Part I](./regression_analysis_I.md)
     -  [Regression analysis Part II](./regression_analysis_II.md)
 
-
+### Q1- What does classification analysis mean?
+- It is one fundamental task in machine learning and data science that uses the supervised learning approach. 
+- Commonly used in building predictive models to categorize data into predefined classes or categories based on input features or attributes.
+- Algorithm learns patterns and relationships between input features and class labels.
+- Once the model is trained, it can predict the class labels of new or unseen data instances.
+- This predictive capability enables various applications such as:
+    -  Spam detection
+    -  Sentiment analysis
+    -  Medical diagnosis
+    -  Fraud detection
+- More detailed questions and informations regarding classification analysis is provided in the subsequent pages :  [Classification analysis](./classification_analysis_I.md)
 
 
