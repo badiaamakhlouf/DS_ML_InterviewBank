@@ -39,6 +39,6 @@ This GitHub page provides essential information and detailed insights into each 
     -  Sentiment analysis
     -  Medical diagnosis
     -  Fraud detection
-- More detailed questions and informations regarding classification analysis is provided in the subsequent pages :  [Classification analysis](./classification_analysis_I.md)
+- More detailed questions and informations, regarding classification analysis, is provided in the subsequent pages :  [Classification analysis](./classification_analysis_I.md)
 
 
