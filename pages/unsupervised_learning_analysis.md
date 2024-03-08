@@ -10,5 +10,26 @@ Machine learning algorithms can be categorized into different types based on the
 
 🙏🏻 Note: Your suggestions for improvement are welcome; please feel free to provide feedback to help maintain the precision and coherence of this page.
 
+## List Of Questions :
+### Q0- What does Clustering Analysis mean?
+- It is unsupervised machine learning technique to group similar data points based on their characteristics.
+- It aims to identify clusters within a dataset.
+- Data points within the same cluster are more similar to each other than to those in other clusters.
+- Clustering analysis is commonly used for:
+   - Exploratory data analysis
+   - Pattern recognition
+   - Segmentation 
+- It is used in various fields such as:
+   - Marketing
+   - Biology
+   - Finance
+   - etc.
+- Sometimes, you know the number of clusters and sometimes you must determine it.
+
+### Q1- What does Association means?
+
+
+
+
 
 
