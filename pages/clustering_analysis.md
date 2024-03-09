@@ -100,6 +100,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
    - It assigns data points to the nearest cluster median
    - It updates the cluster medians to minimize the total distance between data points and their respective cluster medians.
    - Repeat the process until convergence: each point is closer to the median of its cluster than to the medians of other clusters.
+     
 ### Q9- What is Hierarchical Clustering ? 
 - It is a clustering technique used in data analysis and machine learning.
 - It starts with each data point as a separate cluster and then iteratively merges or splits clusters based on their similarity, forming a dendrogram.
@@ -149,7 +150,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
     - Measures the straight-line distance between two points in Euclidean space.
     - Represents the shortest distance between two vectors
     - Suitable for continuous numerical data
-    - Formula:  $  d(c, x) = \sqrt{\sum_i (c_i - x_i)^2}$
+    - Formula:  $d(c, x) = \sqrt{\sum_i (c_i - x_i)^2}$
     - Where : 
        - c is the centroid of the cluster.
        - x is the data point.
