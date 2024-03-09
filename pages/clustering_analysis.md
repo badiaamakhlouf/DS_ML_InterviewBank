@@ -291,10 +291,10 @@ Here are more details regarding each method:
 
 ### Q18- How do measure the effectiveness of the clusters?
 - Here is the list of used metrics:
- - Inertia
- - Sum of Squared Errors (SSE)
- - Silhouette Score
- - l1, and l2 scores
+   - Inertia
+   - Sum of Squared Errors (SSE)
+   - Silhouette Score
+   - l1, and l2 scores
 - The first three metrics are the most and commonly used for measuring the effectiveness of the clusters.
  
 ### Q19- What does SUM of Squared Error  mean ?
