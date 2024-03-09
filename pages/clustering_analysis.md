@@ -45,8 +45,8 @@ Several well-known machine learning algorithms are commonly used for solving clu
 - Number of clusters is known at the beginning.
 - It assigns each point to the nearest custer centroid based on distance
 - Has two version : 
- - Hard-Kmeans 
- - Soft Kmeans 
+   - Hard-Kmeans 
+   - Soft Kmeans 
  
 ### Q4- How hard K-Means works
 - It works as follow :
