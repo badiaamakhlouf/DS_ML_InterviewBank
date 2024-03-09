@@ -150,7 +150,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
     - Measures the straight-line distance between two points in Euclidean space.
     - Represents the shortest distance between two vectors
     - Suitable for continuous numerical data
-    - Formula:  $d(c, x) = \sqrt{\sum_i (c_i - x_i)^2}$
+    - Formula:  $d(c, x) = \sqrt{\sum_{i=1}^{n}(c_i - x_i)^2}$
     - Where : 
        - c is the centroid of the cluster.
        - x is the data point.
