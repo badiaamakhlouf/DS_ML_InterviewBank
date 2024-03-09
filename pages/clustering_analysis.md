@@ -232,10 +232,10 @@ Here are more details regarding each method:
     - Formula: $d(C_{1},C_{2})={max_{i \in C_{1}, j \in C_{2}} distance(i,j)}$ 
 - **Average Linkage:**
     - The distance between two clusters is the average distance between all pairs of points from the two clusters.
-    - Formula: $d(C_{1},C_{2})={1 \over |C_{1}|\times|C_{2}|}{\sum \limits _{i\in C_{1}} \sum \limits _{j\in C_{2}} distance(i,j)}$
+    - Formula: $d(C_{1},C_{2})={1 \over |C_{1}|\times|C_{2}|}{\sum_{i\in C_{1}} \sum_{j\in C_{2}} distance(i,j)}$
 - **Centroid Linkage (UPGMA - Unweighted Pair Group Method with Arithmetic Mean):**
     - The distance between two clusters is the distance between their centroids (mean vectors).
-    - Formula: d($C_{1}$,$C_{2}$)=distance(centroid($C_{1}$), centroid($C_{2}$))
+    - Formula: $d(C_{1},C_{2})=distance(centroid(C_{1}), centroid(C_{2}))$
 - **Ward's Method:**
     - Minimizes the increase in variance within the clusters when merging.
     - It considers the sum of squared differences within each cluster and the sum of squared differences between the centroids of the clusters.
