@@ -190,7 +190,7 @@ Several well-known machine learning algorithms are commonly used for solving clu
 5. **Chebyshev Distance:**
    - Measures the maximum absolute difference between coordinates.
    - Suitable for data where outliers might have a significant impact.
-   - Formula: $ d(c, x) = \max_i |c_i - x_i| $
+   - Formula: $d(c, x) = \max_i |c_i - x_i|$
    - Where : 
      - $c_i$: the $i$-th attributes of the centroid
      - $x_i$: the $i$-th attributes of the data point
@@ -229,7 +229,7 @@ Here are more details regarding each method:
    
 - **Complete Linkage (Maximum Linkage):**
     - The distance between two clusters is the maximum distance between any two points in the two clusters.
-    - Formula: $d(C_{1},C_{2})={max{i \in C_{1}, j \in C_{2}} distance(i,j)}$ 
+    - Formula: $d(C_{1},C_{2})={max_{i \in C_{1}, j \in C_{2}} distance(i,j)}$ 
 - **Average Linkage:**
     - The distance between two clusters is the average distance between all pairs of points from the two clusters.
     - Formula: $d(C_{1},C_{2})={1 \over |C_{1}|\times|C_{2}|}{\sum \limits _{i\in C_{1}} \sum \limits _{j\in C_{2}} distance(i,j)}$
