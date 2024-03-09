@@ -33,6 +33,22 @@ Machine learning algorithms can be categorized into different types based on the
 - More details and additional questions regarding clustering analysis are available in the subsequent page : [Clustering Analysis](./clustering_analysis.md)
 
 ### Q1- What does Association means?
+- Known as association rule mining
+- It is a rule-based approach used to discover interesting relationships between features in a given dataset.
+- It works by using a measure of interest to identify strong rules found within a dataset. 
+- Application: 
+   - **Retail:** Understanding purchasing patterns for better product placement.
+   - **Recommendation Systems:** Suggesting related items based on past user behavior.
+   - **Healthcare:** Finding correlations between symptoms and diseases for diagnosis and treatment planning.
+   - **Web Usage Mining:** Analyzing user behavior to improve website experience.
+- Most common algorithms:
+   - Apriori Algorithm: A classic algorithm that discovers frequent itemsets and generates association rules.
+   - FP-Growth (Frequent Pattern Growth): An efficient algorithm for discovering frequent itemsets using a divide-and-conquer strategy.
+   - Eclat (Equivalence Class Transformation): Another frequent itemset mining algorithm that uses a depth-first search strategy to find frequent itemsets.
+   - FPMax (Maximal Frequent Pattern): An extension of FP-Growth that extracts maximal frequent itemsets.
+   - CARMA (Class Association Rule Mining Algorithm): An algorithm designed specifically for mining class association rules, which consider both itemset frequency and class labels.
+
+
 
 
 
