@@ -299,9 +299,9 @@ Here are more details regarding each method:
  
 ### Q19- What does SUM of Squared Error  mean ?
 - SSE: SUM of Squared Error 
-- Formula: $SSE={\sum \limits _{k=1} ^{K} \sum \limits _{y_{i} \in C_{k}} ||y_{i}-x_{k}||^2}$
+- Formula: $SSE={\sum_{k=1} ^{K} \sum_{y_{i} \in C_{k}} ||y_{i}-x_{k}||^2}$
 - $y_{i}$ : is the ith vector belonging to cluster $C_{k}$ and $x_{k}$ is the centroid 
-- Formula of centroid: $$x_{k}={1\over N_{k}}{\sum \limits _{y_{i} \in C_{k}} y_{i}}$$
+- Formula of centroid: $$x_{k}={1\over N_{k}}{\sum_{y_{i} \in C_{k}} y_{i}}$$
 - If SSE is small, clusters are compact and well separated
 - Cluster with smallest SSE is the best one 
 
