@@ -38,7 +38,6 @@ Feature scaling is a preprocessing step in machine learning that involves transf
 The goal is to ensure that all features contribute equally to the learning process and to prevent certain features from dominating due to differences in their magnitudes.
 
 ### Q6- What are the common techniques for feature scaling?
-
 Here are common techniques for feature scaling:
 - Normalization
 - Standard scaling : converts features to standard normal variables (by subtracting the mean and dividing the standard error)
@@ -67,7 +66,6 @@ Here are common techniques for feature scaling:
 - Formula: $X_{robust} = {X - median(X)\over IQR(X)}$
 
 ### Q10- How to perform Log Transformation
-
 - The log transformation is the most popular among the different types of transformations used in machine learning.
 - It aims to make highly skewed distributions (features with high variance) less skewed.
 - The logarithm used is often the natural logarithm (base e) or the common logarithm (base 10).
@@ -86,7 +84,6 @@ Here are common techniques for feature scaling:
 - Choosing the best polynomial degree is so important as it impacts the number of input features created. 
 
 **More notes:** 
-
 - Higher-degree polynomials (Degree > 2) can lead to overfitting, capturing noise in the data rather than true underlying patterns. Regularization techniques may be needed to mitigate this.
 - It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
 
@@ -97,7 +94,6 @@ Here are common techniques for feature scaling:
 - Q3 : It represents the median of the upper 50% of the data
 
 ![title](images/boxplot.png)
-
 
 Here's how you calculate the IQR: 
 - 1. Order the dataset: arrange the values in the dataset in ascending order
@@ -122,8 +118,7 @@ Here are some common encoding methods:
 - Label Encoding : Assign a unique numerical label to each category in a categorical variable
 - Binary Encoding : Convert each category into its binary representation.
 - Frequency (Count) Encoding: Replace each category with its frequency or count in the dataset
-
-
+- 
 **!! Notes :**
 - Ordinal encoding is a good choice in case we have ranking in our categorical variables (Low, medium, high), most used with DT and Random Forest.
 - One-hot encoding is more used when there is no ranking in the categorical variables.
@@ -144,13 +139,11 @@ Here are some key points about Feature Extraction:
 - Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
 
 ### Q16- What does Dimensionality reduction mean?
-
 - It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
 - The goal is to simplify the dataset while retaining its essential information and patterns.
 - High-dimensional datasets, where the number of features is large, can suffer from the curse of dimensionality, leading to increased computational complexity and potential overfitting.
 - Dimensionality reduction methods aim to overcome these challenges by transforming or selecting a subset of features, preserving the most relevant information and reducing noise in the data.
 - Here are popular examples of Dimensionality reduction techniques:
-
   - Principal Component Analysis (PCA)
   - Singular Value Decomposition (SVD)
   - Independent Component Analysis (ICA)
