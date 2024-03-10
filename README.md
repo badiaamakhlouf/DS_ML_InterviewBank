@@ -57,19 +57,31 @@ Certainly, there are certain data science skills that are exclusively required f
  In today's landscape, many advanced machine learning topics have become popular, with applications spanning various exciting fields. This section is designed to delve into these topics in depth, offering insights into their techniques and methodologies. 
  
  Some advanced topics include :
- - 🎯 [Deep Learning](./deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning. 
- - 🎯 [Reinforcement Learning](./reinforcement_learning.md): it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
- - 🎯 [Transfer Learning](./transfert_learning.md): it is a machine learning technique that involves reusing a model developed for one task as the starting point for another task. This approach is particularly prevalent in computer vision and natural language processing, where pre-trained models are leveraged to kickstart the learning process for subsequent tasks.
+ - 🧠 [Deep Learning](./deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning.
+   
+ - 💡 [Reinforcement Learning](./reinforcement_learning.md): it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
+   
+ - 🚀 [Transfer Learning](./transfert_learning.md): it is a machine learning technique that involves reusing a model developed for one task as the starting point for another task. This approach is particularly prevalent in computer vision and natural language processing, where pre-trained models are leveraged to kickstart the learning process for subsequent tasks.
+   
  - 🎯 [Meta Learning](./meta_learning.md):
- - 🎯 [Automated Machine Learning (AutoML)](./AutoML.md):
+   
+ - ⚙️ [Automated Machine Learning (AutoML)](./AutoML.md):
+   
  - 🎯 [Generative Adversarial Networks (GANs)](./generative_adversarial_networks.md):
- - 🎯 [Time Series Analysis](./time_series_analysis.md):
+   
+ - 📈 [Time Series Analysis](./time_series_analysis.md):
+   
  - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
- - 🎯 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
- - 🎯 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to improve communication between computers and humans using human language. It helps computers understand, interpret, and generate language in a meaningful way, drawing from computer science, linguistics, and psychology.
+   
+ - 🤖 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
+   
+ - 📖 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to improve communication between computers and humans using human language. It helps computers understand, interpret, and generate language in a meaningful way, drawing from computer science, linguistics, and psychology.
+   
  - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md):
- - 🎯 [Interpretability and Explainability](./ml_interpretability_explainability.md):
- - 🎯 [Recommender Systems](./recommender_systems.md): they are applications or algorithms designed to suggest items or content to users according to their preferences and behavior. By utilizing data on users and items, these systems offer personalized recommendations aiming to enhance user experience and satisfaction. They find extensive use across diverse industries.
+   
+ - ✅  [Interpretability and Explainability](./ml_interpretability_explainability.md):
+   
+ - 🛒 [Recommender Systems](./recommender_systems.md): they are applications or algorithms designed to suggest items or content to users according to their preferences and behavior. By utilizing data on users and items, these systems offer personalized recommendations aiming to enhance user experience and satisfaction. They find extensive use across diverse industries.
 
  ## 3- Machine Learning Operations : MLOPS
 
