@@ -69,7 +69,7 @@ Certainly, there are certain data science skills that are exclusively required f
    
  - 🎯 [Generative Adversarial Networks (GANs)](./generative_adversarial_networks.md):
    
- - 📈 [Time Series Analysis](./time_series_analysis.md):
+ - 📈 [Time Series Analysis](./time_series_analysis.md): it is a specialized method for examining a series of data points gathered over a period of time. Its objective is to derive insightful statistics and other attributes from the data.
    
  - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
    
@@ -77,9 +77,9 @@ Certainly, there are certain data science skills that are exclusively required f
    
  - 📖 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to improve communication between computers and humans using human language. It helps computers understand, interpret, and generate language in a meaningful way, drawing from computer science, linguistics, and psychology.
    
- - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md):
+ - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md): it refers to the application of Bayesian methods in the field of machine learning. It involves using Bayesian principles to model uncertainty, update beliefs, and make predictions or decisions based on data. Bayesian methods are particularly useful when dealing with limited data, noisy observations, or complex models, as they allow for more robust and interpretable results
    
- - ✅  [Interpretability and Explainability](./ml_interpretability_explainability.md):
+ - ✅  [Interpretability and Explainability](./ml_interpretability_explainability.md): as machine learning models get more complex, there's a rising demand for ways to interpret and explain their decisions. Techniques like SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) tackle this issue.
    
  - 🛒 [Recommender Systems](./recommender_systems.md): they are applications or algorithms designed to suggest items or content to users according to their preferences and behavior. By utilizing data on users and items, these systems offer personalized recommendations aiming to enhance user experience and satisfaction. They find extensive use across diverse industries.
 
