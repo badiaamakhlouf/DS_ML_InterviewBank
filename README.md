@@ -58,17 +58,18 @@ Certainly, there are certain data science skills that are exclusively required f
  
  Some advanced topics include :
  - 🎯 [Deep Learning](./deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning. 
- - 🎯 [Reinforcement Learning]: it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
- - 🎯 [Transfer Learning]:
- - 🎯 [Meta Learning]:
- - 🎯 [Automated Machine Learning (AutoML)]:
+ - 🎯 [Reinforcement Learning](./reinforcement_learning.md): it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
+ - 🎯 [Transfer Learning](./transfert_learning.md):
+ - 🎯 [Meta Learning](./meta_learning.md):
+ - 🎯 [Automated Machine Learning (AutoML)](./AutoML.md):
  - 🎯 [Generative Adversarial Networks (GANs)]:
- - 🎯 [Time Series Analysis]:
- - 🎯 [Graph Neural Networks (GNNs)]:
- - 🎯 [Computer Vision]:
- - 🎯 [Natural Language Processing]:
- - 🎯 [Bayesian Machine Learning]:
- - 🎯 [Interpretability and Explainability]:
+ - 🎯 [Time Series Analysis](./time_series_analysis.md):
+ - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
+ - 🎯 [Computer Vision](./computer_vision.md):
+ - 🎯 [Natural Language Processing](./natural_language_processing.md):
+ - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md):
+ - 🎯 [Interpretability and Explainability](./ml_interpretability_explainability.md):
+ - 🎯 [Recommender Systems](./recommender_systems.md)
    
  ## 3- 🍀 Soft Skills 
  
