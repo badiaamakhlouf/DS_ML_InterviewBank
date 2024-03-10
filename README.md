@@ -71,7 +71,7 @@ Certainly, there are certain data science skills that are exclusively required f
    
  - 📈 [Time Series Analysis](./time_series_analysis.md): it is a specialized method for examining a series of data points gathered over a period of time. Its objective is to derive insightful statistics and other attributes from the data.
    
- - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md): they are neural networks designed for graph-structured data. They analyze relationships between entities in networks, like social connections or molecular structures. GNNs are useful for tasks such as social network analysis and drug discovery.
+ - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md): they are neural networks designed to handle non-Euclidean data represented as graphs or graph-structured data. They analyze relationships between entities in networks, like social connections or molecular structures. GNNs are useful for tasks such as social network analysis and drug discovery.
 
  - 🤖 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
    
