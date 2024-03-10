@@ -1,10 +1,11 @@
 # ML : Unsupervised learning 
 
-Machine learning algorithms can be categorized into different types based on their learning approaches, data characteristics, and task objectives. Unsupervised learning is one such type where the models are trained on unlabeled data to uncover hidden patterns or structures without explicit guidance. It's about finding relationships or structures within data without predefined outcomes or target variables.
+🚀 Machine learning algorithms can be categorized into different types based on their learning approaches, data characteristics, and task objectives. Unsupervised learning is one such type where the models are trained on unlabeled data to uncover hidden patterns or structures without explicit guidance. It's about finding relationships or structures within data without predefined outcomes or target variables.
 
 💡 Unsupervised learning encompasses two main techniques:
    - Clustering
    - Associations
+   - Dimensionality reduction
 
 🧠 This GitHub page provides essential information and detailed insights into each technique, offering comprehensive and tailored questions for technical interviews for data scientists and machine learning engineers. It can help you master everything about Clsutering and associations, ensuring you're well-prepared to pass your technical interview.
 
@@ -33,8 +34,10 @@ Machine learning algorithms can be categorized into different types based on the
 - More details and additional questions regarding clustering analysis are available in the subsequent page : [Clustering Analysis](./clustering_analysis.md)
 
 ### Q1- What does Association means?
-- Known as association rule mining
-- It is a rule-based approach used to discover interesting relationships between features in a given dataset.
+- Known as association rule mining, and it is data mining technique
+- It is used to discover interesting relationships or associations among variables.
+- It focuses on identifying patterns, correlations, and dependencies between different items, events, or variables by analyzing how often they appear together in the dataset.
+- It is mainly used with large datasets.
 - It works by using a measure of interest to identify strong rules found within a dataset. 
 - Application: 
    - **Retail:** Understanding purchasing patterns for better product placement.
@@ -47,6 +50,10 @@ Machine learning algorithms can be categorized into different types based on the
    - Eclat (Equivalence Class Transformation): uses a depth-first search strategy to find frequent itemsets.
    - FPMax (Maximal Frequent Pattern): An extension of FP-Growth that extracts maximal frequent itemsets.
    - CARMA (Class Association Rule Mining Algorithm): designed specifically for mining class association rules, which consider both itemset frequency and class labels.
+
+**Notes:**
+- You can find more information and additional questions about association rule mining on the following page : [Association mining](./association_mining.md)
+- ### Q2- What does dimensionality reduction mean?
 
 
 
