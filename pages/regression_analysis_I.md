@@ -95,8 +95,18 @@ Here are some important assumptions of Linear Regression:
 - Multicollinearity involves high-correlation between the independent variables.
 - In this situation, it become difficult to find the true relationship between the predictors and target variables.
 - More precisely, it is challenging to point which predictor variable has the major influence on the target variable.
-  
-### Q7- What are the performance metrics for Regression Analysis? 
+
+### Q7- What does Ordinary Least Squares mean?
+- It has foundational role in numerous regression techniques.
+- It's a widely adopted method for estimating coefficients or parameters in linear regression models.
+- The model formula is : $y = W_0 + W_1 x_1+ W_2 x_2 +...+ W_n x_n + ϵ$, where ϵ represents the error term.
+- OLS aims to minimize the sum of squared differences/errors between actual and predicted values, representing the prediction error.
+- The choice of summing squared errors, rather than errors directly, is deliberate. This is because errors can cancel each other out when summed directly due to being positive or negative.
+- It is widely used as it provides unbiased estimators of the coefficients. 
+- It has well-understood statistical properties. 
+- It assumes a linear relationship between the independent variables (predictors) $x_i$ and the target $y_i$ 
+
+### Q8- What are the performance metrics for Regression Analysis? 
 - Several performance metrics are commonly used to evaluate the accuracy and goodness of fit of regression models.
 - Here are some common performance metrics for regression:
     - **Mean Absolute Error (MAE)**
@@ -109,27 +119,27 @@ Here are some important assumptions of Linear Regression:
 - Considering multiple metrics is better solution to gain a comprehensive understanding about the model performance.
 - Almost, all regression tasks uses error to evaluate the model: if error is high ==> we need either to change the model or retrain it with more data.
   
-### Q8- What is Mean Absolute Error (MAE) ? 
+### Q9- What is Mean Absolute Error (MAE) ? 
 - As its name indicates, it represents the average absolute difference between the predicted values and the actual values.
 - **Formula :**
 $$MAE ={1\over n}{\sum_{i=1}^{n}|y_{i}-\hat{y}_{i}|}$$
 
-### Q9- What is Mean Squared Error (MSE) ?
+### Q10- What is Mean Squared Error (MSE) ?
 - It represents the average squared difference between the predicted values and the actual values.
 - It penalizes larger errors more heavily than MAE.
 - **Formula:** $$MSE = {1\over n} {\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})^2}$$ 
 
-### Q10- What is Root Mean Squared Error (RMSE) ? 
+### Q11- What is Root Mean Squared Error (RMSE) ? 
 - It represents the square root of the MSE
 - It provides a measure of the average magnitude of errors in the same units as the target variable.
 - **Formula:** $$RMSE= {\sqrt MSE}$$
 
-### Q11- What is Mean Absolute Percentage Error (MAPE) ? 
+### Q12- What is Mean Absolute Percentage Error (MAPE) ? 
 - It calculates the average percentage difference between the predicted and actual values.
 - It is a relative error metric
 - **Formula:** $$MAPE = {1\over n} \sum_{i=1}^{n} ({|y_{i}- \hat{y}_{i}|\over |y_i|})\times 100$$
 
-### Q12- What is R-squared (R2)
+### Q13- What is R-squared (R2)
 - Known also as the coefficient of determination.
 - It corresponds to the degree to which the variance in the dependent variable (the target, y) can be explained by the independent variables (features). 
 - Generally, it measures the proportion of variance explained by our regression model model via representing the correlation between true value and predicted value.
@@ -144,14 +154,14 @@ Notes:
 - In the case of non-linear models, it is possible that R² is negative.
 - It is possible to use **Adjusted R-squared**, which provides a penalized version of R-squared that adjusts the model complexity.
   
-### Q13- Which evaluation metric is more robust to the outliers : MAE or MSE or RMSE ?
+### Q14- Which evaluation metric is more robust to the outliers : MAE or MSE or RMSE ?
 - MAE is robust to the outliers as compared to the MSE or RMSE. 
 - This is because MAE calculates the average absolute difference between predicted and actual values, which makes it less sensitive to extreme values or outliers. 
 - MSE and RMSE involve squaring the differences, which can amplify the impact of outliers on the overall error. 
 - Therefore, in datasets with outliers, MAE is often preferred as a more resilient metric for evaluating model performance.
   
 ##  Decision Trees
-### Q14- What does decision tree mean ? 
+### Q15- What does decision tree mean ? 
 - It is a non-parametric supervised learning algorithm. 
 - It has the tree structure: root node, edges (branches), internal and leaf nodes
 - It can be used to solve both Classification and Regression problems.
@@ -160,13 +170,13 @@ Notes:
 <img src="images/tree_structure.png" width="400">
 
 *Source: https://www.ibm.com/topics/decision-trees
-### Q15- What are the types of decision tree 
+### Q16- What are the types of decision tree 
 - We have three main types :
     - **ID3:** Iterative Dichotomiser 3: splitting datasets is based on metrics like entropy and information gain. 
     - **C4.5:** it is identified as a later iteration of ID3, where it uses information gain or gain ratios to split datasets.
     - **CART:** Classification And Regression Trees: it utilizes Gini impurity to identify the ideal attribute to split the dataset on.
 
-### Q16- What are the different menthods used by DT in splitting datasets? 
+### Q17- What are the different menthods used by DT in splitting datasets? 
 Here is the list of methods:
 
 - **Variance:** 
@@ -209,7 +219,7 @@ Here is the list of methods:
         - If it is high, the differences between parent and child nodes is high ==> high homogeneity.
         - If it is low, the differences between parent and child nodes is low ==> low homogeneity.
                   
-### Q17- How many splits are there in a decision tree?
+### Q18- How many splits are there in a decision tree?
  - As mentioned before, the splitting criteria used by the regression tree and the classification tree are different.
  - For classification problems, if we have n classes in a decision tree, the maximum splits will be $2^{(n -1)} – 1$. 
  - The number of splits in a decision tree for regression depends on several factors:
@@ -218,22 +228,22 @@ Here is the list of methods:
      - Thresholds: if our feature is continous, we have infinite values that could be used to split node
      - Stopping Criteria: some conditions like minimum samples per leaf or maximum tree depth, can limit the number of splits and prevent the tree from growing excessively.
      
-### Q18- What is the best method for splitting a decision tree?
+### Q19- What is the best method for splitting a decision tree?
  - Actually, there is no best method that is suitable for all problems but it depends on the problem itself and the target variable we want to estimate (continous or discrete)
  - The most widely used method for splitting a decision tree is the gini index or the entropy.
  - The scikit learn library provides all the splitting methods for classification and regression trees.
    
-### Q19- What are the Advantages of Decision Trees?
+### Q20- What are the Advantages of Decision Trees?
 - Easy to interpret
 - Little or no data preparation is needed: handle categorical and continous variables, handle variables with missing values.
 - High flexibility : it is used for both classification and regression tasks.
 
-### Q20- What are the disadvantages of Decision Trees ?
+### Q21- What are the disadvantages of Decision Trees ?
 - Prone to overfitting : building complex decision tree model can easily overfit because it does not generalize well to unseen data
 - High variance estimators :  even little variations within data can produce a very different decision tree
 - Too costly: it uses greedy search approach to build decision tree model therefore, training this model can be very expensive to train compared to other algorithms.
   
-### Q21- How to avoid Overfitting of a Decision Tree model?
+### Q22- How to avoid Overfitting of a Decision Tree model?
 - Overfitting corresponds to the situation when the model captures noise or random fluctuations in the training data which gives poor performance on unseen data. 
 - Here a list of methods that could help in avoiding overfitting in DT:
     - Limiting Tree Depth : avoiding having complex trees
@@ -244,7 +254,7 @@ Here is the list of methods:
     - Minimum Samples per Leaf
     - Minimum Samples per Split    
     
-### Q22 - What does pruning decision tree mean? 
+### Q23- What does pruning decision tree mean? 
 - Pruning is a technique in ML that aims to reduce the size of DT and remove specific subtrees.
 - It aims to reduce the complexity of final model (tree) and improve its generalization performance on real data and unseen. 
 - Reduce the complexity means removing or cutting down specific nodes in a decision tree
@@ -253,7 +263,7 @@ Here is the list of methods:
     - Pre-pruning : removes subtrees while constructing the model
     - Post-pruning : removes subtrees with inadequate data after tree construction.
       
-### Q23- What does Pre-pruning and Post-pruning algorithms mean?
+### Q24- What does Pre-pruning and Post-pruning algorithms mean?
 - **Pre-pruning:** 
     - Also, it is called early stopping.
     - It aims to stop the growth of the tree before it becomes fully expanded.
@@ -275,7 +285,7 @@ Here is the list of methods:
         - Cost-complexity pruning or reduced error pruning
         - Subtree replacement
           
-### Q24- What are the popular pruning algorithms?
+### Q25- What are the popular pruning algorithms?
 Various pruning algorithms are used to reduce the complexity of decision trees and prevent overfitting:
 - **Cost complexity pruning**
 - **Reduced error pruning**
@@ -310,7 +320,7 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
     - It consists on reducing the complexity of the tree via recursively merging nodes that do not significantly decrease the description length of the tree.
     - Its main target is to find the best model that optimally compresses data via minimizing the combined length of the tree structure and the encoded data.              
 
-### Q25- What are the stopping criteria in splitting datasets in decision trees
+### Q26- What are the stopping criteria in splitting datasets in decision trees
 - Stopping criteria in decision trees indicate when to stop the process of splitting nodes further and growing the tree :
     - Minimum samples per leaf: minimum number of samples required to be present in a leaf node.
     - Maximum Tree depth: once the model reaches the maximum depth or level of the tree, no further splitting is performed, and all nodes at the maximum depth become leaf nodes.
@@ -318,7 +328,7 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
     - Maximum number of nodes: fixing the total number of nodes in the tree.
     - Minimum impurity decrease: it is all based on the comparison between impurity decrease and the minimum decrease in impurity (threshold), no further splitting is performed
       
-### Q26 - Final comments regarding Decision trees
+### Q27- Final comments regarding Decision trees
 - Decision trees are very common algorithm in machine learning for solving both classification and regression problems.
 - However, creating an optimal decision tree requires finding the right features and splitting the data in an effective way that maximizes information gain.
 - Here some useful terms and assumptions regarding decision trees:
@@ -331,20 +341,20 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
         - Subtree or branches
         - Parent and Child Node
           
-###  Q27- What does Ensemble learning algorithm mean?
+###  Q28- What does Ensemble learning algorithm mean?
 - Ensemble involves taking a group of things instead of individual 
 - It is a ML algorthim that makes improved decision by combining the predictions from multiple models.
 - It leverages the diversity of multiple models to make more robust and accurate predictions.
 - It seeks better predictive performance and to increase the accuracy because we could have high variance using a single model.
 
-### Q28- What are the common techniques used by ensemble learning?
+### Q29- What are the common techniques used by ensemble learning?
 - Various techniques are used in Ensemble Learning approach. Here are some common techniques:
     - Bagging (Bootstrap Aggregating)
     - Boosting
     - Averaging
     - Stacking
     
-### Q29- What does Bagging Ensemble Learning mean? 
+### Q30- What does Bagging Ensemble Learning mean? 
 - It is an ensemble learning technique. 
 - It is known as Bootstrap Aggregating
 - It aims to improve the stability, avoid overfiting and increase accuracy of machine learning models 
@@ -356,7 +366,7 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
   - Classification 
   - Regression
    
-### Q30- How Bagging algorithm works?
+### Q31- How Bagging algorithm works?
 - Bagging starts by creating multiple bootstrap samples (Bootstrapping) from the original training data.
 - The extracted subsets with replacement have the same size as the original datasets.
 - Some data points may be repeated in each bootstrap sample, while others may be left out because bootstrap sampling involves random selection with replacement.
@@ -368,14 +378,14 @@ Various pruning algorithms are used to reduce the complexity of decision trees a
 <img src="images/bootstrap.png" width="500"> 
 
 *source:https://www.researchgate.net/publication/322179244_Data_Mining_Accuracy_and_Error_Measures_for_Classification_and_Prediction      
-### Q31- Some examples of  of bagging algorithms?
+### Q32- Some examples of  of bagging algorithms?
 Here is the list :
 - Random Forest
 - Bagged Decision Trees
 - Bagged Support Vector Machines (Bagged SVM)
 - Bagged Neural Networks
 
-### Q32- How Random Forest works? 
+### Q33- How Random Forest works? 
 - It is a specific ensemble learning technique that combines multiple decision trees trained on random subsets of the data and features.
 - It can be used for both :
    - Classification 
@@ -388,7 +398,7 @@ Here is the list :
       - Classification:using voting
       - Regression: compute the average.
  
-### Q33- What are the advantages and the disadvantages of Random Forest?
+### Q34- What are the advantages and the disadvantages of Random Forest?
 - **Advantages:**
     - Randomness and diversity Introduction
     - Reducing correlation among the trees in the forest. 
@@ -401,14 +411,14 @@ Here is the list :
     - Can overfit noisy data.
     - Requires careful tuning of hyperparameters.
 
-### Q34-What are some of the hyperparameters of the random forest regressor which help to avoid overfitting?
+### Q35-What are some of the hyperparameters of the random forest regressor which help to avoid overfitting?
 - The key hyperparameters of a Random Forest include:
     - max_depth: Limits the depth of each tree to prevent overfitting.
     - n_estimators: Determines the number of decision trees in the forest.
     - min_samples_split: Specifies the minimum number of samples required for a node to split.
     - max_leaf_nodes: Controls node splitting and helps restrict the model's depth.
     
-### Q35- What does Boosting Ensemble Learning mean?
+### Q36- What does Boosting Ensemble Learning mean?
 - It is an ensemble learning technique that combines multiple weak learners to create a strong learner.
 - Boosting trains weak learners sequentially.
 - Each new learner corrects the mistakes of the previous ones, enhancing the ensemble's performance over time.
@@ -421,7 +431,7 @@ Here is the list :
    - Light Gradient Boosting Machine: LightGBM
 - Each boosting algorithm has its own variations and enhancements
 
-### Q36- How Boosting techniques works in Regression?
+### Q37- How Boosting techniques works in Regression?
 - Iteratively training a series of weak regression models to predict continuous target values.
 - Each subsequent model aims to  reduce the errors made by the previous ones.
 - The algorithm assigns higher weights to the instances where the previous models had larger errors, effectively boosting their importance in subsequent iterations.
@@ -430,7 +440,7 @@ Here is the list :
 <img src="images/Boosting.png" width="500"> 
 *Source: https://www.geeksforgeeks.org/boosting-in-machine-learning-boosting-and-adaboost/
 
-### Q37- How Gradient Boosting works?
+### Q38- How Gradient Boosting works?
 - It builds an ensemble of decision trees, where each tree is trained to correct the errors of the previous ones by minimizing a loss function.
 - Loss function measures the difference between predicted and actual values such as MSE
 - It uses a gradient descent algorithm to optimization (minimise) the loss fucntion.
@@ -441,7 +451,7 @@ Here is the list :
    - Each learner is trained to predict the residuals of the ensemble so far.
    - This process continues until the residuals become almost zero.
  
-### Q38- Advantages Vs disadvantages of Gradient Boosting
+### Q39- Advantages Vs disadvantages of Gradient Boosting
 - **Advantages:**
    - Excellent predictive accuracy, often outperforming other algorithms.
    - Handles mixed data types (numeric, categorical) well.
@@ -451,7 +461,7 @@ Here is the list :
    - Can be computationally expensive and time-consuming.
    - Requires careful hyperparameter tuning.
 
-### Q39- How AdaBoost works?
+### Q40- How AdaBoost works?
 - Short for Adaptive Boosting
 - Here how it works: 
    - Initially, all data points  is assigned an equal weight.
@@ -460,7 +470,7 @@ Here is the list :
    - This iterative process continues until a perfect model is achieved.
    - In the end, AdaBoost combines the predictions of all weak learners using weighted averaging to make the final prediction.
  
-### Q40- Advantages Vs disadvantages of AdaBoost
+### Q41- Advantages Vs disadvantages of AdaBoost
 - **Advantages:**
    - Versatile: works well with various types of data and base learners.
    - High Accuracy
@@ -473,13 +483,13 @@ Here is the list :
    - Data Requirements: needs sufficient data to avoid overfitting.
    - Imbalanced Classes: struggles with imbalanced class distributions.
 
-### Q41- How XGBoost works?
+### Q42- How XGBoost works?
 - The full name of the XGBoost algorithm is the eXtreme Gradient Boosting.
 - It is another boosting machine learning approach.
 - It is a regularised version of the current gradient-boosting technique. 
 - This regularisation approach makes it faster and more performant than old approach.
 
-### Q42- Advantages Vs disadvantages of XGBoost
+### Q43- Advantages Vs disadvantages of XGBoost
 - **Advantages:**
     - Superior performance and scalability due to parallel processing.
     - Handles missing data efficiently.
@@ -492,7 +502,7 @@ Here is the list :
     - Prone to overfitting with large datasets if not properly regularized.
     - May struggle with highly imbalanced datasets.
 
-### Q43- How LightGBM works?
+### Q44- How LightGBM works?
 - The full name Light Gradient Boosting Machine
 - It uses histogram-based algorithms for tree construction (ensemble learning), which groups data points into discrete bins based on feature values. 
 - This reduces memory usage and speeds up training by avoiding the need to sort data points at each split.
@@ -503,7 +513,7 @@ Here is the list :
     - **Gradient-based One-Side Sampling (GOSS):** selects data instances based on gradients
     - **Exclusive Feature Bundling (EFB):** bundles less significant features together, reducing the feature set during training.
 
-### Q44- Advantages Vs disadvantages of LightGBM
+### Q45- Advantages Vs disadvantages of LightGBM
 - **Advantages:**
    - Efficient: fast and memory-friendly.
    - High predictive performance /accuracy.
@@ -517,7 +527,7 @@ Here is the list :
    - Preprocessing: requires careful data preparation.
    - Resource-intensive: may require more computational resources, particularly memory, compared to simpler models.
 
-### Q45-  How can we use CatBoost to resolve classification problem?
+### Q46-  How can we use CatBoost to resolve classification problem?
 - It is a powerful gradient boosting algorithm
 - Specifically, it is designed for handling categorical features in machine learning tasks
 - It can be used for both tasks:
@@ -531,7 +541,7 @@ Here is the list :
 - It incorporates regularization techniques to prevent overfitting, such as L2 regularization and feature permutation importance. ==> The model generalize well to unseen data.
 - It employs parallelized algorithms and advanced optimization techniques to achieve high performance. ==> faster training and inference times
 
-### Q46- Advantages Vs disadvantages of CatBoost
+### Q47- Advantages Vs disadvantages of CatBoost
 - **Advantages:**
     - Handles categorical features automatically without preprocessing.
     - Robust to overfitting due to built-in regularization techniques.
@@ -543,7 +553,7 @@ Here is the list :
     - Limited interpretability of models compared to simpler algorithms like decision trees.
     - May require parameter tuning to achieve optimal performance.
 
-### Q47- Advantages  Vs Disadvantages of Boosting 
+### Q48- Advantages  Vs Disadvantages of Boosting 
 - **Advantages:**
     - Improved Accuracy
     - Robustness to Overfitting 
@@ -554,12 +564,12 @@ Here is the list :
     - It is difficult to use for Real-Time applications.
     - It is computationally expensive for large datasets
 
-### Q48- Boosting vs Bagging 
+### Q49- Boosting vs Bagging 
 Boosting and bagging are both ensemble learning techniques used to improve model performance.
 - Boosting: Focuses on sequentially training weak learners, with each subsequent learner learning from the mistakes of its predecessors. This results in a strong learner with improved predictive performance. Examples include AdaBoost and Gradient Boosting.
 - Bagging: Involves training multiple weak learners independently on random subsets of the training data and combining their predictions. This helps to reduce overfitting and improve stability. Random Forest is a popular example of a bagging algorithm.
 
-### Q49- What does Averaging Ensemble Learning mean?
+### Q50- What does Averaging Ensemble Learning mean?
 - It is known as averaging methods or simple averaging. 
 - It involves combining predictions from multiple models by averaging them, which can help reduce overfitting and improve generalization.
 - Here are the main three steps :
@@ -567,7 +577,7 @@ Boosting and bagging are both ensemble learning techniques used to improve model
     - Each base model makes predictions on unseen data.
     - The predictions of all base models are combined by taking the average (or weighted average) to obtain the final prediction.
 - It can be applied to various types of models, including decision trees, neural networks, and linear models etc.
-### Q50- What does Stacking Ensemble Learning mean?
+### Q51- What does Stacking Ensemble Learning mean?
 - It is known as stacked generalization or stacked ensemble. 
 - It is a technique where multiple diverse base models are trained independently.
 - Then, their predictions are used as input features for a meta-model, which combines these predictions to make the final prediction.
