@@ -38,9 +38,11 @@ $$RSS_{Lasso}= {RSS + penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2} + λ \s
 - It adds penalty equivalent to the square of the magnitude of coefficients
 - It penalizes the square of the coefficients of the regression variables by adding a penalty term to the ordinary least squares (OLS) objective function.
 - Here is the formula of Ridge Regression objective function : $$RSS + λ * (sum\ of\ the\ squares\ of\ the\ coefficients)$$
+$$RSS_{Ridge}= {RSS + Ridge\ penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2 + λ \sum_{j=1}^{p} \hat W_j^2}$$
 - Where : 
-  - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
-  - λ (lambda) is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+ - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+ - $RSS = \sum_{i=1}^{n}(y_i -\hat y_i)^2$, where $y_i$ true value, $\hat y_i$ predicted value.
+ - λ (lambda) is the regularization parameter or coefficient that controls the strength of the penalty term.
 - It works by shrinking the coefficients of less important features towards zero. 
 - However, unlike Lasso Regression, it does not set coefficients exactly to zero.
 - Instead, it shrinks them towards zero while still keeping them in the model.
