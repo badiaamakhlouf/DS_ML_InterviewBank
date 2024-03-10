@@ -3,24 +3,29 @@
 This page presents the second part of the comprehensive guide to mastering regression analysis for your technical interview. It offers tailored questions and detailed answers to help you understand specific concepts thoroughly. If you missed the first part of the guide, please check [Regression Analysis I](./regression_analysis_I.md) for a complete understanding. 
 
 ## List of Questions 
-### Q1- What is Lasso Regression and how it works?
+### Q0-What is Lasso Regression and how it works?
 - It is short for Least Absolute Shrinkage and Selection Operator.
 - It is a linear regression technique used for: 
    - Feature selection
    - L1 regularization : used over regression methods for a more accurate prediction.
-- It consists on adding a penalty term to the objective function, which is ordinary least squares (OLS). 
+- It consists on adding a penalty term to the objective /cost function, which is ordinary least squares (OLS). 
 - This penalty term penalizes the absolute values of the coefficients of the regression variables.
-- Here is the formula of Lasso Regression objective function : $$RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
+- Here is the formula of Lasso Regression objective function : $$ RSS + λ * (sum\ of\ the\ absolute\ values\ of\ the\ coefficients) $$
+$$RSS_{Lasso}= {RSS + penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2} + λ \sum_{j=1}^{p}|\hat W_j| $$
 - Where :
-   - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
-   - λ is the regularization parameter (Shrinkage coefficient) that controls the strength of the penalty term.
+ - RSS (Residual Sum of Squares) is the residual error between the predicted and actual values.
+ - λ controls the strength of the penalty term.
 - It works as follow : 
-   - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
-   - It encourages sparsity in the model which involves selecting only the most important features while setting the coefficients of less important features to zero.
+ - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
+ - It encourages sparsity in the model which involves selecting only the most important features (p<n) while setting the coefficients of less important features to zero.
  
-**Notes:**
-- Lasso and Ridge regression are most used when dataset has high number of features.
-- Large means can cause overfiting + Can cause computational challenges.
+ 
+### Q1- How to choose a suitable or optimal λ value for Lasso Regression?
+- λ is called Shrinkage coefficient or regularization parameter
+- It controls the strength of the penalty term.
+- Choosing the optimal value involves using cross-validation technique like K-fold cross validation
+- Then, iteratively train and evaluate the model for various λ values using K-fold cross validation.
+- The optimal regularization parameter is identified based on balancing model complexity with predictive accuracy. 
  
 ### Q2- Advantages of Lasso Regression
 - The ability to perform feature selection automatically. 
