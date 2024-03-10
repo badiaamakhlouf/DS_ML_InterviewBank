@@ -53,7 +53,21 @@
 
 **Notes:**
 - You can find more information and additional questions about association rule mining on the following page : [Association mining](./association_mining.md)
-- ### Q2- What does dimensionality reduction mean?
+  
+### Q2- What does Dimensionality reduction mean?
+- It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
+- The goal is to simplify the dataset while retaining its essential information and patterns.
+- High-dimensional datasets, where the number of features is large, can suffer from the curse of dimensionality, leading to increased computational complexity and potential overfitting.
+- Dimensionality reduction methods aim to overcome these challenges by transforming or selecting a subset of features, preserving the most relevant information and reducing noise in the data.
+- Here are popular examples of Dimensionality reduction techniques:
+  - Principal Component Analysis (PCA)
+  - Singular Value Decomposition (SVD)
+  - Independent Component Analysis (ICA)
+  - Linear Discriminant Analysis (LDA)
+  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+**Notes:**
+- For further details and additional answers about Dimensionality reduction techniques, refer to the subsequent page : [Dimensionality Reduction Techniques](./dimensionality_reduction.md)
 
 
 
