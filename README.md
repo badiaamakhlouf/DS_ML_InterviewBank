@@ -57,8 +57,8 @@ Certainly, there are certain data science skills that are exclusively required f
  In today's landscape, many advanced machine learning topics have become popular, with applications spanning various exciting fields. This section is designed to delve into these topics in depth, offering insights into their techniques and methodologies. 
  
  Some advanced topics include :
- - Deep Learning
- - Reinforcement Learning
+🎯 Deep Learning
+🎯 Reinforcement Learning
  - Transfer Learning:
  - Meta Learning
  - Automated Machine Learning (AutoML)
