@@ -72,7 +72,7 @@ Certainly, there are certain data science skills that are exclusively required f
  - 📌 [Business sense and Domain Knowledge](): it's crucial to master domain-specific knowledge by understanding the business, its unique needs, and navigating data effectively to maximize business value. It's not just about applying data science skills but deeply understanding the business, identifying organizational problems, and leveraging data to support future growth and success.
 
 **Notes:**
-- 📚 Interview preparation is very important 🔑, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
+- 📚 Interview preparation is very important, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
 - 💻 It is essential to stay updated on industry trends and advancements to showcase a proactive attitude during interviews.
 - 🙏 Please, do not forget to tailor your preparation to the specific requirements outlined in the job description
 
