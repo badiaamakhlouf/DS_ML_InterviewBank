@@ -19,21 +19,13 @@ $$RSS_{Lasso}= {RSS + Lasso penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2} +
  - Reducing the impact of less important features on the model by shrinking their coefficients towards zero.
  - It encourages sparsity in the model which involves selecting only the most important features (p<n) while setting the coefficients of less important features to zero.
  
- 
-### Q1- How to choose a suitable or optimal λ value for Lasso Regression?
-- λ is called Shrinkage coefficient or regularization parameter
-- It controls the strength of the penalty term.
-- Choosing the optimal value involves using cross-validation technique like K-fold cross validation
-- Then, iteratively train and evaluate the model for various λ values using K-fold cross validation.
-- The optimal regularization parameter is identified based on balancing model complexity with predictive accuracy. 
- 
-### Q2- Advantages of Lasso Regression
+### Q1- Advantages of Lasso Regression
 - The ability to perform feature selection automatically. 
 - Very useful when dealing with high-dimensional datasets (large number of features)
 - Prevent overfitting by penalizing large coefficients
 - Gives models that are more generalizable to unseen data.
   
-### Q3- What is Ridge Regression and how it works?
+### Q2- What is Ridge Regression and how it works?
 - It is a linear regression technique used for L2 regularization. 
 - It adds penalty equivalent to the square of the magnitude of coefficients
 - It penalizes the square of the coefficients of the regression variables by adding a penalty term to the ordinary least squares (OLS) objective function.
@@ -47,7 +39,7 @@ $$RSS_{Ridge}= {RSS + Ridge\ penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2 +
 - However, unlike Lasso Regression, it does not set coefficients exactly to zero.
 - Instead, it shrinks them towards zero while still keeping them in the model.
 
-### Q4- Advantages of Ridge Regression :
+### Q3- Advantages of Ridge Regression :
 - Reducing the model complexity.
 - Improving model performance by reducing variance, especially in cases of multicollinearity.
 - Stabilizes the model and reduces sensitivity to changes in training data.
@@ -57,8 +49,15 @@ $$RSS_{Ridge}= {RSS + Ridge\ penality\ term  = \sum_{i=1}^{n}(y_i -\hat y_i)^2 +
 **Notes:**
 - Multicollinearity means high correlation between predictor /input variables .
 
-### Q5- Ridge Regression Vs Lasso Regression
+### Q4- Ridge Regression Vs Lasso Regression
 Ridge Regression penalizes coefficients based on their squares, while Lasso Regression penalizes coefficients based on their absolute values, potentially selecting variables by driving some coefficients to zero.
+
+### Q5- How to choose a suitable or optimal λ value for Lasso/Ridge Regression?
+- λ is called Shrinkage coefficient or regularization parameter
+- It controls the strength of the penalty term.
+- Choosing the optimal value involves using cross-validation technique like K-fold cross validation
+- Then, iteratively train and evaluate the model for various λ values using K-fold cross validation.
+- The optimal regularization parameter is identified based on balancing model complexity with predictive accuracy. 
 
 ### Q6- How to choose the right Shrinkage coefficient for Lasso and Ridge?
 - It is important to choose the right shrinkage coefficient (know as regularization parameter or penalty parameter).
