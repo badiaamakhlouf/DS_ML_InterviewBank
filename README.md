@@ -57,18 +57,18 @@ Certainly, there are certain data science skills that are exclusively required f
  In today's landscape, many advanced machine learning topics have become popular, with applications spanning various exciting fields. This section is designed to delve into these topics in depth, offering insights into their techniques and methodologies. 
  
  Some advanced topics include :
- - 🎯 Deep Learning: it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning. 
- - 🎯 Reinforcement Learning:
- - 🎯 Transfer Learning:
- - 🎯 Meta Learning:
- - 🎯 Automated Machine Learning (AutoML):
- - 🎯 Generative Adversarial Networks (GANs):
- - 🎯 Time Series Analysis:
- - 🎯 Graph Neural Networks (GNNs):
- - 🎯 Computer Vision:
- - 🎯 Natural Language Processing:
- - 🎯 Bayesian Machine Learning:
- - 🎯 Interpretability and Explainability:
+ - 🎯 [Deep Learning](./deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning. 
+ - 🎯 [Reinforcement Learning]: it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
+ - 🎯 [Transfer Learning]:
+ - 🎯 [Meta Learning]:
+ - 🎯 [Automated Machine Learning (AutoML)]:
+ - 🎯 [Generative Adversarial Networks (GANs)]:
+ - 🎯 [Time Series Analysis]:
+ - 🎯 [Graph Neural Networks (GNNs)]:
+ - 🎯 [Computer Vision]:
+ - 🎯 [Natural Language Processing]:
+ - 🎯 [Bayesian Machine Learning]:
+ - 🎯 [Interpretability and Explainability]:
    
  ## 3- 🍀 Soft Skills 
  
