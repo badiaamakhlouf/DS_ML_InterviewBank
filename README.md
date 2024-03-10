@@ -92,15 +92,15 @@ Certainly, there are certain data science skills that are exclusively required f
  
  Here are more key details regarding each skill to focus on:
 
- - 📌 [Effective Communication Skills](pages/how_to_improve_communication_skills.md): Strong communication skills are essential for discussing technical concepts and presenting findings to both technical and non-technical stakeholders. Effective communication entails clear documentation of code, results, and statistical assumptions.
+ - 🗣 [Effective Communication Skills](pages/how_to_improve_communication_skills.md): Strong communication skills are essential for discussing technical concepts and presenting findings to both technical and non-technical stakeholders. Effective communication entails clear documentation of code, results, and statistical assumptions.
    
- - 📌 [Proactive Problem-Solving](pages/problem_solving.md): honing problem-solving skills, particularly the ability to identify data-related opportunities and challenges, to explain problems and solutions by identifying existing assumptions and resources and to select the most effective approach to get the right answers. 
+ - ⁉️ [Proactive Problem-Solving](pages/problem_solving.md): honing problem-solving skills, particularly the ability to identify data-related opportunities and challenges, to explain problems and solutions by identifying existing assumptions and resources and to select the most effective approach to get the right answers. 
    
- - 📌 [Leadership and Project Management](): For senior positions like Data Science Manager or Team Lead, mastering leadership and project management skills is crucial. This includes guiding teams, making strategic decisions, and managing projects effectively. A good manager or leader listens actively and empathetically to team members to foster a positive and productive work environment.
+ -  🎯 [Leadership and Project Management](): For senior positions like Data Science Manager or Team Lead, mastering leadership and project management skills is crucial. This includes guiding teams, making strategic decisions, and managing projects effectively. A good manager or leader listens actively and empathetically to team members to foster a positive and productive work environment.
    
- - 📌 [Intellectual curiosity and Continuous Learning](): With the rapid growth of data science and machine learning, it's vital to show a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
+ - 📚 [Intellectual curiosity and Continuous Learning](): With the rapid growth of data science and machine learning, it's vital to show a commitment to continuous learning and staying updated on the latest trends, technologies, and advancements in the field.
    
- - 📌 [Business sense and Domain Knowledge](): it's crucial to master domain-specific knowledge by understanding the business, its unique needs, and navigating data effectively to maximize business value. It's not just about applying data science skills but deeply understanding the business, identifying organizational problems, and leveraging data to support future growth and success.
+ - 💰 [Business sense and Domain Knowledge](): it's crucial to master domain-specific knowledge by understanding the business, its unique needs, and navigating data effectively to maximize business value. It's not just about applying data science skills but deeply understanding the business, identifying organizational problems, and leveraging data to support future growth and success.
 
 **Notes:**
 - 📚 Interview preparation is very important, the same for practical hands-on experience with real-world datasets which can significantly enhance your confidence and proficiency in these fundamental areas.
