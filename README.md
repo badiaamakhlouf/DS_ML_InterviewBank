@@ -66,10 +66,10 @@ Certainly, there are certain data science skills that are exclusively required f
  - 🎯 [Time Series Analysis](./time_series_analysis.md):
  - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
  - 🎯 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
- - 🎯 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to enhance communication between computers and humans using human language. Its main goal is to enable computers to comprehend, interpret, and generate human language in a manner that is meaningful and contextually appropriate. It combines various techniques from computer science, linguistics, and cognitive psychology to facilitate the human communication and computer understanding.
+ - 🎯 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to improve communication between computers and humans using human language. It helps computers understand, interpret, and generate language in a meaningful way, drawing from computer science, linguistics, and psychology.
  - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md):
  - 🎯 [Interpretability and Explainability](./ml_interpretability_explainability.md):
- - 🎯 [Recommender Systems](./recommender_systems.md)
+ - 🎯 [Recommender Systems](./recommender_systems.md): they are applications or algorithms designed to suggest items or content to users according to their preferences and behavior. By utilizing data on users and items, these systems offer personalized recommendations aiming to enhance user experience and satisfaction. They find extensive use across diverse industries.
 
  ## 3- Machine Learning Operations : MLOPS
 
