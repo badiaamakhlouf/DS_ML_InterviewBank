@@ -96,7 +96,7 @@ Here are some important assumptions of Linear Regression:
 - In this situation, it become difficult to find the true relationship between the predictors and target variables.
 - More precisely, it is challenging to point which predictor variable has the major influence on the target variable.
 
-### Q7- What does Ordinary Least Squares mean?
+### Q7- What does Ordinary Least Squares (OLS) mean?
 - It has foundational role in numerous regression techniques.
 - It's a widely adopted method for estimating coefficients or parameters in linear regression models.
 - The model formula is : $y = W_0 + W_1 x_1+ W_2 x_2 +...+ W_n x_n + ϵ$, where ϵ represents the error term.
