@@ -53,25 +53,28 @@ Certainly, there are certain data science skills that are exclusively required f
     - By exploring these topics, you'll gain insights into various aspects of data science and AI, enhancing your understanding of these interconnected fields.
 
 
- ## 2- 💻 Machine Learning and MLOPS
+ ## 2- 💻 Advanced Machine Learning topics
  In today's landscape, many advanced machine learning topics have become popular, with applications spanning various exciting fields. This section is designed to delve into these topics in depth, offering insights into their techniques and methodologies. 
  
  Some advanced topics include :
  - 🎯 [Deep Learning](./deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning. 
  - 🎯 [Reinforcement Learning](./reinforcement_learning.md): it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
- - 🎯 [Transfer Learning](./transfert_learning.md):
+ - 🎯 [Transfer Learning](./transfert_learning.md): it is a machine learning technique that involves reusing a model developed for one task as the starting point for another task. This approach is particularly prevalent in computer vision and natural language processing, where pre-trained models are leveraged to kickstart the learning process for subsequent tasks.
  - 🎯 [Meta Learning](./meta_learning.md):
  - 🎯 [Automated Machine Learning (AutoML)](./AutoML.md):
- - 🎯 [Generative Adversarial Networks (GANs)]:
+ - 🎯 [Generative Adversarial Networks (GANs)](./generative_adversarial_networks.md):
  - 🎯 [Time Series Analysis](./time_series_analysis.md):
  - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
- - 🎯 [Computer Vision](./computer_vision.md):
- - 🎯 [Natural Language Processing](./natural_language_processing.md):
+ - 🎯 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
+ - 🎯 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to enhance communication between computers and humans using human language. Its main goal is to enable computers to comprehend, interpret, and generate human language in a manner that is meaningful and contextually appropriate. It combines various techniques from computer science, linguistics, and cognitive psychology to facilitate the human communication and computer understanding.
  - 🎯 [Bayesian Machine Learning](./bayesian_machine_learning.md):
  - 🎯 [Interpretability and Explainability](./ml_interpretability_explainability.md):
  - 🎯 [Recommender Systems](./recommender_systems.md)
+
+ ## 3- Machine Learning Operations : MLOPS
+
    
- ## 3- 🍀 Soft Skills 
+ ## 4- 🍀 Soft Skills 
  
  Building strong soft skills is essential for interview success 💡. Communication skills help you express ideas clearly ✅ , while problem-solving shows your analytical abilities 📈. Leadership and project management demonstrate your ability to lead teams and make strategic decisions ⏳. Commitment to learning highlights adaptability and staying updated on industry trends 🤝. Domain knowledge adds depth to your readiness for interviews.
  
