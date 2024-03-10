@@ -1,6 +1,7 @@
 # ML: Unsupervised Learning 
 # Dimensionality Reduction Techniques 
 
+This page is your go-to resource for understanding dimensionality reduction techniques. It offers in-depth explanations of various concepts and provides a comprehensive range of questions and answers, from basics to advanced techniques. By delving into dimensionality reduction algorithms and their applications, it serves as an invaluable tool for interview preparation and skill enhancement in dimensionality reduction analysis.
 
 ## List Of Question 
 ### Q0- What does Dimensionality reduction mean?
@@ -8,14 +9,19 @@
 - The goal is to simplify the dataset while retaining its essential information and patterns.
 - High-dimensional datasets, where the number of features is large, can suffer from the curse of dimensionality, leading to increased computational complexity and potential overfitting.
 - Dimensionality reduction methods aim to overcome these challenges by transforming or selecting a subset of features, preserving the most relevant information and reducing noise in the data.
-- Here are popular examples of Dimensionality reduction techniques:
-  - Principal Component Analysis (PCA)
-  - Singular Value Decomposition (SVD)
-  - Independent Component Analysis (ICA)
-  - Linear Discriminant Analysis (LDA)
-  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
-
-### Q1- What does Principal Component Analysis (PCA) mean? 
+  
+### Q1- What are the most common dimensionality reduction techniques include:
+Here are popular examples of Dimensionality reduction techniques:
+- Principal Component Analysis (PCA)
+- Singular Value Decomposition (SVD)
+- Independent Component Analysis (ICA)
+- Linear Discriminant Analysis (LDA)
+- t-Distributed Stochastic Neighbor Embedding (t-SNE)
+- Autoencoders
+- Locally Linear Embedding (LLE)
+- Isomap (Isometric Mapping)
+  
+### Q2- What does Principal Component Analysis (PCA) mean? 
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
@@ -47,7 +53,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
     3. Select the k largest eigenvalues and their associated eigenvectors.
     4. Transform the data into a k dimensional subspace using those k eigenvectors.
        
-### Q2- Why do we need to find eigenvalues and eigenvectors in PCA?
+### Q3- Why do we need to find eigenvalues and eigenvectors in PCA?
 - In PCA, finding eigenvalues and eigenvectors is a crucial step in transforming the original data into a new coordinate system (principal components) that captures the maximum variance.
 - PCA begins by calculating the **covariance matrix** of the original data. This matrix summarizes the relationships between different variables.
 - **Eigenvalues:** The eigenvalues of the covariance matrix represent the variance of the data along the corresponding eigenvectors. Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
@@ -60,7 +66,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - Eigenvectors are orthogonal, meaning they are perpendicular to each other. This orthogonality ensures that the principal components are uncorrelated, simplifying the interpretation of the transformed data.
 
-### Q3- What does Singular Value Decomposition (SVD) means ? 
+### Q4- What does Singular Value Decomposition (SVD) means ? 
 - Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis.
 - is often used to reduce the number of features or dimensions in a dataset.
 - The singular values obtained from the decomposition can be used to identify the most important components or features, and the corresponding vectors can be used to transform the data into a lower-dimensional space.
@@ -78,7 +84,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - **Collaborative Filtering**
   - **Latent Semantic Analysis (LSA)**
     
-### Q4- PCA Versus SVD? 
+### Q5- PCA Versus SVD? 
 - PCA is a specific method for dimensionality reduction and data analysis, SVD is a more general matrix decomposition technique.
 - PCA can be viewed as a special case of SVD when applied to the covariance matrix of the data.
 - Both techniques have their applications and are widely used in various fields, often complementing each other in data analysis and modeling.
@@ -88,7 +94,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - PCA typically involves centering the data (subtracting the mean) before computing the covariance matrix. SVD can be applied directly to the original data matrix without the need for centering.
   - PCA Commonly used for dimensionality reduction, data visualization, and noise reduction. SVD Applied in a broader range of applications, including matrix inversion, image compression, collaborative filtering, and solving linear least squares problems.
 
-### Q5- What does Independent Component Analysis (ICA) mean ? 
+### Q6- What does Independent Component Analysis (ICA) mean ? 
 - ICA is a computational technique used in signal processing and data analysis.
 - It aims to separate a multivariate signal into additive, independent components, with the assumption that the original signals are statistically independent and non-Gaussian.
 - Here's a breakdown of key concepts related to Independent Component Analysis:
@@ -113,7 +119,7 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
   
-### Q6- How to measure non-Gaussianity in ICA? 
+### Q7- How to measure non-Gaussianity in ICA? 
 ICA aims to break down a multivariate signal into independent components. It relies on the assumption that observed data stems from independent sources, and it's essential that these sources exhibit non-Gaussian behavior. This non-Gaussianity enables ICA to effectively discern and isolate the independent components.
 
 Non-Gaussianity in Independent Component Analysis (ICA) can be measured using various statistical metrics or tests. Here are the main measures for non-Gaussianity: 
@@ -126,7 +132,7 @@ Non-Gaussianity in Independent Component Analysis (ICA) can be measured using va
 
 These measures and tests provide insights into the departure of the data distribution from a Gaussian distribution, which is essential for successful ICA decomposition.
 
-### Q7- Fast-ICA versus ICA ?
+### Q8- Fast-ICA versus ICA ?
 Fast Independent Component Analysis (Fast-ICA) and Independent Component Analysis (ICA) are both techniques used for separating mixed signals into statistically independent components.
 Here's a comparison between the two:
 
@@ -138,6 +144,7 @@ Here's a comparison between the two:
 - **Robustness:** Fast-ICA is efficient but more sensitive to the choice of initialization and parameters, requiring careful tuning for optimal performance. However, traditional ICA methods may offer more robustness and flexibility, allowing for customization based on specific dataset characteristics.
   
 Fast-ICA and ICA both serve the purpose of separating mixed signals into independent components, but they differ in terms of computational efficiency, optimization methods, assumptions, convergence speed, applications, and robustness. The choice between the two depends on the specific requirements of the task at hand and the characteristics of the dataset.
+
 
 **Note:**
 Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
