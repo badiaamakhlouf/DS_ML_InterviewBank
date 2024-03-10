@@ -63,16 +63,16 @@ Certainly, there are certain data science skills that are exclusively required f
    
  - 🚀 [Transfer Learning](./transfert_learning.md): it is a machine learning technique that involves reusing a model developed for one task as the starting point for another task. This approach is particularly prevalent in computer vision and natural language processing, where pre-trained models are leveraged to kickstart the learning process for subsequent tasks.
    
- - 🎯 [Meta Learning](./meta_learning.md):
+ - 🎯 [Meta Learning](./meta_learning.md): it is a method that aims to teach machines how to learn. In this technique, algorithms or models learn from various tasks or datasets to improve their performance on new tasks, all with minimal human intervention.
    
- - ⚙️ [Automated Machine Learning (AutoML)](./AutoML.md):
+ - ⚙️ [Automated Machine Learning (AutoML)](./AutoML.md): it automates machine learning tasks like model selection, tuning, feature engineering, and evaluation. It aims to make machine learning easier by reducing the need for manual effort and expertise.
    
- - 🎯 [Generative Adversarial Networks (GANs)](./generative_adversarial_networks.md):
+ - 🎯 [Generative Adversarial Networks (GANs)](./generative_adversarial_networks.md): they are a type of machine learning model where two neural networks, the generator and discriminator, compete against each other. The generator creates new data samples, while the discriminator tries to distinguish between real and fake samples. This process helps generate realistic data, such as images or text, and has applications in various fields.
    
  - 📈 [Time Series Analysis](./time_series_analysis.md): it is a specialized method for examining a series of data points gathered over a period of time. Its objective is to derive insightful statistics and other attributes from the data.
    
- - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md):
-   
+ - 🎯 [Graph Neural Networks (GNNs)](./graph_neural_networks.md): they are neural networks designed for graph-structured data. They analyze relationships between entities in networks, like social connections or molecular structures. GNNs are useful for tasks such as social network analysis and drug discovery.
+
  - 🤖 [Computer Vision](./computer_vision.md): it is an AI and computer science field dedicated to helping machines interpret and comprehend real-world visual data. Through sophisticated algorithms and programs, it enables computers to achieve a human-like understanding of images and videos.
    
  - 📖 [Natural Language Processing](./natural_language_processing.md): it is an area of artificial intelligence (AI) that aims to improve communication between computers and humans using human language. It helps computers understand, interpret, and generate language in a meaningful way, drawing from computer science, linguistics, and psychology.
