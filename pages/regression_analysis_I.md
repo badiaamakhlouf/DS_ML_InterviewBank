@@ -5,11 +5,9 @@ This page serves as a comprehensive resource for mastering regression analysis, 
 
 ## List of questions:
 ### Q0- What does regression analysis mean?
-
 - It is a statistical technique used in data science and machine learning fields. 
 - It aims to model the relationship between a dependent variable and one or more independent variables.
 - By modeling the relationship between inputs and output, it is easy to understand the nature and strength of the relationship and to make predictions based on that understanding.
-
 - Mainly, we use regression analysis to resolve problems and answer questions such as:
     - How does a change in one variable (independent variable) impact another variable (dependent variable)?
     - Can we predict the value of the dependent variable based on the values of one or more independent variables?
