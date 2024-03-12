@@ -119,6 +119,8 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 - Recall measures the proportion of actual positive cases correctly identified by the model.
 - Precision calculates the accuracy of positive predictions, emphasizing correctness
 - Recall focuses on minimizing false negatives, while precision focuses on minimizing false positives.
+- So, if I want to avoid false negative (spam email classified as non spam)-> recall should be used
+- And, if I want to avoid False postive (avoid giving the vaccine to somebody who doesn't need it, otherwise !!!) -> we must have a very high precision and then precision should be used
   
 ### Q11- How to define F1-score? 
 - An evaluation metric that combines both Precision and Recall.
