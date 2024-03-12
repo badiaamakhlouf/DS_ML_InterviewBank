@@ -100,6 +100,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 
 ### Q8- How to define Precision ?
 - An evaluation metric that measures the accuracy of the positive predictions made by the model or the classifier.
+- It is used for binary classification.
 - It divides the number of true positive predictions by the sum of true positives and false positives.
 - It belongs to [0,1] interval, 0 corresponds to no precision and 1 corresponds to perfect precision.
 - A high precision indicates that the classifier makes few false positive predictions relative to the total number of positive predictions.
@@ -108,6 +109,7 @@ Here are some well-known machine learning algorithms commonly used to solve clas
 
 ### Q9- How to define Recall, Sensitivity or True Positive Rate?
 - Recall measures the ability of a classifier to find all the relevant cases within a dataset.
+- The same here, it is used for binary classification
 - It divides number of true positives samples by the sum of true positives and false negatives.
 - A high recall indicates that the classifier is effectively identifying most of the positive cases in the dataset.
 - Recall = Sensitivity = True Positive Rate. 
