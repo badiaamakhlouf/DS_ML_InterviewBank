@@ -715,21 +715,13 @@ Here are some common validation techniques:
 - Effectively manages the balance between accuracy and speed, making it a popular choice for training deep learning models.
 
 ### Q42- What is the difference between stochastic gradient descent (SGD) and gradient descent (GD)?
-- **Batch Size:** 
-  - SGD processes one data point or a small subset at a time.
-  - While, GD uses the entire dataset.
-- **Efficiency:** 
-   - SGD is faster for large datasets because it uses only sinle point or mini-batch
-   - While GD can be slower and more memory-intensive as it requires the whole dataset.
-- **Convergence:** 
-  - SGD may have more fluctuations due to the randomness coming from using individual data points or mini-batches
-  - While GD converges more smoothly as it considers the entire dataset for each update.
-- **Stability:**
-  - GD provides more stable updates,
-  - While SGD can be more erratic due to the noisy updates from individual data points.
-- **Hyperparameter Tuning:**
-  - SGD requires more careful tuning of the learning rate and other hyperparameters  due to its sensitivity to noise.
-  - While GD is less sensitive to learning rate choices since it uses the entire dataset consistently.
+- **Batch Size:** SGD processes one data point or a small subset at a time. While, GD uses the entire dataset.
+- **Efficiency:** SGD is faster for large datasets because it uses only sinle point or mini-batch. While, GD can be slower and more memory-intensive as it requires the whole dataset.
+- **Convergence:** SGD may have more fluctuations due to the randomness coming from using individual data points or mini-batches. While, GD converges more smoothly as it considers the entire dataset for each update.
+- **Stability:** GD provides more stable updates. While, SGD can be more erratic due to the noisy updates from individual data points.
+- **Hyperparameter Tuning:** SGD requires more careful tuning of the learning rate and other hyperparameters  due to its sensitivity to noise. While, GD is less sensitive to learning rate choices since it uses the entire dataset consistently.
+
+
 
 
    
