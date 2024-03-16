@@ -638,7 +638,12 @@ Here are some common validation techniques:
     - Ensure that feature engineering is done using only information available at the time of prediction
     - Be cautious about any transformations or preprocessing steps that might inadvertently introduce information from the future into the training process.
 
-### Q34- What is gradient descent (GD) and how it works?
+### Q34- What does term inference mean in machine learning?
+- It refers to the process of using a trained model to make predictions or infer output values for new, unseen data.
+- During the testing phase, the trained model is deployed to perform inference on a separate dataset (often called the test set or validation set) to evaluate its performance and generalization ability.
+- This process involves feeding input data into the model and obtaining predictions or classifications as output, which are then compared with the true labels or ground truth to assess the model's accuracy and effectiveness.
+
+### Q35- What is gradient descent (GD) and how it works?
 - It is an optimization algorithm used to minimize the cost function.
 - The cost function corresponds to the difference between the predicted output and the actual output.
 - The cost function measures how well the model fits the training data.
@@ -653,7 +658,7 @@ Here are some common validation techniques:
    - **Convergence:** gradient descent gradually converges towards the optimal set of parameters that yield the lowest cost.
    - **Learning Rate:** at each iteration, a learning rate (a hyperparameter) determines the step size taken. It directly influences the speed and stability of convergence.
 
-### Q35- How many hyperparameters do we have in Gradient Descent (GD)?
+### Q36- How many hyperparameters do we have in Gradient Descent (GD)?
 - We have mainly one hyperparameters which is the **Learning Rate**
 - **Number of Iterations** can also be considered a hyperparameter in some contexts 
 - However, number of Iterations is more commonly referred to as a tuning parameter or a parameter of the optimization process rather than a hyperparameter.
@@ -665,7 +670,7 @@ Here are some common validation techniques:
   - At each iteration, monitor training progress and model performance. 
   - Choose the combination that yields the best performance on unseen data.
 
-### Q36- How to choose the right Learning Rate value for Gradient Descent (GD)?
+### Q37- How to choose the right Learning Rate value for Gradient Descent (GD)?
 - The learning rate play crucial roles in the performance of gradient descent.
 - It determines how quickly the algorithm moves towards the minimum.
 - Start with small value such as 0.01 and adjust (increase or decrease) iteratively based on performance: 
@@ -675,7 +680,7 @@ Here are some common validation techniques:
   - Choose the learning rate that provides the best performance that converges effectively without overfitting or diverging or oscillating.
 - Use learning rate schedules or adaptive learning rate methods (e.g., momentum, AdaGrad, RMSProp, Adam) to adjust the learning rate dynamically during training.
 
-### Q37- How to choose the right value for Number of Iterations in Gradient Descent (GD)? 
+### Q38- How to choose the right value for Number of Iterations in Gradient Descent (GD)? 
 - The number of iterations play crucial roles in the performance of gradient descent.
 - Start with a reasonable range of iteration values, such as [100, 500, 1000, 2000].
 - Train your model using each iteration value on a validation set or through cross-validation.
@@ -683,7 +688,7 @@ Here are some common validation techniques:
 - Choose the iteration value that provides satisfactory performance without overfitting or underfitting.
 - You can adjust the range of iterations and repeat the process to fine-tune the selection if needed
 
-### Q38- What are the different variations of gradient descent ? 
+### Q39- What are the different variations of gradient descent ? 
 - Gradient descent has various variants, each tailored for specific scenarios: 
   - **Batch Gradient Descent** 
   - **Stochastic Gradient Descent (SGD)**
@@ -693,28 +698,28 @@ Here are some common validation techniques:
   - Computational resources
   - Convergence requirements
 
-### Q39- What is Batch Gradient Descent ?
+### Q40- What is Batch Gradient Descent ?
 - Iterates through the entire dataset to calculate the gradient of the cost function.
 - This means that the gradient is computed with respect to each data point individually.
 - It updates the model parameters based on the average gradient of all data points.
 - Provides accurate but slow convergence, especially for large datasets.
 - Computationally expensive as it requires storing the entire dataset in memory, making it memory-intensive for big data scenarios.
 
-### Q40- What is Stochastic Gradient Descent (SGD) ?
+### Q41- What is Stochastic Gradient Descent (SGD) ?
 - Randomly select a single data point or a small subset (mini-batch) from the training set.
 - Compute the gradient of the cost function and update the parameters using that data point or that mini-batch.
 - Update the model parameters in the direction of the negative gradient scaled by the learning rate.
 - Repeat the process for a fixed number of iterations or until convergence is achieved.
 - Faster convergence but noisy updates due to frequent parameter updates.
 
-### Q41- What is Mini-batch Gradient Descent
+### Q42- What is Mini-batch Gradient Descent
 - Randomly, divide the training dataset into small batches of data points.
 - Compute the gradient of the cost function with respect to the model parameters using each mini-batch.
 - Update the model parameters based on the average gradient computed from the mini-batch.
 - Repeat the process for all mini-batches in the dataset for a fixed number of iterations or until convergence is achieved.
 - Effectively manages the balance between accuracy and speed, making it a popular choice for training deep learning models.
 
-### Q42- What is the difference between stochastic gradient descent (SGD) and gradient descent (GD)?
+### Q43- What is the difference between stochastic gradient descent (SGD) and gradient descent (GD)?
 - **Batch Size:** SGD processes one data point or a small subset at a time. While, GD uses the entire dataset.
 - **Efficiency:** SGD is faster for large datasets because it uses only sinle point or mini-batch. While, GD can be slower and more memory-intensive as it requires the whole dataset.
 - **Convergence:** SGD may have more fluctuations due to the randomness coming from using individual data points or mini-batches. While, GD converges more smoothly as it considers the entire dataset for each update.
