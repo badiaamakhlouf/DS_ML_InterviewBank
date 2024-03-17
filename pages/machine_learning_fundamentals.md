@@ -571,18 +571,19 @@ Here are some common validation techniques:
 ### Q27- What is the difference between paramter tuning, hyperparamter tuning and fine tuning?
 - In the context of optimization:
     - Parameter tuning: involves finding the optimal values for the internal variables
-    - hyperparameter tuning: involves finding the best configuration for external settings.
-- Fine-tuning can refer to different processes depending on the context:
-    - **Model Fine-tuning:** 
-        - In case of transfer learning (pre-trained models in DL), fine-tuning refers to adjusting a pre-trained model on a new, domain-specific dataset.
+    - hyperparameter tuning: involves finding the best configuration for external settings (hyperparameters).
+- Fine-tuning can refer to two main processes depending on the context:
+    - **Model Fine-tuning:**
+        - Adjusting a pre-trained model, in case of transfer learning, on a new domain-specific dataset.
         - The pre-trained model, often trained on a large dataset, serves as a starting point, and the model is further trained on the new dataset to adapt to the specific task at hand.
+        - 
     - **Algorithm Fine-tuning:** 
         - The adjustment or customization of algorithms to better fit a specific problem or dataset.
         - It involves making small adjustments to the algorithm's parameters or characteristics to achieve better performance.
 
 **Note:**
-- Fine-tuning can have a broader interpretation, including adjusting pre-trained models or making small adjustments to algorithms for better alignment with specific tasks or datasets.
-- Fine-tuning may involve parameter tuning, but it can encompass a more comprehensive process of model adaptation or algorithm customization.
+- In machine learning, fine-tuning usually refers to the process of taking a pre-trained model and further training it on a specific task or dataset with a small learning rate.
+-  This is often done to adapt the pre-trained model to a new task or domain without retraining it from scratch.
 
 ### Q28- What is the difference between Type I error and Type II error ?
 - Type I error (False Positive):
