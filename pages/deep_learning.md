@@ -244,7 +244,6 @@ Here are some points why Data Augmentation is important in neural network:
 - Training process is more cost effective 
 
 ### Q21- What does Image augmentation mean?
-
 - An efficacious Technique when we do not have enough amount of data to train a DL model.
 - It aims to increase the diversity of images in a dataset via applying various transformations to images : 
    - Rotation
@@ -259,7 +258,6 @@ Here are some points why Data Augmentation is important in neural network:
 - DL frameworks such as TensorFlow and PyTorch provide built-in support for image augmentation.
 - Augmentation parameters must be chosen carefully 
 
-
 ### Q22- How to address the problem of class imbalance ?
 - It is important to address the class imbalance issue in neural networks to ensure that the model learns effectively from all exisitng classes. 
 - Here are some common techniques to mitigate class imbalance:
@@ -271,4 +269,70 @@ Here are some points why Data Augmentation is important in neural network:
     - **Cross-Validation techniques:** use validation techniques such as k-fold cross-validation.
     - **Weighted loss functions** which give more importance to minority class samples (Assign higher weights to the loss) during training, helping the model better learn from these instances and improve performance on imbalanced datasets.
     - **Use Specific algorithms:** which are designed to handle class imbalance, such as SMOTE (Synthetic Minority Over-sampling Technique) or ADASYN (Adaptive Synthetic Sampling).
-    - **Choose the right Evaluation Metrics:** in case of class imbalance accuracy alone is not a robust or an accurate metric. Instead, we can use precision, recall, F1-score or ROC-AUC. 
+    - **Choose the right Evaluation Metrics:** in case of class imbalance accuracy alone is not a robust or an accurate metric. Instead, we can use precision, recall, F1-score or ROC-AUC.
+      
+### Q23- What Are Hyperparameters and parameters of neural network?
+- Neural network has several important hyperparameters and parameters. 
+- Hyperparameters guide the learning process, while parameters are learned from data during training.
+- **Hyperparameters:**
+   - Set before the training process.
+   - Control the model's architecture and learning process.
+   - Tuning hyperparameters affects model performance.
+   - Examples: learning rate, batch size, and number of layers.
+
+- **Parameters:**
+   - Learned during the training process.
+   - Adjusted iteratively to minimize the loss/cost function.
+   - Define the model's ability to capture patterns in the data.
+   - Examples: weights and biases in the network's connections.
+
+### Q24- What is the Learning rate in neural network and how  to choose its optimal value? 
+- It is an hyperparameter of the model. 
+- It aims to control the step size taken during updating the weights of the network. 
+- It determines how much the model's parameters (weights) are adjusted with respect to the loss / cost function. 
+- During the optimization process, we aim to minimize the gradient descent loss function
+- The loss function corresponds to the difference between predicted and actual outputs.
+- Choosing the optimal learning rate is crucial for achieving better performance :
+  - High : faster convergence and might lead to overshooting the optimal solution.
+  - Low: slower convergence but more stable training. 
+- To choose the optimal learning rate, we use techniques like :
+   - Grid search
+   - Random search
+   - Leverage adaptive learning rate algorithms : AdaGrad, RMSprop, or Adam.
+
+### Q25- What is batch size in neural network ? 
+- It corresponds to the number of training samples used in one iteration.
+- It determines how many samples are propagated through the network before updating the model parameters during training.
+- It is considered as an hyperparameter in neural network training.
+- Adjusting the batch size can affect the convergence speed and generalization of the model
+- It is an important aspect to tune during the training process.
+
+### Q26- How to choose the best batch size ?
+- Several factors must be considered while choosing the best batch size. 
+- Factors can be : dataset size, model complexity, available computational resources, and training objectives
+- However, it is important to try with different batch sizes to identify the best one for your specific task and constraints.
+- Here are some ideas how to choose the right value :
+   - Consider hardware limitations and dataset size: large datasets requires large memory and expensive computational resources.
+   - Try various batch sizes : a range between 10 and 250 and choose the size that optimizes training speed and accuracy.
+   - Balance between speed and accuracy: 
+       - Smaller batch sizes may lead to slower convergence but: can provide more noise in gradient estimation + potentially leading to better generalization. 
+       - Larger batch sizes may speed up training but could result in poorer generalization.
+   - Consider total dataset size :
+       - For large datasets: smaller batches can still offer sufficient randomness
+       - For smaller datasets: bigger batches might be better.
+   - Smaller batch sizes can help in mitigating overfitting during the optimization process
+
+### Q27- What Is the difference between Epoch, Batch, and Iteration in Deep Learning?
+In deep learning:
+- Epoch: One pass through the entire dataset.--> numder of epochs defines the number of times the algorithm sees the entire dataset.
+- Batch: Subset of the dataset used in one iteration.
+- Iteration: One update of the model's parameters using one batch of data.
+- An epoch consists of multiple iterations, and each iteration processes one batch of data.
+ 
+### Q28- What is the significance of using the Fourier transform in Deep Learning tasks?
+- It plays a crucial role in deep learning as it used for several tasks:
+    -  **Feature Extraction:** extract frequency-domain features from signals or images, aiding in the representation of data for deep learning models.
+    - **Data Preprocessing:** such as denoising, smoothing signals and remove irrelevant components, before feeding them into neural networks. 
+    - **Data Augmentation:** applying transformations (Fourier transform and its variants, such as the Short-Time Fourier Transform (STFT) like rotation or scaling in the frequency domain.
+    - **Efficient Convolution:** it can be used to implement convolution operations in convolutional neural networks (CNNs) and reducing computational complexity.
+    - **Time-Series Analysis:** used to analyze time-series data or audio signals, and identify patterns or anomalies effectively.
