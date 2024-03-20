@@ -870,3 +870,45 @@ Here are some useful techniques to mitigate Exploding Gradient :
      - It can be computationally intensive and may require careful tuning of hyperparameters.
      
 - In specific cases, ensemble methods in conjunction with neural networks are beneficial, such as when dealing with noisy data or when aiming for improved robustness.
+
+## Part 4:  Advanced neural network architectures.
+### Q1- Explain a Recurrent Neural Network (RNN) ?
+- It is a type of neural network specialized in sequential data like text, time series or audio signals. 
+- They use loops in their architecture to remember past information as they process each new input.
+- Each neuron in an RNN receives input not only from the previous layer but also from its own output at the previous time step.
+- They understand the order of inputs, crucial for tasks like language understanding or predicting future values in a time series.
+- They can capture temporal dependencies in the data by maintaining a hidden state that represents a summary of past information
+
+### Q2- Give some real-life applications of RNN ?
+- RNNs are powerful models for handling sequential data therefore, they are widely used.
+- Here are some real-life applications: 
+   - Natural Language Processing (NLP): Sentiment Analysis, Text Generation etc. 
+   - Time Series Analysis
+   - Speech Recognition: Speech-to-Text Conversion
+   - Sequence Generation: Music Composition, Image Captioning etc. 
+   - Healthcare: Disease Diagnosis
+   - Video Analysis: Action Recognition, Video Captioning etc.
+
+### Q3- How the RNN structure looks like ?
+- It consists of the following components:
+   - **Input Layer:**
+      - Receives input data at each time step.
+      - Represents the features or dimensions of the input data.
+   - **Recurrent Layer:**
+      - Contains recurrent neurons/cell that maintain a hidden state representing past information.
+      - Each neuron receives input not only from the previous layer but also from its own output at the previous time step.
+   - **Output Layer:**
+      - Produces output predictions or classifications based on the processed sequence data.
+      - Typically consists of one or more neurons depending on the task.
+
+<div>
+<img src="images/RNN_architecture.png" width="400"/>
+</div>
+
+*Source: https://intellipaat.com/blog/tutorial/artificial-intelligence-tutorial/recurrent-neural-network/
+      
+<div>
+<img src="images/rnn_time_step.png" width="500"/>
+</div>
+
+*Source: https://plainenglish.io/community/vanishing-gradient-problem-in-rnns-9d8e14
