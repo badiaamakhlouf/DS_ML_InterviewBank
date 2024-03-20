@@ -279,7 +279,6 @@ Here are some points why Data Augmentation is important in neural network:
    - Control the model's architecture and learning process.
    - Tuning hyperparameters affects model performance.
    - Examples: learning rate, batch size, and number of layers.
-
 - **Parameters:**
    - Learned during the training process.
    - Adjusted iteratively to minimize the loss/cost function.
@@ -328,7 +327,6 @@ In deep learning:
 - Batch: Subset of the dataset used in one iteration.
 - Iteration: One update of the model's parameters using one batch of data.
 - An epoch consists of multiple iterations, and each iteration processes one batch of data.
- 
 ### Q28- What is the significance of using the Fourier transform in Deep Learning tasks?
 - It plays a crucial role in deep learning as it used for several tasks:
     -  **Feature Extraction:** extract frequency-domain features from signals or images, aiding in the representation of data for deep learning models.
