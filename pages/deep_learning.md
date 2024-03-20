@@ -5,8 +5,8 @@ This Github page is a valuable resource for technical interviews on deep learnin
 
 ## List of Questions
 ## Part 1: Deep Learning and Neural Networks
-### Q0 -What is Deep Learning?
 
+### Q0 -What is Deep Learning?
 - It is a subset of machine learning that involves training artificial neural networks with multiple layers (deep neural networks). 
 - It is used to model complex patterns and representations.
 - DL models are trained using large amounts of data.
@@ -99,8 +99,7 @@ This Github page is a valuable resource for technical interviews on deep learnin
    - Binary Classification (Single Output Neuron): Sigmoid or Logistic function.
    - Multiclass Classification (Multiple Output Neurons): Softmax function.
    - Regression (Single Output Neuron): ReLU (Rectified Linear Unit) or no activation function (identity function).
-
-    
+   
 <div>
 <img src="images/neural1.png" width="500"/>
 </div>
@@ -477,7 +476,6 @@ In TensorFlow, the main programming elements include:
    - PyTorch is more preferred by researchers and developers who value flexibility, dynamic computation graphs, and Pythonic design.
 
 ## Part 3: Model training and Evaluation
-
 ### Q1- What is the Cost Function? 
 - It is also called loss function
 - It measures the performance of the neural network model during training phase. 
@@ -641,3 +639,121 @@ In TensorFlow, the main programming elements include:
 **Summary:**
 - The main difference between BGD and SGD lies in the amount of data used to compute the gradient and update the model parameters in each iteration.
 - BGD uses the entire dataset, providing accurate but computationally expensive updates, while SGD uses only a single example or a mini-batch, leading to faster but noisier updates.
+
+### Q18- How do we initialize Weights in a neural network?
+- Various initialization method are used to initialize Weights in a neural network
+- Each method has its advantages and is chosen based on the specific characteristics of the neural network architecture and the training task at hand.
+- Here are some common strategies: 
+  - **Zero:** setting all weights to zero but it is not very used as it leads to symmetric gradients and identical weight updates during training.
+  - **Random:** initialisation with random values taken from a uniform or Gaussian distribution. This approach can avoid the symmetry in the network and promotes diverse updates during training.
+  - **Xavier:** also, called Glorot initialization. It initializes weights with random values drawn from a distribution with zero mean and a specific variance based on the number of input and output units of the layer. It helps stabilize the gradients and speeds up convergence.
+  - **He:** like Xavier initialization, but scales the variance based on the number of input units only. It is often preferred for activation functions like ReLU.
+  - **Pre-trained Weights:** initializing weights with pre-trained values from a model trained on a similar task or dataset. This approach is common in transfer learning scenarios, where the pre-trained model's knowledge is leveraged to accelerate training on a new task.
+
+
+### Q19- What is the need to add randomness in the weight initialization process?
+- If all weights are initialized to the same value, neurons with the same input would always update identically, leading to symmetry in the network.
+- This symmetry could persist throughout training, causing the network to learn redundant features and limiting its ability to represent complex patterns in the data.
+- Randomness in initialization process helps in preventing this problem as encourages the network to explore a wider range of possible solutions. 
+- The model will learn more diverse representations of the input data and potentially better generalization performance.
+- So, each weight starts with a different initial value, breaking the symmetry and allowing neurons to update independently during training.
+
+### Q20- What does model convergence mean?
+- It is a state reached during the training of a model. 
+- At this point:
+  - The model has learned the underlying patterns in the data to a satisfactory degree.
+  - The loss changes very little between each iteration. -> loss stabilizes
+  - Further training epochs are unlikely to significantly improve the model's performance on the training dataset.
+  - The model has "learned" as much as it can from the data and further training doesn't lead to substantial improvement.
+
+### Q21- How to evaluate models in neural networks?
+- Several metrics could be used to evaluate neural network models. 
+- The choice of the model depends on the problem: classification or regression. 
+- Models are often evaluated on a separate validation set during training to monitor performance and prevent overfitting.
+- The final evaluation is done on a holdout test set to assess generalization to unseen data.
+- Here's how models can be evaluated:
+  - **Classification:** 
+      - **Loss Function:** measures the error between the predicted values and the actual values. Lower values indicate better performance.
+      - **Accuracy:** measures the proportion of correct predictions out of the total number of predictions.
+      - **Precision:** measures the proportion of true positive predictions out of all positive predictions.
+      - **Recall:** measures the proportion of true positive predictions out of all actual positives 
+      - **F1 Score:** is the harmonic mean of precision and recall.
+      - **Confusion Matrix:** provides a detailed breakdown of correct and incorrect predictions for each class in classification tasks.
+      - **ROC Curve:** ROC (Receiver Operating Characteristic) curve plots the true positive rate against the false positive rate.
+      - **AUC Score:** AUC (Area Under the Curve) score measures the area under the ROC curve. -> Binary classification
+  - Regression:
+      - **Mean Absolute Error (MAE):** measures the average difference between predicted and actual values
+      - **Mean Squared Error (MSE):** measure the average difference between predicted and actual values
+      - **Loss Function**
+      
+**Notes:**
+- It is important to use Cross-validation techniques, such as k-fold cross-validation. 
+- The validation technique divides the dataset into multiple subsets for training and testing, providing a more robust estimate of model performance.
+
+### Q22- What is ovefitting and underfitting ?
+- **Overfitting:**
+    - It is a common challenges in machine learning that relate to the performance of a model on unseen data.
+    - It occurs when a machine learning model learns the training data too well, capturing noise and random fluctuations in addition to the underlying patterns (as concept).
+    - High error on testing dataset.
+- **Causes of Overfitting :**
+    - Too many features or parameters.
+    - Model is too complex for the available data.
+    - Training on a small dataset or training for too many iterations
+- **Underfitting:** 
+    - It is the case when the model is too simple to capture the underlying patterns in the training data.
+    - Besides, the model performs poorly not only on the training data but also on new, unseen data.
+    - High error rate on both training and testing datasets.
+    - It occurs when the model lacks the complexity or flexibility to represent the underlying relationships between the features and the target variable.
+- **Causes of Underfitting:**
+    - Too few features or parameters: inadequate feature representation.
+    - Insufficient model complexity: using a model that is too basic for the complexity of the data.
+    - Inadequate training time or data.
+    
+### Q23- How to mitigate overfitting in neural network?
+To mitigate overfitting in neural networks, you can employ several techniques:
+- **Regularization:** add regularization terms to the loss function, such as L1 or L2 regularization, to penalize large weights and prevent overfitting.
+- **Dropout:** introduce dropout layers, which randomly deactivate a fraction of neurons during training, preventing the network from relying too heavily on any particular feature.
+- **Data augmentation:** increase the diversity of the training data by applying transformations such as rotation, translation, or scaling to the input samples.
+- **Early stopping:** monitor the validation loss during training and stop training when the validation loss starts to increase, indicating that the model is overfitting the training data.
+- **Reduce Model Complexity:** Simplify the architecture of the neural network by reducing the number of layers or the number of neurons in each layer to make it less prone to overfitting.
+- **Cross-Validation:** use techniques like k-fold cross-validation to evaluate the model's performance on different subsets of the data and ensure that it generalizes well to unseen data.
+
+**Notes:**
+- It is possible to apply one or more of these techniques to reduce reduce overfitting effectively and improve the generalization performance of your neural network model.
+
+### Q24- How to mitigate underfitting in neural network?
+- **Increase model complexity:** add more layers or neurons to capture complex patterns in the data.
+- **Train for more epochs:** allow the model to learn from the data for a longer period.
+- **Add more features:** include additional relevant features to enhance the model's understanding.
+- **Reduce regularization:** decrease the strength of techniques like dropout or weight decay.
+- **Change the model architecture:** experiment with different architectures to find a better fit.
+- **Adjust hyperparameters:** fine-tune parameters like learning rate and batch size for optimal performance
+
+### Q25- What does early stopping mean?
+- Early stopping is a technique used in training neural networks to prevent overfitting.
+- It involves monitoring the model's performance on a separate validation dataset during training.
+- If the model's performance on the validation set degrades, indicating overfitting, training is stopped early.
+- The model at this point is saved, and it is considered the final model.
+- Early stopping helps prevent the model from becoming too complex and ensures it generalizes well to unseen data.
+- It effectively balances the trade-off between model complexity and generalization performance.
+
+### Q26- What does Dropout mean?
+- As mentioned before, it is a regularization technique used to prevent overfitting.
+- It randomly deactivate a fraction of neurons during training. 
+- This action prevents the network from relying too heavily on any particular feature and encourages robustness by forcing the network to learn redundant representations.
+- Dropout is applied during the training phase but is turned off during inference.
+
+### Q27- What does Batch Normalization mean?
+- It is a technique used to mitigate the internal covariate shift problem, which refers to the change in the distribution of layer inputs during training. 
+- It normalizes the activations of each layer in a mini-batch, making training more stable and accelerating convergence.
+- It calculates the mean and standard deviation of the inputs across the batch dimension and normalizes each input based on these statistics.
+- By normalizing the inputs to each layer, Batch Normalization reduces the sensitivity of the network to weight initialization and helps to ensure that gradients flow more smoothly during backpropagation.
+- It helps in faster training and allows the use of higher learning rates.
+- Batch Normalization is applied during the training phase and is not used during inference.
+
+### Q28- What does Layer Normalization mean?
+- It is a technique use to normalize the inputs to a layer across the feature dimension.
+- calculates the mean and standard deviation of the inputs across the feature dimension (each neuron's inputs) and normalizes each input based on these statistics.
+- Similar to batch normalization, layer normalization helps stabilize training by reducing internal covariate shift, making it easier for the network to learn effectively.
+- Unlike batch normalization, which normalizes inputs across the mini-batch dimension, layer normalization operates independently for each example in the mini-batch.
+- Less affected by batch size and more suitable for recurrent neural networks (RNNs) or tasks where batch size varies.
