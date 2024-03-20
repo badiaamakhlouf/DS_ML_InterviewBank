@@ -912,3 +912,270 @@ Here are some useful techniques to mitigate Exploding Gradient :
 </div>
 
 *Source: https://plainenglish.io/community/vanishing-gradient-problem-in-rnns-9d8e14
+
+### Q4- How RNNs are trained ?
+- They are trained using a process called backpropagation through time (BPTT), which is a variant of the standard backpropagation algorithm used in feedforward neural networks.
+- It works as follow: 
+   - During the forward pass:
+      - RNN processes input sequences one element at a time.
+      - Each element is fed into the network, and the RNN computes its output predictions, at each time step, based on the current input and the previous hidden state.
+   - Loss calculation:
+      - Once the entire input sequence has been processed, the RNN's output predictions are compared to the true targets (labels or next elements in the sequence) to compute a loss or error measure.
+      - This loss represents how well the RNN's predictions match the ground truth.
+   - During the backward pass:
+     - RNN calculates the gradient of the loss with respect to the network's parameters (weights and biases) 
+     - This involves propagating the error gradients backward through time, from the end of the sequence to the beginning.
+   - Gradient optimization using algorithm such as stochastic gradient descent (SGD) to:
+       - Adjust the parameters of the RNN (weights and biases)
+       - minimise the loss function
+       - Improve the model's performance on training data.
+
+### Q5- Some known examples of RNN ?
+- RNNs are powerful tools and they have many variants and applications in the field of deep learning. 
+- Here are some examples :
+    - Long Short-Term Memory (LSTM)
+    - Sequence-to-Sequence Models
+    - Deep RNNs
+    - Gated Recurrent Unit (GRU)
+    - Bidirectional RNN (BiRNN)
+    
+### Q6- Feedforward Neural Network versus Recurrent Neural Network?   
+- They are two fundamental types of neural network architectures, each with its own characteristics and applications.
+- **Feedforward Neural Network (FNN):**
+   - Information flows in one direction only, from input nodes through hidden layers to output nodes, without any loops or connections that form cycles.
+   - They are typically used for tasks where the input and output are independent of each other, such as image classification or regression.
+   - Each layer in an FNN processes the input independently of previous inputs, making FNNs well-suited for static or non-sequential data.
+   - They are suitable for static or non-sequential data,
+- **Recurrent Neural Network (RNN):**
+   - Information is processed in a sequential manner, with connections that form loops allowing information to persist over time.
+   - RNNs are designed to handle sequential data, such as time series, text data, or audio signals, where the order of inputs matters.
+   - Each neuron in an RNN receives input not only from the previous layer but also from its own output at the previous time step, enabling the network to capture temporal dependencies in the data.
+   - Can capture complex temporal relationships, but training can be challenging due to issues like vanishing gradients.
+
+<div>
+<img src="images/ANN_Vs_RNN.png" width="500"/>
+</div>  
+
+### Q7- What is LSTM  and how it Works?
+- It is short for Long Short-Term Memory (LSTM).
+- It is a is a type of recurrent neural network (RNN) architecture designed to overcome the vanishing gradient problem. 
+- LSTM uses memory cells with gates to capture long-term dependencies in **sequential data**. 
+- **Memory cells** can maintain information over long sequences, making them suitable for tasks involving sequential data.
+- Three types of **gates** are existing: input gate, forget gate, and output gate.
+- **Input Gate:** regulates the amount of new information that is added to the memory cell at each time step. 
+- **Forget Gate:** controls how much old information from the memory cell should be retained or forgotten.
+- **Output Gate:** determines how much information from the memory cell should be outputted to the next time step.
+- As usual with RNNs, LSTM is trained using backpropagation through time (BPTT), where gradients are computed and used to update the network's parameters during training.
+
+<div>
+<img src="images/lstm.jpg" width="400"/>
+</div>
+
+### Q8-  Give some real-life applications of  LSTM?
+- **Speech Recognition:** convert spoken language into text, voice assistants like Siri, Alexa, and Google Assistant. 
+- **Language Translation:** in machine translation systems to translate text from one language to another like Google Translate 
+- **Time Series Forecasting:** in financial markets to predict stock prices, in weather forecasting to predict temperature trends, and in energy load forecasting to predict electricity demand.
+- **Natural Language Processing (NLP):** sentiment analysis, text classification, and named entity recognition.
+- **Healthcare:** patient monitoring, disease diagnosis, and predicting patient outcomes.
+- **Autonomous Vehicles:** object detection, pedestrian tracking, and lane prediction.
+
+### Q9- Explain a Convolutional neural network (CNN)
+- It is a type of deep learning model specifically designed for processing structured grid-like data, such as images.
+- They are powerful models capable of automatically learning hierarchical representations of input data.
+- CNNs are trained using labeled datasets through a process called backpropagation. 
+- During this process, the network adjusts its weights and biases to minimize the difference between predicted and actual outputs.
+- Common optimization techniques, such as stochastic gradient descent (SGD) and its variants, are used to update the network parameters iteratively.
+
+- CNNs have two main components in their structure:
+   - **Layers:** convolutional, flatten, pooling etc.
+   - **Activation Functions:** such as Relu
+   
+
+### Q10- What are the Different Layers on CNN?
+- CNNs consist of several types of layers, each serving a specific function in the network's architecture. 
+- The layers are stacked together in a sequential manner to form the architecture of a CNN.
+- Not all CNNs include every layer type
+- Here are the main layers commonly found: 
+   - **Convolutional Layer**
+   - **Activation Layer (ReLU)**
+   - **Pooling Layers**
+   - **Fully Connected (Dense) Layer:**
+   - **Flatten Layer**
+   - **Normalization Layer (Batch Normalization)**
+   - **Dropout Layer**
+<div>
+<img src="images/cnn1.png" width="400"/>
+</div>
+
+1. **Convolutional Layer:** 
+   - It applies a set of  filters (kernels) to the input data and performing convolution operations. 
+   - It is used to extract features such as edges, textures, or patterns from the input images.
+   
+2. **Activation Layer (ReLU):**
+   - It comes after the convolutional layer.
+   - It corresponds to applying an activation function such as ReLU element-wise.
+   - It introduces non-linearity into the network and enables it to learn complex relationships in the data.
+   
+3. **Pooling Layer:**
+   - It reduces or downsample the spatial dimensions (width and height) of the feature maps while retaining their essential information.
+   - Common pooling operations are: 
+        - **Max pooling:** downsample by taking the maximum value within each pooling window.
+        - **Average pooling:**  downsample by taking the average value within each pooling window.
+        
+4. **Fully Connected (Dense) Layer:** 
+   - It is used as one of the final layers of the network.
+   - It receives the flattened feature maps from the previous layers. 
+   - It perform a series of matrix multiplications to learn high-level representations of the input data
+   - Usually, it is followed by activation functions.
+   
+5. **Flatten Layer:** 
+   - It used before the fully connected or dense layers to ensure compatibility of feature map. 
+   - It reshapes the 3D feature maps into a 1D vector.
+
+6. **Normalization Layer (Batch Normalization):**
+   - It normalizes the activations of each layer
+   - It aims to improve the stability and speed of training by reducing internal covariate shift.
+   - It is often applied after the activation functions.
+   
+7. **Dropout Layer:**
+   - It randomly deactivate a fraction of neurons during training, preventing overfitting. 
+   - It encourages the network to learn more robust features and reducing reliance on specific neurons.
+
+### Q11- What type of activation function are used in CNNs?
+- Various activation functions are used to introduce non-linearity into the network and enable it to learn complex relationships in the data.
+- Examples: 
+   - **ReLU (Rectified Linear Unit):** commonly used due to its simplicity and effectiveness in addressing the vanishing gradient problem.
+   - **Leaky ReLU:** a variant of ReLU that addresses the "dying ReLU" problem, where neurons may become inactive during training.
+   - **Sigmoid:** squeezes the output of each neuron to a range between 0 and 1, making it suitable for binary classification tasks. 
+   - **Tanh (Hyperbolic Tangent):** similar to the sigmoid function but maps the input values to a range between -1 and 1. It used mostly in RNNs
+
+### Q12- What does Padding technique mean in CNNs?
+- Padding is a technique used in CNNs for several reasons:
+  - **Preserve spatial information:** 
+      - Of the input data as it passes through convolutional layers.
+      - It is important when the spatial relationships between features are essential for the task at hand.
+      
+  - **Avoiding edge effects:**
+      - Padding prevents information loss at the edges by allowing filters to be applied to all areas of the input. 
+      - It maintain spatial resolution and preventing edge effects.
+      
+  - **Controlling Output Size:**
+      - Padding allows for greater control over the spatial dimensions of the output feature maps.
+      - By adjusting padding, you can control the output feature map size and customize the CNN architecture to fit the task.
+      
+  - **Stabilize training:** 
+      - Ensure that the gradients propagated during backpropagation are consistent across all regions of the input.         - This can prevent issues such as vanishing gradients or exploding gradients, especially in deeper networks.
+
+**Notes:**
+- Edge effects: the spatial dimensions (length, width, and height) of the output feature maps are smaller than those of the input, leading to a reduction in spatial resolution and potential loss of information at the edges of the input.
+
+### Q13- List common Padding techniques in CNNs?
+- **Valid Padding:**
+   - Known as "no padding" in which no padding is added to the input. 
+   - As a result, the spatial dimensions of the output feature map are reduced after convolution, as only complete filter windows are applied to the input.
+- **Same Padding:**
+   - Padding is added to the input so that the spatial dimensions of the output feature map are the same as those of the input.
+   - It is achieved by adding zeros around the input such that the filter can be applied to every spatial location.
+- **Full Padding:**
+   - It pads the input with enough zeros so that the spatial dimensions of the output feature map are increased after convolution.
+   - This means that the filter can be applied to every possible position within the input, resulting in an output feature map with larger spatial dimensions.
+
+### Q14- Give some real-life applications of CNN?
+Here are some known examples:
+- **Image Classification:** identifying species of plants or animals, Classifying diseases from medical images etc.
+- **Object Detection:** autonomous vehicles detecting pedestrians, vehicles, and traffic signs, security systems identifying and tracking intruders etc.
+- **Facial Recognition:** facial authentication in devices / smartphones , analyzing facial expressions for emotion detection etc.
+- **Medical Imaging Analysis:** diagnosing diseases, segmenting organs and structures for surgical planning etc.
+- **Natural Language Processing (NLP):** sentiment analysis, text classification
+- **Video Analysis:**  video summarization, anomaly detection etc.
+
+### Q15- Why is a CNN preferred over a Dense NN for an image classification task?
+Here is why A CNN is preferred over a Dense Neural Network (DNN) for image classification tasks :
+- CNNs can effectively capture spatial hierarchies and local patterns (such as edges and textures) in images through their convolutional layers, whereas DNNs treat input data as flat vectors, ignoring spatial relationships and lack this capability.
+- CNNs learn hierarchical features by progressively combining information from neighboring pixels through convolutional layers, enabling them to capture complex structures in images.
+- CNNs are more efficient for image data processing than DNNs, as they can learn from raw pixel data directly, reducing the need for manual feature engineering.
+- Due to their ability, CNNs often outperform DNNs in image classification tasks, achieving higher accuracy and generalization.
+
+**Notes:**
+- Spatial hierarchies or relationships and local patterns such as edges and textures are crucial for recognizing objects in images
+
+
+### Q16- What Is an Auto-encoder?
+- It is a type of artificial neural network used for unsupervised learning and dimensionality reduction.
+- It consists of two main parts: an **encoder** and a **decoder**.
+- **Encoder:** encode the input via compressing it into a lower-dimensional representation. It consists of one or more layers of neurons.
+- **Decoder:** reconstructs the original input data from the decoded and compressed representation. It consists of one or more layers of neurons. 
+- They are trained using unsupervised learning, meaning they learn to reconstruct the input data without explicit labels.
+- During training, the autoencoder learns to minimize the reconstruction error, i.e., the difference between the input data and its reconstructed output.
+
+<div>
+<img src="images/encoders.png" width="400"/>
+</div>
+
+### Q17- Give some real-life applications of Auto-encoders?
+Autoencoders are versatile models with applications in various domains: 
+- **Image Compression:** JPEG compression in image processing, compress images while preserving important features.  
+- **Anomaly Detection:** detecting deviations or anomalies such as fraudulent transactions in financial transactions 
+- **Feature Learning:** extracting features from high-dimensional data while capturing meaningful patterns and reducing noise. 
+- **Data Denoising:** removing noise from images captured by sensors in medical imaging via reconstructing clean data from noisy input,
+- **Dimensionality Reduction:** reduce the dimensionality of high-dimensional data, making it easier to visualize and analyze.
+- **Content-based Recommendation Systems:** recommending movies or products to users based on their preferences and past behavior.
+- **Healthcare:** detecting abnormalities in medical images or predicting patient outcomes based on electronic health records.
+
+### Q18- What does transformer mean in deep learning?
+- It refers to a specific type of neural network architecture called the Transformer model.
+- It is based on a mechanism called self-attention, which allows it to consider the entire input sequence simultaneously, unlike traditional recurrent neural networks (RNNs) that process inputs sequentially. 
+- The Transformer model has been widely adopted in various NLP tasks such as machine translation, text summarization, question answering, and language understanding.
+- Also, it has been used in other domain to capture complex patterns in sequential data.
+- Examples :
+     - BERT (Bidirectional Encoder Representations from Transformers): by Google + a pre-trained transformer model designed for natural language understanding tasks.
+     - GPT (Generative Pre-trained Transformer): by OpenAI, the GPT series includes models like GPT-2 and GPT-3 + pre-trained on large text corpora and can generate human-like text 
+     - Transformer-XL
+     - T5 (Text-to-Text Transfer Transformer): by Google, T5 is a transformer model that frames all NLP tasks as text-to-text tasks. 
+     - RoBERTa (Robustly optimized BERT approach):  a variant of BERT introduced by Facebook AI + improves upon BERT's pre-training objectives and training data + leading to better performance on downstream NLP tasks.
+     
+     
+### Q19- Transfomers versus Transfert learning 
+- Transformers and transfer learning are two distinct concepts in the field of deep learning:
+- transformers are a specific type of neural network architecture commonly used in natural language processing tasks, while transfer learning is a broader machine learning technique used to leverage knowledge from one task to improve performance on another task. 
+- It is true that transformers can be used in transfer learning scenarios, they are not synonymous concepts.
+
+### Q20- What it Generative Adversarial Network (GANs)?
+- They are a class of neural networks introduced in 2014.
+- They are consist of two neural networks: a **generator** and a **discriminator**, which are trained simultaneously through a competitive process.
+- **The generator:** 
+    - It is a network that takes random noise or a random input and generates synthetic data samples, which are indistinguishable from real data.
+    - The network learns to map random noise to meaningful data representations through the training process.
+- **The Discriminator:**
+    - It is a network like a binary classifier which tries to distinguish between real data samples and fake data samples generated by the generator.
+    - Its goal is to correctly classify the origin of the input data as real or fake.
+
+### Q21- Explain the training process of GANs?
+- The training process of GANs involves a competitive game between two neural networks: the generator and the discriminator
+- As training progresses, the generator learns to generate samples that are indistinguishable from real data, and the discriminator becomes unable to differentiate between real and fake samples.
+- Here are the steps for more details : 
+1. Both the generator and discriminator networks are initialized with random weights.
+2. The training process consists of multiple iterations, where the generator and discriminator are updated alternately.
+3. **Training the Discriminator**
+   - Given a batch of real samples:
+     - The discriminator is trained to classify them as real.
+     - Simultaneously, the generator produces a batch of fake samples, by feeding random noise into the generator network, and then, is trained to classify them as fake.
+   - The discriminator's loss is calculated using a binary cross-entropy loss function to identify its ability to distinguish between real and fake samples.
+   - The discriminator's weights are updated to minimize its loss.
+4. **Training the Generator:**
+   - Once the discriminator has been trained on the current batch, the generator is updated.
+   - Agian, The generator produces a new batch of fake data samples using random noise as input and the feedback from discriminator.
+   - The generator's loss is calculated based on the discriminator's ability to classify the generated samples as real or fake.
+   - The generator's weights are updated to maximize its ability to fool the discriminator, effectively minimizing the discriminator's loss
+5. The process of updating the generator and discriminator alternately continues for a fixed number of iterations or until convergence.
+
+### Q22- Give some real-life applications of GANs
+Here are some real-life applications of GANs:
+- **Image Generation and Editing** 
+- **Video Generation and Synthesis** 
+- **Medical Image Analysis** 
+- **Data Augmentation** generate synthetic data samples to augment training datasets for machine learning models.
+- **Fashion Design and Retail** generate realistic images from textual descriptions, enabling applications like image captioning and visual storytelling.
+- **Virtual Reality and Gaming**
+
+
