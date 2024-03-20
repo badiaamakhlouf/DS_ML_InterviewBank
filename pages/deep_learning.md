@@ -510,3 +510,134 @@ In TensorFlow, the main programming elements include:
 <div>
 <img src="images/feed_back.png" width="500"/>
 </div>
+
+### Q4- What are the parameters and hyperparameters of neural network?
+
+- **Parameters:** 
+   - **Weights:** the coefficients that adjust the strength of the connections between neurons in different layers.
+   - **Biases:** the constants added to the weighted inputs of each neuron in a layer.
+- **Hyperparameters:**
+   - **Learning Rate:** controls the step size in the gradient descent optimization process.
+   - **Number of Hidden Layers:** determines the depth of the network and complexity of learned features.
+   - **Number of Neurons per Layer:** sets the width of each layer in the network.
+   - **Activation Functions:** defines the non-linear transformation applied to the output of each neuron.
+   - **Batch Size:** specifies the number of training examples processed before updating the model parameters.
+   - **Epochs:** refers to the number of times the entire dataset is passed forward and backward through the neural network during training. 
+   
+   
+### Q5- How to perform hyperparameters tuning in neural network?
+- Tuning or optimization aims to find the best set of hyperparameters for a machine learning model.
+- In a neural network, it involves the following steps:
+1. **Define Hyperparameters:** learning rate, batch size, number of layers, number of neurons per layer, activation functions, etc
+2. **Choose a Search Space:** define range or values for each hyperparameter.
+3. **Select a Tuning Method:** choose a method for tuning, such as grid search, random search, or Bayesian optimization.
+4. **Set up Validation Strategy:** using cross-validation or a holdout validation set.
+5. **Perform Hyperparameter Search:** run the chosen tuning method to explore the hyperparameter space and evaluate each configuration's performance based on the validation strategy.
+6. **Evaluate Results:** analyze the results of the hyperparameter search to identify the best-performing hyperparameter configuration.
+7. **Fine-tuning:** optionally, perform additional rounds of tuning around the best-performing configurations to refine the hyperparameters further.
+8. **Final Evaluation:** evaluate the performance using the chosen hyperparameters on a separate test dataset.
+
+**Notes:**
+- Hyperparameter tuning is essential for improving the generalization performance of a machine learning model.
+- It helps to avoid overfitting and ensures that the model is well-configured to handle new, unseen data effectively.
+- In machine learning, fine-tuning usually refers to the process of taking a pre-trained model and further training it on a specific task or dataset with a small learning rate.
+
+### Q6- What does Optimizer mean in neural network ? 
+- It is a technique used to adjust the attributes, such as weights and biases, of a neural network during training.
+- It aims to minimize the error or loss function to improve the network's predictive accuracy.
+- Some popular optimizers: Gradient Descent, Adam, RMSprop.
+- Each optimizer has its own approach to adjust network parameters based on gradients of the loss function.
+
+### Q7- Explain the Adam optimization algorithm?
+- It is a popular variant of stochastic gradient descent (SGD).
+- It combines ideas from both momentum-based optimization and adaptive learning rate methods. 
+- **Momentum:** a component that helps the optimization algorithm navigate through steep and narrow optimization landscapes by accumulating past gradients' momentum.
+- Adaptive learning rate method is the **Root Mean Square Propagation (RMSProp)** which adapts the learning rate for each parameter individually based on the recent history of gradients, ensuring smoother convergence in different directions of the optimization space.
+- It's particularly beneficial for tackling complex problems with large datasets or parameters
+- Unlike traditional SGD, Adam requires less memory and is highly efficient.
+- By integrating momentum and RMSProp, Adam offers faster convergence and better performance in optimizing deep neural networks, making it a popular choice for various machine learning tasks.
+
+### Q8- Explain the Gradient Descent algorithm?
+- It is an optimization algorithm used to to find the set of parameters that minimizes the cost function and error.
+- It aims to improves the model’s performance or accuracy via adjusting parameters iteratively in the direction of the negative gradient.
+- It can be used in various ML algorithms such as Linear regression, Logistic regression, neural networks etc.
+- It works as follow :
+    - **Initialization:** it starts with an initial set of parameters and updates them in small steps.
+    - **Calculate Gradient:** it calculates the gradient of the cost function, which represents the direction and magnitude of the steepest ascent.
+    - **Negative Gradient Descent:** since we aim to minimize the cost function, gradient descent moves in the opposite direction of the gradient, known as the negative gradient direction.
+    - **Iterative Refinement:** iteratively, refine or updated the parameters in the negative gradient direction based on the cost function.
+    - **Convergence:** it gradually converges towards the optimal parameters that offer the lowest cost.
+    - **Learning Rate:** at each iteration, a learning rate (a hyperparameter) determines the step size taken. It directly influences the speed and stability of convergence.
+    
+### Q9- How many hyperparameters do we have in Gradient Descent (GD)?
+- One hyperparameters: the **Learning Rate**.
+- **Number of Iterations** can also be considered a hyperparameter in some contexts
+- However, number of Iterations is more commonly referred to as a tuning parameter or a parameter of the optimization process rather than a hyperparameter.
+- The learning rate and the number of iterations play crucial roles in the performance of gradient descent.
+
+### Q10- How to determine the optimal hyperparameters ?
+- Use a grid search or random search across various values.
+- Iteratively, adjusting the learning rate and number of iterations values.
+- Evaluate each hyperparameter combination using cross-validation.
+- At each iteration, monitor training progress and model performance.
+- Choose the combination that yields the best performance on unseen data.
+  
+### Q11- What are the different variations of gradient descent ?
+- Actually, each variant is tailored for specific scenarios:
+   - Batch Gradient Descent
+   - Stochastic Gradient Descent (SGD)
+   - Mini-batch Gradient Descent:
+- Each variant has its pros and cons, making them suitable for different optimization tasks based on:
+   - Dataset size
+   - Computational resources
+   - Convergence requirements
+   
+### Q12- What is Batch Gradient Descent ?
+- Iterates through the entire dataset to calculate the gradient of the cost function.
+- This means that the gradient is computed with respect to each data point individually.
+- It updates the model parameters based on the average gradient of all data points.
+- Provides accurate but slow convergence, especially for large datasets.
+- Computationally expensive as it requires storing the entire dataset in memory, making it memory-intensive for big data scenarios.
+
+   
+### Q13- What is Stochastic Gradient Descent (SGD) ?
+- Randomly select a single data point or a small subset (mini-batch) from the training set.
+- Compute the gradient of the cost function and update the parameters using that data point or that mini-batch.
+- Update the model parameters in the direction of the negative gradient scaled by the learning rate.
+- Repeat the process for a fixed number of iterations or until convergence is achieved.
+- Faster convergence but noisy updates due to frequent parameter updates.
+
+### Q14- What is Mini-batch Gradient Descent
+- Randomly, divide the training dataset into small batches of data points.
+- Compute the gradient of the cost function with respect to the model parameters using each mini-batch.
+- Update the model parameters based on the average gradient computed from the mini-batch.
+- Repeat the process for all mini-batches in the dataset for a fixed number of iterations or until convergence is achieved.
+- Effectively manages the balance between accuracy and speed, making it a popular choice for training deep learning models.
+
+### Q15- Why do we use mini-batch gradient ?
+- **Efficiency:** Faster computation than batch gradient descent, especially for large datasets. It updates the model parameters more frequently to reach optimal solution faster.
+- **Regularization:**  introduces noise into the parameter updates due to the randomness of the mini-batch selection. This noise acts as a form of regularization, preventing the model from overfitting to the training data.
+- **Smooth Convergence:** can lead to smoother convergence to the optimal solution compared to stochastic gradient descent (SGD) by averaging the gradient estimates over multiple examples in each mini-batch.
+- **Parallelization:** easily parallelized across multiple processors or GPUs, enabling faster training on hardware with parallel computing capabilities.
+
+### Q16- What is the difference between stochastic gradient descent (SGD) and gradient descent (GD)?
+- **Batch Size:** SGD processes one data point or a small subset at a time. While, GD uses the entire dataset.
+- **Efficiency:** SGD is faster for large datasets because it uses only sinle point or mini-batch. While, GD can be slower and more memory-intensive as it requires the whole dataset.
+- **Convergence:** SGD may have more fluctuations due to the randomness coming from using individual data points or mini-batches. While, GD converges more smoothly as it considers the entire dataset for each update.
+- **Stability:** GD provides more stable updates. While, SGD can be more erratic due to the noisy updates from individual data points.
+- **Hyperparameter Tuning:** SGD requires more careful tuning of the learning rate and other hyperparameters  due to its sensitivity to noise. While, GD is less sensitive to learning rate choices since it uses the entire dataset consistently.
+
+### Q17- What is the difference between Batch Gradient Descent and Stochastic Gradient Descent?  
+- They are both optimization algorithms used to train neural networks, but they differ in how they update the model's parameters during training.
+- **Batch Gradient Descent (BGD):**
+   - The entire training dataset is used to compute the gradient of the cost function with respect to the model parameters in each iteration.
+   - After computing the gradient, the model parameters are updated once per iteration by taking a step in the direction opposite to the gradient.
+   - It provides accurate parameter updates but can be computationally expensive, especially for large datasets, as it requires processing the entire dataset in memory for each iteration.
+- **Stochastic Gradient Descent (SGD):**
+   - Instead of using the entire dataset, only one training example (or a small random subset, known as a mini-batch) is used to compute the gradient in each iteration.
+   - After computing the gradient, the model parameters are updated based on the gradient of the cost function for the current training example.
+   - SGD is computationally less expensive than BGD, as it processes only one or a few examples at a time. It also introduces noise into the parameter updates, which can help escape local minima and speed up convergence, especially in noisy or non-convex optimization landscapes.
+   
+**Summary:**
+- The main difference between BGD and SGD lies in the amount of data used to compute the gradient and update the model parameters in each iteration.
+- BGD uses the entire dataset, providing accurate but computationally expensive updates, while SGD uses only a single example or a mini-batch, leading to faster but noisier updates.
