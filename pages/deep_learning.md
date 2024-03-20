@@ -757,3 +757,35 @@ To mitigate overfitting in neural networks, you can employ several techniques:
 - Similar to batch normalization, layer normalization helps stabilize training by reducing internal covariate shift, making it easier for the network to learn effectively.
 - Unlike batch normalization, which normalizes inputs across the mini-batch dimension, layer normalization operates independently for each example in the mini-batch.
 - Less affected by batch size and more suitable for recurrent neural networks (RNNs) or tasks where batch size varies.
+
+### Q29- How to perform Regularization in neural netowrks?
+- It is a technique used to mitigate overfitting.
+- Examples: 
+  - Regularization techniques: L1 regularization (lasso), L2 regularization (ridge)
+  - Early stopping
+  - Dropout
+  - Batch Normalization
+  - etc.
+
+### Q30- What are callbacks in neural networks?
+- They are function that aims to a flexible and powerful mechanism for customizing the training process.
+- Also, they help in implementing advanced training techniques in neural networks. 
+- Those functions are called at specific points during the training process to perform some actions. 
+- Here are some common uses of callbacks
+   - **Model Checkpointing:** saving the model periodically during training.
+   - **Early Stopping**
+   - **Learning Rate Scheduling:** gradually reduce or increase the learning rate as training progresses.
+   - **TensorBoard Logging**
+   - **Custom Logging and Monitoring**
+
+- They help in customizing and extending the training process behavior without explicitly modifying the training loop.
+
+### Q31 - What does Model Checkpointing mean?
+- It is a technique used in the context of training neural networks.
+- Regularly, saving the current model state (weights and other parameters) during training. 
+- These saved states are referred to as checkpoints.
+- This technique allows to : 
+   - Resume training , if training is interrupted, and restore the model to the best performing state.
+   - Select the best model based on validation performance.
+   - Debugging and Analysis: saves snapshots of a model's progress during training which allows pausing and resume training, pick the best-performing model, and compare the performance of the model at different checkpoints.
+   - Transfer Learning: save the progress of fine-tuning and experiment with different hyperparameters or training strategies without starting from scratch each time.
