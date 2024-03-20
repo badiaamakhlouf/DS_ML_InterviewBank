@@ -476,3 +476,37 @@ In TensorFlow, the main programming elements include:
    - TensorFlow is often favored for its ease of use, deployment capabilities, and extensive ecosystem
    - PyTorch is more preferred by researchers and developers who value flexibility, dynamic computation graphs, and Pythonic design.
 
+## Part 3: Model training and Evaluation
+
+### Q1- What is the Cost Function? 
+- It is also called loss function
+- It measures the performance of the neural network model during training phase. 
+- It calculates the difference between predicted and actual/true values. 
+- During the training phase, the main goal is to minimize the cost function via adjusting the model's parameters to improve its accuracy
+
+### Q2- What  do you  understand by Feedforward
+- To train a neural network, we use two main algorithms:
+  - **Feedforward**
+  - **Backpropagation**
+- It aims to find predictions and outputs via passing data through the neural network. 
+- The information is following one direction, from input layer to output layer.
+- It has no feedback loops or recurrent connections. 
+- Each layer in the network takes the input data and transforms it, making it more abstract as it goes.
+- The final /output layer provides the predictions that are compared to the true / target values to identify the loss or error.  
+- It does not have memory, therefore, it is used for tasks where the input-output mapping is fixed and does not depend on previous states or inputs.
+
+**Notes:**
+- "More abstract" means that the features become less directly related to the raw input data and instead capture higher-level patterns or concepts
+- Unlike recurrent networks, feedforward networks do not have memory and are typically used for tasks where the input-output mapping is fixed and does not depend on previous states or inputs.
+
+### Q3- What  do you  understand by Backpropagation?
+- It is a key algorithm used to train a neural network. 
+- It aims to adjust the model's weights and biases to minimise the cost function and improve the model's accuracy.
+- It involves propagating the error backward from the output layer to the input layer.
+- It calculates the gradient of the loss function with respect to each parameter in the network.
+- It enables efficient optimization using gradient descent or its variants.
+- Iteratively, it adjusts the model's parameters based on these gradients to improve performance over time.
+
+<div>
+<img src="images/feed_back.png" width="500"/>
+</div>
