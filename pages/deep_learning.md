@@ -76,3 +76,52 @@ This Github page is a valuable resource for technical interviews on deep learnin
 <div>
 <img src="images/neural_network.png" width="300"/>
 </div>
+
+### Q6- What does Connections (Weights) mean in NN?
+- They are the parameters used to determine the relationship strength between neurons in consecutive layers. 
+- Each connection is associated with a weight which is used to determine the contribution of the neuron's output to the next layer.
+- During training, NNs learn from data through the adjustment of weights based on the error between the predicted output and the actual output. 
+- This adjustment is accomplished using optimization algorithms such as gradient descent.
+- The learning process enables the network to recognize patterns, generalize from examples, and make predictions on new, unseen data.
+
+### Q7- What are the various activation functions used in NN?
+- Each neuron has an activation function that determines its output based on the weighted sum of its inputs.
+- They help in transforming the output of the neural network into a suitable format for the specific problem domain.
+- Common activation functions are:
+    - Sigmoid
+    - Hyperbolic tangent (tanh)
+    - Rectified linear unit (ReLU)
+    - Leaky ReLU
+    - Softmax
+    - Swish
+    
+- The choice of the activation function depends on the tak: 
+   - Binary Classification (Single Output Neuron): Sigmoid or Logistic function.
+   - Multiclass Classification (Multiple Output Neurons): Softmax function.
+   - Regression (Single Output Neuron): ReLU (Rectified Linear Unit) or no activation function (identity function).
+
+    
+<div>
+<img src="images/neural1.png" width="500"/>
+</div>
+
+### Q8- Explain the Sigmoid function ?
+- Formula : $σ(x) = {1 \over 1 + e^{-x}}$
+- It compresses the input values, making sure they're all between 0 and 1.
+- Used for binary Classification. 
+- However, it suffers from the vanishing gradient problem.
+- Illustration :
+     
+<img src="images/sigmoid-function.png" width="350"/>
+   
+** Source: https://www.codecademy.com/resources/docs/ai/neural-networks/sigmoid-activation-function   
+
+### Q9- Explain the Softmax function ?
+- Formula : $softmax(x_i) = {e^{x_i} \over \sum_{j=1}^{n}e^{x_j}}$
+- It converts the output of a NN into a probability distribution over multiple classes. 
+- Suitable for multi-class classification problems.
+- Illustration :
+
+<img src="images/Softmax1.png" width="350"/>
+
+** Source : https://botpenguin.com/glossary/softmax-function
