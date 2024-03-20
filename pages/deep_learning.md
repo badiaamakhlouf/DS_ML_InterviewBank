@@ -165,3 +165,110 @@ This Github page is a valuable resource for technical interviews on deep learnin
 <img src="images/Swish.png" width="400"/>
 
 ** Source: https://www.researchgate.net/figure/Self-Gated-Swish-Activation-Function-3_fig1_359571434
+
+### Q14- What Is a Multi-layer Perceptron(MLP)?
+- It is a type of ANN composed of multiple layers of neurons or nodes. 
+- It has the next architecture:
+    - One input layer
+    - One or more hidden layers
+    - One output layer
+- As defined previously, weight is associated to each connection and each neuron is connected to all neurons in the consecutive layer.
+- It has significant role in ML as it is able to learn complex patterns and nonlinear relationships in the data. 
+- Actually, neurons use nonlinear activation functions which make the network able to learn complex patterns in data. 
+- MLP is trained using backpropagation technique, where weights are adjusted to minimize the difference between its predictions and the true target values.
+- MLP is used for multiple tasks: 
+  - Classification
+  - Regression 
+  - Pattern recognition
+  
+### Q15- What is Shallow neural network?
+
+- It is a single-layer neural network that has only one hidden layer between the input and output layers.
+- It is simple and computationally efficient. 
+- Each neuron in the hidden layer receives inputs from the input layer.
+- Then, performs a weighted sum of these inputs, applies an activation function
+- Finally, passes the result to the output layer.
+- Shallow neural network can be used for simple linear classification or regression tasks.
+  
+### Q16- What is Deep neural network?
+
+- It is a type of ANN that has multiple hidden layers
+- It consist of an input layer, one or more hidden layers, and an output layer.
+- Each layer has multiple neurons which perform computations on the input data using weighted connections and activation functions.
+- During the training phase, DNN uses backpropagation and gradient descent algorithm to adjust the weights and connections biases based on minimizing the difference between predicted and actual outputs.
+- DNN is able to learn complicated patterns and representations in data.
+- They are more suitable for complex tasks such as : natural language processing, image recognition and speech recognition.
+
+
+### Q17- Deep neural networks versus Shallow neural networks :
+
+- **Shallow neural networks:**
+    - Simple architecture : only one hidden layer.
+    - They are more used with simple tasks, where the data has simple patterns or relationships.
+    - They are suitable for cases when the dataset is small.  
+    - They have a limited capacity to learn complex patterns in data.
+    - They are simple, easier to train and computationally efficient. 
+    
+- **Deep neural networks:** 
+    - They have complex architecture with multiple hidden layers.
+    - They can capture and learn more complex patterns and non-linear relationships in data.
+    - They are suitable for more challenging and complicated tasks with large amount of data.
+    - They require more computational resources and large amount of labeled data to achieve optimal performance during training phase. 
+    
+### Q18- What types of data processing are typically performed in neural networks?
+Typically, data processing in neural networks involves several steps:
+- **Data Cleaning:** handling missing values, ensuring data coherence and removing outliers
+- **Data Normalization:** scaling numerical features to a standard range.
+- **Feature Engineering:** creating new features or transforming existing ones
+- **Encoding Categorical features:** converting categorical variables into numerical form suitable for neural networks.
+- **Data Augmentation:** generating additional training samples 
+- **Dimensionality Reduction:** reducing the number of features
+- **Train-Test Split:** splitting the dataset into training and testing subsets. 
+- **Data Balancing:** addressing class imbalances by oversampling, undersampling, or using techniques like SMOTE.
+
+### Q19- Why do we need Data Normalization in neural networks?
+- It is used to achieve stable and fast training of the model
+- It aims to bring all the features to a certain scale or range of values, usually between 0 and 1. 
+- Without normalization, there's a higher risk of the gradient descent failing to converge to the global or local minima and instead oscillating back and forth.
+- Normalized data reduces the likelihood of numerical instability that can occur when working with features with vastly different scales.
+- It is used to prevent overfitting and improve the generalization ability of the model.
+- Normalizing features ensures that they contribute equally to the model's learning process. 
+
+### Q20- Why do we need Data Augmentation in neural networks?
+Here are some points why Data Augmentation is important in neural network: 
+- Increase the model robustness and improve performance via exposing it to a larger number of various data samples.
+- Enhance the model generalization ability and improve performance. 
+- Mitigating and reducing overfitting.
+- It increases the effective size of the dataset to overcome the lack of data issue. Especially, when the provided dataset is so small. 
+- It helps in reducing the dependency on Large Datasets -> the need for collecting and annotating large datasets is reduced.
+- Training process is more cost effective 
+
+### Q21- What does Image augmentation mean?
+
+- An efficacious Technique when we do not have enough amount of data to train a DL model.
+- It aims to increase the diversity of images in a dataset via applying various transformations to images : 
+   - Rotation
+   - Scaling and resizing
+   - Cropping and flipping
+   - Changing color and brightness
+- It increases the diversity of the dataset without collecting new data.
+- It helps improve the robustness and generalization ability of models by exposing it to a wider range of variations.
+- It is widely used in computer vision tasks such as object detection and classification.
+- It is very useful when dealing with limited or imbalanced datasets.
+- It helps prevent overfitting and improves model performance on unseen data.
+- DL frameworks such as TensorFlow and PyTorch provide built-in support for image augmentation.
+- Augmentation parameters must be chosen carefully 
+
+
+### Q22- How to address the problem of class imbalance ?
+- It is important to address the class imbalance issue in neural networks to ensure that the model learns effectively from all exisitng classes. 
+- Here are some common techniques to mitigate class imbalance:
+    - **Data Augmentation:** generate artificial samples for minority classes.
+    - **Resampling Techniques:**
+        - Oversampling: increase the number of samples in the minority class by replicating existing samples or generating synthetic data.
+        - Undersampling: Decrease the number of samples in the majority class to match the size of the minority class.
+    - **Ensemble Methods:** various models are trained on different subsets of data or different algorithms are used, then merge their predictions to handle class imbalance.
+    - **Cross-Validation techniques:** use validation techniques such as k-fold cross-validation.
+    - **Weighted loss functions** which give more importance to minority class samples (Assign higher weights to the loss) during training, helping the model better learn from these instances and improve performance on imbalanced datasets.
+    - **Use Specific algorithms:** which are designed to handle class imbalance, such as SMOTE (Synthetic Minority Over-sampling Technique) or ADASYN (Adaptive Synthetic Sampling).
+    - **Choose the right Evaluation Metrics:** in case of class imbalance accuracy alone is not a robust or an accurate metric. Instead, we can use precision, recall, F1-score or ROC-AUC. 
