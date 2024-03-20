@@ -789,3 +789,84 @@ To mitigate overfitting in neural networks, you can employ several techniques:
    - Select the best model based on validation performance.
    - Debugging and Analysis: saves snapshots of a model's progress during training which allows pausing and resume training, pick the best-performing model, and compare the performance of the model at different checkpoints.
    - Transfer Learning: save the progress of fine-tuning and experiment with different hyperparameters or training strategies without starting from scratch each time.
+
+### Q32- What is tranfert learning? 
+- It is a machine learning technique where a model trained on one task is reused or adapted for a different but related task.
+- Instead of starting the learning process from scratch, transfer learning takes knowledge gained from solving one task.
+- Then, learned model is applies to help solve a different but related problem, possibly more complex one.
+- By leveraging previous experience, it helps improve performance on the new task. Especially, if previous model has been trained on larget dataset
+
+
+### Q33- How to use a pre-trained model?
+Using a pre-trained model typically involves the following steps:
+- Loading the Pre-trained Model: involves using a deep learning framework like TensorFlow or PyTorch and importing the pre-trained model class from a model repository.
+- Preparing the Data: involve resizing images, tokenizing text, or normalizing numerical data, depending on the type of model and task.
+- Feature Extraction or Fine-tuning: feature extraction involves using the pre-trained model to extract useful features from your data, while fine-tuning involves further training the model on your specific task.
+- Inference or Prediction: use the model to make predictions or generate outputs for your task.
+- Evaluation and Iteration: evaluate the performance of the pre-trained model and iterate. This may involve fine-tuning hyperparameters, adjusting the architecture of the model, or collecting more labeled data for training.
+
+**Two options :**
+- Option 1: if source dataset like target dataset==> use a fixed pre-trained model (no training is needed)
+- Option 2: if source dataset is different than target dataset ==> training from scratch, freezing the other pre-trained feature layers. 
+
+### Q34- What are some common used transfer learning models?
+Some of the popular transfer learning models are:
+- **VGG:** like VGG16 and VGG19, are famous for their simplicity and effectiveness in recognizing images. They have layers that first look for patterns, like edges or textures, and then combine them to recognize objects like cats or cars.
+- **BERT:** a powerful model for understanding language, pre-trained on lots of text data. It's great at tasks like answering questions, understanding sentiment, and recognizing named entities.
+- **MobileNet:** are designed for mobile and embedded devices with limited computational resources.
+- **Inception (GoogLeNet):** use a combination of convolutional filters with different kernel sizes to capture features at multiple scales. They are efficient and have been used in various image recognition tasks.
+- **ResNet:** uses skip connections to help alleviate the vanishing gradient problem in deep networks. It is widely used for image classification and other computer vision tasks.
+- **GPT:** are transformer-based language models trained on large corpora of text. They have been used for tasks like text generation, language translation, and text summarization. Examples include GPT-2 and GPT-3.
+
+**Notes:**
+- GPT: Generative Pre-trained Transformer
+- BERT: Bidirectional Encoder Representations from Transformers
+- ResNet: Residual Network
+- VGG: Visual Geometry Group
+
+### Q35- What is Vanishing Gradient?
+- It is a phenomenon that occurs during the training process. Especially, if the neural network has many layers.
+- Knowing that, neural networks learn by adjusting their weights using gradients to minimize errors.
+- Gradients are calculated backward through the network to update weights.
+- **Vanishing Gradient** refers to the situation where the gradients of the loss function with respect to the weights of the earlier layers (input) become extremely small as training progresses.
+- It means that the earlier layers of the network receive very little feedback about their contribution to the overall loss function.
+- As a result, these layers may learn less or not learn meaningful features from the data, leading to poor performance .
+
+### Q36- How to mitigate  vanishing gradient ?
+Here are several techniques that can be employed:
+- Use activation functions like ReLU or Leaky ReLU to avoid gradient saturation (become very small). These functions allow gradients to flow more easily during backpropagation.
+- Initialize weights carefully using techniques like Xavier or He initialization to ensure gradients will propagate effectively through the network.
+- Normalize layer inputs with batch normalization to stabilize training and encourage gradient flow. It helps  keeping activations within a reasonable range.
+- **Gradient Clipping:** Limit the gradient size to prevent it from becoming too large or too smal.
+- Employ skip connections (found in residual networks (ResNet)) to help gradients propagate effectively through the network. This allows gradients to bypass certain layers during backpropagation.
+- Some architecture design can help: shallower networks, RNNs, LSTM etc.
+
+### Q37- What is Exploding Gradient?
+- It is a phenomenon that occurs during the training process where gradient become very large.
+- Actually, very large gradients causing weight updates to become too large as well.
+- The training process become unstable and causing the model's performance to degrade.
+- It can prevent the model from converging to a good solution or even cause it to diverge altogether.
+
+### Q38- How to mitigate  Exploding Gradient?
+Here are some useful techniques to mitigate Exploding Gradient : 
+- Gradient Clipping
+- Apply regularization techniques such as L2 or L1 to the network's weights
+- Use normalization techniques like batch normalization or layer normalization to stabilize activations within the network
+- Adjust the learning rate dynamically during training using learning rate scheduling techniques. 
+- Instead of clipping individual gradients, clip the norm (magnitude) of the entire gradient vector to a predefined threshold. 
+- Use activation functions that are less prone to exploding gradients, such as ReLU or its variants (Leaky ReLU, Parametric ReLU)
+
+### Q39- Can we use bagging and boosting with neural network 
+- Actually, it is better to use bagging and boosting with simpler model such as decision trees.
+- However, it is possible to use them with neural networks but it is not comman as they are already powerful models that can capture complex patterns in the data and computationally expensive to train.
+- Here are some Examples how to use them : 
+  - **Bagging (Bootstrap Aggregating):**
+     - Multiple neural networks are trained independently on different subsets of the training data, often with replacement (bootstrap sampling). 
+     - The final prediction is made by averaging or voting across the predictions of all individual networks.
+     - By introducing diversity in the ensemble, it help reduce overfitting and improve generalization. 
+  - **Boosting:**
+     - Builds a sequence of neural networks, where each subsequent model focuses on the mistakes made by the previous ones.
+     - Each model in the sequence is trained to correct the errors of the previous model, leading to a strong overall predictor.
+     - It can be computationally intensive and may require careful tuning of hyperparameters.
+     
+- In specific cases, ensemble methods in conjunction with neural networks are beneficial, such as when dealing with noisy data or when aiming for improved robustness.
