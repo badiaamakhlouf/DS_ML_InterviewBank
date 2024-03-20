@@ -902,7 +902,7 @@ Here are some useful techniques to mitigate Exploding Gradient :
       - Typically consists of one or more neurons depending on the task.
 
 <div>
-<img src="images/RNN_architecture.png" width="400"/>
+<img src="images/RNN_architecture.png" width="500"/>
 </div>
 
 *Source: https://intellipaat.com/blog/tutorial/artificial-intelligence-tutorial/recurrent-neural-network/
@@ -1004,7 +1004,7 @@ Here are some useful techniques to mitigate Exploding Gradient :
    - **Normalization Layer (Batch Normalization)**
    - **Dropout Layer**
 <div>
-<img src="images/cnn1.png" width="400"/>
+<img src="images/cnn1.png" width="500"/>
 </div>
 
 1. **Convolutional Layer:** 
@@ -1109,7 +1109,7 @@ Here is why A CNN is preferred over a Dense Neural Network (DNN) for image class
 - During training, the autoencoder learns to minimize the reconstruction error, i.e., the difference between the input data and its reconstructed output.
 
 <div>
-<img src="images/encoders.png" width="400"/>
+<img src="images/encoders.png" width="500"/>
 </div>
 
 ### Q17- Give some real-life applications of Auto-encoders?
