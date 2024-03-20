@@ -125,3 +125,43 @@ This Github page is a valuable resource for technical interviews on deep learnin
 <img src="images/Softmax1.png" width="350"/>
 
 ** Source : https://botpenguin.com/glossary/softmax-function
+
+### Q10- Explain ReLU (Rectified Linear Unit) function      
+- Formula : ReLU(x)=max(0,x), ReLU  returns x if x is positive, and 0 otherwise.
+- It sets all negative values to zero and leaves positive values unchanged.
+- It is widely used due to its simplicity and effectiveness in training deep neural networks.
+- Illustration :
+     
+<img src="images/Relu.png" width="350"/>
+
+** Source : https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/
+
+### Q11- Explain Hyperbolic tangent (tanh) function
+- Formula: $tanh(x) = {e^x - e^{-x} \over e^x + e^{-x}}$
+- Similar to the sigmoid function, but it squashes the input values between -1 and 1.
+- It is often used in recurrent neural network
+- Illustration :
+
+<img src="images/tanh.png" width="350"/>
+
+** Source: https://en.m.wikipedia.org/wiki/File:Hyperbolic_Tangent.svg
+
+### Q12- Explain Leaky ReLU function
+
+- Formula: $ReLU_{Leaky}(x) = { x\  if\ x > 0,\ alpha \times x\ if\ x <= 0 }$, where is a small positive constant, typically in the range of 0.01 to 0.3, which determines the slope of the function for negative input values.
+- It is similar to ReLU.
+- However, it allows a small, positive gradient for negative inputs, which helps mitigate the "dying ReLU" problem.
+- Illustration :
+<img src="images/LeakyReLU.png" width="350"/>
+
+** Source: https://www.researchgate.net/figure/ReLU-activation-function-vs-LeakyReLU-activation-function_fig2_358306930
+
+### Q13- Explain Swish function
+- Formula: $Swish(x) ={x . sigmoid(x)} = {x \over 1 + e^{-x}}$
+- Proposed as an alternative to ReLU. 
+- Swish is a smooth, non-monotonic activation function. 
+- It is preferred to be used in various neural networks because it often works really well.
+- Illustration :
+<img src="images/Swish.png" width="400"/>
+
+** Source: https://www.researchgate.net/figure/Self-Gated-Swish-Activation-Function-3_fig1_359571434
