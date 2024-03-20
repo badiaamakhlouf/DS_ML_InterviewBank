@@ -370,7 +370,7 @@ In TensorFlow, the main programming elements include:
 - The data could be input data, model parameters, and outputs that is passed between operations in a computational graph.
 - Tensorflow, perform mathematical operations on this data efficiently, even if it is of large-scale data. 
 
-### Q4- What placeholders mean in Tensorflow ? 
+### Q4- What do placeholders mean in Tensorflow ? 
 - First, they are used to create a computational graph. 
 - At the beginning, they are considered as empty variables, that will be fill with data during execution (running the graph).
 - Then, they allow us to feed data to a tensorflow model (a computational graph) from outside a model, when running the graph. 
@@ -399,3 +399,80 @@ In TensorFlow, the main programming elements include:
     - They are typically used to represent fixed values or hyperparameters in a model.
     - To define a constant we use  `tf.constant()` command.
     - Example: `a = tf.constant(6.0,tf.float32)`
+
+### Q7- Explain Session in TensorFlow 
+- It is an execution environment for running operations or evaluating tensors.
+- It encapsulates the control and state of the TensorFlow runtime, allowing to perform computations on the defined computational graph.
+- It manages the resources (memory allocation and device management) required for running the computations efficiently.
+- It maintains the state of variables and other resources throughout the execution
+- Here are how you should use Session:
+    - First create a Session object in your TensorFlow program using `with tf.Session() as sess:` command
+    - Then, run operations and evaluate tensors within the context of the Session using `sess.run(...)`
+- TensorFlow setup gives you the flexibility in managing the flow of computations via having control over when to start and end the execution of operations within the Session.
+
+### Q8- What is Keras and what it is used for ?
+- It is a Python-based open-source framework, that simplifies the process of developing deep learning models.
+- It offers a user-friendly API and a high-level interface for building, training, and deploying neural networks enabling rapid development and experimentation.
+- Models in Keras are built using layers, which can be easily stacked and configured to create complex architectures.
+- It supports both **convolutional and recurrent neural networks**, as well as combinations of the two.
+- Also, it provides support for custom layers, loss functions, and metrics.
+- It allows creating custom layers, callbacks, and regularizers tailored to specific requirements or tasks.
+- Compatible with multiple backends, including TensorFlow, Theano, etc.
+- Simplifies the process of developing deep learning models for various applications.
+
+### Q9- What is Pytorch and what it is used for ?
+- It is an open-source machine learning framework used for building deep learning models.
+- It supports both:
+    - Traditional feedforward networks
+    - Advanced architectures like RNNs and CNNs.
+- It has an automatic differentiation engine that enables gradient-based optimization methods for training neural networks. 
+- It allows efficient gradients computation and complex optimization algorithms implementation simplification.
+- It is widely used in research (enable explore new ideas and algorithms quickly) and industry (model serialization, inference optimization, and integration with other frameworks and platforms) for various machine learning tasks.
+- It integrates smoothly with GPUs, accelerating computation for training large-scale models and handling massive datasets efficiently.
+- It is used in many fields such as: 
+    - Computer vision
+    - Natural language processing
+    - Reinforcement learning
+
+**Notes:**
+- RNNs: Recurrent Neural Networks
+- CNNs: Convolutional Neural Networks
+
+### Q10- Why is Tensorflow the most preferred Library in Deep Learning?
+- **Flexibility:** it allows building a wide range of neural networks, from simple to complex architectures.
+- **Community Support:** it has a large community with extensive documentation and resources available.
+- **Performance:** it is optimized for speed and efficiency, utilizing hardware accelerators like GPUs and TPUs.
+- **Ease of Use:** high-level APIs like Keras make it easy to build and train neural networks with an intuitive interface.
+- **Deployment Options:** models can be deployed across various platforms, including mobile devices, desktops, servers, and the cloud.
+- **Continuous Development:** it is actively maintained, receiving regular updates and improvements to stay current with the latest advancements.
+
+### Q11- Tensorflow Versus Pytorch
+- TensorFlow and PyTorch are two popular deep learning frameworks 
+- The choice between them depends on:
+   - Specific project requirements
+   - Familiarity with the framework
+   - Personal preference
+- **Tensorflow :**
+    - Based on theano library.
+    - Developed By Google and has a larger user base and extensive documentation.
+    - Easy to use
+    - It Offers both:
+      - high-level APIs like Keras for quick development of neural networks
+      - lower-level APIs for fine-grained control over model architecture.
+    - Has Tensorboard for visualizing deep learning models
+    - Better support for deployment in production environments, has tools for mobile and embedded devices: 
+       - TensorFlow Serving 
+       - TensorFlow Lite 
+    - Very performant, particularly on large-scale distributed training and deployment scenarios. 
+- **Pytorch :**
+    - Based on Torch library
+    - Developed by Facebook/ Meta and has an active research community, particularly in academia.
+    - Offers dynamic computation graphs, which makes it flexible, and easy to debug. 
+    - It is more Pythonic and intuitive for developers.
+    - Visualization features are existing
+    - Historically, deployment in production has been more challenging compared to TensorFlow.
+    - Competitive performance for its efficient GPU utilization and dynamic graph execution.
+- **In summary:**
+   - TensorFlow is often favored for its ease of use, deployment capabilities, and extensive ecosystem
+   - PyTorch is more preferred by researchers and developers who value flexibility, dynamic computation graphs, and Pythonic design.
+
