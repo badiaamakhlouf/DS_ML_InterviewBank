@@ -334,3 +334,68 @@ In deep learning:
     - **Data Augmentation:** applying transformations (Fourier transform and its variants, such as the Short-Time Fourier Transform (STFT) like rotation or scaling in the frequency domain.
     - **Efficient Convolution:** it can be used to implement convolution operations in convolutional neural networks (CNNs) and reducing computational complexity.
     - **Time-Series Analysis:** used to analyze time-series data or audio signals, and identify patterns or anomalies effectively.
+      
+## Part 2: Tensorflow, Keras and Pytorch
+### Q1- What is Tensorflow and what it is used for?
+- It is an Open-source machine learning framework by Google.
+- It aims to Build, train, and deploy machine learning models.
+- Key features: it supports neural networks, including deep learning models.
+- Itallows users to build complex neural network architectures using high-level APIs like Keras or through its own lower-level API.
+- It perform efficient training on large datasets, including distributed training across multiple GPUs or TPUs (Tensor Processing Units).
+- Used to develop and deploy models for making predictions on new data.
+- It offers an advanced visualization tools that are used for monitoring and analyzing model performance.
+- It supports various deployment options, including exporting models to different formats for deployment on different platforms, such as mobile devices or the web.
+- It is widely used in research and industry for tasks like image recognition and NLP.
+
+### Q2- What are the programming elements in Tensorflow?
+
+In TensorFlow, the main programming elements include:
+
+- **Tensors:** fundamental data structures representing multi-dimensional arrays.
+- **Variables:** mutable tensors that can hold state that can be updated during computation.
+- **Constants:** parameters whose value does not change.
+- **Placeholders:** allow us to feed data to a tensorflow model from outside a model
+- **Layers:** high-level abstractions for building neural network layers.
+- **Sessions:** execution environments where operations are evaluated and tensors are computed.
+- **Operations:** mathematical operations that can be performed on tensors.
+- **Graphs:** computational graphs that define the flow of data and operations.
+- **Estimators:** high-level API for training and evaluating TensorFlow models.
+- **Optimizers:** algorithms for optimizing the parameters of a model during training.
+- **Loss Functions:** functions that compute the error or loss between predicted and actual values.
+- **Metrics:** functions for evaluating the performance of a model.
+### Q3- What does Tensor mean in Tensorflow?
+- Tensor corresponds to fundamental data structures representing a multi-dimensional array that can be vectors, matrices and even complex data structures.
+- The term "tensor" is a mathematical concept that represents data with multiple dimensions.
+- In Tensorflow setup, a tensor can be considered as a container that can hold data in multiple dimensions.
+- The data could be input data, model parameters, and outputs that is passed between operations in a computational graph.
+- Tensorflow, perform mathematical operations on this data efficiently, even if it is of large-scale data. 
+
+### Q4- What placeholders mean in Tensorflow ? 
+- First, they are used to create a computational graph. 
+- At the beginning, they are considered as empty variables, that will be fill with data during execution (running the graph).
+- Then, they allow us to feed data to a tensorflow model (a computational graph) from outside a model, when running the graph. 
+- They are typically used to define the input and target data for training a machine learning model.
+- To define a placeholder, we use the `tf.placeholder()` command. 
+- This separation of graph definition and data feeding enables flexibility and efficiency in TensorFlow's execution.
+
+### Q5-  Explain a Computational Graph.
+- TensorFlow operates via constructing a computational graph.
+- In the computational graph we have: 
+    - Interconnected Nodes that correspond to mathematical operations such as  addition, multiplication, or convolution
+    - Edges represent tensors, which are multi-dimensional arrays carrying data between nodes (data flow).
+- By using operations within the graph, TensorFlow allows for dynamic computation and optimization during execution.
+- This structure forms a "DataFlow Graph," enabling efficient computation and optimization of machine learning models.
+- This graph-based approach facilitates distributed computing and parallel execution, enhancing scalability and performance.
+
+### Q6- What do Variables and Constants mean in TensorFlow? 
+- First of all, Variables and Constants are two important elements in building and training machine learning models using TensorFlow.
+- **Variables:**
+    - Mutable tensors that hold values that can be updated during computation,
+    - They are typically used to represent trainable parameters, such as weights, biases, in machine learning models.
+    - To define a variable, we use the `tf.Variable()` command and initialize them before running the graph in a session
+    - Example : W = tf.Variable([.5].dtype=tf.float32)
+- **Constants:**
+    - Immutable tensors whose values remain fixed and constant during the execution of a TensorFlow graph
+    - They are typically used to represent fixed values or hyperparameters in a model.
+    - To define a constant we use  `tf.constant()` command.
+    - Example: `a = tf.constant(6.0,tf.float32)`
