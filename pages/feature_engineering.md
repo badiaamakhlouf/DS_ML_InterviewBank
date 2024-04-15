@@ -24,6 +24,7 @@ Here is a range of significant activities used in Feature Engineering :
     - **Embedded Methods**
 
 1 - **Filter Methods:** they aim to select features based on their statistical properties, no learning algorithm is adopted here. Common techniques are the next : 
+
      - **Correlation-based:** it is used for continuous variable in regression cases. It is based on correlation with Target variable. For example, we can use a correlation matrix.
      - **Chi-square Test:** it is used for categorical target variables to select features that are most related to the target. It is mainly used in classification problems. 
      - **Information Gain / Mutual Information:** it aim to measure the dependency between variables. Then it selects features with the highest information gain or mutual information with the target. It is mainly used in classification. 
