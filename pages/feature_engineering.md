@@ -40,7 +40,7 @@ Here is a range of significant activities used in Feature Engineering :
   - Forward Selection: it starts with an empty set of features, then it starts adding one feature at each iteration. Finally, it selects the one that improves the model performance the most. It involves iteratively adding features to our model until the addition of a new variable no longer improves its performance.
 - Backward Elimination: It starts with all features. Then,  it removes the least relevant feature , at each iteration, which improves the performance of the model. It is a repetitive process untill no improvement is found on removal of features.
 
-<img src="images/feature_selection.png" width="400">
+<img src="images/feature_selection.png" width="500">
 
 3 - **Embedded Methods:**
    - Regularised Linear Models: L1 (Lasso) and L2 (Ridge) regression techniques. They are based on adding regularisation terms that penalise the magnitude of coefficients, that forces some coefficients to shrink to zero and leading to automatic feature selection. Also, we can use Elastic Net
