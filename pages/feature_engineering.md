@@ -24,10 +24,10 @@ Here is a range of significant activities used in Feature Engineering :
     - **Embedded Methods**
 
 1 - **Filter Methods:** they aim to select features based on their statistical properties, no learning algorithm is adopted here. Common techniques are the next : 
-    - **Correlation-based:** it is used for continuous variable in regression cases. It is based on correlation with Target variable. For example, we can use a correlation matrix.
-    - **Chi-square Test:** it is used for categorical target variables to select features that are most related to the target. It is mainly used in classification problems. 
-    - **Information Gain / Mutual Information:** it aim to measure the dependency between variables. Then it selects features with the highest information gain or mutual information with the target. It is mainly used in classification. 
-    - **Variance Thresholding:** it is based on removing features with low variance, assuming they contain no relevant information.
+     - **Correlation-based:** it is used for continuous variable in regression cases. It is based on correlation with Target variable. For example, we can use a correlation matrix.
+     - **Chi-square Test:** it is used for categorical target variables to select features that are most related to the target. It is mainly used in classification problems. 
+     - **Information Gain / Mutual Information:** it aim to measure the dependency between variables. Then it selects features with the highest information gain or mutual information with the target. It is mainly used in classification. 
+     - **Variance Thresholding:** it is based on removing features with low variance, assuming they contain no relevant information.
 
 2 - **Wrapper Methods:** They aim to evaluate the performance of a trained model with a selected subset of features. Common techniques are:
     - **Recursive Feature Elimination (RFE):** it is a greedy optimisation algorithm that aims to iteratively find the best performing feature subset. It repeatedly creates models and keeps aside the best or the worst performing feature at each iteration. It builds successive models using the remaining features until all options are exhausted. Then, it ranks the features based on the sequence in which they were eliminated.
