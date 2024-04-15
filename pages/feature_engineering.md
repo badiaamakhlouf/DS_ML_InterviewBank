@@ -44,7 +44,8 @@ Here is a range of significant activities used in Feature Engineering :
    - Regularised Linear Models: L1 (Lasso) and L2 (Ridge) regression techniques. They are based on adding regularisation terms that penalise the magnitude of coefficients, that forces some coefficients to shrink to zero and leading to automatic feature selection. Also, we can use Elastic Net
    - Tree-based Methods:  like Decision Trees, Random Forests, and Gradient Boosting Machines, they  automatically select the best features (most informative) for making decisions and splitting each node.
 
-- **Notes:**
+
+- **!! Notes:**
    - Dimensionality Reduction Techniques such as PCA or t-SNE can be used to reduce number of feature and transforming them into a lower-dimensional space while preserving most of the information. Yet, they are feature extraction techniques and not feature selection.
    - Choosing the appropriate feature selection method depends on various factors such as the dataset size, dimensionality, nature of features, computational resources, and the desired model performance. 
 
