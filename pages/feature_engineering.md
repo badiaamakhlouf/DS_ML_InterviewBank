@@ -36,7 +36,7 @@ Here is a range of significant activities used in Feature Engineering :
  - Variance Thresholding: it is based on removing features with low variance, assuming they contain no relevant information.
 
 2 - **Wrapper Methods:** They aim to evaluate the performance of a trained model with a selected subset of features. Common techniques are:
-  - Recursive Feature Elimination (RFE):** it is a greedy optimisation algorithm that aims to iteratively find the best performing feature subset. It repeatedly creates models and keeps aside the best or the worst performing feature at each iteration. It builds successive models using the remaining features until all options are exhausted. Then, it ranks the features based on the sequence in which they were eliminated.
+  - Recursive Feature Elimination (RFE): it is a greedy optimisation algorithm that aims to iteratively find the best performing feature subset. It repeatedly creates models and keeps aside the best or the worst performing feature at each iteration. It builds successive models using the remaining features until all options are exhausted. Then, it ranks the features based on the sequence in which they were eliminated.
   - Forward Selection: it starts with an empty set of features, then it starts adding one feature at each iteration. Finally, it selects the one that improves the model performance the most. It involves iteratively adding features to our model until the addition of a new variable no longer improves its performance.
 - Backward Elimination: It starts with all features. Then,  it removes the least relevant feature , at each iteration, which improves the performance of the model. It is a repetitive process untill no improvement is found on removal of features.
 
