@@ -9,7 +9,7 @@ Here are the main tasks to perform in the cleaning phase :
   
 Note : encoding categorical data can be done in feature engineering phase. 
 ### Q2- How to deal with missing values ?
-Handling missing values is a crucial step in data preprocessing to ensure accurate and unbiased analysis. Here are two main methods to deal with missing values: 
+Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are two main methods to deal with missing values: 
 - Remove missing values 
 - Impute missing values 
 - Forward or Backward Fill
