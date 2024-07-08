@@ -15,60 +15,68 @@ Note : encoding categorical data can be done in feature engineering phase.
 - Visualization method
 
 ### Q3- How to deal with missing values ?
-Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are four main methods to deal with missing values: 
+Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are three main methods to deal with missing values: 
 - Remove Missing Data:
     - Row Removal: delete rows with missing values.
     - Column Removal: delete columns with a high percentage of missing values.
 - Impute Missing Data:
     - Mean/Median/Mode Imputation: replace missing values with the mean, median, or mode of the column.
     - Forward/Backward Fill: use previous or next values to fill missing data in time series.
-- Predict Missing Data:
     - Regression/Classification Models: use machine learning models to predict and fill missing values based on other available data.
 - Domain-Specific Methods:
     - Custom Imputation: use domain knowledge to fill in missing data appropriately.
 
-**Note:** to improve predictions, we can extend imputation by adding an extra column that indicates whether the value is a raw value or an imputed value. This helps the model differentiate between original and imputed data, potentially enhancing its predictive performance.
+**Note:** to improve predictions, we can extend imputation by adding an extra column that indicates whether the value is a raw value or an imputed value. Model would make better prediction by considering which values were originally missing.
 
 ### Q4- How to choose the right method to deal with missing values
 - No single method is suitable for all situations, so it's essential to understand the context and implications of each approach.
-- Choosing the right method is based on:
-  - The characteristics and nature of the data
-  - The percentage of missing values: there is a high percentage of missing values, it is generally better to remove the entire row or column. Otherwise, imputation is the best choice.
-  - The goals of the performed analysis.
+- Deleting missing values from our data or keep them depends on some factors and the specific situations such as the nature of the missing data, its impact on the model, the data size, percentage of missing values and finally data integrity.
+- Here are more details:
+  - Nature of Missing Data: are they random ?, or related to certain characteristics of the data ? or are related to the target variable.
+  - Impact on Model: missing values in :
+      - **Training data**: may impact the training process and the quality of the resulting models.
+      - **Testing data**: might affect the evaluation of the model's performance.
+  - Choosing the appropriate strategy:
+  - Removing missing values : deleting or removing missing values is not always adequate, as it can result in the loss of important or insightful information
+  - If the percentage of missing values is very high so it is better to remove the entire row or column.
+  - Imputate them with the adequate value: mean, median Forward Fill/Backward Fill or predictive imputation.
+  - Maintaining data integrity: is deleting missing values would significantly reduce the dataset size so it is better to use an imputation strategy.
 
-### Q4- How to remove missing values? 
-
+### Q5- How to remove missing values? 
 Here is how to remove missing values :
-- Remove Rows with nan/null values using `df = df.dropna()`
-- Remove Columns with nan/null values using `df = df.dropna(axis=1)`
+- Remove Rows: with nan/null values using `df = df.dropna()`
+- Remove Columns: with nan/null values using `df = df.dropna(axis=1)`
 
 Dropping rows or columns is not too advantageous because most values are going to be lost and they contain important information
 
-### Q5- How to impute missing values? 
-
-We have four main methods:
-
-  - Impute with statistical measures
-  - Impute with a Placeholder 
-  - Impute with Machine Learning Algorithms
-  - Impute using Interpolation
-  - Multiple Imputation
-Imputed value won't be exactly right in most cases but it usually leads to more accurate models than you would get from dropping the column entirely  
+### Q6- How to impute missing values? 
+- We have four main methods:
+   - Impute with statistical measures: mean, median or mode
+   - Impute with a Placeholder 
+   - Impute with Machine Learning Algorithms
+   - Impute using Interpolation
+   - Multiple Imputation
+     
+**Note:** Imputed value won't be exactly right in most cases but it usually leads to more accurate models than you would get from dropping the column entirely  
     
-#### 5. 1- What does impute with a statistical measures mean ? 
+#### 6. 1- What does impute with a statistical measures mean ? 
 - Fill missing values with statistical measures (mean, median, mode) or using more advanced imputation methods.
-- Example: `df['column'] = df['column'].fillna(df['column'].mean())`
+- Code:
+     - `df['column'] = df['column'].fillna(df['column'].mean())`
+     - `df['column'] = df['column'].fillna(df['column'].median())`
+     - `df['column'] = df['column'].fillna(df['column'].mode())`
     
-#### 5. 2- What does impute with a Placeholder mean ? 
+#### 6. 2- What does impute with a Placeholder mean ? 
 - Replace with a specific value that does not occur naturally in the dataset. 
 - Example: `df = df.fillna(-1)`
 
-#### 5. 3- What does impute with a Machine Learning Algorithm mean ?    
+#### 6. 3- What does impute with a Machine Learning Algorithm mean ?    
 - **Solution 1:**  use `KNNImputer()` class from the scikit-learn Python library.
 - **Solution 2:**
     - Train a machine learning model to predict missing values based on other features in the dataset.
-    - Example : Random Forest 
-#### 5. 4- What does Impute using Interpolation mean ?
+    - Example : Random Forest
+      
+#### 6. 4- What does Impute using Interpolation mean ?
 - Interpolation is a technique used to estimate missing values based on the observed values in a dataset.
 - It works by filling in the gaps between known data points, assuming some underlying pattern or relationship.
 - Here are some interpolation techniques:
@@ -77,32 +85,35 @@ Imputed value won't be exactly right in most cases but it usually leads to more 
     - Quadratic 
     - Etc.
 
-Note : the choice of the right interpolation method depends on:
+**Note:** the choice of the right interpolation method depends on:
 - The nature of the data.
 - The assumptions about its behavior
-#### 5. 5- What does multiple imputation mean ? 
+  
+#### 6. 5- What does multiple imputation mean ? 
 - It is a statistical technique used to handle missing data via creating multiple imputed datasets. 
-- Multiple datasets are created by imputing missing values using a chosen imputation method. 
+- Each of the previously mentioned datasets is created via imputing missing values with a chosen imputation method. 
 - Examples : mean imputation, regression imputation, k-Nearest Neighbors imputation, or more sophisticated methods.
-- Each dataset represents a set of values for the missing entries.
 - Instead of imputing a single value for each missing observation, multiple imputation illustrates the uncertainty associated with missing data by generating several imputed datasets. 
 - The results from the analyses conducted on the imputed datasets are combined, or "pooled," to obtain an overall estimate of the parameter of interest.
 - The combined results provide not only a point estimate but also an estimate of the uncertainty associated with the missing data. This incorporates both the imputation variability and the variability due to analyzing different imputed datasets.
 - `fancyimpute()` Python library can be employed to implement multiple imputation efficiently.
 
-### Q6- What is KNN Imputer?
+### Q7- What is KNN Imputer?
 - It is is a more sophisticated method for filling null values.
-- It uses a distance parameter, known as the k parameter.
+- It uses a distance parameter, known as the K parameter.
 - It operates similarly to a clustering algorithm, imputing missing values based on the neighborhood points of the missing values.
 
-### Q7- Why do we need an extension to imputation? 
-
-- Sometimes, missing values themselves can be indicative. Create a new binary column indicating whether a value is missing. 
+### Q8- Why do we need an extension to imputation? 
+- Sometimes, missing values themselves can be indicative.
+- This method aims to create a new binary column indicating whether a value is missing. 
 - For each column with missing entries in the original dataset, we add a new column that shows the location of imputed entries. 
 - Models would make better predictions by considering which values were originally missing.   
-- Example:  `df['column_missing'] = df['column'].isnull().astype(int)` 
+- Code:  `df['column_missing'] = df['column'].isnull().astype(int)` 
 
-### Q8- Why it is better to use the median value for imputation in the case of outliers?
+### Q9- What are the consideration to 
+
+
+### Q9- Why it is better to use the median value for imputation in the case of outliers?
 - Using the median for imputation in case of outliers is often considered a better solution compared to the mean.
 - The median is a measure of central tendency that has: 
     - **Robustness to Outliers:** it is less influenced by extreme values because it is not affected by the actual values of data points but rather their order. Outliers have a minimal impact on the median.
