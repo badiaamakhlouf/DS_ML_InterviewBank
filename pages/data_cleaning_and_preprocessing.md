@@ -110,10 +110,13 @@ Dropping rows or columns is not too advantageous because most values are going t
 - Models would make better predictions by considering which values were originally missing.   
 - Code:  `df['column_missing'] = df['column'].isnull().astype(int)` 
 
-### Q9- What are the consideration to 
-
-
-### Q9- Why it is better to use the median value for imputation in the case of outliers?
+### Q9- When do we use mean value for missing values imputation ?
+- The mean is suitable for numerical data that follows a roughly normal distribution.
+- There are no extreme outliers as the presence of significant outliers can skew the mean, making it less representative of the data.
+- If the data distribution is symmetric, the mean is a good measure of central tendency
+- The percentage of missing values is relatively low: imputing a small percentage of missing values with the mean is less likely to distort the overall data distribution.
+- 
+### Q10- When it is better to use the median value for imputation ?
 - Using the median for imputation in case of outliers is often considered a better solution compared to the mean.
 - The median is a measure of central tendency that has: 
     - **Robustness to Outliers:** it is less influenced by extreme values because it is not affected by the actual values of data points but rather their order. Outliers have a minimal impact on the median.
