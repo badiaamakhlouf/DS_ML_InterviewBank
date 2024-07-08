@@ -22,7 +22,7 @@ Certainly, there are certain data science skills that are exclusively required f
     - This step involves mastering the handling of missing data (null values), encoding categorical variables, handling outliers, and executing various data manipulation tasks.
     - This step is essential for extracting accurate insights from the provided data. Successfully completing these cleaning and preprocessing steps is crucial for subsequent stages, such as feature engineering and extraction, where refined features are created to enhance model performance.
 
-- 📉 [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization.md):
+- 📉 [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
     - Exploratory Data Analysis (EDA) involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
