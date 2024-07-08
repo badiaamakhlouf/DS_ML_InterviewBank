@@ -1,8 +1,10 @@
 # Data Visualisation and Exploratory Data Analysis
-Whether you're preparing for an interview or seeking to deepen your understanding of essential data science concepts, this page offers structured questions designed to enhance your proficiency and understanding of data cleaning—a fundamental stage in data science workflows. It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario.
-## List of Questions:
+This page serves as a valuable resource for interview preparation and enhancing your understanding of data visualization and exploratory data analysis within the data science lifecycle.
+It provides structured questions aimed at improving proficiency in exploratory data analysis, emphasizing how to select the right visualizations to uncover insights and details within your data.
+The content covers a range of techniques and visualization methods, offering explanations on their selection for different analytical scenarios.
 
-### Q24- What does Exploratory Data Analysis (EDA) mean? 
+## List of Questions:
+### Q- What does Exploratory Data Analysis (EDA) mean? 
 It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset. The primary goal of EDA is to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
 
 **Key aspects of Exploratory Data Analysis include:**
@@ -12,7 +14,7 @@ It is a critical step in the data analysis process and is often the second step 
 - Correlation Analysis
 Effective EDA aims to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
 
-### Q25- What does Distribution Analysis mean?
+### Q- What does Distribution Analysis mean?
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
 - Here are some examples of distribution analysis: 
@@ -25,7 +27,7 @@ Effective EDA aims to perform more targeted and informed analyses, leading to be
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q26- What does Skewness and Kurtosis mean ?
+### Q- What does Skewness and Kurtosis mean ?
 **Skewness:**
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
@@ -55,7 +57,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 <img src="images/Kurtosis.png" width="400">
 
-### Q27- What does Spread or Dispersion mean ?
+### Q- What does Spread or Dispersion mean ?
 - Data spread: 
     - It provides information about the range of values in a dataset.
     - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
@@ -67,7 +69,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
     - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
 
-### Q28- How to get statistical description of our data using pandas ? 
+### Q- How to get statistical description of our data using pandas ? 
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
     - Minimum
@@ -77,15 +79,15 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Mean
 - Code: `df.describe().transpose()`
 
-### Q29- What does Correlation Analysis mean?
+### Q- What does Correlation Analysis mean?
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
-### Q30- What are the plots used to illustrate correlation?
+### Q- What are the plots used to illustrate correlation?
 - Correlation matrix and heatmap 
 - Scatter Plot : it provides a visual representation of the relationship between two variables. X versus Y
   
-### Q31- What does correlation matrix mean? 
+### Q- What does correlation matrix mean? 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
 - This matrix helps detect the presence of any positive or negative correlation between variables.
@@ -95,7 +97,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 _source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
-### Q32- What else we can perform in EDA ? 
+### Q- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
 - Data frame dimension `df.shape`
 - Data frame columns: `df.columns`
@@ -115,7 +117,7 @@ Notes:
 - Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
-### Q33- What is the difference between covariance and correlation?
+### Q- What is the difference between covariance and correlation?
 - These two measures are used during the exploratory data analysis to gain insights from the data.
 - **Covariance:** 
    - It measures the degree to which two variables change together.
@@ -129,7 +131,7 @@ Notes:
         - -1 indicates a perfect negative linear relationship
         - 0 indicates no linear relationship.
           
-  ### Q33- Why removing highly correlated features is very important?
+  ### Q- Why removing highly correlated features is very important?
 - Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
 - In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
 - Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
