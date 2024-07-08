@@ -1,7 +1,7 @@
 # Data Visualisation and Exploratory Data Analysis
 This page serves as a valuable resource for interview preparation and enhancing your understanding of data visualization and exploratory data analysis 📊 within the data science lifecycle.
 
-It provides structured questions aimed at improving your proficiency in exploratory data analysis, emphasizing how to select the right visualizations to uncover insights and details within your data.
+It provides structured questions aimed at improving your proficiency in exploratory data analysis, emphasizing how to select the right visualizations to uncover insights and details within your data ✅.
 
 The content covers a range of techniques and visualization methods, offering explanations on their selection for different analytical scenarios💡.
 
