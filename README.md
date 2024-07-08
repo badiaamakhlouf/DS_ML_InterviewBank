@@ -18,7 +18,7 @@ Certainly, there are certain data science skills that are exclusively required f
     - The choice between the two depends on various factors. For instance, if you're dealing with intricate data requiring extensive statistical computations and superior data visualization capabilities, R is often preferred. On the other hand, Python is better suited for a wide range of data science tasks, including machine learning, deep learning, and artificial intelligence applications.
     - Finally, the decision is based on the specific requirements of your project and your familiarity with each language's ecosystem.
   
-- 🧹 [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
+- 🧹 ✅ [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
     - Data cleaning is a critical step in the data preprocessing phase of the data science workflow.
     - This step involves mastering the handling of missing data (null values), removing duplicates and handling outliers.
     - It is essential as it helps improve the quality and reliability of data, leading to more accurate analysis and reliable insights.
