@@ -19,8 +19,9 @@ Certainly, there are certain data science skills that are exclusively required f
     - Finally, the decision is based on the specific requirements of your project and your familiarity with each language's ecosystem.
   
 - 🧹 [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
-    - This step involves mastering the handling of missing data (null values), encoding categorical variables, handling outliers, and executing various data manipulation tasks.
-    - This step is essential for extracting accurate insights from the provided data. Successfully completing these cleaning and preprocessing steps is crucial for subsequent stages, such as feature engineering and extraction, where refined features are created to enhance model performance.
+    - This step involves mastering the handling of missing data (null values), removing duplicates, handling outliers, and executing various data manipulation tasks.
+    - This step is essential for extracting accurate insights from the provided data.
+    - Successfully completing these cleaning and preprocessing steps is crucial for subsequent stages, such as feature engineering and extraction, where refined features are created to enhance model performance.
 
 - 📉 [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
