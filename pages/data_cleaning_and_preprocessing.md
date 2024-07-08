@@ -30,7 +30,7 @@ Handling missing values is a crucial step in data cleaning to ensure accurate an
 
 **Note:** to improve predictions, we can extend imputation by adding an extra column that indicates whether the value is a raw value or an imputed value. Model would make better prediction by considering which values were originally missing.
 
-### Q4- How to choose the right method to deal with missing values
+### Q4- How to choose the right method to deal with missing values?
 - No single method is suitable for all situations, so it's essential to understand the context and implications of each approach.
 - Deleting missing values from our data or keep them depends on some factors and the specific situations such as the nature of the missing data, its impact on the model, the data size, percentage of missing values and finally data integrity.
 - Here are more details:
