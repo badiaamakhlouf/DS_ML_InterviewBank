@@ -3,6 +3,7 @@ Whether you're preparing for an interview or seeking to deepen your understandin
 ## List of Questions:
 ### Q1-What are the main tasks of data cleaning in Data Science?
 Here are the main tasks to perform in the cleaning phase :
+
 - Handling Missing Values
 - Removing Duplicates
 - Outlier Detection and Management
@@ -16,6 +17,7 @@ Note : encoding categorical data can be done in feature engineering phase.
 
 ### Q3- How to deal with missing values ?
 Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are three main methods to deal with missing values: 
+
 - Remove Missing Data:
     - Row Removal: delete rows with missing values.
     - Column Removal: delete columns with a high percentage of missing values.
@@ -32,6 +34,7 @@ Handling missing values is a crucial step in data cleaning to ensure accurate an
 - No single method is suitable for all situations, so it's essential to understand the context and implications of each approach.
 - Deleting missing values from our data or keep them depends on some factors and the specific situations such as the nature of the missing data, its impact on the model, the data size, percentage of missing values and finally data integrity.
 - Here are more details:
+  
   - Nature of Missing Data: are they random ?, or related to certain characteristics of the data ? or are related to the target variable.
   - Impact on Model: missing values in :
       - **Training data**: may impact the training process and the quality of the resulting models.
@@ -45,6 +48,7 @@ Handling missing values is a crucial step in data cleaning to ensure accurate an
 
 ### Q5- How to remove missing values? 
 Here is how to remove missing values :
+
 - Remove Rows: with nan/null values using `df = df.dropna()`
 - Remove Columns: with nan/null values using `df = df.dropna(axis=1)`
 
@@ -52,6 +56,7 @@ Dropping rows or columns is not too advantageous because most values are going t
 
 ### Q6- How to impute missing values? 
 - We have four main methods:
+  
    - Impute with statistical measures: mean, median or mode
    - Impute with a Placeholder 
    - Impute with Machine Learning Algorithms
@@ -81,6 +86,7 @@ Dropping rows or columns is not too advantageous because most values are going t
 - Interpolation is a technique used to estimate missing values based on the observed values in a dataset.
 - It works by filling in the gaps between known data points, assuming some underlying pattern or relationship.
 - Here are some interpolation techniques:
+  
     - Linear Interpolation 
     - Polynomial Interpolation
     - Quadratic 
@@ -174,7 +180,7 @@ Dropping rows or columns is not too advantageous because most values are going t
   - The type of outliers you expect to encounter. 
 - It's often a good practice to combine multiple methods for a more robust outlier detection approach.
 
-### Q12- What Visualization techniques can be used to determine outliers?
+### Q16- What Visualization techniques can be used to determine outliers?
 
 - Performing some plots and analysis:   
     - Box plot is considered as Uni-variate analysis 
@@ -193,20 +199,20 @@ Dropping rows or columns is not too advantageous because most values are going t
  
     ![title](images/scatter-plot.png) 
       
-### Q13- How to handle outliers in dataset ? 
+### Q17- How to handle outliers in dataset ? 
 Here are some methods about how we handle outliers :
 
 - **Deleting the values:** removing the value completely, if we are sure that this value is wrong and it will never occur again, we remove it using either Interquartile range or Z-score.
 - **Replace the values:** change the values if we know the reason for the outliers. (Example: using 99th percentile)
 - **Data transformation:** some times data transformation such as natural log reduces the variation caused by the extreme values. Most used for highly skewed data sets.
 
-### Q14- What does Z-Score mean?
+### Q18- What does Z-Score mean?
 - It calculates the Z-score for each data point.
 - Z-score measures how many standard deviations a data point is from the mean.
 - Typically, a threshold of 2 to 3 standard deviations is used to identify outliers.
 - Formula: $Z ={ X - \mu \over\sigma}$
 
-### Q15- What does IQR : interquartile range mean? 
+### Q19- What does IQR : interquartile range mean? 
 - The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
 - Q1: It represents the median of the lower 50% of the data. Represents 0.25 percentile
 - Q3 : It represents the median of the upper 50% of the data. Represents 0.75 percentile
@@ -214,7 +220,7 @@ Here are some methods about how we handle outliers :
 To calculate percentiles or quantiles, we need to sort the data in ascending order and finding the value below which a certain percentage of the data falls.
 ![title](images/boxplot.png) 
 
-### Q16- What are the limitations of IQR?
+### Q20- What are the limitations of IQR?
 Here are the list of limitations : 
 
 - IQR is sensitive to the size of the dataset : may not accurately represent the spread of the data in case of smaller dataset
@@ -226,19 +232,20 @@ Here are the list of limitations :
 - IQR is considered robust to outliers within its calculated range. This means that if there are extreme values within this range, they have less impact on the calculation of IQR.
 -  IQR provides robustness within its calculated range, it is not robust to the influence of extreme values outside that range, and such extreme values may still affect the identification of potential outliers. 
 
-### Q17- How to mitigate these limitations ?
+### Q21- How to mitigate these limitations ?
 Here are some solutions:
+
 - In scenarios where the nature and cause of outliers matter, the IQR alone might not be sufficient. Other methods that retain specific value information, such as boxplots or more advanced outlier detection techniques, might be more suitable for a detailed diagnostic analysis.
 - In situations where extreme values might exist, and their impact needs to be minimized, other outlier detection methods that are more robust to extreme values, such as modified Z-scores or robust regression techniques, might be considered.
 
 <img src="images/distribution_modes.png" width="600">
 
-### Q18- How ML Algorithms used for outliers detection ?
+### Q22- How ML Algorithms used for outliers detection ?
 We have two main methods: 
 - **Clustering Algorithms:** for example k-means can be used to detect outliers where points that do not belong to any cluster or are in small clusters can be identified as outliers.
 - **Isolation Forest:** designed specifically for outlier detection. It isolates outliers by recursively partitioning the data.
   
-### Q19- What does Exploratory Data Analysis (EDA) mean? 
+### Q23- What does Exploratory Data Analysis (EDA) mean? 
 It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset. The primary goal of EDA is to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
 
 **Key aspects of Exploratory Data Analysis include:**
@@ -248,7 +255,7 @@ It is a critical step in the data analysis process and is often the second step 
 - Correlation Analysis
 Effective EDA aims to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
 
-### Q20- What does Distribution Analysis mean?
+### Q24- What does Distribution Analysis mean?
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
 - Here are some examples of distribution analysis: 
@@ -261,7 +268,7 @@ Effective EDA aims to perform more targeted and informed analyses, leading to be
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q21- What does Skewness and Kurtosis mean ?
+### Q25- What does Skewness and Kurtosis mean ?
 **Skewness:**
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
@@ -291,7 +298,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 <img src="images/Kurtosis.png" width="400">
 
-### Q22- What does Spread or Dispersion mean ?
+### Q26- What does Spread or Dispersion mean ?
 - Data spread: 
     - It provides information about the range of values in a dataset.
     - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
@@ -303,7 +310,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
     - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
 
-### Q23- How to get statistical description of our data using pandas ? 
+### Q27- How to get statistical description of our data using pandas ? 
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
     - Minimum
@@ -313,15 +320,15 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Mean
 - Code: `df.describe().transpose()`
 
-### Q24- What does Correlation Analysis mean?
+### Q28- What does Correlation Analysis mean?
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
-### Q25- What are the plots used to illustrate correlation?
+### Q29- What are the plots used to illustrate correlation?
 - Correlation matrix and heatmap 
 - Scatter Plot : it provides a visual representation of the relationship between two variables. X versus Y
   
-### Q26- What does correlation matrix mean? 
+### Q30- What does correlation matrix mean? 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
 - This matrix helps detect the presence of any positive or negative correlation between variables.
@@ -331,7 +338,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 _source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
-### Q27- What else we can perform in EDA ? 
+### Q31- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
 - Data frame dimension `df.shape`
 - Data frame columns: `df.columns`
@@ -351,7 +358,7 @@ Notes:
 - Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
-### Q28- What is the difference between covariance and correlation?
+### Q32- What is the difference between covariance and correlation?
 - These two measures are used during the exploratory data analysis to gain insights from the data.
 - **Covariance:** 
    - It measures the degree to which two variables change together.
@@ -365,7 +372,7 @@ Notes:
         - -1 indicates a perfect negative linear relationship
         - 0 indicates no linear relationship.
           
-  ### Q29- Why removing highly correlated features is very important?
+  ### Q33- Why removing highly correlated features is very important?
 - Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
 - In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
 - Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
