@@ -3,13 +3,12 @@ Whether you're preparing for an interview or seeking to deepen your understandin
 ## List of Questions:
 ### Q1-What are the main tasks of data cleaning in Data Science?
 Here are the main tasks to perform in the cleaning phase :
-- Finding and handling missing data
-- Finding and handling duplicates
-- Finding and handling outliers
+- Handling Missing Values
+- Removing Duplicates
+- Outlier Detection and Management
   
 Note : encoding categorical data can be done in feature engineering phase. 
 ### Q2- How to deal with missing values ?
-
 Handling missing values is a crucial step in data preprocessing to ensure accurate and unbiased analysis. Here are two main methods to deal with missing values: 
 - Remove missing values 
 - Impute missing values 
