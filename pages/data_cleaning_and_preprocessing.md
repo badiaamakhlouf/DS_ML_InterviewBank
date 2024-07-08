@@ -41,6 +41,7 @@ Handling missing values is a crucial step in data cleaning to ensure accurate an
   - If the percentage of missing values is very high so it is better to remove the entire row or column.
   - Imputate them with the adequate value: mean, median Forward Fill/Backward Fill or predictive imputation.
   - Maintaining data integrity: is deleting missing values would significantly reduce the dataset size so it is better to use an imputation strategy.
+  - If missing values are common in real-world scenarios, it's best to keep them in the testing data.
 
 ### Q5- How to remove missing values? 
 Here is how to remove missing values :
@@ -115,7 +116,7 @@ Dropping rows or columns is not too advantageous because most values are going t
 - There are no extreme outliers as the presence of significant outliers can skew the mean, making it less representative of the data.
 - If the data distribution is symmetric, the mean is a good measure of central tendency
 - The percentage of missing values is relatively low: imputing a small percentage of missing values with the mean is less likely to distort the overall data distribution.
-- 
+  
 ### Q10- When it is better to use the median value for imputation ?
 - Using the median for imputation in case of outliers is often considered a better solution compared to the mean.
 - The median is a measure of central tendency that has: 
@@ -124,41 +125,54 @@ Dropping rows or columns is not too advantageous because most values are going t
     - **Ability to avoid Biased Estimates:** in the presence of outliers, using the mean for imputation might lead to biased estimates, especially when the distribution is not symmetric. The median provides a more balanced estimate in skewed or asymmetric distributions.
     - **Ability to maintain Robustness in Non-Normal Distributions:** in case our data does not have a normal distribution, the median is often a more reliable measure of central tendency as it helps in producing more accurate imputations.
     
-### Q9-  How to perform Forward or Backward Fill   ? 
-Propagate the last valid observation forward or use the next valid observation to fill missing values: 
+### Q11-  How to perform Forward or Backward Fill   ? 
+- Propagate the last valid observation forward or use the next valid observation to fill missing values: 
+  - Forward fill using : `df = df.ffill()`  or `df.fillna(method='ffill')`
+  - Backward fill using : `df = df.bfill()` or `df.fillna(method='bfill')`
 
-- Forward fill using : `df = df.ffill()`  or `df.fillna(method='ffill')`
-- Backward fill using : `df = df.bfill()` or `df.fillna(method='bfill')`
+### Q12- Why removing duplicates is important ?
+- Removing duplicates from a dataset in data science is important because:
+  - Improves Model Accuracy: duplicate records can skew the results and lead to overfitting or biased models, affecting their predictive accuracy.
+  - Ensures Data Integrity: duplicates can distort the analysis, leading to incorrect conclusions and insights.
+  - Reduces Redundancy: eliminating duplicates reduces the dataset size, making computations faster and more efficient.
+  - Prevents Misleading Statistics: duplicates can inflate statistics, such as averages and counts, leading to inaccurate summaries of the data.
+  - Enhances Data Quality: clean, duplicate-free data ensures higher quality and more reliable analysis.
   
-### Q10- How to handle duplicates ? 
-Handling duplicates in data science is an essential step to ensure data quality and avoid biases or inaccuracies in analysis. Here are common methods to handle duplicates:
-- 1- Identifying Duplicates using `duplicated()` using Pandas
-- 2- Removing Duplicates - all : `df = df.drop_duplicates()`
-- 3- Removing Duplicates - Keep first Occurrences : `df = df.drop_duplicates(keep='first')`
-- 4- Removing Duplicates - Keep last Occurrences : `df = df.drop_duplicates(keep='last')`
-- 5- Handling Duplicates Based on Columns
+### Q13- How to remove duplicates ? 
+- Removing duplicates is is an essential step to ensure data quality and avoid biases or inaccuracies in analysis.
+- Here are common methods to handle duplicates:
+  - Identifying Duplicates: using `duplicated()` function of Pandas
+  - Removing Duplicates - all : `df = df.drop_duplicates()`
+  - Removing Duplicates - Keep first Occurrences : `df = df.drop_duplicates(keep='first')`
+  - Removing Duplicates - Keep last Occurrences : `df = df.drop_duplicates(keep='last')`
+  - Handling Duplicates Based on Columns
+ 
+### Q14- What are outliers in the data?
+- Outliers are data points that significantly differ from the rest.
+- They can affect our analysis by causing variations in results, potentially leading to incorrect conclusions.
+- Many reasons are behind outliers appearance such as mistakes during data collection by humans, inaccuracies in the instruments used for data collection, errors introduced during data processing or outliers that occur naturally in the data, not as a result of any error.
+- Handling outliers concerns both continuous numerical variables or categorical variable or Mixed-type data.
   
-### Q11- How to find outliers?
-To find outliers, only numerical columns are considered in our analysis. Here are the common methods to do that :
-- Visualization technique :  Box Plot, Scatter Plot and Histogram Plot (the most used ones).
-- Mathematical approach :
+### Q15- How to find outliers?
+- To find outliers, only numerical columns are considered in our analysis.
+- Here are the common methods to do that :
+  - **Visualization technique:**  Box Plot, Scatter Plot and Histogram Plot (the most used ones).
+  - **Mathematical approach:**
     - Z-score
     - Interquartile range : IQR score 
-- Machine Learning Models :
+  - **Machine Learning Models:**
     - Clustering Algorithms : Kmeans, DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
     - One-Class SVM (Support Vector Machine)
     - Autoencoders
-- Histogram-based Methods:
     - Isolation Forest
-- Domain-Specific Knowledge
+  - **Domain-Specific Knowledge**
 
-It's better to try various outlier detection methods and evaluate their performance based on your specific data characteristics that are:
-
-- Data distribution
-- Data dimensionality
-- The type of outliers you expect to encounter. 
-
-It's often a good practice to combine multiple methods for a more robust outlier detection approach.
+**Note:**
+- It's better to try various outlier detection methods and evaluate their performance based on your specific data characteristics that are:
+  - Data distribution
+  - Data dimensionality
+  - The type of outliers you expect to encounter. 
+- It's often a good practice to combine multiple methods for a more robust outlier detection approach.
 
 ### Q12- What Visualization techniques can be used to determine outliers?
 
