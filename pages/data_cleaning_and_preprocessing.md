@@ -55,6 +55,7 @@ Here is how to remove missing values :
 Dropping rows or columns is not too advantageous because most values are going to be lost and they contain important information
 
 ### Q6- How to impute missing values? 
+
 - We have four main methods:
   
    - Impute with statistical measures: mean, median or mode
@@ -67,6 +68,7 @@ Dropping rows or columns is not too advantageous because most values are going t
     
 #### 6. 1- What does impute with a statistical measures mean ? 
 - Fill missing values with statistical measures (mean, median, mode) or using more advanced imputation methods.
+  
 - Code:
      - `df['column'] = df['column'].fillna(df['column'].mean())`
      - `df['column'] = df['column'].fillna(df['column'].median())`
@@ -105,25 +107,42 @@ Dropping rows or columns is not too advantageous because most values are going t
 - The combined results provide not only a point estimate but also an estimate of the uncertainty associated with the missing data. This incorporates both the imputation variability and the variability due to analyzing different imputed datasets.
 - `fancyimpute()` Python library can be employed to implement multiple imputation efficiently.
 
-### Q7- What is KNN Imputer?
+### Q7- How to handle missing values in case of categorical data?
+- The best method to handle missing values in case of categorical data depends on the specific characteristics of your dataset.
+- Here are some commonly used approaches:
+   - **Mode imputation:**
+      - It is an adequate method to replace missing categorical values with the most frequent category (mode) in that column.
+      - However, it is suitable when the missing values are expected to occur randomly and are relatively few.
+   - **Create a Separate Category:**
+      - Treat missing values as a separate category or label.
+      - This approach preserves the information that data was missing and can be effective if there is a reason why data might be missing systematically.
+   - **Using Predictive Models:**
+      - Use of ML classification algorithms to predict missing categorical values based on other features.
+      - It can be more complex but may yield better results if there are correlations among features that can predict the missing values accurately.
+   - **Assigning Values Using Business Rules:**
+      - Use domain knowledge or business rules to impute missing categorical values.
+      - This approach is useful when there are clear guidelines or rules to determine the missing values based on existing data.
+   - **Multiple Imputation:** useful when uncertainty in imputed values needs to be quantified. 
+
+### Q8- What is KNN Imputer?
 - It is is a more sophisticated method for filling null values.
 - It uses a distance parameter, known as the K parameter.
 - It operates similarly to a clustering algorithm, imputing missing values based on the neighborhood points of the missing values.
 
-### Q8- Why do we need an extension to imputation? 
+### Q9- Why do we need an extension to imputation? 
 - Sometimes, missing values themselves can be indicative.
 - This method aims to create a new binary column indicating whether a value is missing. 
 - For each column with missing entries in the original dataset, we add a new column that shows the location of imputed entries. 
 - Models would make better predictions by considering which values were originally missing.   
 - Code:  `df['column_missing'] = df['column'].isnull().astype(int)` 
 
-### Q9- When do we use mean value for missing values imputation ?
+### Q10- When do we use mean value for missing values imputation ?
 - The mean is suitable for numerical data that follows a roughly normal distribution.
 - There are no extreme outliers as the presence of significant outliers can skew the mean, making it less representative of the data.
 - If the data distribution is symmetric, the mean is a good measure of central tendency
 - The percentage of missing values is relatively low: imputing a small percentage of missing values with the mean is less likely to distort the overall data distribution.
   
-### Q10- When it is better to use the median value for imputation ?
+### Q12- When it is better to use the median value for imputation ?
 - Using the median for imputation in case of outliers is often considered a better solution compared to the mean.
 - The median is a measure of central tendency that has: 
     - **Robustness to Outliers:** it is less influenced by extreme values because it is not affected by the actual values of data points but rather their order. Outliers have a minimal impact on the median.
@@ -131,12 +150,12 @@ Dropping rows or columns is not too advantageous because most values are going t
     - **Ability to avoid Biased Estimates:** in the presence of outliers, using the mean for imputation might lead to biased estimates, especially when the distribution is not symmetric. The median provides a more balanced estimate in skewed or asymmetric distributions.
     - **Ability to maintain Robustness in Non-Normal Distributions:** in case our data does not have a normal distribution, the median is often a more reliable measure of central tendency as it helps in producing more accurate imputations.
     
-### Q11-  How to perform Forward or Backward Fill   ? 
+### Q12-  How to perform Forward or Backward Fill   ? 
 - Propagate the last valid observation forward or use the next valid observation to fill missing values: 
   - Forward fill using : `df = df.ffill()`  or `df.fillna(method='ffill')`
   - Backward fill using : `df = df.bfill()` or `df.fillna(method='bfill')`
 
-### Q12- Why removing duplicates is important ?
+### Q13- Why removing duplicates is important step?
 - Removing duplicates from a dataset in data science is important because:
   - Improves Model Accuracy: duplicate records can skew the results and lead to overfitting or biased models, affecting their predictive accuracy.
   - Ensures Data Integrity: duplicates can distort the analysis, leading to incorrect conclusions and insights.
@@ -144,7 +163,7 @@ Dropping rows or columns is not too advantageous because most values are going t
   - Prevents Misleading Statistics: duplicates can inflate statistics, such as averages and counts, leading to inaccurate summaries of the data.
   - Enhances Data Quality: clean, duplicate-free data ensures higher quality and more reliable analysis.
   
-### Q13- How to remove duplicates ? 
+### Q14- How to remove duplicates ? 
 - Removing duplicates is is an essential step to ensure data quality and avoid biases or inaccuracies in analysis.
 - Here are common methods to handle duplicates:
   - Identifying Duplicates: using `duplicated()` function of Pandas
@@ -153,13 +172,13 @@ Dropping rows or columns is not too advantageous because most values are going t
   - Removing Duplicates - Keep last Occurrences : `df = df.drop_duplicates(keep='last')`
   - Handling Duplicates Based on Columns
  
-### Q14- What are outliers in the data?
+### Q15- What are outliers in the data?
 - Outliers are data points that significantly differ from the rest.
 - They can affect our analysis by causing variations in results, potentially leading to incorrect conclusions.
 - Many reasons are behind outliers appearance such as mistakes during data collection by humans, inaccuracies in the instruments used for data collection, errors introduced during data processing or outliers that occur naturally in the data, not as a result of any error.
 - Handling outliers concerns both continuous numerical variables or categorical variable or Mixed-type data.
   
-### Q15- How to find outliers?
+### Q16- How to find outliers?
 - To find outliers, only numerical columns are considered in our analysis.
 - Here are the common methods to do that :
   - **Visualization technique:**  Box Plot, Scatter Plot and Histogram Plot (the most used ones).
@@ -180,7 +199,7 @@ Dropping rows or columns is not too advantageous because most values are going t
   - The type of outliers you expect to encounter. 
 - It's often a good practice to combine multiple methods for a more robust outlier detection approach.
 
-### Q16- What Visualization techniques can be used to determine outliers?
+### Q17- What Visualization techniques can be used to determine outliers?
 
 - Performing some plots and analysis:   
     - Box plot is considered as Uni-variate analysis 
@@ -199,20 +218,20 @@ Dropping rows or columns is not too advantageous because most values are going t
  
     ![title](images/scatter-plot.png) 
       
-### Q17- How to handle outliers in dataset ? 
+### Q18- How to handle outliers in dataset ? 
 Here are some methods about how we handle outliers :
 
 - **Deleting the values:** removing the value completely, if we are sure that this value is wrong and it will never occur again, we remove it using either Interquartile range or Z-score.
 - **Replace the values:** change the values if we know the reason for the outliers. (Example: using 99th percentile)
 - **Data transformation:** some times data transformation such as natural log reduces the variation caused by the extreme values. Most used for highly skewed data sets.
 
-### Q18- What does Z-Score mean?
+### Q19- What does Z-Score mean?
 - It calculates the Z-score for each data point.
 - Z-score measures how many standard deviations a data point is from the mean.
 - Typically, a threshold of 2 to 3 standard deviations is used to identify outliers.
 - Formula: $Z ={ X - \mu \over\sigma}$
 
-### Q19- What does IQR : interquartile range mean? 
+### Q20- What does IQR : interquartile range mean? 
 - The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
 - Q1: It represents the median of the lower 50% of the data. Represents 0.25 percentile
 - Q3 : It represents the median of the upper 50% of the data. Represents 0.75 percentile
@@ -220,7 +239,7 @@ Here are some methods about how we handle outliers :
 To calculate percentiles or quantiles, we need to sort the data in ascending order and finding the value below which a certain percentage of the data falls.
 ![title](images/boxplot.png) 
 
-### Q20- What are the limitations of IQR?
+### Q21- What are the limitations of IQR?
 Here are the list of limitations : 
 
 - IQR is sensitive to the size of the dataset : may not accurately represent the spread of the data in case of smaller dataset
@@ -232,7 +251,7 @@ Here are the list of limitations :
 - IQR is considered robust to outliers within its calculated range. This means that if there are extreme values within this range, they have less impact on the calculation of IQR.
 -  IQR provides robustness within its calculated range, it is not robust to the influence of extreme values outside that range, and such extreme values may still affect the identification of potential outliers. 
 
-### Q21- How to mitigate these limitations ?
+### Q22- How to mitigate these limitations ?
 Here are some solutions:
 
 - In scenarios where the nature and cause of outliers matter, the IQR alone might not be sufficient. Other methods that retain specific value information, such as boxplots or more advanced outlier detection techniques, might be more suitable for a detailed diagnostic analysis.
@@ -240,12 +259,12 @@ Here are some solutions:
 
 <img src="images/distribution_modes.png" width="600">
 
-### Q22- How ML Algorithms used for outliers detection ?
+### Q23- How ML Algorithms used for outliers detection ?
 We have two main methods: 
 - **Clustering Algorithms:** for example k-means can be used to detect outliers where points that do not belong to any cluster or are in small clusters can be identified as outliers.
 - **Isolation Forest:** designed specifically for outlier detection. It isolates outliers by recursively partitioning the data.
   
-### Q23- What does Exploratory Data Analysis (EDA) mean? 
+### Q24- What does Exploratory Data Analysis (EDA) mean? 
 It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset. The primary goal of EDA is to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
 
 **Key aspects of Exploratory Data Analysis include:**
@@ -255,7 +274,7 @@ It is a critical step in the data analysis process and is often the second step 
 - Correlation Analysis
 Effective EDA aims to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
 
-### Q24- What does Distribution Analysis mean?
+### Q25- What does Distribution Analysis mean?
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
 - Here are some examples of distribution analysis: 
@@ -268,7 +287,7 @@ Effective EDA aims to perform more targeted and informed analyses, leading to be
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q25- What does Skewness and Kurtosis mean ?
+### Q26- What does Skewness and Kurtosis mean ?
 **Skewness:**
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
@@ -298,7 +317,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 <img src="images/Kurtosis.png" width="400">
 
-### Q26- What does Spread or Dispersion mean ?
+### Q27- What does Spread or Dispersion mean ?
 - Data spread: 
     - It provides information about the range of values in a dataset.
     - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
@@ -310,7 +329,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
     - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
 
-### Q27- How to get statistical description of our data using pandas ? 
+### Q28- How to get statistical description of our data using pandas ? 
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
     - Minimum
@@ -320,15 +339,15 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Mean
 - Code: `df.describe().transpose()`
 
-### Q28- What does Correlation Analysis mean?
+### Q29- What does Correlation Analysis mean?
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
-### Q29- What are the plots used to illustrate correlation?
+### Q30- What are the plots used to illustrate correlation?
 - Correlation matrix and heatmap 
 - Scatter Plot : it provides a visual representation of the relationship between two variables. X versus Y
   
-### Q30- What does correlation matrix mean? 
+### Q31- What does correlation matrix mean? 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
 - This matrix helps detect the presence of any positive or negative correlation between variables.
@@ -338,7 +357,7 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
 
 _source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
-### Q31- What else we can perform in EDA ? 
+### Q32- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
 - Data frame dimension `df.shape`
 - Data frame columns: `df.columns`
@@ -358,7 +377,7 @@ Notes:
 - Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
-### Q32- What is the difference between covariance and correlation?
+### Q33- What is the difference between covariance and correlation?
 - These two measures are used during the exploratory data analysis to gain insights from the data.
 - **Covariance:** 
    - It measures the degree to which two variables change together.
