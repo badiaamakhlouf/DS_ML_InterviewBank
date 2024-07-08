@@ -1,6 +1,10 @@
 # Data Cleaning and Pre-processing 
 Whether you're preparing for an interview or seeking to deepen your understanding of essential data science concepts, this page offers structured questions designed to enhance your proficiency and understanding of data cleaning—a fundamental stage in data science workflows. It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario.
 ## List of Questions:
+### Q0- What is data cleaning?
+
+It is the process of detecting and correcting or removing inaccurate, incomplete, irrelevant, and inconsistent data within a dataset. The goal of data cleaning is to ensure that the data is accurate, reliable, and suitable for analysis. 
+
 ### Q1-What are the main tasks of data cleaning in Data Science?
 Here are the main tasks to perform in the cleaning phase :
 
