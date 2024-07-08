@@ -8,25 +8,33 @@ Here are the main tasks to perform in the cleaning phase :
 - Outlier Detection and Management
   
 Note : encoding categorical data can be done in feature engineering phase. 
-### Q2- How to deal with missing values ?
-Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are two main methods to deal with missing values: 
-- Remove missing values 
-- Impute missing values 
-- Forward or Backward Fill
 
-
-**Note:** to make better predictions we can add an extension to imputation.
-
-Choosing the right method is based on:
-- The characteristics of the data
-- The percentage of missing values
-- The goals of the performed analysis.
-
-No single method is suitable for all situations, so it's essential to understand the context and implications of each approach.
-
-### Q3- How to detect or identify missing values? 
+### Q2- How to detect or identify missing values? 
 - Identifying missing values is the first step to perform when dealing with them. 
 - Using Pandas functions like `isnull()` or `info()`.
+- Visualization method
+
+### Q3- How to deal with missing values ?
+Handling missing values is a crucial step in data cleaning to ensure accurate and unbiased analysis. Here are four main methods to deal with missing values: 
+- Remove Missing Data:
+    - Row Removal: delete rows with missing values.
+    - Column Removal: delete columns with a high percentage of missing values.
+- Impute Missing Data:
+    - Mean/Median/Mode Imputation: replace missing values with the mean, median, or mode of the column.
+    - Forward/Backward Fill: use previous or next values to fill missing data in time series.
+- Predict Missing Data:
+    - Regression/Classification Models: use machine learning models to predict and fill missing values based on other available data.
+- Domain-Specific Methods:
+    - Custom Imputation: use domain knowledge to fill in missing data appropriately.
+
+**Note:** to improve predictions, we can extend imputation by adding an extra column that indicates whether the value is a raw value or an imputed value. This helps the model differentiate between original and imputed data, potentially enhancing its predictive performance.
+
+### Q4- How to choose the right method to deal with missing values
+- No single method is suitable for all situations, so it's essential to understand the context and implications of each approach.
+- Choosing the right method is based on:
+  - The characteristics and nature of the data
+  - The percentage of missing values: there is a high percentage of missing values, it is generally better to remove the entire row or column. Otherwise, imputation is the best choice.
+  - The goals of the performed analysis.
 
 ### Q4- How to remove missing values? 
 
