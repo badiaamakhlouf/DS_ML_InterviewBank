@@ -7,7 +7,7 @@
   
 ![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-MIT-red)
 ![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
