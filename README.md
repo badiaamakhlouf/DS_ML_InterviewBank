@@ -7,7 +7,9 @@
   
 ![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+![Build Status](https://img.shields.io/travis/badiaamakhlouf/repository.svg)
 
 
 ## 1- 📊 Data science 
