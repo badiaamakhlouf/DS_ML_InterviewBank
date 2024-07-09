@@ -10,6 +10,8 @@
 ![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 ![Build Status](https://img.shields.io/travis/badiaamakhlouf/repository.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
+
 
 
 ## 1- 📊 Data science 
