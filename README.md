@@ -107,3 +107,6 @@ Certainly, there are certain data science skills that are exclusively required f
 **Feedback:**
 - 😉 Please, your feedback is highly valued, so please feel free to share any suggestions or comments for improvement.
 - 🤝 Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
+
+**License:**
+This project is licensed under the [MIT License](), making it open for collaboration and use in various projects.
