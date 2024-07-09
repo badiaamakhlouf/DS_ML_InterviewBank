@@ -7,6 +7,8 @@
   
 ![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
 
 ## 1- 📊 Data science 
 Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
