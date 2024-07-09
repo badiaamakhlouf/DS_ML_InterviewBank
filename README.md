@@ -109,4 +109,4 @@ Certainly, there are certain data science skills that are exclusively required f
 - 🤝 Together, let's foster a collaborative space for learning and growth in the dynamic realm of data science and machine learning.
 
 **License:**
-This project is licensed under the [MIT License](), making it open for collaboration and use in various projects.
+This project is licensed under the [MIT License](https://github.com/badiaamakhlouf/DS_ML_InterviewBank/blob/main/LICENSE.md), making it open for collaboration and use in various projects.
