@@ -6,10 +6,10 @@
 - 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules.
   
 ![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-blue)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-![Build Status](https://img.shields.io/travis/badiaamakhlouf/repository.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen.svg)
 
 
