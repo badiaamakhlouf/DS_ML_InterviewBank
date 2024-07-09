@@ -157,5 +157,21 @@ Notes:
 - In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
 - Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
 
+### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
+
+### Q- How to perform univariate analysis for numerical and categorical variables?
+### Q- Mention the two kinds of target variables for predictive modeling.
+
+### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
+### What are the different tests that are used for verifying analysis/hypothesis for numerical-numerical, categorical-categorical, and numerical-categorical variables?
+
+### What is a scatter plot? For what type of data is scatter plot usually used for?
+### Question9: When will you use a histogram and when will you use a bar chart? Explain with an example.}
+### What type of data is box-plots usually used for? Why?
+### What information could you gain from a box-plot?
+### Explain descriptive, predictive, and prescriptive analytics.
+### What are the different types of sampling techniques used by data analysts?
+###  Describe univariate, bivariate, and multivariate analysis.
+
 
 
