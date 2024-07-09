@@ -5,6 +5,27 @@ It provides structured questions aimed at improving your proficiency in explorat
 
 The content covers a range of techniques and visualization methods, offering explanations on their selection for different analytical scenarios💡.
 
+Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
+Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
+
+<div id="badges">
+  <a href="https://github.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/badiaa-m-b77032116/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://medium.com/@badiaa-makhlouf">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+  <a href="https://www.kaggle.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle Badge"/>
+  </a>
+  <a href="https://stackoverflow.com/users/10863083/baddy">
+    <img src="https://img.shields.io/stackexchange/stackoverflow/r/10863083?color=orange&label=reputation&logo=stackoverflow&style=for-the-badge" alt="Stackoverflow Badge"/>
+  </a>
+</div>
+
 ## List of Questions:
 ### Q- What does Exploratory Data Analysis (EDA) mean? 
 It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset. The primary goal of EDA is to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
