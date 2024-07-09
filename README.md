@@ -5,7 +5,7 @@
 
 - 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules.
   
-![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaamakhlouf-blue)
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa?Makhlouf-blue)
 
 ## 1- 📊 Data science 
 Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
