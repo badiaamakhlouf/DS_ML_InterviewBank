@@ -3,8 +3,6 @@ This page serves as a valuable resource for interview preparation and enhancing 
 
 It provides structured questions aimed at improving your proficiency in exploratory data analysis, emphasizing how to select the right visualizations to uncover insights and details within your data ✅.
 
-The content covers a range of techniques and visualization methods, offering explanations on their selection for different analytical scenarios💡.
-
 Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
 Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
 
