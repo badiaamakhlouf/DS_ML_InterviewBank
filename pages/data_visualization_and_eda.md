@@ -160,6 +160,8 @@ Notes:
         - 1: perfect positive linear relationship
         - -1 indicates a perfect negative linear relationship
         - 0 indicates no linear relationship.
+### Q What does Normal distribution mean ?
+### Q- What does Uniform distribution mean ?
           
   ### Q- Why removing highly correlated features is very important?
 - Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
