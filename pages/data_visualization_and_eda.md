@@ -35,14 +35,14 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 ## List of Questions:
 ### Q- What does Exploratory Data Analysis (EDA) mean? 
-It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset. The primary goal of EDA is to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
-
-**Key aspects of Exploratory Data Analysis include:**
-- Summary Statistics using `.describe()` pandas library.
-- Data Visualization
-- Distribution Analysis
-- Correlation Analysis
-Effective EDA aims to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
+- It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset.
+- It aims to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
+- Effective EDA helps to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
+- **Key aspects of Exploratory Data Analysis include:**
+     - Summary Statistics using `.describe()` pandas library.
+     - Data Visualization
+     - Distribution Analysis
+     - Correlation Analysis
 
 ### Q- What does Distribution Analysis mean?
 - This analysis aims to examine the distribution of values within a dataset.
