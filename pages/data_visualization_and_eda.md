@@ -100,6 +100,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Kurtosis<0 (Platykurtic):** the distribution has thinner tails (lighter tails) and a flatter peak than a normal distribution. This suggests a lower probability of extreme values.
 
 <img src="images/Kurtosis.png" width="400">
+* Source:https://en.wikipedia.org/wiki/Skewness *
 
 ### Q- What does Spread or Dispersion mean ?
 - Data spread: 
