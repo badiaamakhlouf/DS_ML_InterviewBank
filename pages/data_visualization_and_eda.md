@@ -109,19 +109,25 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 
 _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776_
 
-### Q- What does Spread or Dispersion mean ? !!!!
+### Q- What does Spread or Dispersion mean ?
 
-- **Data spread:** 
-    - It provides information about the range of values in a dataset.
-    - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
-    - Spread measures help to understand the variability or dispersion of the data.
-    - **Examples: IQR, range, variance, standard deviation** 
-    - It is crucial to understand the spread of data for better outliers detection, risk assessment, decision-Making etc.
-- **Dispersion:**
+- Spread analysis and dispersion analysis are usually used interchangeably, but they can have subtle differences depending on the context.
+- Dispersion analysis is a more specific term used in statistics to describe the variability within a dataset.
+- Spread analysis might be used more broadly depending on the context, particularly outside of pure statistical analysis.
+- **Dispersion analysis:**
     - It explains how individual data points in a dataset deviate or spread out from a central measure of tendency, such as the mean or median. 
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
-    - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
+    -  Common measures of dispersion include:
+       - Range: The difference between the maximum and minimum values.
+       - Interquartile Range (IQR): The range of the middle 50% of the data, calculated as the difference between the 75th and 25th percentiles.
+       - Variance: The average squared deviation from the mean, showing how data points are spread out.
+       - Standard Deviation: The square root of the variance, providing a measure of spread in the same units as the data.
+       - etc.
 
+- **Spread analysis:** 
+    - It might not only focus on statistical measures of dispersion but also consider how the spread affects decision-making, risk assessment, or comparison between different datasets.
+    - It is used in various area such as finance, economics, and marketing to refer to differences between values (e.g., bid-ask spread, yield spread) beyond just statistical dispersion.
+    - It can include the Dispersion analysis measures but may also consider broader implications and specific contexts.
 
 ### Q- What does Correlation Analysis mean?
 
