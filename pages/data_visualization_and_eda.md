@@ -1,4 +1,13 @@
 # Data Visualisation and Exploratory Data Analysis
+
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
+[![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
+![License](https://img.shields.io/badge/License-MIT-red)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg) 
+
 This page serves as a valuable resource for interview preparation and enhancing your understanding of data visualization and exploratory data analysis 📊 within the data science lifecycle.
 
 It provides structured questions aimed at improving your proficiency in exploratory data analysis, emphasizing how to select the right visualizations to uncover insights and details within your data ✅.
