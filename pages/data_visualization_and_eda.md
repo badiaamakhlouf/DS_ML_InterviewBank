@@ -55,7 +55,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - Code: `df.describe().transpose()`
 - Example:
 
-<img src="images/summary_statistic.png" width="400">
+<img src="images/summary_statistic.png" width="600">
 
 
 ### Q- What does Distribution Analysis mean?
