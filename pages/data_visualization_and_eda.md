@@ -87,7 +87,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
-Source:https://en.wikipedia.org/wiki/Skewness
+_Source:https://en.wikipedia.org/wiki/Skewness_
 
 
 - If we have a positively skewed distribution:  Mode < Median < Mean 
@@ -105,9 +105,9 @@ Source:https://en.wikipedia.org/wiki/Skewness
     - **Kurtosis<0 (Platykurtic):** the distribution has thinner tails (lighter tails) and a flatter peak than a normal distribution. This suggests a lower probability of extreme values.
 
 <img src="images/Kurtosis.png" width="400">
-Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776
+_Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776_
 
-### Q- What does Spread or Dispersion mean ?
+### Q- What does Spread or Dispersion mean ? !!!!
 
 - **Data spread:** 
     - It provides information about the range of values in a dataset.
@@ -140,20 +140,58 @@ Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zer
 
 - It is a graphical representation of the relationship between two variables, X versus Y.
 - Each point on the scatter plot represents an observation. Patterns in the scatter plot can indicate the type and strength of the correlation.
+- It is typically used for visualizing and analyzing the relationship between two quantitative (numerical) variables.
+- It is mainly used for trend identification, correlation analysis and outliers detection
+- Scatter plots are a fundamental tool in exploratory data analysis (EDA) for uncovering relationships between variables and guiding further statistical analysis and modeling.
+  
 <img src="images/scatterplot.png" width="500">
 
-*Source: https://www.data-to-viz.com/graph/scatter.html
+_Source: https://www.data-to-viz.com/graph/scatter.html_
 
 ### Q- What does correlation matrix mean? 
+
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
 - This matrix helps detect the presence of any positive or negative correlation between variables.
 - The correlation is calculated using the pearson correlation coefficient so values varies from -1 to 1
 - It is often visualized using heatmaps, where colors represent the magnitude and direction of correlations. This can make it easier to identify strong and weak correlations at a glance.
 
-<img src="images/corr_matrix.png" width="400">
+<img src="images/corr_matrix.png" width="500">
 
-_source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
+_Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
+
+### Q- What is the difference between covariance and correlation?
+
+- These two measures are used during the exploratory data analysis to gain insights from the data.
+- **Covariance:** 
+   - It measures the degree to which two variables change together.
+   - It indicates the direction of the linear relationship between the variables.
+   - It can take on any value
+
+- **Correlation:**
+   - It is a standardized measure of the strength and direction of the linear relationship between two variables.
+   - It ranges from -1 to 1, where :
+        - 1: perfect positive linear relationship
+        - -1 indicates a perfect negative linear relationship
+        - 0 indicates no linear relationship.
+    
+### Q- Why removing highly correlated features is very important?
+
+- Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
+- In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
+- Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
+  
+### Q What does Normal distribution mean ?
+### Q- What does Uniform distribution mean ?
+
+### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
+
+
+### Q- How to perform univariate analysis for numerical and categorical variables?
+
+### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
+
+
 
 ### Q- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
@@ -175,42 +213,15 @@ Notes:
 - Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
-### Q- What is the difference between covariance and correlation?
-- These two measures are used during the exploratory data analysis to gain insights from the data.
-- **Covariance:** 
-   - It measures the degree to which two variables change together.
-   - It indicates the direction of the linear relationship between the variables.
-   - It can take on any value
-
-- **Correlation:**
-   - It is a standardized measure of the strength and direction of the linear relationship between two variables.
-   - It ranges from -1 to 1, where :
-        - 1: perfect positive linear relationship
-        - -1 indicates a perfect negative linear relationship
-        - 0 indicates no linear relationship.
-### Q What does Normal distribution mean ?
-### Q- What does Uniform distribution mean ?
-          
-  ### Q- Why removing highly correlated features is very important?
-- Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
-- In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
-- Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
-
-### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
-
-### Q- How to perform univariate analysis for numerical and categorical variables?
 ### Q- Mention the two kinds of target variables for predictive modeling.
 
-### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
-### What are the different tests that are used for verifying analysis/hypothesis for numerical-numerical, categorical-categorical, and numerical-categorical variables?
+### Q- What information could you gain from a box-plot?
 
-### What is a scatter plot? For what type of data is scatter plot usually used for?
-### Question9: When will you use a histogram and when will you use a bar chart? Explain with an example.}
-### What type of data is box-plots usually used for? Why?
-### What information could you gain from a box-plot?
-### Explain descriptive, predictive, and prescriptive analytics.
-### What are the different types of sampling techniques used by data analysts?
-###  Describe univariate, bivariate, and multivariate analysis.
+### Q- What type of data is box-plots usually used for? Why?
+
+### Q- Explain descriptive, predictive, and prescriptive analytics.
+
+### Q- When will you use a histogram and when will you use a bar chart? Explain with an example.}
 
 
 
