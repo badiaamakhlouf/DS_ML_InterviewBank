@@ -82,8 +82,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
-Source:![Skewness](https://en.wikipedia.org/wiki/Skewness)
-
+Source:https://en.wikipedia.org/wiki/Skewness
 
 
 - If we have a positively skewed distribution:  Mode < Median < Mean 
@@ -100,16 +99,16 @@ Source:![Skewness](https://en.wikipedia.org/wiki/Skewness)
     - **Kurtosis<0 (Platykurtic):** the distribution has thinner tails (lighter tails) and a flatter peak than a normal distribution. This suggests a lower probability of extreme values.
 
 <img src="images/Kurtosis.png" width="400">
-Source:[Kurtosis](https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776)
+Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776
 
 ### Q- What does Spread or Dispersion mean ?
-- Data spread: 
+- **Data spread:** 
     - It provides information about the range of values in a dataset.
     - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
     - Spread measures help to understand the variability or dispersion of the data.
     - **Examples: IQR, range, variance, standard deviation** 
     - It is crucial to understand the spread of data for better outliers detection, risk assessment, decision-Making etc.
-- Dispersion:
+- **Dispersion:**
     - It explains how individual data points in a dataset deviate or spread out from a central measure of tendency, such as the mean or median. 
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
     - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
@@ -118,11 +117,24 @@ Source:[Kurtosis](https://www.researchgate.net/figure/Examples-of-positive-negat
 ### Q- What does Correlation Analysis mean?
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
+- The most common correlation coefficient is Pearson's r, which ranges from -1 to 1:
+   - +1 indicates a perfect positive linear relationship.
+   - -1 indicates a perfect negative linear relationship.
+   - 0 indicates no linear relationship.
+- Correlation analysis include three cases:
+   - **Positive Correlation:** indicates that when one variable increases, the other increases.
+   - **Negative Correlation:** indicates when one variable increases, the other decreases.
+   - **No Correlation:** it indicates when there is no apparent relationship between the variables. 
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
-### Q- What are the plots used to illustrate correlation?
-- Correlation matrix and heatmap 
-- Scatter Plot : it provides a visual representation of the relationship between two variables. X versus Y
-  
+- Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis
+
+### Q- What is the Scatter Plot ?
+- It is a graphical representation of the relationship between two variables, X versus Y.
+- Each point on the scatter plot represents an observation. Patterns in the scatter plot can indicate the type and strength of the correlation.
+<img src="images/scatterplot.png" width="400">
+
+*Source: https://www.data-to-viz.com/graph/scatter.html
+
 ### Q- What does correlation matrix mean? 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
