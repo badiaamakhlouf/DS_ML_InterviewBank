@@ -43,6 +43,20 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
      - Data Visualization
      - Distribution Analysis
      - Correlation Analysis
+ 
+### Q- How to get statistical description of our data using pandas ? 
+- In the statistical description we try to select the next values for each numerical features:
+    - Maximum values
+    - Minimum
+    - Average
+    - Standard deviation
+    - Median
+    - Mean
+- Code: `df.describe().transpose()`
+- Example:
+
+<img src="images/summary_statistic.png" width="400">
+
 
 ### Q- What does Distribution Analysis mean?
 - This analysis aims to examine the distribution of values within a dataset.
@@ -99,15 +113,6 @@ kurtosis measures whether the data is heavy-tailed (more extreme values than a n
     - Dispersion measures provide insights into the variability or spread of the data and are crucial for understanding the overall distribution.
     - **Examples: IQR, range, variance, standard deviation, Mean Absolute Deviation (MAD), Coefficient of Variation (CV)**
 
-### Q- How to get statistical description of our data using pandas ? 
-- In the statistical description we try to select the next values for each numerical features:
-    - Maximum values
-    - Minimum
-    - Average
-    - Standard deviation
-    - Median
-    - Mean
-- Code: `df.describe().transpose()`
 
 ### Q- What does Correlation Analysis mean?
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
