@@ -1,10 +1,5 @@
 # Data Scientist and Machine Learning Engineer Interview Questions
-- 💡 This [repository](https://github.com/badiaamakhlouf/data_science_interview_preparation), serves as an invaluable resource for those preparing for technical interviews in Data Science and Machine Learning.
 
-- 🤝 My commitment to excellence doesn't stop here—I aspire to continually enhance this repository by incorporating the latest technologies and advancements in data science and machine learning.
-
-- 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules.
-  
 ![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
 [![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
@@ -12,6 +7,13 @@
 ![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg)
+
+- 💡 This [repository](https://github.com/badiaamakhlouf/data_science_interview_preparation), serves as an invaluable resource for those preparing for technical interviews in Data Science and Machine Learning.
+
+- 🤝 My commitment to excellence doesn't stop here—I aspire to continually enhance this repository by incorporating the latest technologies and advancements in data science and machine learning.
+
+- 📋 It is organized into big two main topics, data science and machine learning where subject or topic is splitted into smaller modules.
+  
 
 
 
