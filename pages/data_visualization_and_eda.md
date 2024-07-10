@@ -82,7 +82,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
-*Source:https://en.wikipedia.org/wiki/Skewness*
+*Source:https://en.wikipedia.org/wiki/Skewness *
 
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
