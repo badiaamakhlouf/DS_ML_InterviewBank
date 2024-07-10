@@ -34,7 +34,9 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 </div>
 
 ## List of Questions:
+
 ### Q- What does Exploratory Data Analysis (EDA) mean? 
+
 - It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset.
 - It aims to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
 - Effective EDA helps to perform more targeted and informed analyses, leading to better decision-making and valuable insights from the data.
@@ -45,6 +47,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
      - Correlation Analysis
  
 ### Q- How to get statistical description of our data using pandas ? 
+
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
     - Minimum
@@ -59,6 +62,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 
 ### Q- What does Distribution Analysis mean?
+
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
 - Here are some examples of distribution analysis: 
@@ -72,6 +76,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
 ### Q- What does Skewness mean?
+
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
 - A skewed data can not be used to generate normal distribution. 
@@ -88,7 +93,8 @@ Source:https://en.wikipedia.org/wiki/Skewness
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
-### What does Kurtosis mean ?    
+### What does Kurtosis mean ?  
+
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
 - It provides information about the concentration of data points in the tails relative to the center of the distribution:
    - The data can be heavy-tailed means it has more extreme values than a normal distribution.
@@ -102,6 +108,7 @@ Source:https://en.wikipedia.org/wiki/Skewness
 Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776
 
 ### Q- What does Spread or Dispersion mean ?
+
 - **Data spread:** 
     - It provides information about the range of values in a dataset.
     - It provides information about how dispersed or scattered the individual data points are around a measure of central tendency, such as the mean or median.
@@ -115,6 +122,7 @@ Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zer
 
 
 ### Q- What does Correlation Analysis mean?
+
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
 - The most common correlation coefficient is Pearson's r, which ranges from -1 to 1:
@@ -129,9 +137,10 @@ Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zer
 - Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis
 
 ### Q- What is the Scatter Plot ?
+
 - It is a graphical representation of the relationship between two variables, X versus Y.
 - Each point on the scatter plot represents an observation. Patterns in the scatter plot can indicate the type and strength of the correlation.
-<img src="images/scatterplot.png" width="400">
+<img src="images/scatterplot.png" width="500">
 
 *Source: https://www.data-to-viz.com/graph/scatter.html
 
@@ -140,6 +149,7 @@ Source:https://www.researchgate.net/figure/Examples-of-positive-negative-and-zer
 - Each cell Corresponds to the correlation coefficient between two variables. 
 - This matrix helps detect the presence of any positive or negative correlation between variables.
 - The correlation is calculated using the pearson correlation coefficient so values varies from -1 to 1
+- It is often visualized using heatmaps, where colors represent the magnitude and direction of correlations. This can make it easier to identify strong and weak correlations at a glance.
 
 <img src="images/corr_matrix.png" width="400">
 
