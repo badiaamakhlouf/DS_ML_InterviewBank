@@ -82,7 +82,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
-* Source:[Skewness](https://en.wikipedia.org/wiki/Skewness) *
+*Source:[Skewness](https://en.wikipedia.org/wiki/Skewness)*
 
 
 
