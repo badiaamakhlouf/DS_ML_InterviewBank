@@ -62,7 +62,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
 - Here are some examples of distribution analysis: 
-    - Frequency Distribution:  It provides a summary of how often each value appears. We can use `.value_counts()` Pandas library.
+    - Frequency Distribution:  it provides a summary of how often each value appears. 
     - Univariate and Bivariate Analysis : distplot, histplot and X versus Y etc.
     - Probability Distribution
     - Spread or Dispersion analysis
@@ -71,8 +71,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q- What does Skewness and Kurtosis mean ?
-**Skewness:**
+### Q- What does Skewness mean?
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
 - A skewed data can not be used to generate normal distribution. 
@@ -87,17 +86,15 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
-    
-**Kurtosis:**
+### What does Kurtosis mean ?    
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
-- It provides information about the concentration of data points in the tails relative to the center of the distribution. 
+- It provides information about the concentration of data points in the tails relative to the center of the distribution:
+   - The data can be heavy-tailed means it has more extreme values than a normal distribution.
+   - Or it can be light-tailed means it has fewer extreme values than a normal distribution.
 - The three types of Kurtosis are:
     - **Kurtosis=0 (Mesokurtic) :** the distribution has the same tail behavior as a normal distribution.
     - **Kurtosis>0 (Leptokurtic):** the distribution has fatter tails (heavier tails) and a sharper peak than a normal distribution. This indicates a higher probability of extreme values.
     - **Kurtosis<0 (Platykurtic):** the distribution has thinner tails (lighter tails) and a flatter peak than a normal distribution. This suggests a lower probability of extreme values.
-   
-kurtosis measures whether the data is heavy-tailed (more extreme values than a normal distribution) or light-tailed (fewer extreme values than a normal distribution).
-
 
 <img src="images/Kurtosis.png" width="400">
 
