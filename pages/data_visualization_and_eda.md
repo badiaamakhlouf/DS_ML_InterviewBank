@@ -82,7 +82,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
     - **Skewness=0, Zero skewness :** the distribution is perfectly symmetrical.
     
 <img src="images/Skewness.png" width="500">
-Source:[Skewness](https://en.wikipedia.org/wiki/Skewness)
+Source:![Skewness](https://en.wikipedia.org/wiki/Skewness)
 
 
 
@@ -100,7 +100,7 @@ Source:[Skewness](https://en.wikipedia.org/wiki/Skewness)
     - **Kurtosis<0 (Platykurtic):** the distribution has thinner tails (lighter tails) and a flatter peak than a normal distribution. This suggests a lower probability of extreme values.
 
 <img src="images/Kurtosis.png" width="400">
-* Source:[Kurtosis](https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776) *
+Source:[Kurtosis](https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776)
 
 ### Q- What does Spread or Dispersion mean ?
 - Data spread: 
