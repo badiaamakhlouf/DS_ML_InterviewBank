@@ -208,7 +208,7 @@ _Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-
       - Choose Bins and decide on intervals for grouping data.
       - Count Frequencies via calculating how many data points fall into each bin.
       - Visualize frequently distribution for numerical data using histograms.
-   - For Categorical Data:
+   - **For Categorical Data:**
       - Count Frequencies via counting occurrences of each category.
       - Visualize using bar charts or pie charts.
         
