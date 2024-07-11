@@ -19,3 +19,6 @@ This page is a helpful resource featuring essential questions about probability 
         - 1: perfect positive linear relationship.
         - -1: indicates a perfect negative linear relationship.
         - 0: indicates no linear relationship.
+    
+### Q- What does Uniform distribution mean ?
+
