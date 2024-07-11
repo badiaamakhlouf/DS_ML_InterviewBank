@@ -94,7 +94,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
-### What does Kurtosis mean ?  
+### Q- What does Kurtosis mean ?  
 
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
 - It provides information about the concentration of data points in the tails relative to the center of the distribution:
@@ -194,10 +194,58 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
         
 
 <img src="images/normal_dist.PNG" width="500">
+_Source:https://medicoapps.org/biostatistics-normal-curve-test-of-significance-standard-error-2/_
 
 ### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
 
+- **Univariate Analysis:**
+    - Analysis of a single variable.
+    - To describe the distribution, central tendency, and variability of the variable.
+    - Techniques:
+        - **Descriptive Statistics:** Mean, median, mode, standard deviation, variance.
+        - **Visualization:** Histograms, box plots, frequency distributions.
+    - Example: Analyzing the house price in a certain region .
+
+- **Bivariate Analysis:**
+    - Analysis of two variables to understand the relationship between them.
+    - To explore the association, correlation, or causation between the variables.
+    - Techniques:
+         - **Descriptive Statistics:** Correlation coefficient, cross-tabulation.
+         - **Visualization:** Scatter plots, bar charts, line graphs.
+         - **Statistical Tests:** t-tests, chi-square tests, ANOVA.
+    - Example: Analyzing the relationship between height and weight of a group of people.
+ 
+- **Multivariate Analysis:**
+    - Analysis of more than two variables simultaneously.
+    - To understand complex relationships, interactions, and the effect of multiple variables on outcomes.
+    - Techniques:
+        - **Descriptive Statistics:** Multivariate means, covariance matrices.
+        - **Visualization:** Multidimensional scaling, parallel coordinates plots.
+        - **Statistical Models:** Multiple regression, principal component analysis (PCA), factor analysis, MANOVA (multivariate analysis of variance).
+    - Example: Analyzing the relationship between height, weight, age, and income of a group of people.
+      
 ### Q- How to perform univariate analysis for numerical and categorical variables?
+
+- **Univariate Analysis for Numerical Variables:**
+  
+    - **Descriptive Statistics:**
+      -  Determine mean, median, mode, standard deviation, variance, range, quartiles, percentiles
+      -  Code: `df.describe().transpose()`
+    - **Visualization:**
+      - Histogram: Shows the distribution of the data. `histplot`
+      - Box Plot: Visualizes the median, quartiles, and potential outliers.
+      - Density Plot: Smooths out the histogram into a continuous curve. `distplot`
+ 
+  - **Univariate Analysis for Categorical Variables:**
+    
+      - **Descriptive Statistics:**
+        - Frequency Distribution: count values of each category.
+        - Mode: most frequently occurring category.
+        - Proportions/Percentages: relative frequency of each category.
+      - **Visualization:**
+        - Bar Chart: displays the frequency or proportion of each category.
+        - Pie Chart: shows the proportion of each category as slices of a pie.
+
 
 ### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
 
