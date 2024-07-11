@@ -109,7 +109,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 
 _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776_
 
-### Q- What does Spread or Dispersion mean ?
+### Q- What does Spread or Dispersion analysis mean ?
 
 - Spread analysis and dispersion analysis are usually used interchangeably, but they can have subtle differences depending on the context.
 - Dispersion analysis is a more specific term used in statistics to describe the variability within a dataset.
@@ -142,7 +142,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
    - **Negative Correlation:** indicates when one variable increases, the other decreases.
    - **No Correlation:** it indicates when there is no apparent relationship between the variables. 
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
-- Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis
+- Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis.
 
 ### Q- What is the Scatter Plot ?
 
@@ -168,32 +168,34 @@ _Source: https://www.data-to-viz.com/graph/scatter.html_
 
 _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
-### Q- What is the difference between covariance and correlation?
-
-- These two measures are used during the exploratory data analysis to gain insights from the data.
-- **Covariance:** 
-   - It measures the degree to which two variables change together.
-   - It indicates the direction of the linear relationship between the variables.
-   - It can take on any value
-
-- **Correlation:**
-   - It is a standardized measure of the strength and direction of the linear relationship between two variables.
-   - It ranges from -1 to 1, where :
-        - 1: perfect positive linear relationship
-        - -1 indicates a perfect negative linear relationship
-        - 0 indicates no linear relationship.
     
 ### Q- Why removing highly correlated features is very important?
-
-- Removing highly correlated features is a preprocessing step that can be beneficial for both classification and regression tasks.
-- In both cases, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
-- Therefore, it's a common practice to identify and remove such features to improve the overall performance and interpretability of the model.
+- Removing highly correlated features is a preprocessing step and it is important for several reasons, especially in the context of statistical modeling and machine learning.
+- It can be beneficial for both classification and regression tasks.
+- Here are the key reasons why this is crucial:
+   - Highly correlated features make it difficult to determine the individual effect of each feature on the target variable.
+   - Besides, highly correlated features can introduce redundancy into the model, leading to overfitting and reduced generalization performance.
+   - Removing them simplifies the model, makes it easier to interpret and improve its generalization to new data.
+   - Reducing the number of features by removing highly correlated ones can lead to faster training times and reduced computational resource requirements via focusing on the most informative and relevant features.
   
-### Q What does Normal distribution mean ?
-### Q- What does Uniform distribution mean ?
+### Q- What does Normal distribution mean ?
+- It is also known as the Gaussian distribution and it is a continuous probability distribution that is symmetric about its mean.
+- It describes how the values of a variable are distributed.
+- It is very useful in machine learning because it has deterministic statistical characteristics and it helps detect linear relationship between variables.
+- Here are the key characteristics and properties of the normal distribution:
+   - It has a Bell-shaped and symmetric curve about the mean.
+   - The mean, median, and mode of the distribution are all equal.
+   - The tails of the normal distribution approach, but never touch, the horizontal axis (x-axis)
+   - The normal distribution has a single peak (one mode)
+   - Empirical Rule:
+      - 68% within 1σ of the mean.
+      - 95% within 2σ of the mean.
+      - 99.7% within 3σ of the mean
+        
+
+<img src="images/normal_dist.PNG" width="500">
 
 ### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
-
 
 ### Q- How to perform univariate analysis for numerical and categorical variables?
 
@@ -222,6 +224,18 @@ Notes:
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
 ### Q- Mention the two kinds of target variables for predictive modeling.
+
+- In predictive modeling, target variables can be classified into two main types: 
+    - Continuous Target Variables:
+        - They numerical variables that can take on any value within a range.
+        - They are used in regression problems with regression models like Linear Regression, Random Forest, Decision Trees etc.
+        - Applications: Predicting house prices, forecasting stock prices, etc.
+          
+    - Categorical Target Variables:
+        - They are variables that represent categories or groups.
+        - They are used in classification problems with classification models such as Logistic Regression, Decision Trees, Random Forests etc.
+        - Applications: Spam detection (spam or not spam), image recognition (cat, dog, or other), medical diagnosis (disease present or not), etc.
+
 
 ### Q- What information could you gain from a box-plot?
 
