@@ -194,7 +194,32 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
         
 
 <img src="images/normal_dist.PNG" width="500">
-_Source:https://medicoapps.org/biostatistics-normal-curve-test-of-significance-standard-error-2/_
+_Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-standard-error-2/_
+
+### Q- How to perform Frequency and Probability distribution analysis in EDA ?
+
+
+### Q- What else we can perform in EDA ? 
+Here are more analysis to perform during EDA phase:
+- Data frame dimension `df.shape`
+- Data frame columns: `df.columns`
+- Count values: `df['SaleCondition'].value_counts().to_frame()`
+- Data sampling: sometimes, it is required to perform over/undersampling in case we have Imbalanced datasets
+- Data Grouping using groupby : df_group=df[['YearRemodAdd','SalePrice']].groupby(by=['YearRemodAdd']).max()
+- Data filtering :
+    - `df_filter =df[df.column>200000]` 
+    - `df_filter =df[(df.column1>150000) & (df.column2==2008)]`
+    - `df_filter =df[(df.column1>2011) | (df.column2==2008)]`
+- Data analysis: 
+    - Univariate Analysis : `distplot` and `histplot`
+    - Bivariate Analysis `pairplot`, `FacetGrid`, `jointplot` etc.
+    - Multivariate Analysis: correlation matrix or heatmap
+
+Notes:
+- Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
+- Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
+
+
 
 ### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
 
@@ -236,40 +261,33 @@ _Source:https://medicoapps.org/biostatistics-normal-curve-test-of-significance-s
       - Box Plot: Visualizes the median, quartiles, and potential outliers.
       - Density Plot: Smooths out the histogram into a continuous curve. `distplot`
  
-  - **Univariate Analysis for Categorical Variables:**
+- **Univariate Analysis for Categorical Variables:**
     
-      - **Descriptive Statistics:**
-        - Frequency Distribution: count values of each category.
-        - Mode: most frequently occurring category.
-        - Proportions/Percentages: relative frequency of each category.
-      - **Visualization:**
-        - Bar Chart: displays the frequency or proportion of each category.
-        - Pie Chart: shows the proportion of each category as slices of a pie.
+   - **Descriptive Statistics:**
+      - Frequency Distribution: count values of each category.
+      - Mode: most frequently occurring category.
+      - Proportions/Percentages: relative frequency of each category.
+   - **Visualization:**
+      - Bar Chart: displays the frequency or proportion of each category.
+      - Pie Chart: shows the proportion of each category as slices of a pie.
 
 
 ### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
 
+- **Numerical-Numerical Analysis:**
+  - Scatter Plot to visualizes the relationship between two numerical variables and to identify patterns, trends, and potential correlations.
+  - Correlation Coefficient to measure the strength and direction of the linear relationship between two variables. Pearson's correlation coefficient is commonly used.
+  - Sometimes a Linear Regression is used to model the relationship between two variables and to provide insights into the nature and strength of the relationship.
+    
+- **Categorical-Categorical Analysis:** 
+  - Contingency Table: displays the frequency distribution of two categorical variables and helps in understanding the joint distribution. `pd.crosstab(data['Category1'], data['Category2'])`
+  - Chi-Square Test of Independence to tests whether there is a significant association between two categorical variables. `chi2, p, dof, expected = chi2_contingency(contingency_table)`
+  - Stacked Bar Chart to visualizes the relationship by stacking bars for each category combination.
 
-
-### Q- What else we can perform in EDA ? 
-Here are more analysis to perform during EDA phase:
-- Data frame dimension `df.shape`
-- Data frame columns: `df.columns`
-- Count values: `df['SaleCondition'].value_counts().to_frame()`
-- Data sampling: sometimes, it is required to perform over/undersampling in case we have Imbalanced datasets
-- Data Grouping using groupby : df_group=df[['YearRemodAdd','SalePrice']].groupby(by=['YearRemodAdd']).max()
-- Data filtering :
-    - `df_filter =df[df.column>200000]` 
-    - `df_filter =df[(df.column1>150000) & (df.column2==2008)]`
-    - `df_filter =df[(df.column1>2011) | (df.column2==2008)]`
-- Data analysis: 
-    - Univariate Analysis : `distplot` and `histplot`
-    - Bivariate Analysis `pairplot`, `FacetGrid`, `jointplot` etc.
-    - Multivariate Analysis: correlation matrix or heatmap
-
-Notes:
-- Multivariate analysis involves analyzing the relationship between three or more variables. We can use scatter matrix plots to visualize the relationship between each pair of features, along with the distribution of each feature.
-- Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
+- **Numerical-Categorical Analysis:**
+  - Box Plot to visualizes the distribution of a numerical variable across different categories and helps identify differences in central tendency and variability.
+  - Violin Plot which is similar to a box plot but also shows the density of the data at different values.
+  - ANOVA (Analysis of Variance) to test whether there are significant differences between the means of different categories.
 
 ### Q- Mention the two kinds of target variables for predictive modeling.
 
@@ -289,9 +307,12 @@ Notes:
 
 ### Q- What type of data is box-plots usually used for? Why?
 
+### Q what is Violin Plot and what is used for ?
+
+### Q- When will you use a histogram and when will you use a bar chart? Explain with an example.
+
 ### Q- Explain descriptive, predictive, and prescriptive analytics.
 
-### Q- When will you use a histogram and when will you use a bar chart? Explain with an example.}
 
 
 
