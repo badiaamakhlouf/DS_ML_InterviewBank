@@ -35,7 +35,10 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 ## List of Questions:
 
-### Q- What does Exploratory Data Analysis (EDA) mean? 
+### Q1- Explain descriptive, predictive, and prescriptive analytics.
+
+
+### Q2- What does Exploratory Data Analysis (EDA) mean? 
 
 - It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset.
 - It aims to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
@@ -46,7 +49,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
      - Distribution Analysis
      - Correlation Analysis
  
-### Q- How to get statistical description of our data using pandas ? 
+### Q3- How to get statistical description of our data using pandas ? 
 
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
@@ -61,7 +64,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 <img src="images/summary_statistic.png" width="600">
 
 
-### Q- What does Distribution Analysis mean?
+### Q4- What does Distribution Analysis mean?
 
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
@@ -75,7 +78,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q- What does Skewness mean?
+### Q5- What does Skewness mean?
 
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
@@ -94,7 +97,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
-### Q- What does Kurtosis mean ?  
+### Q6- What does Kurtosis mean ?  
 
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
 - It provides information about the concentration of data points in the tails relative to the center of the distribution:
@@ -109,7 +112,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 
 _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776_
 
-### Q- What does Spread or Dispersion analysis mean ?
+### Q7- What does Spread or Dispersion analysis mean ?
 
 - Spread analysis and dispersion analysis are usually used interchangeably, but they can have subtle differences depending on the context.
 - Dispersion analysis is a more specific term used in statistics to describe the variability within a dataset.
@@ -129,7 +132,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
     - It is used in various area such as finance, economics, and marketing to refer to differences between values (e.g., bid-ask spread, yield spread) beyond just statistical dispersion.
     - It can include the Dispersion analysis measures but may also consider broader implications and specific contexts.
 
-### Q- What does Correlation Analysis mean?
+### Q8- What does Correlation Analysis mean?
 
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
@@ -144,7 +147,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
 - Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis.
 
-### Q- What is the Scatter Plot ?
+### Q9- What is the Scatter Plot ?
 
 - It is a graphical representation of the relationship between two variables, X versus Y.
 - Each point on the scatter plot represents an observation. Patterns in the scatter plot can indicate the type and strength of the correlation.
@@ -156,7 +159,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
 
 _Source: https://www.data-to-viz.com/graph/scatter.html_
 
-### Q- What does correlation matrix mean? 
+### Q10- What does correlation matrix mean? 
 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
@@ -169,7 +172,7 @@ _Source: https://www.data-to-viz.com/graph/scatter.html_
 _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
     
-### Q- Why removing highly correlated features is very important?
+### Q11- Why removing highly correlated features is very important?
 - Removing highly correlated features is a preprocessing step and it is important for several reasons, especially in the context of statistical modeling and machine learning.
 - It can be beneficial for both classification and regression tasks.
 - Here are the key reasons why this is crucial:
@@ -178,7 +181,7 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
    - Removing them simplifies the model, makes it easier to interpret and improve its generalization to new data.
    - Reducing the number of features by removing highly correlated ones can lead to faster training times and reduced computational resource requirements via focusing on the most informative and relevant features.
   
-### Q- What does Normal distribution mean ?
+### Q12- What does Normal distribution mean ?
 - It is also known as the Gaussian distribution and it is a continuous probability distribution that is symmetric about its mean.
 - It describes how the values of a variable are distributed.
 - It is very useful in machine learning because it has deterministic statistical characteristics and it helps detect linear relationship between variables.
@@ -194,12 +197,13 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
         
 
 <img src="images/normal_dist.PNG" width="500">
+
 _Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-standard-error-2/_
 
-### Q- How to perform Frequency and Probability distribution analysis in EDA ?
+### Q13- How to perform Frequency and Probability distribution analysis in EDA ?
 
 
-### Q- What else we can perform in EDA ? 
+### Q14- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
 - Data frame dimension `df.shape`
 - Data frame columns: `df.columns`
@@ -221,7 +225,7 @@ Notes:
 
 
 
-### Q- What is the Difference between Univariate, Bivariate, and Multivariate analysis
+### Q15- What is the Difference between Univariate, Bivariate, and Multivariate analysis
 
 - **Univariate Analysis:**
     - Analysis of a single variable.
@@ -249,7 +253,7 @@ Notes:
         - **Statistical Models:** Multiple regression, principal component analysis (PCA), factor analysis, MANOVA (multivariate analysis of variance).
     - Example: Analyzing the relationship between height, weight, age, and income of a group of people.
       
-### Q- How to perform univariate analysis for numerical and categorical variables?
+### Q16- How to perform univariate analysis for numerical and categorical variables?
 
 - **Univariate Analysis for Numerical Variables:**
   
@@ -272,7 +276,7 @@ Notes:
       - Pie Chart: shows the proportion of each category as slices of a pie.
 
 
-### Q- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
+### Q17- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
 
 - **Numerical-Numerical Analysis:**
   - Scatter Plot to visualizes the relationship between two numerical variables and to identify patterns, trends, and potential correlations.
@@ -289,7 +293,7 @@ Notes:
   - Violin Plot which is similar to a box plot but also shows the density of the data at different values.
   - ANOVA (Analysis of Variance) to test whether there are significant differences between the means of different categories.
 
-### Q- Mention the two kinds of target variables for predictive modeling.
+### Q18- Mention the two kinds of target variables for predictive modeling.
 
 - In predictive modeling, target variables can be classified into two main types: 
     - Continuous Target Variables:
@@ -303,15 +307,14 @@ Notes:
         - Applications: Spam detection (spam or not spam), image recognition (cat, dog, or other), medical diagnosis (disease present or not), etc.
 
 
-### Q- What information could you gain from a box-plot?
+### Q19- What information could you gain from a box-plot?
 
-### Q- What type of data is box-plots usually used for? Why?
+### Q20- What type of data is box-plots usually used for? Why?
 
-### Q what is Violin Plot and what is used for ?
+### Q21- What is Violin Plot and what is used for ?
 
-### Q- When will you use a histogram and when will you use a bar chart? Explain with an example.
+### Q22- When will you use a histogram and when will you use a bar chart? Explain with an example.
 
-### Q- Explain descriptive, predictive, and prescriptive analytics.
 
 
 
