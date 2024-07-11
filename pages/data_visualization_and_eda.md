@@ -202,6 +202,24 @@ _Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-
 
 ### Q13- How to perform Frequency and Probability distribution analysis in EDA ?
 
+- **Frequency Distribution in EDA:**
+   - Frequency Distribution shows how often each value or range of values occurs in a dataset.
+   - **For Numerical Data:**
+      - Choose Bins and decide on intervals for grouping data.
+      - Count Frequencies via calculating how many data points fall into each bin.
+      - Visualize frequently distribution for numerical data using histograms.
+   - For Categorical Data:
+      - Count Frequencies via counting occurrences of each category.
+      - Visualize using bar charts or pie charts.
+        
+- **Probability Distribution in EDA:**
+   - Probability Distribution shows how probabilities are distributed over values of a random variable.
+   - **For Numerical Data:**
+      - Fit Distribution via identifying the theoretical distribution (e.g., normal, binomial).
+      - Visualize via using density plots or probability density functions (PDFs).
+   - **For Categorical Data:**
+      - Calculate Probabilities via dividing frequencies by total count.
+      - Visualize using bar charts.
 
 ### Q14- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
