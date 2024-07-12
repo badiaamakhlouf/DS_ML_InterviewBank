@@ -433,8 +433,12 @@ _Source: https://www.labxchange.org/library/items/lb:LabXchange:d8863c77:html:1_
 _Source: https://seaborn.pydata.org/generated/seaborn.violinplot.html_
 
 ### Q25- When will you use a histogram and when will you use a bar chart? Explain with an example.
+- Histograms are used to represent the distribution of numerical data by showing the frequency of data points within predefined intervals (bins).
+- Bar charts are used to compare categorical data by showing the values of different categories as bars.
+- Choosing between a histogram and a bar chart depends on whether you want to explore the distribution of numerical data (histogram) or compare categorical data (bar chart).
+- Each type of plot serves its purpose in effectively visualizing different aspects of data.
 
 
+<img src="images/barchart_vs_histogram.jpg" width="500">
 
-
-
+_Source: https://www.storytellingwithdata.com/blog/2021/1/28/histograms-and-bar-charts_
