@@ -35,7 +35,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 ## List of Questions:
 
-### Q1- What are the types of Data Analytics
+### Q1- What are the types of Data Analytics?
 - Data analytics can be broadly categorized into four main types: descriptive, diagnostic, predictive, and prescriptive analytics.
 - Each type serves a distinct purpose and provides different insights into the data.
 - Here’s an overview of each type:
