@@ -394,7 +394,8 @@ Notes:
 
 ### Q22- What information could you gain from a box-plot?
 - It is also known as a box-and-whisker plot.
-- It is useful for quickly understanding the range, central tendency, variability, and outliers within a dataset.
+- It is a valuable tool in exploratory data analysis for quickly summarizing the distribution, central tendency, variability, and presence of outliers in a datase.
+- It provides insights into the shape and characteristics of the data that can aid in understanding its underlying patterns and making informed decisions in statistical analysis.
 - It provides several key pieces of information about a dataset:
     - **Median:** the line inside the box represents the median (50th percentile) of the data, showing the central tendency.
     - **Spread:** the length of the box (interquartile range, IQR) indicates the spread of the middle 50% of the data. The longer the box, the greater the variability in the data.
@@ -408,8 +409,28 @@ Notes:
 _Source: https://www.labxchange.org/library/items/lb:LabXchange:d8863c77:html:1_
 
 ### Q23- What type of data is box-plots usually used for? Why?
+- Box-plots are versatile tools for exploring and comparing **numerical data** distributions across different conditions or groups.
+- They provide a clear, visual summary that aids in understanding key aspects of the data's distribution and variability.
+- They are particularly useful for:
+   - **Comparing Groups**
+   - **Identifying Skewness and Outliers**
+   - **Visualizing Spread and Variability**
+   - **Summarizing Central Tendency**
+   - **Handling Large Datasets**
 
-### Q24- What is Violin Plot and what is used for ?
+### Q24- What is Violin Plot and what is used for?
+
+- It is a graph that combines aspects of a box plot and a density plot.
+- It is used for visualizing and comparing data distributions, providing insights into how data is spread across different groups.
+- The width of each "violin" represents the density of data points at that value.
+- **Uses of Violin Plots:**
+   - **Comparing Distributions:** they are used to compare data distributions between different categories or groups.
+   - **Data Shape:** they show the shape of the distribution, including skewness and multimodal patterns.
+   - **Outlier Detection:** they help in identifying outliers within each category.
+
+<img src="images/violinplot.png" width="500">
+
+_Source: https://seaborn.pydata.org/generated/seaborn.violinplot.html_
 
 ### Q25- When will you use a histogram and when will you use a bar chart? Explain with an example.
 
