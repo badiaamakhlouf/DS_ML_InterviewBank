@@ -53,6 +53,19 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - It involves techniques such as data aggregation, data mining, and summarization to convert raw data into meaningful insights.
 - It uses data visualization tools like charts, graphs, and dashboards to present the information in an easily understandable format.
 - **Examples:** sales performance analysis, customer segmentation, financial analysis etc.
+- **Pros:**
+    - Summarizes Data: provides clear summaries of large datasets.
+    - Identifies Patterns: helps find trends for better understanding.
+    - Benchmarking: allows comparison of current and past performance.
+    - Informed Decisions: enables data-driven decision-making.
+    - Simple to Implement: uses basic statistical techniques.
+      
+- **Cons:**
+    - Historical Focus: only analyzes past data, not future predictions.
+    - Limited Actionability: offers insights but not explanations.
+    - Potential Misinterpretation: summarized data might be misunderstood.
+    - No Predictive Power: doesn't provide future insights.
+    - Data Quality Dependent: relies on the quality of historical data.
 
 ### Q3- Predictive Analytics: Explanation, Pros, and Cons
 - **Question:** What might happen in the future?
@@ -60,6 +73,19 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - It uses historical data combined with statistical modeling, data mining techniques and machine learning.
 - It helps organizations anticipate potential risks and opportunities.
 - **Example:** customer churn analysis, anticipate significant equipment failures, forecast demand for energy etc.
+- **Pros:**
+    - Forecasting: provides insights into future trends and events.
+    - Proactive Decision-Making: allows organizations to anticipate and prepare for potential scenarios.
+    - Optimized Resource Allocation: helps in planning and allocating resources efficiently based on predicted needs.
+    - Competitive Advantage: gives businesses an edge by identifying opportunities and threats early.
+    - Improved Accuracy: often more accurate than simple heuristics or intuition.
+      
+- **Cons:**
+    - Data Quality: highly dependent on the quality and completeness of historical data.
+    - Complexity: requires sophisticated tools and expertise in statistical modeling and machine learning.
+    - Cost: can be expensive to implement due to the need for advanced software and skilled personnel.
+    - Uncertainty: predictions are probabilistic, not certain, and can be affected by unexpected changes or outliers.
+    - Overfitting: models can become too tailored to historical data, reducing their effectiveness on new data.
 
 ### Q4- Prescriptive Analytics: Explanation, Pros, and Cons
 - **Question:** What should we do next?
@@ -67,9 +93,20 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - It provides advice on possible actions and their potential impact using machine learning algorithms.
 - It evaluates different scenarios and suggests the most effective strategies to achieve specific goals.
 - **Examples:** investment decisions, dynamic pricing strategies to maximize revenue based on market conditions, personalized marketing campaigns etc.
+- **Pros:**
+    - Optimized Decisions: provides actionable insights to optimize decisions and strategies.
+    - Scenario Planning: allows for simulation of various scenarios to understand potential outcomes.
+    - Real-time Decision Support: can provide recommendations in real-time for dynamic decision-making.
+    - Competitive Advantage: enables proactive responses to market changes and opportunities.
 
+- **Cons:**
+    - Complexity: requires advanced analytics capabilities and expertise.
+    - Data Dependency: relies heavily on the availability and quality of data.
+    - Implementation Cost: can be expensive to implement and maintain.
+    - Ethical Considerations: recommendations may raise ethical concerns, such as privacy or fairness issues.
+    - Resistance to Change: stakeholders may be reluctant to adopt recommendations without understanding or trust in the analytics model.
 
-### Q2- What does Exploratory Data Analysis (EDA) mean? 
+### Q5- What does Exploratory Data Analysis (EDA) mean? 
 
 - It is a critical step in the data analysis process and is often the second step after cleaning the provided dataset.
 - It aims to summarize the main characteristics of a dataset, gain insights into the underlying structure, identify patterns, detect anomalies, and formulate hypotheses for further analysis.
@@ -80,7 +117,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
      - Distribution Analysis
      - Correlation Analysis
  
-### Q3- How to get statistical description of our data using pandas ? 
+### Q6- How to get statistical description of our data using pandas ? 
 
 - In the statistical description we try to select the next values for each numerical features:
     - Maximum values
@@ -95,7 +132,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 <img src="images/summary_statistic.png" width="600">
 
 
-### Q4- What does Distribution Analysis mean?
+### Q7- What does Distribution Analysis mean?
 
 - This analysis aims to examine the distribution of values within a dataset.
 - Understanding the distribution of data is essential for gaining insights into its underlying characteristics, identifying patterns, and making informed decisions about subsequent analyses or modeling.
@@ -109,7 +146,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - Understanding the data distribution is very important in many tasks, including identifying outliers, assessing the appropriateness of statistical models, and making decisions about data transformations.
 - Different types of distributions may require different approaches in data analysis and modeling, and distribution analysis helps inform these decisions.
 
-### Q5- What does Skewness mean?
+### Q8- What does Skewness mean?
 
 - It is a measure of the asymmetry of a distribution.
 - A distribution is asymmetrical when its left and right side are not mirror images.
@@ -128,7 +165,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 - If we have a positively skewed distribution:  Mode < Median < Mean 
 - If we have a left-skewed distribution: Mean < Median < Mode 
 
-### Q6- What does Kurtosis mean ?  
+### Q9- What does Kurtosis mean ?  
 
 - A statistical measure that describes the shape or "tailedness" of a distribution. 
 - It provides information about the concentration of data points in the tails relative to the center of the distribution:
@@ -143,7 +180,7 @@ _Source: https://en.wikipedia.org/wiki/Skewness_
 
 _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-zero-excess-kurtosis_fig4_373105776_
 
-### Q7- What does Spread or Dispersion analysis mean ?
+### Q10- What does Spread or Dispersion analysis mean ?
 
 - Spread analysis and dispersion analysis are usually used interchangeably, but they can have subtle differences depending on the context.
 - Dispersion analysis is a more specific term used in statistics to describe the variability within a dataset.
@@ -163,7 +200,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
     - It is used in various area such as finance, economics, and marketing to refer to differences between values (e.g., bid-ask spread, yield spread) beyond just statistical dispersion.
     - It can include the Dispersion analysis measures but may also consider broader implications and specific contexts.
 
-### Q8- What does Correlation Analysis mean?
+### Q11- What does Correlation Analysis mean?
 
 - Correlation analysis is a statistical method used to evaluate the strength and direction of the linear relationship between two quantitative variables.
 - The result of a correlation analysis is a correlation coefficient, which quantifies the degree to which changes in one variable correspond to changes in another.
@@ -178,7 +215,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
 - Correlation analysis is widely used in various fields, including economics, biology, psychology, and data science, to understand relationships between variables and make predictions based on observed patterns.
 - Both correlation matrix heatmap and Scatter Plots are used to illustrate correlation analysis.
 
-### Q9- What is the Scatter Plot ?
+### Q12- What is the Scatter Plot ?
 
 - It is a graphical representation of the relationship between two variables, X versus Y.
 - Each point on the scatter plot represents an observation. Patterns in the scatter plot can indicate the type and strength of the correlation.
@@ -190,7 +227,7 @@ _Source: https://www.researchgate.net/figure/Examples-of-positive-negative-and-z
 
 _Source: https://www.data-to-viz.com/graph/scatter.html_
 
-### Q10- What does correlation matrix mean? 
+### Q13- What does correlation matrix mean? 
 
 - It is a table that displays the correlation coefficients between many variables. 
 - Each cell Corresponds to the correlation coefficient between two variables. 
@@ -203,7 +240,7 @@ _Source: https://www.data-to-viz.com/graph/scatter.html_
 _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a-correlation-matrix-a-data-exploration-post/_
 
     
-### Q11- Why removing highly correlated features is very important?
+### Q14- Why removing highly correlated features is very important?
 - Removing highly correlated features is a preprocessing step and it is important for several reasons, especially in the context of statistical modeling and machine learning.
 - It can be beneficial for both classification and regression tasks.
 - Here are the key reasons why this is crucial:
@@ -212,7 +249,7 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
    - Removing them simplifies the model, makes it easier to interpret and improve its generalization to new data.
    - Reducing the number of features by removing highly correlated ones can lead to faster training times and reduced computational resource requirements via focusing on the most informative and relevant features.
   
-### Q12- What does Normal distribution mean ?
+### Q15- What does Normal distribution mean ?
 - It is also known as the Gaussian distribution and it is a continuous probability distribution that is symmetric about its mean.
 - It describes how the values of a variable are distributed.
 - It is very useful in machine learning because it has deterministic statistical characteristics and it helps detect linear relationship between variables.
@@ -231,7 +268,7 @@ _Source: https://www.vertica.com/blog/in-database-machine-learning-2-calculate-a
 
 _Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-standard-error-2/_
 
-### Q13- How to perform Frequency and Probability distribution analysis in EDA ?
+### Q16- How to perform Frequency and Probability distribution analysis in EDA ?
 
 - **Frequency Distribution in EDA:**
    - Frequency Distribution shows how often each value or range of values occurs in a dataset.
@@ -252,7 +289,7 @@ _Source: https://medicoapps.org/biostatistics-normal-curve-test-of-significance-
       - Calculate Probabilities via dividing frequencies by total count.
       - Visualize using bar charts.
 
-### Q14- What else we can perform in EDA ? 
+### Q17- What else we can perform in EDA ? 
 Here are more analysis to perform during EDA phase:
 - Data frame dimension `df.shape`
 - Data frame columns: `df.columns`
@@ -273,8 +310,7 @@ Notes:
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
 
-
-### Q15- What is the Difference between Univariate, Bivariate, and Multivariate analysis
+### Q18- What is the Difference between Univariate, Bivariate, and Multivariate analysis
 
 - **Univariate Analysis:**
     - Analysis of a single variable.
@@ -302,7 +338,7 @@ Notes:
         - **Statistical Models:** Multiple regression, principal component analysis (PCA), factor analysis, MANOVA (multivariate analysis of variance).
     - Example: Analyzing the relationship between height, weight, age, and income of a group of people.
       
-### Q16- How to perform univariate analysis for numerical and categorical variables?
+### Q19- How to perform univariate analysis for numerical and categorical variables?
 
 - **Univariate Analysis for Numerical Variables:**
   
@@ -325,7 +361,7 @@ Notes:
       - Pie Chart: shows the proportion of each category as slices of a pie.
 
 
-### Q17- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
+### Q20- How to perform Bivariate analysis for Numerical-numerical, Categorical-Categorical, and Numerical-Categorical variables?
 
 - **Numerical-Numerical Analysis:**
   - Scatter Plot to visualizes the relationship between two numerical variables and to identify patterns, trends, and potential correlations.
@@ -342,7 +378,7 @@ Notes:
   - Violin Plot which is similar to a box plot but also shows the density of the data at different values.
   - ANOVA (Analysis of Variance) to test whether there are significant differences between the means of different categories.
 
-### Q18- Mention the two kinds of target variables for predictive modeling.
+### Q21- Mention the two kinds of target variables for predictive modeling.
 
 - In predictive modeling, target variables can be classified into two main types: 
     - Continuous Target Variables:
@@ -356,13 +392,25 @@ Notes:
         - Applications: Spam detection (spam or not spam), image recognition (cat, dog, or other), medical diagnosis (disease present or not), etc.
 
 
-### Q19- What information could you gain from a box-plot?
+### Q22- What information could you gain from a box-plot?
+- It is also known as a box-and-whisker plot.
+- It is useful for quickly understanding the range, central tendency, variability, and outliers within a dataset.
+- It provides several key pieces of information about a dataset:
+    - **Median:** The line inside the box shows the middle value of the data.
+    - **Spread:** The box's length indicates how data is spread out—the longer the box, the more spread out the data.
+    - **Outliers:** Points beyond the whiskers indicate potential unusual data points or outliers.
+    - **Symmetry:** It shows whether the data distribution is symmetrical or skewed.
+    - **Comparison:** It allows for easy comparison of data between different groups or categories.
 
-### Q20- What type of data is box-plots usually used for? Why?
+<img src="images/boxplot.png" width="500">
 
-### Q21- What is Violin Plot and what is used for ?
+_Source: https://www.labxchange.org/library/items/lb:LabXchange:d8863c77:html:1_
 
-### Q22- When will you use a histogram and when will you use a bar chart? Explain with an example.
+### Q23- What type of data is box-plots usually used for? Why?
+
+### Q24- What is Violin Plot and what is used for ?
+
+### Q25- When will you use a histogram and when will you use a bar chart? Explain with an example.
 
 
 
