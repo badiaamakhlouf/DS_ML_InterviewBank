@@ -396,11 +396,12 @@ Notes:
 - It is also known as a box-and-whisker plot.
 - It is useful for quickly understanding the range, central tendency, variability, and outliers within a dataset.
 - It provides several key pieces of information about a dataset:
-    - **Median:** The line inside the box shows the middle value of the data.
-    - **Spread:** The box's length indicates how data is spread out—the longer the box, the more spread out the data.
-    - **Outliers:** Points beyond the whiskers indicate potential unusual data points or outliers.
-    - **Symmetry:** It shows whether the data distribution is symmetrical or skewed.
-    - **Comparison:** It allows for easy comparison of data between different groups or categories.
+    - **Median:** the line inside the box represents the median (50th percentile) of the data, showing the central tendency.
+    - **Spread:** the length of the box (interquartile range, IQR) indicates the spread of the middle 50% of the data. The longer the box, the greater the variability in the data.
+    - **Outliers:** points beyond the whiskers indicate potential unusual data points or outliers.
+    - **Symmetry:** it provides a visual indication of symmetry or asymmetry in the data distribution. A symmetrical distribution will have a box plot where the median divides the box equally, and the whiskers are of equal length on both sides. Asymmetrical distributions will have medians that do not divide the box equally and uneven whisker lengths..
+    - **Comparison:** it allows for easy comparison between different groups or categories within the dataset via using multiple box plots side by side to compare the distributions of different groups.
+    - **Skewness:** the position of the median within the box can give an indication of skewness. If the median is closer to the lower quartile (bottom of the box), the data may be negatively skewed (left-skewed); if closer to the upper quartile (top of the box), the data may be positively skewed (right-skewed)
 
 <img src="images/boxplot.png" width="500">
 
