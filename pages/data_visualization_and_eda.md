@@ -35,7 +35,38 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 ## List of Questions:
 
-### Q1- Explain descriptive, predictive, and prescriptive analytics.
+### Q1- What are the types of Data Analytics
+- Data analytics can be broadly categorized into four main types: descriptive, diagnostic, predictive, and prescriptive analytics.
+- Each type serves a distinct purpose and provides different insights into the data.
+- Here’s an overview of each type:
+    - Descriptive Analytics: understands and summarizes past data
+    - Diagnostic Analytics: explains why events happened.
+    - Predictive Analytics: forecasts future events and trends.
+    - Prescriptive Analytics: recommends actions to achieve desired outcomes.
+- These types of data analytics build upon each other, starting with understanding what happened (descriptive), why it happened (diagnostic), what might happen (predictive), and what actions to take (prescriptive)
+- Together, they provide a comprehensive approach to data-driven decision-making.
+
+### Q2- Descriptive Analytics: Explanation, Pros, and Cons
+- **Question:** What happened?
+- It is a branch of data analytics that focuses on summarizing and interpreting historical data to gain insights and understand patterns, trends, and relationships within the data.  
+- It aims to understand what has already occurred using various statistical and visualization techniques.
+- It involves techniques such as data aggregation, data mining, and summarization to convert raw data into meaningful insights.
+- It uses data visualization tools like charts, graphs, and dashboards to present the information in an easily understandable format.
+- **Examples:** sales performance analysis, customer segmentation, financial analysis etc.
+
+### Q3- Predictive Analytics: Explanation, Pros, and Cons
+- **Question:** What might happen in the future?
+- It is a branch of advanced analytics that aims to forecast future outcomes based on patterns found in historical data.
+- It uses historical data combined with statistical modeling, data mining techniques and machine learning.
+- It helps organizations anticipate potential risks and opportunities.
+- **Example:** customer churn analysis, anticipate significant equipment failures, forecast demand for energy etc.
+
+### Q4- Prescriptive Analytics: Explanation, Pros, and Cons
+- **Question:** What should we do next?
+- It aims to recommend actions based on predictive analytics to achieve desired outcomes.
+- It provides advice on possible actions and their potential impact using machine learning algorithms.
+- It evaluates different scenarios and suggests the most effective strategies to achieve specific goals.
+- **Examples:** investment decisions, dynamic pricing strategies to maximize revenue based on market conditions, personalized marketing campaigns etc.
 
 
 ### Q2- What does Exploratory Data Analysis (EDA) mean? 
