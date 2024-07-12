@@ -35,7 +35,7 @@ Certainly, there are certain data science skills that are exclusively required f
     - This step involves mastering the handling of missing data (null values), removing duplicates and handling outliers.
     - It is essential as it helps improve the quality and reliability of data, leading to more accurate analysis and reliable insights.
 
-- 📉 [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
+- 📉 ✅ [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
     - Exploratory Data Analysis (EDA) involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
