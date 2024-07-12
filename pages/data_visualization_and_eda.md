@@ -310,7 +310,7 @@ Notes:
 - Bivariate analysis involves analyzing the relationship between two variables. We can use scatter plots to visualize the relationship between each pair of feature.
 
 
-### Q18- What is the Difference between Univariate, Bivariate, and Multivariate analysis
+### Q18- What is the Difference between Univariate, Bivariate, and Multivariate analysis?
 
 - **Univariate Analysis:**
     - Analysis of a single variable.
