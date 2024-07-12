@@ -439,6 +439,6 @@ _Source: https://seaborn.pydata.org/generated/seaborn.violinplot.html_
 - Each type of plot serves its purpose in effectively visualizing different aspects of data.
 
 
-<img src="images/barchart_vs_histogram.jpg" width="500">
+<img src="images/barchart_vs_histogram.jpg" width="600">
 
 _Source: https://www.storytellingwithdata.com/blog/2021/1/28/histograms-and-bar-charts_
