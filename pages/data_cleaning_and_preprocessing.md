@@ -304,6 +304,8 @@ Here are some solutions:
 
 <img src="images/distribution_modes.png" width="600">
 
+_Source: https://www.linkedin.com/posts/amged-younis-6b926258_histogram-histogram-is-an-important-graphical-activity-7161065469313986560-XEpH/_
+
 ### Q23- How ML Algorithms used for outliers detection ?
 We have two main methods: 
 - **Clustering Algorithms:** for example k-means can be used to detect outliers where points that do not belong to any cluster or are in small clusters can be identified as outliers.
