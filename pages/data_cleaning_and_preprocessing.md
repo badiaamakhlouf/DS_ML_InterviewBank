@@ -39,7 +39,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 - It is the process of detecting and correcting or removing inaccurate, incomplete, irrelevant, and inconsistent data within a dataset.
 - The goal of data cleaning is to ensure that the data is accurate, reliable, and suitable for analysis. 
 
-### Q1-What are the main tasks of data cleaning in Data Science?
+### Q1- What are the main tasks of data cleaning in Data Science?
 Here are the main tasks to perform in the cleaning phase :
 
 - Handling Missing Values
@@ -104,7 +104,7 @@ We have four main methods:
      
 **Note:** Imputed value won't be exactly right in most cases but it usually leads to more accurate models than you would get from dropping the column entirely  
     
-#### 6. 1- What does impute with a statistical measures mean ? 
+#### Q6. 1- What does impute with a statistical measures mean ? 
 - Fill missing values with statistical measures (mean, median, mode) or using more advanced imputation methods.
   
 - Code:
@@ -112,17 +112,17 @@ We have four main methods:
      - `df['column'] = df['column'].fillna(df['column'].median())`
      - `df['column'] = df['column'].fillna(df['column'].mode())`
     
-#### 6. 2- What does impute with a Placeholder mean ? 
+#### Q6. 2- What does impute with a Placeholder mean ? 
 - Replace with a specific value that does not occur naturally in the dataset. 
 - Example: `df = df.fillna(-1)`
 
-#### 6. 3- What does impute with a Machine Learning Algorithm mean ?    
+#### Q6. 3- What does impute with a Machine Learning Algorithm mean ?    
 - **Solution 1:**  use `KNNImputer()` class from the scikit-learn Python library.
 - **Solution 2:**
     - Train a machine learning model to predict missing values based on other features in the dataset.
     - Example : Random Forest
       
-#### 6. 4- What does Impute using Interpolation mean ?
+#### Q6. 4- What does Impute using Interpolation mean ?
 - Interpolation is a technique used to estimate missing values based on the observed values in a dataset.
 - It works by filling in the gaps between known data points, assuming some underlying pattern or relationship.
 - Here are some interpolation techniques:
@@ -136,7 +136,7 @@ We have four main methods:
 - The nature of the data.
 - The assumptions about its behavior
   
-#### 6. 5- What does multiple imputation mean ? 
+#### Q6. 5- What does multiple imputation mean ? 
 - It is a statistical technique used to handle missing data via creating multiple imputed datasets. 
 - Each of the previously mentioned datasets is created via imputing missing values with a chosen imputation method. 
 - Examples : mean imputation, regression imputation, k-Nearest Neighbors imputation, or more sophisticated methods.
@@ -188,7 +188,7 @@ We have four main methods:
     - **Ability to avoid Biased Estimates:** in the presence of outliers, using the mean for imputation might lead to biased estimates, especially when the distribution is not symmetric. The median provides a more balanced estimate in skewed or asymmetric distributions.
     - **Ability to maintain Robustness in Non-Normal Distributions:** in case our data does not have a normal distribution, the median is often a more reliable measure of central tendency as it helps in producing more accurate imputations.
     
-### Q12-  How to perform Forward or Backward Fill   ? 
+### Q12- How to perform Forward or Backward Fill   ? 
 - Propagate the last valid observation forward or use the next valid observation to fill missing values: 
   - Forward fill using : `df = df.ffill()`  or `df.fillna(method='ffill')`
   - Backward fill using : `df = df.bfill()` or `df.fillna(method='bfill')`
