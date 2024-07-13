@@ -250,7 +250,9 @@ We have four main methods:
     - Max
   - Here is an example of Box plot :
     
-    ![title](images/boxplot.png)
+    ![title](images/boxplot1.png)
+
+    _Source: https://www.geeksforgeeks.org/box-plot/_
 
   - Here an example of Scatter plot :
  
