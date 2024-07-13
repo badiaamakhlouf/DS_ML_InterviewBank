@@ -10,7 +10,7 @@
 
 Whether you're preparing for an interview or seeking to deepen your understanding of essential data science concepts, this page offers structured questions designed to enhance your proficiency and understanding of data cleaning—a fundamental stage in data science workflows. 🧹♻️
 
-It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario. 🎯
+It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario.🎯
 
 Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
 Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
