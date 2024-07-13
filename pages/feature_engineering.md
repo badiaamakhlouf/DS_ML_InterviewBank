@@ -8,7 +8,7 @@
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg) 
 
-This page contains well-structured questions and answers to improve your knowledge of feature engineering, a crucial task in the data science life cycle. It is especially useful for those preparing for data scientist and machine learning interviews, providing essential questions, answers, and best practices for effective preparation.
+This page contains well-structured questions and answers to improve your knowledge of feature engineering, a crucial task in the data science life cycle. It is especially useful for those preparing for data scientist and machine learning interviews, providing essential questions, answers, and best practices for effective preparation. 🛠⚙️
 
 Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
 Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
