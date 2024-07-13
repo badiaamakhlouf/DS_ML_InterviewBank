@@ -1,5 +1,16 @@
 # Data Cleaning and Pre-processing 
-Whether you're preparing for an interview or seeking to deepen your understanding of essential data science concepts, this page offers structured questions designed to enhance your proficiency and understanding of data cleaning—a fundamental stage in data science workflows. It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario.
+
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
+[![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
+![License](https://img.shields.io/badge/License-MIT-red)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg) 
+
+Whether you're preparing for an interview or seeking to deepen your understanding of essential data science concepts, this page offers structured questions designed to enhance your proficiency and understanding of data cleaning—a fundamental stage in data science workflows. 🧹♻️
+
+It covers various techniques used in data cleaning and provides explanations on how to choose the appropriate methods for each scenario. 🎯
 
 Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
 Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
