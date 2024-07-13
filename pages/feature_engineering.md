@@ -153,7 +153,7 @@ Here are common techniques for feature scaling:
 - Q1: It represents the median of the lower 50% of the data.
 - Q3 : It represents the median of the upper 50% of the data
 
-![title](images/boxplot.png)
+<img src="images/boxplot.png" width="500">
 
 Here's how you calculate the IQR: 
 - 1. Order the dataset: arrange the values in the dataset in ascending order
