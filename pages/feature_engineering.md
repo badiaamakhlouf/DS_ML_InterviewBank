@@ -8,9 +8,7 @@
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 ![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg) 
 
-This page is a valuable resource for those gearing up for data scientist and machine learning interviews, focusing specifically on feature engineering tasks. It compiles pertinent questions to help individuals prepare effectively. It encapsulates a comprehensive collection of questions, insights, and best practices related to crafting and optimizing features for predictive modeling.
-
-Feature engineering is crucial in data science and machine learning, involving the careful transformation of raw data to boost predictive model performance. The quality and relevance of features significantly impact the effectiveness of machine learning models, influencing accuracy, preventing overfitting, and revealing hidden patterns. Proficient feature engineering is a cornerstone of the model-building process, enabling practitioners to extract meaningful insights, enhance predictions, and harness the full potential of data-driven decision-making.
+This page contains well-structured questions and answers to improve your knowledge of feature engineering, a crucial task in the data science life cycle. It is especially useful for those preparing for data scientist and machine learning interviews, providing essential questions, answers, and best practices for effective preparation.
 
 Here are the social channels I am active on. I would love to connect with and follow others who share the same passion for data science, machine learning, and AI.
 Let's exchange ideas, collaborate on projects, and grow together in this exciting field! 🥰 🥳
