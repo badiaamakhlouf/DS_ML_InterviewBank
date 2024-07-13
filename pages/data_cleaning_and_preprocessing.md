@@ -250,13 +250,13 @@ We have four main methods:
     - Max
   - Here is an example of Box plot :
     
-    ![title](images/boxplot1.png)
+    <img src="images/boxplot1.png" width="600">
 
     _Source: https://www.geeksforgeeks.org/box-plot/_
 
   - Here an example of Scatter plot :
  
-    ![title](images/scatter_plot.png)
+    <img src="images/scatter_plot.png" width="600">
 
     _Source: https://nutriverse.io/nipnTK/articles/sp.html_
       
@@ -279,7 +279,10 @@ Here are some methods about how we handle outliers :
 - Q3 : It represents the median of the upper 50% of the data. Represents 0.75 percentile
 
 To calculate percentiles or quantiles, we need to sort the data in ascending order and finding the value below which a certain percentage of the data falls.
-![title](images/boxplot.png) 
+
+ <img src="images/boxplot1.png" width="600">
+
+_Source: https://www.geeksforgeeks.org/box-plot/_
 
 ### Q21- What are the limitations of IQR?
 Here are the list of limitations : 
