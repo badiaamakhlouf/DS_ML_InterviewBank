@@ -256,7 +256,9 @@ We have four main methods:
 
   - Here an example of Scatter plot :
  
-    ![title](images/scatter-plot.png) 
+    ![title](images/scatter_plot.png)
+
+    _Source: https://nutriverse.io/nipnTK/articles/sp.html_
       
 ### Q18- How to handle outliers in dataset ? 
 Here are some methods about how we handle outliers :
