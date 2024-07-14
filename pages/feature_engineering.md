@@ -168,7 +168,7 @@ Here are common techniques for feature scaling:
 
 <img src="images/boxplot1.png" width="500">
 
-_Source:
+_Source: https://www.geeksforgeeks.org/box-plot/_
 
 - Here's how you calculate the IQR: 
 1. Order the dataset: arrange the values in the dataset in ascending order
@@ -177,11 +177,52 @@ _Source:
 4. Find the Third Quartile (Q3)
 5. Calculate the IQR
 
+### Q10- How to handle categorical values ?
+- Two main approaches are used to handle categorical values
+   - **Drop categorical variables (columns)**, which is generally not a good solution for several reasons such as loss of information
+   - **Perform feature encoding:** such as label encoding, one-hot encoding, binary encoding, frequency encoding etc.
+ 
+### Q11- Why dropping categorical data is not a good solution ?
+
+- Retaining and properly handling categorical data is essential for building robust, accurate, and insightful models.
+- Categorical data such as "Gender," "Occupation," or "Product Type"  may contain valuable information.
+- Dropping it can :
+   - Lead to a loss of important insights.
+   - Result in an incomplete understanding of the data.
+   - Impact the predictive power of a model and leading to inaccurate predictions and poor performance.
+- In addition, removing categorical data reduces the size of the dataset, which can limit the model’s ability to learn from the data and generalize to new data.
+- Categorical features can often be key predictors. Ignoring them might result in a model that overlooks important patterns.
+
+### Q12- What does feature encoding mean? 
+
+- Feature encoding is the process of converting categorical data or text data into a numerical format that can be easily used for machine learning algorithms.
+- In many machine learning models, the input features are expected to be numerical, and encoding is necessary when dealing with non-numeric data.
+- Here are some common encoding methods: 
+   - **Ordinal encoding:** assign numerical values based on the inherent order of categories
+   - **One-hot encoding:** create binary columns for each category, indicating its presence (1) or absence (0)
+   - **Label Encoding:** assign a unique numerical label to each category in a categorical variable
+   - **Binary Encoding:** convert each category into its binary representation.
+   - **Frequency (Count) Encoding:** replace each category with its frequency or count in the dataset
+  
+**!! Notes :**
+- Ordinal encoding is a good choice in case we have ranking in our categorical variables (Low, medium, high), most used with Decision Tree and Random Forest.
+- One-hot encoding is more used when there is no ranking in the categorical variables.
+- If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
 
+### Q13- What does Feature extraction mean?
+- It refers to the process of transforming raw data into a format that is suitable for analysis or modeling.
+- Feature extraction involves selecting, combining, or transforming these features to create a set of new features that are more informative, relevant, or suitable for a specific task.
+- It aims to retain the most relevant information from the original data.
 
+Here are some key points about Feature Extraction:
+  - Feature Transformation : Log,  Square,  Square Root, polynomial, Box-Cox and Quantile Transform
+  - Dimensionality reduction : Principal Component Analysis (PCA), Singular Value Decomposition (SVD) and Independent Component Analysis (ICA) etc.
+  - Domain Knowledge: Domain-specific knowledge is often used to guide the feature extraction process. Understanding the nature of the data and the problem at hand can help in creating meaningful features.
+  - Bag-of-Words (BoW) : it is a feature extraction method commonly used in natural language processing (NLP) and text analysis.
 
-
+**Note:**
+- Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
 
 
 
@@ -213,40 +254,6 @@ _Source:
 - Higher-degree polynomials (Degree > 2) can lead to overfitting, capturing noise in the data rather than true underlying patterns. Regularization techniques may be needed to mitigate this.
 - It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
 
-
-
-### Q14- How to deal with categorical values ?
-- Drop categorical variables (columns)
-- Perform feature encoding
-
-### Q15- What does feature encoding mean? 
-Feature encoding is the process of converting categorical data or text data into a numerical format that can be easily used for machine learning algorithms. In many machine learning models, the input features are expected to be numerical, and encoding is necessary when dealing with non-numeric data.
-
-Here are some common encoding methods: 
-- Ordinal encoding: Assign numerical values based on the inherent order of categories
-- One-hot encoding : Create binary columns for each category, indicating its presence (1) or absence (0)
-- Label Encoding : Assign a unique numerical label to each category in a categorical variable
-- Binary Encoding : Convert each category into its binary representation.
-- Frequency (Count) Encoding: Replace each category with its frequency or count in the dataset
-- 
-**!! Notes :**
-- Ordinal encoding is a good choice in case we have ranking in our categorical variables (Low, medium, high), most used with DT and Random Forest.
-- One-hot encoding is more used when there is no ranking in the categorical variables.
-- If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
-
-### Q16- What does Feature extraction mean?
-- It refers to the process of transforming raw data into a format that is suitable for analysis or modeling.
-- Feature extraction involves selecting, combining, or transforming these features to create a set of new features that are more informative, relevant, or suitable for a specific task.
-- It aims to retain the most relevant information from the original data.
-
-Here are some key points about Feature Extraction:
-  - Feature Transformation : Log,  Square,  Square Root, polynomial, Box-Cox and Quantile Transform
-  - Dimensionality reduction : Principal Component Analysis (PCA), Singular Value Decomposition (SVD) and Independent Component Analysis (ICA) etc.
-  - Domain Knowledge: Domain-specific knowledge is often used to guide the feature extraction process. Understanding the nature of the data and the problem at hand can help in creating meaningful features.
-  - Bag-of-Words (BoW) : it is a feature extraction method commonly used in natural language processing (NLP) and text analysis.
-
-**Note:**
-- Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
 
 ### Q17- What does Dimensionality reduction mean?
 - It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
