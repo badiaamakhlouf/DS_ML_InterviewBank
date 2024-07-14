@@ -36,85 +36,118 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 
 ### Q1- What does feature engineering mean? 
 
-Feature engineering refers to the process of raw data manipulation such as addition, deletion, combination, mutation etc. It encompasses the process of creating new features or modifying existing ones to improve the performance of a machine learning model. 
-
-Here is a range of significant activities used in Feature Engineering :
-
-- Feature Selection
-- Feature/Data Transformation
-- Text Data Processing
-- Time-Series Feature Engineering
+- Feature engineering refers to the process of raw data manipulation such as addition, deletion, combination, mutation etc.
+- It encompasses the process of creating new features or transforming existing ones to improve the performance of a machine learning model.
+- Here is a range of significant activities used in Feature Engineering :
+  - Feature Selection
+  - Feature/Data Transformation
+  - Text Data Processing
+  - Time-Series Feature Engineering
 
 ### Q2- How feature engineering affect the model’s performance? 
-- Sometimes, multiple pieces of information may be combined into a single data column.
-- Creating new meaningful features from this combined data can provide deeper insights and enhance the model's performance.
-- These new features can capture complex relationships and patterns in the data, leading to improved predictive accuracy and better understanding of the underlying phenomena.
+
+- Feature engineering enhance the model performance via:
+  - Improving accuracy via creating relevant features from raw data that help highlighting important patterns and relationships.
+  - Reducing the risk of overfitting by removing noise and irrelevant features to ensure the model generalizes better to new data.
+  - Enhancing interpretability by Constructing meaningful and interpretable features which help in understanding how the model makes predictions, aiding in transparency and trust.
+  - Improving convergence using normalised and scaled features which can speed up the convergence of gradient descent algorithms, leading to faster training times.
+  - Creating interaction features or polynomial features that can help the model capture complex relationships between variables that simple linear models might miss.
 
 ### Q3- What does Feature Selection mean and how to perform it?
-- It is an important step in Data Science and Machine Learning. It is very useful to improve the model performance, reduce overfitting and enhance interpretability. 
+- It is an important step in Data Science and Machine Learning and it is very useful to:
+   -  Improve the model performance
+   -  Reduce overfitting
+   -  Enhance interpretability. 
 - Three main methods are used for feature selection : 
     - **Filter Methods**
     - **Wrapper Methods**
     - **Embedded Methods**
+- Choosing the appropriate feature selection method depends on various factors such as the dataset size, dimensionality, nature of features, computational resources, and the desired model performance. 
 
-1 - **Filter Methods:** they aim to select features based on their statistical properties, no learning algorithm is adopted here. Common techniques are the next : 
+### Q3.1- What does **Filter Methods:** mean in Feature Selection?
 
- - Correlation-based: it is used for continuous variable in regression cases. It is based on correlation with Target variable. For example, we can use a correlation matrix.
- - Chi-square Test:it is used for categorical target variables to select features that are most related to the target. It is mainly used in classification problems. 
- - Information Gain / Mutual Information: it aim to measure the dependency between variables. Then it selects features with the highest information gain or mutual information with the target. It is mainly used in classification. 
- - Variance Thresholding: it is based on removing features with low variance, assuming they contain no relevant information.
+- They aim to select features based on their statistical properties, no learning algorithm is adopted here.
+- Common techniques are the next : 
+  - **Correlation-based:** used for continuous variable in regression cases and it is based on correlation with Target variable. For example, we can use a correlation matrix.
+  - **Chi-square Test:** used for categorical target variables to select features that are most related to the target. It is mainly used in classification problems. 
+  - **Information Gain / Mutual Information:** aims to measure the dependency between variables. Then it selects features with the highest information gain or mutual information with the target. It is mainly used in classification. 
+  - **Variance Thresholding:** based on removing features with low variance, assuming they contain no relevant information.
 
-2 - **Wrapper Methods:** They aim to evaluate the performance of a trained model with a selected subset of features. Common techniques are:
-  - Recursive Feature Elimination (RFE): it is a greedy optimisation algorithm that aims to iteratively find the best performing feature subset. It repeatedly creates models and keeps aside the best or the worst performing feature at each iteration. It builds successive models using the remaining features until all options are exhausted. Then, it ranks the features based on the sequence in which they were eliminated.
-  - Forward Selection: it starts with an empty set of features, then it starts adding one feature at each iteration. Finally, it selects the one that improves the model performance the most. It involves iteratively adding features to our model until the addition of a new variable no longer improves its performance.
-- Backward Elimination: It starts with all features. Then,  it removes the least relevant feature , at each iteration, which improves the performance of the model. It is a repetitive process untill no improvement is found on removal of features.
+### Q3.2- What does **Wrapper Methods:** mean in Feature Selection?
+
+- They aim to evaluate the performance of a trained model with a selected subset of features.
+- Common techniques are:
+  
+  - **Recursive Feature Elimination (RFE):**
+      - It is a greedy optimisation algorithm that aims to iteratively find the best performing feature subset.
+      - It repeatedly creates models and keeps aside the best or the worst performing feature at each iteration.
+      - It builds successive models using the remaining features until all options are exhausted.
+      - Then, it ranks the features based on the sequence in which they were eliminated.
+        
+  - **Forward Selection:**
+      - It starts with an empty set of features, then it starts adding one feature at each iteration.
+      - Finally, it selects the one that improves the model performance the most.
+      - It involves iteratively adding features to our model until the addition of a new variable no longer improves its performance.
+        
+  - **Backward Elimination:** 
+      - It starts with all features.
+      - Then,  it removes the least relevant feature , at each iteration, which improves the performance of the model.
+      - It is a repetitive process untill no improvement is found on removal of features.
 
 <img src="images/feature_selection.png" width="500">
 
-3 - **Embedded Methods:**
-   - Regularised Linear Models: L1 (Lasso) and L2 (Ridge) regression techniques. They are based on adding regularisation terms that penalise the magnitude of coefficients, that forces some coefficients to shrink to zero and leading to automatic feature selection. Also, we can use Elastic Net
-   - Tree-based Methods:  like Decision Trees, Random Forests, and Gradient Boosting Machines, they  automatically select the best features (most informative) for making decisions and splitting each node.
+### Q3.3- What does **Embedded Methods:** mean in Feature Selection?
 
-
-- **!! Notes:**
-   - Dimensionality Reduction Techniques such as PCA or t-SNE can be used to reduce number of feature and transforming them into a lower-dimensional space while preserving most of the information. Yet, they are feature extraction techniques and not feature selection.
-   - Choosing the appropriate feature selection method depends on various factors such as the dataset size, dimensionality, nature of features, computational resources, and the desired model performance. 
+- They are based on adding regularisation terms that penalise the magnitude of coefficients, that forces some coefficients to shrink to zero and leading to automatic feature selection.
+- Examples: regularised Linear Models: L1 (Lasso) and L2 (Ridge) regression techniques.
+- IN addition, we can use Elastic Net
+- Tree-based Methods:  like Decision Trees, Random Forests, and Gradient Boosting Machines, they  automatically select the best features (most informative) for making decisions and splitting each node.
 
 
 ### Q4- What does data transformation mean?
 
-Data transformation is indeed one subtask within the broader field of feature engineering in machine learning. It is a specific aspect of feature engineering that involves modifying the raw data to make it more suitable for the learning algorithm.
-It includes : 
-- Feature Scaling
-- Feature encoding
-- Feature extraction
-- Binning or Discretization
-- Creating Interaction Terms
+- Data transformation is indeed one subtask within the broader field of feature engineering in machine learning.
+- It is a specific aspect of feature engineering that involves modifying the raw data to make it more suitable for the learning algorithm.
+- It includes : 
+   - **Feature Scaling**
+   - **Feature encoding**
+   - **Feature extraction**
+   - **Binning or Discretization**
+   - **Creating Interaction Terms**
   
-### Q5- What does feature scaling mean ?
-Feature scaling is a preprocessing step in machine learning that involves transforming the numerical features of a dataset to a common scale. Feature scaling is particularly important for algorithms that rely on distance metrics or gradient descent optimization.
+### Q5- What does feature scaling mean and Why do we need perform it?
 
-### Q6- Why do we need perform feature scaling ? 
-The goal is to ensure that all features contribute equally to the learning process and to prevent certain features from dominating due to differences in their magnitudes.
+- Feature scaling is a preprocessing step in machine learning that involves transforming the numerical features of a dataset to a common scale.
+- Feature scaling is particularly important for algorithms that rely on distance metrics or gradient descent optimization.
+- The goal is to ensure that all features contribute equally to the learning process and to prevent certain features from dominating due to differences in their magnitudes.
 
-### Q7- What are the common techniques for feature scaling?
+### Q6- What are the common techniques for feature scaling?
+
 Here are common techniques for feature scaling:
-- Normalization
-- Standard scaling : converts features to standard normal variables (by subtracting the mean and dividing the standard error)
-- Log scaling or Log transformation
-- Polynomial transformation
-- Robust scaling
+- **Normalization**
+- **Standard scaling:** converts features to standard normal variables (by subtracting the mean and dividing the standard error)
+- **Log scaling or Log transformation**
+- **Polynomial transformation**
+- **Robust scaling**
   
-### Q8- Why do we perform normalization and How to do it?
-- **Why?**
-  - To achieve stable and fast training of the model
-  - It aims to bring all the features to a certain scale or range of values.
-  - Without normalization, there's a higher risk of the gradient failing to converge to the global or local minima and instead oscillating back and forth.
+### Q7- Why do we perform data normalization ?
+
+- It aims to bring all the features to a certain scale or range of values.
+- To achieve stable and fast training of the model and prevent features with larger ranges from dominating the model.
+- It means preventing models from being biased towards features with larger values.
+- Many machine learning algorithms perform better with normalized data.
+- Without normalization, there's a higher risk of the gradient failing to converge to the global or local minima and instead oscillating back and forth.
+- Algorithms like gradient descent converge faster when features are normalized.
+
+### Q7- How do we achieve normalization ?
+
+- Common techniques include Min-Max Normalization, Standardization, and Robust Scaling.
+
+- **1. Min-Max Normalization:**
   
-- **How to do it?**
-   - We normalize data using Min-Max Scaling
-   - It aims to scale the feature values to a specific range, usually between 0 and 1
-   - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
+ - We normalize data using Min-Max Scaling
+ - It aims to scale the feature values to a specific range, usually between 0 and 1
+ - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
 
 ### Q9 - How to perform Standard scaling - Z-score normalization
 - Centers the feature values around zero with a standard deviation of 1.
