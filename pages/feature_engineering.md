@@ -143,19 +143,22 @@ Here are common techniques for feature scaling:
 
 - Common techniques include Min-Max Normalization, Standardization, and Robust Scaling.
 
-- **1. Min-Max Normalization:**
+**1. Min-Max Normalization:**
   
- - We normalize data using Min-Max Scaling
- - It aims to scale the feature values to a specific range, usually between 0 and 1
- - Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
+- We normalize data using Min-Max Scaling
+- It aims to scale the feature values to a specific range of [0, 1]
+- Formula : $X_{normalized}= {X-X_{min}\over X_{max}-X_{min}}$
 
-### Q9 - How to perform Standard scaling - Z-score normalization
-- Centers the feature values around zero with a standard deviation of 1.
+**2. Standardization (Z-Score Normalization):**
+
+- Centers the data around a mean of 0 with a standard deviation of 1.
 - Suitable for algorithms that assume a normal distribution of features.
 - Formula: $X_{standardized} ={ X - mean(X) \over std(X)}$
 
-### Q10- How to perform Robust Scaling
-- Scales the features based on the interquartile range (IQR) to handle outliers.
+**3. Robust Scaling:**
+
+- Scales the features using the interquartile range (IQR) and the median.
+- It is less sensitive to outliers.
 - Formula: $X_{robust} = {X - median(X)\over IQR(X)}$
 
 ### Q11- How to perform Log Transformation
