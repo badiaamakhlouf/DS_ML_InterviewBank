@@ -26,9 +26,9 @@ Certainly, there are certain data science skills that are exclusively required f
     - In addition, probability distributions, Central Limit Theorem, Bayes’ Theorem and confidence intervals.
   
 -  💻 [Programming Proficiency](pages/programming_proficiency.md):
-    - The primary programming languages used in the data science field are Python and R.
-    - The choice between the two depends on various factors. For instance, if you're dealing with intricate data requiring extensive statistical computations and superior data visualization capabilities, R is often preferred. On the other hand, Python is better suited for a wide range of data science tasks, including machine learning, deep learning, and artificial intelligence applications.
-    - Finally, the decision is based on the specific requirements of your project and your familiarity with each language's ecosystem.
+    - It involves the ability to effectively use programming languages and libraries to analyze data, build models, and derive insights.   
+    - Mastery of languages like Python or R, essential for data manipulation, statistical analysis, and machine learning model implementation.
+    - Overall, strong programming proficiency in data science and machine learning is crucial for effectively transforming data into actionable insights and building robust predictive models.
   
 - 🧹 ✅ [Data Cleaning and Preprocessing](pages/data_cleaning_and_preprocessing.md):
     - Data cleaning is a critical step in the data preprocessing phase of the data science workflow.
