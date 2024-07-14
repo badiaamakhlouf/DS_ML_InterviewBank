@@ -126,8 +126,6 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
 Here are common techniques for feature scaling:
 - **Normalization**
 - **Standard scaling:** converts features to standard normal variables (by subtracting the mean and dividing the standard error)
-- **Log scaling or Log transformation**
-- **Polynomial transformation**
 - **Robust scaling**
   
 ### Q7- Why do we perform data normalization ?
@@ -139,7 +137,7 @@ Here are common techniques for feature scaling:
 - Without normalization, there's a higher risk of the gradient failing to converge to the global or local minima and instead oscillating back and forth.
 - Algorithms like gradient descent converge faster when features are normalized.
 
-### Q7- How do we achieve normalization ?
+### Q8- How do we achieve normalization ?
 
 - Common techniques include Min-Max Normalization, Standardization, and Robust Scaling.
 
@@ -160,8 +158,40 @@ Here are common techniques for feature scaling:
 - Scales the features using the interquartile range (IQR) and the median.
 - It is less sensitive to outliers.
 - Formula: $X_{robust} = {X - median(X)\over IQR(X)}$
+  
+### Q9- What does IQR : interquartile range mean?
+- The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
+- Q1: It represents the median of the lower 50% of the data.
+- Q3: It represents the median of the upper 50% of the data
+- It provides a robust measure of the spread of the middle 50% of the data, making it less sensitive to extreme values or outliers.
+- It is commonly used in box plots to visually represent the dispersion of data.
 
-### Q11- How to perform Log Transformation
+<img src="images/boxplot1.png" width="500">
+
+_Source:
+
+- Here's how you calculate the IQR: 
+1. Order the dataset: arrange the values in the dataset in ascending order
+2. Determine the median (Q2): which is the middle value of the dataset. If the dataset has an odd number of observations, the median is the middle value. If it has an even number, the median is the average of the two middle values.
+3. Find the First Quartile (Q1)
+4. Find the Third Quartile (Q3)
+5. Calculate the IQR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Q9- How to perform Log Transformation
 - The log transformation is the most popular among the different types of transformations used in machine learning.
 - It aims to make highly skewed distributions (features with high variance) less skewed.
 - The logarithm used is often the natural logarithm (base e) or the common logarithm (base 10).
@@ -169,7 +199,7 @@ Here are common techniques for feature scaling:
 - If the original data follows a log-normal distribution or approximately so, then the log-transformed data follows a normal or near normal distribution.
 - However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
 
-### Q12- How to perform Polynomial transformation
+### Q10- How to perform Polynomial transformation
 - It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
 - It involves transforming input features by raising them to the power of an integer, creating polynomial terms.
 - The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
@@ -184,21 +214,6 @@ Here are common techniques for feature scaling:
 - It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
 
 
-### Q13- What does IQR : interquartile range mean?
-- The IQR is the difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1
-- Q1: It represents the median of the lower 50% of the data.
-- Q3 : It represents the median of the upper 50% of the data
-
-<img src="images/boxplot.png" width="500">
-
-Here's how you calculate the IQR: 
-- 1. Order the dataset: arrange the values in the dataset in ascending order
-- 2. Determine the median (Q2): which is the middle value of the dataset. If the dataset has an odd number of observations, the median is the middle value. If it has an even number, the median is the average of the two middle values.
-- 3. Find the First Quartile (Q1)
-- 4. Find the Third Quartile (Q3)
-- 5. Calculate the IQR
-
-The IQR provides a robust measure of the spread of the middle 50% of the data, making it less sensitive to extreme values or outliers. It is commonly used in box plots to visually represent the dispersion of data.
 
 ### Q14- How to deal with categorical values ?
 - Drop categorical variables (columns)
