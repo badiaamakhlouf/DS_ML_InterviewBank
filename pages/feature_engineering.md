@@ -355,21 +355,29 @@ _Source: https://www.geeksforgeeks.org/box-plot/_
 
 ### Q22- Fast-ICA versus ICA ?
 
-Fast Independent Component Analysis (Fast-ICA) and Independent Component Analysis (ICA) are both techniques used for separating mixed signals into statistically independent components.
-Here's a comparison between the two:
-
-- **Speed and Efficiency:** Fast-ICA is optimized for computational efficiency (fast). It employs techniques such as negentropy maximization and gradient ascent to rapidly converge to a solution. However, traditional ICA algorithms may be computationally slower compared to Fast-ICA, especially for large datasets or high-dimensional signal sources.
-- **Optimization Method:** Fast-ICA uses optimization methods like negentropy maximization or fixed-point iteration to find the separating matrix that maximizes independence. Traditional ICA methods may employ various optimization techniques, including gradient ascent, kurtosis maximization, or mutual information minimization.
-- **Assumptions:** Fast-ICA often assumes that the sources are non-Gaussian and have non-quadratic cumulants. It aims to exploit non-Gaussianity to separate the signals. However, ICA assumes generally that the sources are statistically independent and aims to find a linear transformation that maximizes their independence.
-- **Convergence:** Fast-ICA tends to converge faster due to its efficient optimization techniques, making it suitable for real-time applications or large datasets. However, traditional ICA convergence speed may vary depending on the optimization method and the complexity of the dataset.
-- **Applications:** Fast-ICA used in signal processing tasks such as blind source separation, audio processing, and image analysis where computational efficiency is crucial. ICA applied in fields like neuroscience, telecommunications, and biomedical signal processing for separating mixed sources into meaningful components.
-- **Robustness:** Fast-ICA is efficient but more sensitive to the choice of initialization and parameters, requiring careful tuning for optimal performance. However, traditional ICA methods may offer more robustness and flexibility, allowing for customization based on specific dataset characteristics.
+- Fast-ICA and ICA are both techniques used for separating mixed signals into statistically independent components.
+- However, they differ in terms of computational efficiency, optimization methods, assumptions, convergence speed, applications, and robustness.
+- The choice between the two depends on the specific requirements of the task at hand and the characteristics of the dataset.
+- Here's a comparison between the two:
+   - **Speed and Efficiency:**
+       - Fast-ICA employs techniques such as negentropy maximization and gradient ascent to rapidly converge to a solution.
+       - ICA algorithms may be computationally slower compared to Fast-ICA, especially for large datasets or high-dimensional signal sources.
+   - **Optimization Method:**
+       - Fast-ICA uses optimization methods like negentropy maximization or fixed-point iteration to find the separating matrix that maximizes independence.
+       - ICA methods may employ various optimization techniques, including gradient ascent, kurtosis maximization, or mutual information minimization.
+   - **Assumptions:**
+       - Fast-ICA often assumes that the sources are non-Gaussian and have non-quadratic cumulants and it aims to exploit non-Gaussianity to separate the signals.
+       - ICA assumes generally that the sources are statistically independent and aims to find a linear transformation that maximizes their independence.
+   - **Convergence:**
+       - Fast-ICA tends to converge faster due to its efficient optimization techniques, making it suitable for real-time applications or large datasets.
+       - ICA convergence speed may vary depending on the optimization method and the complexity of the dataset.
+   - **Applications:**
+       - Fast-ICA used in signal processing tasks such as blind source separation, audio processing, and image analysis where computational efficiency is crucial.
+       - ICA applied in fields like neuroscience, telecommunications, and biomedical signal processing for separating mixed sources into meaningful components.
+   - **Robustness:**
+       - Fast-ICA is efficient but more sensitive to the choice of initialization and parameters, requiring careful tuning for optimal performance.
+       - ICA methods may offer more robustness and flexibility, allowing for customization based on specific dataset characteristics.
   
-Fast-ICA and ICA both serve the purpose of separating mixed signals into independent components, but they differ in terms of computational efficiency, optimization methods, assumptions, convergence speed, applications, and robustness. The choice between the two depends on the specific requirements of the task at hand and the characteristics of the dataset.
-
-**Note:**
-Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
-
 
 ### Q23- What does "creating interaction terms" mean in feature engineering?
 
@@ -402,6 +410,9 @@ Please be aware that I am committed to maintaining the accuracy and relevance of
 - However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
 - Briefly, log transformation changes the distribution of a feature, often to handle skewness or reduce the impact of outliers.
 
+
+**Note:**
+Please be aware that I am committed to maintaining the accuracy and relevance of this page 🤞🏻. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource. 🚀🎯
 
 
 
