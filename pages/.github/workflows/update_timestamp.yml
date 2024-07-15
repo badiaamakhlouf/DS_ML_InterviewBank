@@ -1,0 +1,21 @@
+name: Update Last Updated Timestamp
+
+on:
+  push:
+    branches:
+      - main  # adjust this to your main branch name
+
+jobs:
+  update_timestamp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Update timestamp
+        run: |
+          bash update_timestamp.sh
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Update last updated timestamp" --no-verify
+          git push
