@@ -115,7 +115,7 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
    - **Binning or Discretization**
    - **Creating Interaction Terms**
   
-### Q5- What does feature scaling mean and Why do we need perform it?
+### Q5- What does feature scaling mean and why we use it ?
 
 - Feature scaling is a preprocessing step in machine learning that involves transforming the numerical features of a dataset to a common scale.
 - Feature scaling is particularly important for algorithms that rely on distance metrics or gradient descent optimization.
@@ -210,52 +210,21 @@ _Source: https://www.geeksforgeeks.org/box-plot/_
 - If our dataset is very large (high cardinality) --> one-hot encoding can greatly expand the size of dataset : number columns.
 
 
-### Q13- What does Feature extraction mean?
+### Q13- What does Feature extraction mean and why do we need it?
+
+- It is a critical step in data preprocessing, focusing on reducing the number of features while retaining the most relevant information from the original data.
 - It refers to the process of transforming raw data into a format that is suitable for analysis or modeling.
-- Feature extraction involves selecting, combining, or transforming these features to create a set of new features that are more informative, relevant, or suitable for a specific task.
-- It aims to retain the most relevant information from the original data.
-
-Here are some key points about Feature Extraction:
-  - Feature Transformation : Log,  Square,  Square Root, polynomial, Box-Cox and Quantile Transform
-  - Dimensionality reduction : Principal Component Analysis (PCA), Singular Value Decomposition (SVD) and Independent Component Analysis (ICA) etc.
-  - Domain Knowledge: Domain-specific knowledge is often used to guide the feature extraction process. Understanding the nature of the data and the problem at hand can help in creating meaningful features.
-  - Bag-of-Words (BoW) : it is a feature extraction method commonly used in natural language processing (NLP) and text analysis.
-
-**Note:**
-- Feature extraction is a crucial step in the data preprocessing pipeline, enabling the creation of a feature set that enhances the performance of machine learning models by providing them with more relevant and informative input variables.
+- It improves model performance, reduces computational costs, and enhances data visualization by transforming the original features into a more informative and compact form.
+- Techniques like PCA, LDA, t-SNE, and autoencoders are commonly used for this purpose and Bag-of-Words (BoW) is commonly used in natural language processing (NLP) and text analysis.
+- Here are some key reasons for its usage:
+   - **Dimensionality Reduction:** reduces the number of features to prevent issues related to high dimensionality and enhance model performance.
+   - **Noise Reduction:**  helps in eliminating redundant and irrelevant information, enhancing the signal-to-noise ratio.
+   - **Computational Efficiency:** decreases computational load and storage requirements, making models faster and more efficient.
+   - **Improved Visualization:** simplifies the data for better visualization and understanding.
 
 
+### Q14- What does Dimensionality reduction mean?
 
-
-
-
-
-
-
-### Q9- How to perform Log Transformation
-- The log transformation is the most popular among the different types of transformations used in machine learning.
-- It aims to make highly skewed distributions (features with high variance) less skewed.
-- The logarithm used is often the natural logarithm (base e) or the common logarithm (base 10).
-- Generally, we use the natural logarithm function in Log transformation.
-- If the original data follows a log-normal distribution or approximately so, then the log-transformed data follows a normal or near normal distribution.
-- However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
-
-### Q10- How to perform Polynomial transformation
-- It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
-- It involves transforming input features by raising them to the power of an integer, creating polynomial terms.
-- The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
-- Such transformations are often beneficial for machine learning algorithms, particularly in tasks involving numerical input variables, improving predictive accuracy, especially in regression tasks.
-- If X is one input feature ==> $X^2$ is its polynomial feature.
-- The “degree” of the polynomial is used to control the number of features added, e.g. a degree of 3 will add two new variables for each input variable.
-- Typically a small degree is used such as 2 or 3.
-- Choosing the best polynomial degree is so important as it impacts the number of input features created. 
-
-**More notes:** 
-- Higher-degree polynomials (Degree > 2) can lead to overfitting, capturing noise in the data rather than true underlying patterns. Regularization techniques may be needed to mitigate this.
-- It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
-
-
-### Q17- What does Dimensionality reduction mean?
 - It is a technique used in machine learning and statistics to reduce the number of input variables or features in a dataset.
 - The goal is to simplify the dataset while retaining its essential information and patterns.
 - High-dimensional datasets, where the number of features is large, can suffer from the curse of dimensionality, leading to increased computational complexity and potential overfitting.
@@ -267,7 +236,8 @@ Here are some key points about Feature Extraction:
   - Linear Discriminant Analysis (LDA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
 
-### Q19- What does Principal Component Analysis (PCA) mean? 
+### Q15- What does Principal Component Analysis (PCA) mean and how to apply it? 
+
 - It is an unsupervised dimensionality reduction technique that aims to transforms input data into a new set of uncorrelated features while keeping the maximum variance in the data.
 - It can be applied to both supervised and unsupervised machine learning tasks
 - To calculate it, we can use various python libraries such as `NumPy`, `SciPy`, and `scikit-learn`
@@ -278,41 +248,43 @@ Here are some key points about Feature Extraction:
   - **Method 1:** Using scikit-learn library: `sklearn.decomposition.PCA()`
   - **Method 2:** Using NumPy, SciPy libraries 
     
-Here are the steps of calculating PCA using the covariance matrix and use eigenvalue decomposition to obtain the eigenvectors and eigenvalues. Here are the steps to apply :
- - 1. Standardise the data
- - 2. Compute the covariance matrix and use eigenvalue decomposition to obtain the eigenvectors and eigenvalues.
- - 3. Select the k largest eigenvalues and their associated eigenvectors.
- - 4. Transform the data into a k dimensional subspace using those k eigenvectors.
     
-#### Q18.1- Case 1 : Using scikit-learn library
-- This method is based on using `sklearn.decomposition.PCA()`, where n is the number of PCA components 
+### Q15.1- Case 1 : Using scikit-learn library
+
+- This method is based on using `sklearn.decomposition.PCA(n_components=n)`, where n is the number of PCA components 
 - How to choose the correct number of PCA Components ?
   - The first principal components that capture the most significant variance in the data
   - Example 97% or 99% of data variability.
 - If we found the correct component number, example: n=2,  then we use the next code : PCA(n_components=2)  
 
-#### Q18.2- Case 2: Using NumPy, SciPy libraries: 
+### Q15.2- Case 2: Using NumPy, SciPy libraries: 
+
 - This method consists on applying PCA using the eigenvalue decomposition, which is based on finding the eigenvectors and eigenvalues.
--  Here are the consecutive steps to apply this method:
-    1. Standardise the data
+- Here are the consecutive steps to apply this method:
+    1. Standardise the data.
     2. Compute the covariance matrix and use eigenvalue decomposition to obtain the eigenvectors and eigenvalues.
     3. Select the k largest eigenvalues and their associated eigenvectors.
     4. Transform the data into a k dimensional subspace using those k eigenvectors.
-       
-### Q19- Why do we need to find eigenvalues and eigenvectors in PCA?
-- In PCA, finding eigenvalues and eigenvectors is a crucial step in transforming the original data into a new coordinate system (principal components) that captures the maximum variance.
-- PCA begins by calculating the **covariance matrix** of the original data. This matrix summarizes the relationships between different variables.
-- **Eigenvalues:** The eigenvalues of the covariance matrix represent the variance of the data along the corresponding eigenvectors. Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
-- **Eigenvectors:** Eigenvectors are the directions (principal components) in which the data varies the most. Each eigenvector corresponds to a principal component, 
-- The principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
-- The eigenvectors are ranked in order of their corresponding eigenvalues.
-- The first few eigenvectors (principal components) with the largest eigenvalues capture the most significant variance in the data ( 97% or 99% of data variability).
-- By choosing a subset of these components, you can effectively reduce the dimensionality of the data while retaining the most important information.
+ 
+### Q16- What are Eigenvalues and Eigenvectors ?
 
-**Note:**
+- More details can be found under probabil
+- **Eigenvalues:** The eigenvalues of the covariance matrix represent the variance of the data along the corresponding eigenvectors. Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
+- **Eigenvectors:** Eigenvectors are the directions (principal components) in which the data varies the most. Each eigenvector corresponds to a principal component.
+       
+### Q17- Why do we need to find eigenvalues and eigenvectors in PCA?
+
+- In PCA, finding eigenvalues and eigenvectors is a crucial step in transforming the original data into a new coordinate system (principal components) that captures the maximum variance.
+- PCA begins by calculating the **covariance matrix** of the original data which, summarizes the relationships between different variables.
+- The principal component directions are given by the eigenvectors of the matrix, and the magnitudes of the components are given by the eigenvalues.
+- The eigenvectors are ranked in order of their corresponding eigenvalues. Then, the first few eigenvectors (principal components) with the largest eigenvalues capture the most significant variance in the data ( 97% or 99% of data variability).
+- Larger eigenvalues indicate directions of maximum variance, and smaller eigenvalues indicate directions of minimum variance.
+- By choosing a subset of these components, you can effectively reduce the dimensionality of the data while retaining the most important information.
 - Eigenvectors are orthogonal, meaning they are perpendicular to each other. This orthogonality ensures that the principal components are uncorrelated, simplifying the interpretation of the transformed data.
 
-### Q20- What does Singular Value Decomposition (SVD) means ? 
+
+### Q18- What does Singular Value Decomposition (SVD) mean ? 
+
 - Singular Value Decomposition (SVD) is a mathematical technique widely used in linear algebra and numerical analysis.
 - is often used to reduce the number of features or dimensions in a dataset.
 - The singular values obtained from the decomposition can be used to identify the most important components or features, and the corresponding vectors can be used to transform the data into a lower-dimensional space.
@@ -320,9 +292,9 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - It aims to represent the original matrix A  with fewer dimensions via decomposing it into three other matrices U, V and Σ.
   - The SVD of a matrix A is represented as: $A = U Σ V^T$ :
     - A: The original matrix that we want to decompose.
-    - **Left Singular Vectors U:** These vectors form an orthonormal basis for the column space of the original matrix A. They capture the relationships between the rows of A.
-    - **Singular Values Σ:** The singular values on the diagonal of Σ are the square roots of the eigenvalues of $AA^T$ (or $A^TA$). They represent the amount of variability or importance associated with each singular vector. The singular values are arranged in descending order.
-    - **Right Singular Vectors $V^T$:** These vectors form an orthonormal basis for the row space of the original matrix A. They capture the relationships between the columns of A.
+    - **Left Singular Vectors U:** these vectors form an orthonormal basis for the column space of the original matrix A. They capture the relationships between the rows of A.
+    - **Singular Values Σ:** the singular values on the diagonal of Σ are the square roots of the eigenvalues of $AA^T$ (or $A^TA$). They represent the amount of variability or importance associated with each singular vector. The singular values are arranged in descending order.
+    - **Right Singular Vectors $V^T$:** these vectors form an orthonormal basis for the row space of the original matrix A. They capture the relationships between the columns of A.
 - This decomposition is widely used in signal processing, data analysis, and machine learning. Examples:
   - **Dimensionality Reduction** 
   - **Image Compression**
@@ -330,7 +302,8 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - **Collaborative Filtering**
   - **Latent Semantic Analysis (LSA)**
     
-### Q21- PCA Versus SVD? 
+### Q19- PCA Versus SVD? 
+
 - PCA is a specific method for dimensionality reduction and data analysis, SVD is a more general matrix decomposition technique.
 - PCA can be viewed as a special case of SVD when applied to the covariance matrix of the data.
 - Both techniques have their applications and are widely used in various fields, often complementing each other in data analysis and modeling.
@@ -340,7 +313,8 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
   - PCA typically involves centering the data (subtracting the mean) before computing the covariance matrix. SVD can be applied directly to the original data matrix without the need for centering.
   - PCA Commonly used for dimensionality reduction, data visualization, and noise reduction. SVD Applied in a broader range of applications, including matrix inversion, image compression, collaborative filtering, and solving linear least squares problems.
 
-### Q22- What does Independent Component Analysis (ICA) mean ? 
+### Q20- What does Independent Component Analysis (ICA) mean ? 
+
 - ICA is a computational technique used in signal processing and data analysis.
 - It aims to separate a multivariate signal into additive, independent components, with the assumption that the original signals are statistically independent and non-Gaussian.
 - Here's a breakdown of key concepts related to Independent Component Analysis:
@@ -365,21 +339,21 @@ Here are the steps of calculating PCA using the covariance matrix and use eigenv
 **Note:**
 - ICA is a powerful technique, especially when dealing with scenarios where the sources are mixed together, and the mixing process is unknown or complex.
   
-### Q23- How to measure non-Gaussianity in ICA? 
+### Q21- How to measure non-Gaussianity in ICA? 
 
-ICA aims to break down a multivariate signal into independent components. It relies on the assumption that observed data stems from independent sources, and it's essential that these sources exhibit non-Gaussian behavior. This non-Gaussianity enables ICA to effectively discern and isolate the independent components.
+- ICA aims to break down a multivariate signal into independent components.
+- It relies on the assumption that observed data stems from independent sources, and it's essential that these sources exhibit non-Gaussian behavior.
+- This non-Gaussianity enables ICA to effectively discern and isolate the independent components.
+- Non-Gaussianity in Independent Component Analysis (ICA) can be measured using various statistical metrics or tests.
+- These measures and tests provide insights into the departure of the data distribution from a Gaussian distribution, which is essential for successful ICA decomposition.
+- Here are the main measures for non-Gaussianity:
+   - **Kurtosis:** in a non-Gaussian distribution, the kurtosis will deviate from the expected value for a Gaussian distribution, which is 3. Higher kurtosis indicates heavier tails than a Gaussian distribution, while lower kurtosis indicates lighter tails.
+   - **Skewness:** in a non-Gaussian distribution, the skewness will deviate from 0, which is the expected value for a symmetric Gaussian distribution. Positive skewness indicates a longer tail on the right side of the distribution, while negative skewness indicates a longer tail on the left side.
+   - **Negentropy:** negentropy is a measure of non-Gaussianity which, quantifies the difference between the entropy of a Gaussian distribution and the observed distribution. Lower negentropy values indicate closer resemblance to a Gaussian distribution.
+   - **Mutual Information:** it measures the amount of information that one random variable contains about another random variable. Since Gaussian distributions are maximally non-informative, components with low mutual information are more likely to be closer to Gaussian, while those with high mutual information are more likely to be non-Gaussian.
+   - **Jarque-Bera Test:** The Jarque-Bera test is a statistical test that assesses whether sample data have the skewness and kurtosis matching a normal distribution. A low p-value indicates departure from normality.
 
-Non-Gaussianity in Independent Component Analysis (ICA) can be measured using various statistical metrics or tests. Here are the main measures for non-Gaussianity: 
-
-- Kurtosis: it quantifies the "tailedness" or peakedness of a distribution. In a non-Gaussian distribution, the kurtosis will deviate from the expected value for a Gaussian distribution, which is 3. Higher kurtosis indicates heavier tails than a Gaussian distribution, while lower kurtosis indicates lighter tails.
-- Skewness: it measures the asymmetry of the distribution. In a non-Gaussian distribution, the skewness will deviate from 0, which is the expected value for a symmetric Gaussian distribution. Positive skewness indicates a longer tail on the right side of the distribution, while negative skewness indicates a longer tail on the left side.
-- Negentropy: Negentropy is a measure of non-Gaussianity. It quantifies the difference between the entropy of a Gaussian distribution and the observed distribution. Lower negentropy values indicate closer resemblance to a Gaussian distribution.
-- Mutual Information: it measures the amount of information that one random variable contains about another random variable. Since Gaussian distributions are maximally non-informative, components with low mutual information are more likely to be closer to Gaussian, while those with high mutual information are more likely to be non-Gaussian.
-- Jarque-Bera Test: The Jarque-Bera test is a statistical test that assesses whether sample data have the skewness and kurtosis matching a normal distribution. A low p-value indicates departure from normality.
-
-These measures and tests provide insights into the departure of the data distribution from a Gaussian distribution, which is essential for successful ICA decomposition.
-
-### Q24- Fast-ICA versus ICA ?
+### Q22- Fast-ICA versus ICA ?
 
 Fast Independent Component Analysis (Fast-ICA) and Independent Component Analysis (ICA) are both techniques used for separating mixed signals into statistically independent components.
 Here's a comparison between the two:
@@ -395,6 +369,39 @@ Fast-ICA and ICA both serve the purpose of separating mixed signals into indepen
 
 **Note:**
 Please be aware that I am committed to maintaining the accuracy and relevance of this page. If you come across any errors, potential adjustments, or missing details, kindly bring them to my attention. Your feedback is invaluable, and together, we can ensure the continual improvement and accuracy of this resource.
+
+
+### Q23- What does "creating interaction terms" mean in feature engineering?
+
+- It involves generating new features that capture the interactions between existing features.
+- It helps models understand the combined effect of multiple variables on the target variable, which might not be evident when considering each feature individually.
+- Polynomial transformation is the method used to create interaction terms and higher-order features.
+
+### Q24- How to perform Polynomial transformation?
+
+- It is a feature engineering technique used in machine learning and statistics to capture non-linear relationships between variables.
+- It involves transforming input features by raising them to the power of an integer, creating polynomial terms.
+- The most common form is the quadratic transformation (squared terms), but higher-order polynomials can also be used.
+- It is useful for machine learning, particularly in tasks involving numerical input variables, improving predictive accuracy, especially in regression tasks.
+- If X is one input feature ==> $X^2$ is its polynomial feature.
+- The “degree” of the polynomial is used to control the number of features added, e.g. a degree of 3 will add two new variables for each input variable.
+- Typically a small degree is used such as 2 or 3.
+- Choosing the best polynomial degree is so important as it impacts the number of input features created. 
+
+**More notes:** 
+- Higher-degree polynomials (Degree > 2) can lead to overfitting, capturing noise in the data rather than true underlying patterns. Regularization techniques may be needed to mitigate this.
+- It's important to scale features before applying polynomial transformations to prevent features with larger scales from dominating the transformed values.
+
+### Q25- What is Log Transformation and how to perform it?
+
+- The log transformation is a type of feature transformation that changes the distribution of the data.
+- It is the most popular among the different types of transformations used in machine learning.
+- It aims to make highly skewed distributions (features with high variance) less skewed.
+- Generally, we use the natural logarithm function in Log transformation.
+- If the original data follows a log-normal distribution or approximately so, then the log-transformed data follows a normal or near normal distribution.
+- However, our real raw data do not always follow a normal distribution. They are often so skewed making the results of our statistical analyses invalid. That’s where Log Transformation comes in.
+- Briefly, log transformation changes the distribution of a feature, often to handle skewness or reduce the impact of outliers.
+
 
 
 
