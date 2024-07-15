@@ -31,8 +31,6 @@ Let's exchange ideas, collaborate on projects, and grow together in this excitin
   </a>
 </div>
 
-[![Last Updated](https://img.shields.io/badge/last%20updated-2024--07--15%20T08%3A30%3A00Z-blue)](feature_engineering.md)
-
 ## List of Questions:
 
 ### Q1- What does feature engineering mean? 
