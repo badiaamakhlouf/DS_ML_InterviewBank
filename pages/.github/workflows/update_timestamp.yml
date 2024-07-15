@@ -1,4 +1,4 @@
-name: Update Last Updated Timestamp
+name: Update Last Updated Badge
 
 on:
   push:
@@ -11,11 +11,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        
+
       - name: Update timestamp
         run: |
-          bash update_timestamp.sh
-          git config --local user.email "action@github.com"
+          TIMESTAMP=$(date +"%Y-%m-%d")
+          sed -i "s/last%20updated-[0-9]*--[0-9]*/last%20updated-$TIMESTAMP/" feature_engineering.md
+          git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
-          git commit -am "Update last updated timestamp" --no-verify
+          git commit -am "Update last updated badge" --no-verify
           git push
