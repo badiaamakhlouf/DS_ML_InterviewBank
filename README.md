@@ -40,10 +40,10 @@ Certainly, there are certain data science skills that are exclusively required f
     - Exploratory Data Analysis (EDA) involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
   
-- 🛠 [Feature Engineering and Feature Extraction](pages/feature_engineering.md):
-    - This step involves identifying and extracting relevant features from raw data or transforming existing ones.
-    - As mentioned earlier, feature engineering and extraction are crucial tasks for enhancing model performance and obtaining meaningful insights.
-        
+- 🛠 ✅ [Feature Engineering and Feature Extraction](pages/feature_engineering.md):
+    - Feature engineering and extraction are crucial tasks for enhancing model performance and obtaining meaningful insights. 
+    - This step involves identifying, transforming and extracting relevant features from raw data.
+   
 - 💡 [Machine Learning Fundamentals](pages/machine_learning_fundamentals.md):
     - Machine learning, a subset of AI, focuses on creating algorithms that enable computers to learn from data and make decisions or predictions.
     - It's essential to understand fundamentals in ML algorithms, including supervised and unsupervised learning methods, and master model evaluation techniques.
