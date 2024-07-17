@@ -1,10 +1,38 @@
 # Machine Learning Fundamentals 
 
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
+[![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
+![License](https://img.shields.io/badge/License-MIT-red)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg) 
+
+
 🧭 This page is a guide for those gearing up for data science and machine learning technical interviews. It covers the basics and essentials, focusing on questions related to machine learning fundamentals and model evaluation. 
 
 🚀 Whether you're polishing your interview skills or seeking insightful questions as an interviewer, this page is a valuable resource to strengthen your grasp of machine learning basics.
 
 **Note:** Your suggestions for improvement are welcome; please feel free to provide feedback to help maintain the precision and coherence of this page.
+
+<div id="badges">
+  <a href="https://github.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/badiaa-m-b77032116/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://medium.com/@badiaa-makhlouf">
+    <img src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+  <a href="https://www.kaggle.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?logo=Kaggle&logoColor=white" alt="Kaggle Badge"/>
+  </a>
+  <a href="https://stackoverflow.com/users/10863083/baddy">
+    <img src="https://img.shields.io/stackexchange/stackoverflow/r/10863083?color=orange&label=reputation&logo=stackoverflow" alt="Stackoverflow Badge"/>
+  </a>
+</div>
+
 
 ## List Of Questions:
 ### PART I: ML Basics and Fundamentals 
