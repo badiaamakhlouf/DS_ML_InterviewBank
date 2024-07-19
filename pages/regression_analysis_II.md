@@ -1,6 +1,33 @@
 # ML : Supervised Learning 
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
+[![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
+![License](https://img.shields.io/badge/License-MIT-red)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg)
+
 # Part II: Regression Analysis
 This page presents the second part of the comprehensive guide to mastering regression analysis for your technical interview. It offers tailored questions and detailed answers to help you understand specific concepts thoroughly. If you missed the first part of the guide, please check [Regression Analysis I](./regression_analysis_I.md) for a complete understanding. 
+
+<div id="badges">
+  <a href="https://github.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/badiaa-m-b77032116/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://medium.com/@badiaa-makhlouf">
+    <img src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+  <a href="https://www.kaggle.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?logo=Kaggle&logoColor=white" alt="Kaggle Badge"/>
+  </a>
+  <a href="https://stackoverflow.com/users/10863083/baddy">
+    <img src="https://img.shields.io/stackexchange/stackoverflow/r/10863083?color=orange&label=reputation&logo=stackoverflow" alt="Stackoverflow Badge"/>
+  </a>
+</div>
+
 
 ## List of Questions 
 ### Q0-What is Lasso Regression and how it works?
