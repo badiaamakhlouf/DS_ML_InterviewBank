@@ -1,4 +1,11 @@
 # ML : Supervised Learning
+![Badiaa Makhlouf](https://img.shields.io/badge/Author-Badiaa%20Makhlouf-green)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/badiaa-m-b77032116/)
+[![Follow](https://img.shields.io/github/followers/badiaamakhlouf?label=Follow&style=social)](https://github.com/badiaamakhlouf)
+![License](https://img.shields.io/badge/License-MIT-red)
+![Last Updated](https://img.shields.io/badge/last%20updated-July%202024-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+![Maintained](https://img.shields.io/badge/maintained-yes-blue.svg)
 
 Machine learning algorithms can be categorized into different types based on their learning approaches, data characteristics, and task objectives. Supervised learning is one such type, where the model learns patterns from labeled data. In supervised learning, the input data is divided into features (input) and target (output). The goal is to predict the target or output using the provided features.
 
@@ -7,6 +14,24 @@ Machine learning algorithms can be categorized into different types based on the
    - Regression
 
 This GitHub page provides essential information and detailed insights into each technique, offering comprehensive and tailored questions for technical interviews for data scientists and machine learning engineers. It can help you master everything about classification and regression, ensuring you're well-prepared to pass your technical interview.
+
+<div id="badges">
+  <a href="https://github.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/badiaa-m-b77032116/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://medium.com/@badiaa-makhlouf">
+    <img src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+  <a href="https://www.kaggle.com/badiaamakhlouf">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?logo=Kaggle&logoColor=white" alt="Kaggle Badge"/>
+  </a>
+  <a href="https://stackoverflow.com/users/10863083/baddy">
+    <img src="https://img.shields.io/stackexchange/stackoverflow/r/10863083?color=orange&label=reputation&logo=stackoverflow" alt="Stackoverflow Badge"/>
+  </a>
+</div>
 
 ## List of Questions
 
