@@ -6,7 +6,7 @@ This Github page is a valuable resource for technical interviews on deep learnin
 ## List of Questions
 ## Part 1: Deep Learning and Neural Networks
 
-### Q0 -What is Deep Learning?
+### Q0- What is Deep Learning?
 - It is a subset of machine learning that involves training artificial neural networks with multiple layers (deep neural networks). 
 - It is used to model complex patterns and representations.
 - DL models are trained using large amounts of data.
