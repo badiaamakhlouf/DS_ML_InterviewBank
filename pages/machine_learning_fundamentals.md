@@ -468,7 +468,7 @@ Here are some common validation techniques:
 - Also, it is known as the intercept or constant term.
 - It is a constant value added to the linear combination of input features.
 - In simple linear regression model:
-    - Equation is: $$y = mx + b$$
+    - Equation is: $y = mx + b$
     - Where : 
         - y is the predicted output.
         - x is the input feature.
@@ -476,7 +476,7 @@ Here are some common validation techniques:
         - b is the bias term.
     - Bias term is the y-intercept of the linear equation, indicating the value of y when x is zero.
 - In complex models with multiple features:
-    - Equation: $$Y=W \times X + b$$
+    - Equation: $Y=W \times X + b$
     - Where:
         - Y: is the vector of predicted outputs.
         - X: is the matrix of input features.
