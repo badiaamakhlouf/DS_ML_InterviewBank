@@ -448,7 +448,7 @@ Here are some common validation techniques:
 
 ### Q18- What is Bias-Variance Decomposition? 
 - It is a mathematical expression that breaks down the mean squared error (MSE) of a predictive model into three components: bias squared, variance, and irreducible error. 
-- Formula : $$MSE=Bias^2 +Variance+Irreducible Error$$
+- Formula : $MSE=Bias^2 +Variance+Irreducible Error$
 - Irreducible error is the inherent noise or randomness in the data that cannot be reduced by any model. It represents the minimum achievable error, even with a perfect model.
 - This decomposition provides insights into the sources of error in a model and helps to illustrate the bias-variance tradeoff.
 - We aim to find the optimal model complexity that minimizes the sum of bias squared and variance.
