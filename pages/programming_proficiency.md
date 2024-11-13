@@ -18,4 +18,5 @@
   - Code examples :
     - `pyenv install 3.9.2` : Install version 3.9.2 of Python
     - `pyenv global 3.9.2`: make this python version global
-    - `pyenv local 3.8.6`: make this python version local but you must cd to your project folder.  
+    - `pyenv local 3.8.6`: make this python version local but you must cd to your project folder.
+    - `pyenv install --list` : list all existing python versions
