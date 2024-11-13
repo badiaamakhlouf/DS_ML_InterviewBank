@@ -7,7 +7,8 @@
   - A collection or set of python files where each files corresponds to a module. 
   - This modules are organized together and are installed as a unit.
   - It is possible that one package contains several modules or even several sub-packages and other files such as documentation or configuration files.
-  - Installation can be done using `pip` or `conda` in case you are using `Anaconda`. 
+  - Installation can be done using `pip` or `conda` in case you are using `Anaconda`.
+  - A package usually has an __init__.py file (in Python) that marks the directory as a package.
   - Exampes: `numpy`, `pandas`
 ### Q- What are the common python libraries?
 
