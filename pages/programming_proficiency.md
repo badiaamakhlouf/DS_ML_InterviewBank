@@ -20,3 +20,11 @@
     - `pyenv global 3.9.2`: make this python version global
     - `pyenv local 3.8.6`: make this python version local but you must cd to your project folder.
     - `pyenv install --list` : list all existing python versions
+
+- **pipenv:**
+  - A tool that simplifies and combines two main tasks in Python development.
+  - These two tasks are managing python project dependencies (like pip does) and managing virtual environments (like virtualenv does).
+  - It is very helpful to keep projects organized, reproducible, and compatible with different setups.
+  - With `pipenv`you can easily installa and isolate project dependencies, while automatically creating a virtual environment for each project. 
+
+
