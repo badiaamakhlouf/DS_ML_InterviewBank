@@ -26,7 +26,7 @@
   - These two tasks are managing python project dependencies (like pip does) and managing virtual environments (like virtualenv does).
   - It is very helpful to keep projects organized, reproducible, and compatible with different setups.
   - With `pipenv`you can easily installa and isolate project dependencies, while automatically creating a virtual environment for each project.
-  - It uses `Pipfile` and `Pipfile.lock to track dependencies, which replaces the older requirements.txt file: 
+  - It uses `Pipfile` and `Pipfile.lock` to track dependencies, which replaces the older requirements.txt file: 
     - The `Pipfile` lists high-level dependencies and their version ranges.
     - The `Pipfile.lock` is a snapshot of the exact versions installed, ensuring a reproducible environment
   - Code examples:
