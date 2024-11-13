@@ -44,7 +44,7 @@ Certainly, there are certain data science skills that are exclusively required f
     - Feature engineering and extraction are crucial tasks for enhancing model performance and obtaining meaningful insights. 
     - This step involves identifying, transforming and extracting relevant features from raw data.
    
-- 💡 [Machine Learning Fundamentals](pages/machine_learning_fundamentals.md):
+- 💡 ✅ [Machine Learning Fundamentals](pages/machine_learning_fundamentals.md):
     - Machine learning, a subset of AI, focuses on creating algorithms that enable computers to learn from data and make decisions or predictions.
     - It's essential to understand fundamentals in ML algorithms, including supervised and unsupervised learning methods, and master model evaluation techniques.
     - In the following section, I will delve into more detailed questions concerning advanced machine learning models and Machine Learning Operations (MLOps).
