@@ -25,6 +25,20 @@
   - A tool that simplifies and combines two main tasks in Python development.
   - These two tasks are managing python project dependencies (like pip does) and managing virtual environments (like virtualenv does).
   - It is very helpful to keep projects organized, reproducible, and compatible with different setups.
-  - With `pipenv`you can easily installa and isolate project dependencies, while automatically creating a virtual environment for each project. 
+  - With `pipenv`you can easily installa and isolate project dependencies, while automatically creating a virtual environment for each project.
+  - It uses `Pipfile` and `Pipfile.lock to track dependencies, which replaces the older requirements.txt file: 
+    - The `Pipfile` lists high-level dependencies and their version ranges.
+    - The `Pipfile.lock` is a snapshot of the exact versions installed, ensuring a reproducible environment
+  - Code examples:
+    - `pip install pipenv`: to install `pipenv
+    - `pipenv install <package_name>` : install a package
+    - `pipenv uninstall <package_name>`: uninstall a package
+    - `pipenv check`: check for Security Vulnerabilities
+    - `pipenv install`: install all dependencies from Pipfile.
+      
+
+
+
+
 
 
