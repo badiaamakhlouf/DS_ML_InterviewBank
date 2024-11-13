@@ -73,7 +73,10 @@ Certainly, there are certain data science skills that are exclusively required f
  Some advanced topics include :
  - 🧠 [Deep Learning](pages/deep_learning.md): it is a subfield of machine learning where neural networks with many layers ("deep") are trained to learn intricate patterns in data and to accomplish complex tasks accurately with minimal human intervention. Deep learning has significantly transformed fields like computer vision, natural language processing, and reinforcement learning.
    
- - 💡 [Reinforcement Learning](pages/reinforcement_learning.md): it is a type of machine learning where an agent learns to make decisions by interacting with its environment. Through trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards. This approach is inspired by how humans and animals learn from experience.
+ - 💡 [Reinforcement Learning](pages/reinforcement_learning.md):
+    - It is a type of ML approach where an agent learns to make decisions by interacting with its environment.
+    - Using trial and error, the agent receives feedback as rewards or penalties helping it to learn optimal strategies over time to maximize cumulative rewards.
+    - This approach is inspired by how humans and animals learn from experience.
    
  - 🚀 [Transfer Learning](pages/transfert_learning.md): it is a machine learning technique that involves reusing a model developed for one task as the starting point for another task. This approach is particularly prevalent in computer vision and natural language processing, where pre-trained models are leveraged to kickstart the learning process for subsequent tasks.
    
