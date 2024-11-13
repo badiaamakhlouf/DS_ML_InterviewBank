@@ -30,7 +30,7 @@
     - The `Pipfile` lists high-level dependencies and their version ranges.
     - The `Pipfile.lock` is a snapshot of the exact versions installed, ensuring a reproducible environment
   - Code examples:
-    - `pip install pipenv`: to install `pipenv
+    - `pip install pipenv`: to install `pipenv`
     - `pipenv install <package_name>` : install a package
     - `pipenv uninstall <package_name>`: uninstall a package
     - `pipenv check`: check for Security Vulnerabilities
