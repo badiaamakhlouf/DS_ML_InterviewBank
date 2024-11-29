@@ -100,7 +100,7 @@ Certainly, there are certain data science skills that are exclusively required f
  - It is a key function of Machine Learning field that aims to use various practices and tools to take models to production, and then maintaining and monitoring them regularly.
  - It aims to bring the benefits of DevOps practices to the machine learning lifecycle, ensuring that models can be reliably deployed, maintained, and updated.
  - It is crucial to carefully select the appropriate production environments to ensure optimal performance, reliability, and scalability of the system.
- - More details could be found [here](pages/mlops.md)
+ - More details could be found [here](https://github.com/badiaamakhlouf/MLOps_Guide/tree/main)
 
    
  ## 4- 🍀 Soft Skills 
