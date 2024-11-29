@@ -37,7 +37,7 @@ Certainly, there are certain data science skills that are exclusively required f
 
 - 📉 ✅ [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
-    - Exploratory Data Analysis (EDA) involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
+    - EDA involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
   
 - 🛠 ✅ [Feature Engineering and Feature Extraction](pages/feature_engineering.md):
@@ -47,7 +47,6 @@ Certainly, there are certain data science skills that are exclusively required f
 - 💡 ✅ [Machine Learning Fundamentals](pages/machine_learning_fundamentals.md):
     - Machine learning, a subset of AI, focuses on creating algorithms that enable computers to learn from data and make decisions or predictions.
     - It's essential to understand fundamentals in ML algorithms, including supervised and unsupervised learning methods, and master model evaluation techniques.
-    - In the following section, I will delve into more detailed questions concerning advanced machine learning models and Machine Learning Operations (MLOps).
   
 -  🔍 [SQL Skills](pages/sql_skills_for_data_science):
     - Every data scientist should master SQL to access and manipulate data effectively, including tasks like aggregation, filtering, and sorting.
