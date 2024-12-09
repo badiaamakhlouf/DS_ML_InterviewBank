@@ -22,7 +22,9 @@ No matter your career stage—junior, mid-level, senior, or lead—there are fun
 
 While some data science skills are specific to senior or lead roles, this comprehensive list is thoughtfully tailored to suit various proficiency levels.
 
-- 🔣 
+- 🔣 [Linear algebra and calculus](pages/linear_algebra_and_calculs):
+    - Linear Algebra: matrix operations, vector spaces, eigenvalues, eigenvectors, system of linear equations and transformations
+    - Calculus: differentiation, integration, Limits and continuity, Chain rule and product rule, Gradient descent
 
 - 📈 [Probability and Statistics](pages/statistics_and_probability.md):
     - It is required to master and understand fundamental statistical concepts such as mean, standard deviation, variance etc.
