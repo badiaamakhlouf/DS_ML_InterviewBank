@@ -18,8 +18,9 @@
 
 
 ## 1- 📊 Data science 
-Regardless of your career level—whether you're a junior, mid-level, senior, or lead—there are essential technical concepts and skills that every individual should master before embarking on a data science interview.
-Certainly, there are certain data science skills that are exclusively required for senior or lead positions. Here, I provide you with a comprehensive list tailored to different proficiency levels:
+No matter your career stage—junior, mid-level, senior, or lead—there are fundamental technical concepts and skills that everyone should master before tackling a data science interview.
+
+While some data science skills are specific to senior or lead roles, this comprehensive list is thoughtfully tailored to suit various proficiency levels.
 
 - 📈 [Probability and Statistics](pages/statistics_and_probability.md):
     - It is required to master and understand fundamental statistical concepts such as mean, standard deviation, variance etc.
