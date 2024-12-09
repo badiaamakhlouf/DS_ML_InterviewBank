@@ -17,10 +17,12 @@
 
 
 
-## 1- 📊 Data science 
+## 1- 📚 Data science 
 No matter your career stage—junior, mid-level, senior, or lead—there are fundamental technical concepts and skills that everyone should master before tackling a data science interview.
 
 While some data science skills are specific to senior or lead roles, this comprehensive list is thoughtfully tailored to suit various proficiency levels.
+
+- 🔣 
 
 - 📈 [Probability and Statistics](pages/statistics_and_probability.md):
     - It is required to master and understand fundamental statistical concepts such as mean, standard deviation, variance etc.
@@ -36,7 +38,7 @@ While some data science skills are specific to senior or lead roles, this compre
     - This step involves mastering the handling of missing data (null values), removing duplicates and handling outliers.
     - It is essential as it helps improve the quality and reliability of data, leading to more accurate analysis and reliable insights.
 
-- 📉 ✅ [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
+- 📊 ✅ [Data Visualization and Exploratory Data Analysis (EDA)](pages/data_visualization_and_eda.md):
     - Effective visualizations are crucial for understanding data accurately and making informed assumptions.
     - EDA involves obtaining summary statistics with Pandas, examining variable distributions using distribution plots and boxplots, exploring relationships between features with correlation matrices and scatter plots, identifying outliers, and more.
     - All of these techniques are invaluable for clearly communicating insights and findings.
