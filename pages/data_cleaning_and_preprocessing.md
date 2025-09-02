@@ -78,11 +78,11 @@ Handling missing values is a crucial step in data cleaning to ensure accurate an
       - **Training data**: may impact the training process and the quality of the resulting models.
       - **Testing data**: might affect the evaluation of the model's performance.
   - Choosing the appropriate strategy:
-  - Removing missing values : deleting or removing missing values is not always adequate, as it can result in the loss of important or insightful information
-  - If the percentage of missing values is very high so it is better to remove the entire row or column.
-  - Imputate them with the adequate value: mean, median Forward Fill/Backward Fill or predictive imputation.
-  - Maintaining data integrity: is deleting missing values would significantly reduce the dataset size so it is better to use an imputation strategy.
-  - If missing values are common in real-world scenarios, it's best to keep them in the testing data.
+    - Removing missing values : deleting or removing missing values is not always adequate, as it can result in the loss of important or insightful information
+    - If the percentage of missing values is very high so it is better to remove the entire row or column.
+    - Imputate them with the adequate value: mean, median Forward Fill/Backward Fill or predictive imputation.
+    - Maintaining data integrity: is deleting missing values would significantly reduce the dataset size so it is better to use an imputation strategy.
+    - If missing values are common in real-world scenarios, it's best to keep them in the testing data.
 
 ### Q5- How to remove missing values? 
 Here is how to remove missing values :
