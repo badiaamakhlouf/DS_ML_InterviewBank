@@ -16,7 +16,7 @@ Whether you're building foundational knowledge or preparing for data science int
 - Cloud provides such as AWS, GCP and Azure help provide the computing power needed to make a useful analysis and reveal new knowledge.
 - Data science can help organizations understand their environments, analyze existing problems, and improve their business returns.
 
-### Q1- How to define a good Data Scientis ?
+### Q1- How to define a good Data Scientist ?
 
 - Data scientists leverage data analysis to enhance organizational knowledge by delving into data, exploring its potential to add value to the business.
 - Effective data scientists exhibit curiosity, continuously asking pertinent questions and seeking answers through data exploration. They identify the necessary data and its sources, utilizing various analytical methods and models to uncover patterns and anomalies.
