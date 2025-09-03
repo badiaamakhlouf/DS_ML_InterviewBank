@@ -288,8 +288,8 @@ Actually, you can find more details in the regression section. Here is the list 
 ### Q26- What does K-Nearest Neighbors (KNN) mean?
 - Simple supervised ML algorithm
 - Used for both :
- - Regression
- - Classification
+    - Regression
+    - Classification
 - For classification, the prediction for a new data point is made based on the majority class
 - For regression, the prediction for a new data point is made based on the average of the nearest K neighbors
 - K :  the number of nearest neighbors considered for making predictions.
